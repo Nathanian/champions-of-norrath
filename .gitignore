@@ -1,0 +1,68 @@
+# --- your own legally obtained copy of the game (NEVER commit) ---
+baserom*
+orig/
+reference/
+expected/
+
+# Retail ELF, ROM images and disc dumps of Champions of Norrath (SLUS-20565)
+*.elf
+*.rom
+*.iso
+*.bin
+*.bin.cue
+*.cue
+*.mdf
+*.mds
+*.chd
+*.cso
+*.zso
+*.zst
+*.pbp
+*.zip
+
+# --- generated: disassembly, data blobs and build artifacts ---
+asm/
+assets/
+build/
+.splat/
+
+# Generated dependency files, symbol lists and object files
+*.d
+*_auto.txt
+*.o
+*.obj
+
+# Generated linker scripts and map files
+# (splat.yaml IS tracked; these are its products, regenerated on every build)
+*.ld
+*.map
+
+# --- progress / report files (may embed disassembly) ---
+report.txt
+*.report
+
+# --- editor / OS noise ---
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.vs/
+*.swp
+*~
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Python environment (splat / tooling) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- optional MIPS toolchain installs ---
+compiler/
+tools/download/
+
+# --- scratch / temp files ---
+ctx.c
+ctx.c.m2c
+*.tmp

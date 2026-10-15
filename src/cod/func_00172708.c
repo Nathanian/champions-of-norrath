@@ -1,0 +1,11 @@
+#include "common.h"
+
+/* identical to func_0015A8E0 (matched), with its names changed by decomp.wtf */
+// context.h included automatically
+
+extern void func_0016E658(void);
+
+void func_00172708(void) {
+    void (*fp)(void) = func_0016E658;
+    fp();
+}
