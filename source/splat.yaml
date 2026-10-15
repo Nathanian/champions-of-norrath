@@ -4,7 +4,7 @@ options:
   disassemble_all: True
   auto_decompile_empty_functions: False
   basename: game.elf
-  target_path: game.elf.rom
+  target_path: baserom.bin
   elf_path: build/game.elf.elf
   base_path: .
   platform: ps2
