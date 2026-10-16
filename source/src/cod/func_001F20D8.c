@@ -1,7 +1,5 @@
 #include "common.h"
 
-s32 func_001129F0(void *, void *);
-
 void func_001F20D8(void *arg0, u32 arg1) {
     u32 sp0;
     sp0 = arg1;

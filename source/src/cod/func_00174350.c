@@ -1,15 +1,5 @@
 #include "common.h"
 
-extern void func_0016D160(s32, s32);
-
-typedef struct {
-    s32 unk0;
-    s32 unk4;
-    s32 unk8;
-    s32 unkC;
-    s32 unk10;
-} Obj;
-
 void func_00174350(Obj *arg0) {
     void (*fp)(s32, s32);
     s32 unk8 = arg0->unk8;

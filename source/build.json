@@ -25,7 +25,8 @@
  ],
  "ld_flags": [
   "-EL",
-  "--no-check-sections"
+  "--no-check-sections",
+  "--allow-multiple-definition"
  ],
  "assembly": [
   {

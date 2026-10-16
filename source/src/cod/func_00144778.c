@@ -1,15 +1,5 @@
 #include "common.h"
 
-void func_00144730(u32 arg0, u32 arg1) {
-    arg1 += arg0;
-    arg0 &= ~0xFU;
-    if (arg0 < arg1) {
-        do {
-            arg0++;
-        } while (arg0 < arg1);
-    }
-}
-extern s32 D_00333D58[];
 s32 func_00144778(void) {
     s32 sum = 0;
     s32 i = 2;

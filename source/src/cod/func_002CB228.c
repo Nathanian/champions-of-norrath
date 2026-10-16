@@ -1,9 +1,5 @@
 #include "common.h"
 
-/* identical to func_00113770 (matched), with its names changed by decomp.wtf */
-extern void func_002CBF88(void *);
-extern void D_008D86A0(void);
-
 void func_002CB228(void) {
     volatile void *dummy;
     func_002CBF88(&D_008D86A0);

@@ -1,6 +1,5 @@
 #include "common.h"
 
-void func_00143630(void *);
 void func_0018E3D8(void *arg0) {
     volatile void *dummy;
     s32 tmp;

@@ -1,10 +1,5 @@
 #include "common.h"
 
-extern s32 func_00138758(void *arg0, s32 arg1, void **arg2);
-extern s32 func_00138900(void *arg0, void *arg1);
-extern void *func_00143A58(void *arg0);
-extern s32 func_00277AD8(void *arg0, void *arg1);
-
 s32 func_0013AAC0(void *arg0, s32 *arg1) {
     struct { char b0[0xA0]; char b1[0xA0]; char *s; } l;
     void *a;

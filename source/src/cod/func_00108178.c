@@ -1,8 +1,5 @@
 #include "common.h"
 
-extern s32 func_001039F0(void);
-extern f32 func_00108230(void *);
-
 void func_00108178(void **arg0, f32 *arg1, f32 *arg2) {
     void *temp_2;
     s16 temp_16;

@@ -1,9 +1,5 @@
 #include "common.h"
 
-s32 func_00148480(s32, void *);
-
-s32 D_00484538;
-
 void func_00154AB8(void *arg0, s32 arg1) {
     s32 i;
     s32 found;

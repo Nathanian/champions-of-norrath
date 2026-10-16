@@ -1,9 +1,5 @@
 #include "common.h"
 
-/* identical to func_002A90A8 (matched), with its names changed by decomp.wtf */
-s32 func_001671F8(char *);
-void func_00190E20(s32, s32, f32, f32, f32, f32, f32, f32, f32, f32);
-extern char D_00479970[];
 void func_002BE240(void *arg0, s32 arg1, s32 arg2) {
     char *p1 = (char *)(*(s32 *)((char *)arg0 + 0x60)) + 0x58;
     s32 (*fn1)(void *, s32, s32) = *(s32 (**)(void *, s32, s32))(p1 + 4);

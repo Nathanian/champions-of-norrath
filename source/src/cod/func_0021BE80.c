@@ -1,8 +1,5 @@
 #include "common.h"
 
-extern s32 D_004844A0;
-extern void func_001757D8(s32, s32, void *, s32);
-extern void func_00142310(void *, s32);
 void func_0021BE80(char *arg0) {
     f32 stk[3];
     f32 zero = 0.0f;

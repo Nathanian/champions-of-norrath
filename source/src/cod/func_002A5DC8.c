@@ -1,7 +1,5 @@
 #include "common.h"
 
-s32 func_001671F8(void *); void func_001C7600(s32, s32, s32, s32);
-extern char D_00478708[];
 s32 func_002A5DC8(s32 arg0, void *arg1) {
   s32 var_5 = 1;
   if ((*(s32 *)((char *)arg1 + 0xC) & 0x40) &&

@@ -1,12 +1,5 @@
 #include "common.h"
 
-#include "context.h"
-
-extern u32 D_00484538;
-extern char D_00408600[];
-
-typedef struct { f32 x, y, z; } Pt12;
-
 s32 func_00135658(void *arg0, f32 arg1) {
     Pt12 local = *(Pt12 *)arg0;
     Pt12 *lp = &local;

@@ -1,9 +1,5 @@
 #include "common.h"
 
-void func_002CBEF0(void *);
-void func_002CBF00(void *, s32);
-extern u8 D_008D86A0[];
-
 void func_002CB1D0(s32 arg0, s32 arg1) {
     s32 saved_s0 = arg0;
     if (arg1 != 0xFFFF) goto exit;

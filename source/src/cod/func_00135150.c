@@ -1,9 +1,5 @@
 #include "common.h"
 
-extern s8 D_00483829;
-s32 D_0048385C;
-extern s8 D_004E6755[];
-
 s32 func_00135150(s32 arg0) {
     if (D_00483829 == 0) {
         return 1;

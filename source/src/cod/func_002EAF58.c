@@ -1,8 +1,5 @@
 #include "common.h"
 
-s32 func_002EB670(s32, s32);
-s32 func_002EB690(s32, s32, s32, s32, s32);
-s32 func_00301FFC(s32, s32, s32);
 s32 func_002EAF58(s32 *arg0, s32 arg1, s32 arg2, s32 arg3, s32 *arg4) {
     s32 t;
     if (arg0 == 0)

@@ -1,9 +1,5 @@
 #include "common.h"
 
-/* identical to func_00303880 (matched), with its names changed by decomp.wtf */
-extern s32 func_002D57C8(s32);
-extern s32 D_00486DF0[4];
-
 s32 func_003094D0(s32 *arg0, s32 arg1) {
     s32 ret;
     s32 *arg0_saved = arg0;

@@ -1,10 +1,5 @@
 #include "common.h"
 
-s32 func_001671F8(void *);
-s32 func_001C7600(s32, s32, s32, s32);
-extern u8 D_00408600[];
-extern char D_00477918[];
-
 s32 func_00290928(void *unused, void *arg0) {
     void *ptr = arg0;
     s32 result = 1;

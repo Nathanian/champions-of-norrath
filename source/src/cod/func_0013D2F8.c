@@ -1,15 +1,5 @@
 #include "common.h"
 
-/* identical to func_0013D230 (matched), with its names changed by decomp.wtf */
-typedef struct Obj {
-    struct Obj *unk0;
-    struct Obj *unk4;
-    char pad[0x28];
-    f32 unk30;
-    f32 unk34;
-} Obj;
-extern void *D_004F40F0[];
-extern s32 D_00486848[2];
 void func_0013D2F8(Obj *arg0) {
     s32 x;
     s32 y;

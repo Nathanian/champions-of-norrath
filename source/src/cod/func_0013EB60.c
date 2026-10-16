@@ -1,13 +1,5 @@
 #include "common.h"
 
-typedef struct Obj {
-    struct Obj *unk0;
-    struct Obj *unk4;
-    char pad[0x28];
-    f32 unk30;
-    f32 unk34;
-} Obj;
-extern void *D_004F40F0[];
 void func_0013EB60(Obj *arg0) {
     s32 x;
     s32 y;
