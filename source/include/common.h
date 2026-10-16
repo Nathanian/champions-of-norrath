@@ -42,14 +42,28 @@ extern u8 D_004E2280[];
 extern s8 D_004E6755[];
 s32 func_001353A8(s32);   /* queries entry i; returns nonzero if occupied */
 
+s32 D_00483AAC;
+extern u8 D_004F4060[];
+extern u8 D_004F4098[];
+extern char D_00333930[];
+void func_001385C0(void *a0, void *a1, s32 a2);
 s32 D_00486894;
 s32 D_004868A4;
 s32 D_00483F88;
 f32 D_00482AA0;
+f32 D_004816D4;
 f32 D_00482E48;
 f32 D_00482E44;
 f32 D_00483AB4;
 s32 D_00486848[2];
+/* matrix helpers around 0x00159390 (opencode-19): 4x4-ish block at arg0
+ * floats at 0,0x14,0x28,0x2C,0x38; s32 zeros elsewhere; 0x59550 adds
+ * col0*a+col1*b+col2*c to trans (offsets 0,C,18->24 etc); 0x595D8 scales
+ * the 9 col floats (0,4,8,10,14,18,20,24,28) by one float. */
+void func_00159390(void *arg0, f32, f32, f32, f32, f32, f32, f32);
+void func_00159410(void *arg0, f32, f32, f32, f32, f32, f32, f32);
+void func_00159550(void *arg0, f32, f32, f32);
+void func_001595D8(void *arg0, f32);
 f32 D_00482880;
 f32 D_00482884;
 f32 D_00482888;

@@ -529,7 +529,9 @@
    "seg": "cod",
    "vram": 1082376,
    "rom": 33800,
-   "asm": "asm/nonmatchings/cod/func_00108408.s"
+   "asm": "asm/nonmatchings/cod/func_00108408.s",
+   "c": "src/cod/func_00108408.c",
+   "own": {}
   },
   {
    "name": "func_00108428",
@@ -3571,7 +3573,9 @@
    "seg": "cod",
    "vram": 1295584,
    "rom": 247008,
-   "asm": "asm/nonmatchings/cod/func_0013C4E0.s"
+   "asm": "asm/nonmatchings/cod/func_0013C4E0.s",
+   "c": "src/cod/func_0013C4E0.c",
+   "own": {}
   },
   {
    "name": "func_0013C508",
@@ -3643,14 +3647,18 @@
    "seg": "cod",
    "vram": 1298992,
    "rom": 250416,
-   "asm": "asm/nonmatchings/cod/func_0013D230.s"
+   "asm": "asm/nonmatchings/cod/func_0013D230.s",
+   "c": "src/cod/func_0013D230.c",
+   "own": {}
   },
   {
    "name": "func_0013D2F8",
    "seg": "cod",
    "vram": 1299192,
    "rom": 250616,
-   "asm": "asm/nonmatchings/cod/func_0013D2F8.s"
+   "asm": "asm/nonmatchings/cod/func_0013D2F8.s",
+   "c": "src/cod/func_0013D2F8.c",
+   "own": {}
   },
   {
    "name": "func_0013D3C0",
@@ -3722,7 +3730,9 @@
    "seg": "cod",
    "vram": 1304256,
    "rom": 255680,
-   "asm": "asm/nonmatchings/cod/func_0013E6C0.s"
+   "asm": "asm/nonmatchings/cod/func_0013E6C0.s",
+   "c": "src/cod/func_0013E6C0.c",
+   "own": {}
   },
   {
    "name": "func_0013E6F0",
@@ -3807,7 +3817,9 @@
    "seg": "cod",
    "vram": 1305112,
    "rom": 256536,
-   "asm": "asm/nonmatchings/cod/func_0013EA18.s"
+   "asm": "asm/nonmatchings/cod/func_0013EA18.s",
+   "c": "src/cod/func_0013EA18.c",
+   "own": {}
   },
   {
    "name": "func_0013EAC0",
@@ -4875,14 +4887,18 @@
    "seg": "cod",
    "vram": 1395216,
    "rom": 346640,
-   "asm": "asm/nonmatchings/cod/func_00154A10.s"
+   "asm": "asm/nonmatchings/cod/func_00154A10.s",
+   "c": "src/cod/func_00154A10.c",
+   "own": {}
   },
   {
    "name": "func_00154AB8",
    "seg": "cod",
    "vram": 1395384,
    "rom": 346808,
-   "asm": "asm/nonmatchings/cod/func_00154AB8.s"
+   "asm": "asm/nonmatchings/cod/func_00154AB8.s",
+   "c": "src/cod/func_00154AB8.c",
+   "own": {}
   },
   {
    "name": "func_00154BA8",
@@ -4907,7 +4923,9 @@
    "seg": "cod",
    "vram": 1395704,
    "rom": 347128,
-   "asm": "asm/nonmatchings/cod/func_00154BF8.s"
+   "asm": "asm/nonmatchings/cod/func_00154BF8.s",
+   "c": "src/cod/func_00154BF8.c",
+   "own": {}
   },
   {
    "name": "func_00154C78",
@@ -5054,14 +5072,18 @@
    "seg": "cod",
    "vram": 1399072,
    "rom": 350496,
-   "asm": "asm/nonmatchings/cod/func_00155920.s"
+   "asm": "asm/nonmatchings/cod/func_00155920.s",
+   "c": "src/cod/func_00155920.c",
+   "own": {}
   },
   {
    "name": "func_001559C8",
    "seg": "cod",
    "vram": 1399240,
    "rom": 350664,
-   "asm": "asm/nonmatchings/cod/func_001559C8.s"
+   "asm": "asm/nonmatchings/cod/func_001559C8.s",
+   "c": "src/cod/func_001559C8.c",
+   "own": {}
   },
   {
    "name": "func_00155AB8",
@@ -5352,35 +5374,45 @@
    "seg": "cod",
    "vram": 1414032,
    "rom": 365456,
-   "asm": "asm/nonmatchings/cod/func_00159390.s"
+   "asm": "asm/nonmatchings/cod/func_00159390.s",
+   "c": "src/cod/func_00159390.c",
+   "own": {}
   },
   {
    "name": "func_00159410",
    "seg": "cod",
    "vram": 1414160,
    "rom": 365584,
-   "asm": "asm/nonmatchings/cod/func_00159410.s"
+   "asm": "asm/nonmatchings/cod/func_00159410.s",
+   "c": "src/cod/func_00159410.c",
+   "own": {}
   },
   {
    "name": "func_001594B0",
    "seg": "cod",
    "vram": 1414320,
    "rom": 365744,
-   "asm": "asm/nonmatchings/cod/func_001594B0.s"
+   "asm": "asm/nonmatchings/cod/func_001594B0.s",
+   "c": "src/cod/func_001594B0.c",
+   "own": {}
   },
   {
    "name": "func_00159550",
    "seg": "cod",
    "vram": 1414480,
    "rom": 365904,
-   "asm": "asm/nonmatchings/cod/func_00159550.s"
+   "asm": "asm/nonmatchings/cod/func_00159550.s",
+   "c": "src/cod/func_00159550.c",
+   "own": {}
   },
   {
    "name": "func_001595D8",
    "seg": "cod",
    "vram": 1414616,
    "rom": 366040,
-   "asm": "asm/nonmatchings/cod/func_001595D8.s"
+   "asm": "asm/nonmatchings/cod/func_001595D8.s",
+   "c": "src/cod/func_001595D8.c",
+   "own": {}
   },
   {
    "name": "func_00159648",
@@ -5390,32 +5422,34 @@
    "asm": "asm/nonmatchings/cod/func_00159648.s"
   },
   {
-   "name": "func_00159700",
+   "name": "mat3x3_scale",
    "seg": "cod",
    "vram": 1414912,
    "rom": 366336,
-   "asm": "asm/nonmatchings/cod/func_00159700.s"
+   "asm": "asm/nonmatchings/cod/mat3x3_scale.s"
   },
   {
-   "name": "func_00159770",
+   "name": "mat3x3_scale_columns",
    "seg": "cod",
    "vram": 1415024,
    "rom": 366448,
-   "asm": "asm/nonmatchings/cod/func_00159770.s"
+   "asm": "asm/nonmatchings/cod/mat3x3_scale_columns.s",
+   "c": "src/cod/mat3x3_scale_columns.c",
+   "own": {}
   },
   {
-   "name": "func_001597E0",
+   "name": "mat3x3_mul_vec3",
    "seg": "cod",
    "vram": 1415136,
    "rom": 366560,
-   "asm": "asm/nonmatchings/cod/func_001597E0.s"
+   "asm": "asm/nonmatchings/cod/mat3x3_mul_vec3.s"
   },
   {
-   "name": "func_00159880",
+   "name": "mat3x3_transposed_mul_vec3",
    "seg": "cod",
    "vram": 1415296,
    "rom": 366720,
-   "asm": "asm/nonmatchings/cod/func_00159880.s"
+   "asm": "asm/nonmatchings/cod/mat3x3_transposed_mul_vec3.s"
   },
   {
    "name": "func_00159920",
@@ -5443,14 +5477,18 @@
    "seg": "cod",
    "vram": 1416088,
    "rom": 367512,
-   "asm": "asm/nonmatchings/cod/func_00159B98.s"
+   "asm": "asm/nonmatchings/cod/func_00159B98.s",
+   "c": "src/cod/func_00159B98.c",
+   "own": {}
   },
   {
    "name": "func_00159C38",
    "seg": "cod",
    "vram": 1416248,
    "rom": 367672,
-   "asm": "asm/nonmatchings/cod/func_00159C38.s"
+   "asm": "asm/nonmatchings/cod/func_00159C38.s",
+   "c": "src/cod/func_00159C38.c",
+   "own": {}
   },
   {
    "name": "func_00159CD8",
@@ -5492,7 +5530,9 @@
    "seg": "cod",
    "vram": 1417208,
    "rom": 368632,
-   "asm": "asm/nonmatchings/cod/func_00159FF8.s"
+   "asm": "asm/nonmatchings/cod/func_00159FF8.s",
+   "c": "src/cod/func_00159FF8.c",
+   "own": {}
   },
   {
    "name": "func_0015A030",
@@ -5522,7 +5562,9 @@
    "seg": "cod",
    "vram": 1417624,
    "rom": 369048,
-   "asm": "asm/nonmatchings/cod/func_0015A198.s"
+   "asm": "asm/nonmatchings/cod/func_0015A198.s",
+   "c": "src/cod/func_0015A198.c",
+   "own": {}
   },
   {
    "name": "func_0015A1D0",
@@ -6626,7 +6668,9 @@
    "seg": "cod",
    "vram": 1469776,
    "rom": 421200,
-   "asm": "asm/nonmatchings/cod/func_00166D50.s"
+   "asm": "asm/nonmatchings/cod/func_00166D50.s",
+   "c": "src/cod/func_00166D50.c",
+   "own": {}
   },
   {
    "name": "func_00166DC0",
@@ -6658,21 +6702,27 @@
    "seg": "cod",
    "vram": 1470224,
    "rom": 421648,
-   "asm": "asm/nonmatchings/cod/func_00166F10.s"
+   "asm": "asm/nonmatchings/cod/func_00166F10.s",
+   "c": "src/cod/func_00166F10.c",
+   "own": {}
   },
   {
    "name": "func_00166F30",
    "seg": "cod",
    "vram": 1470256,
    "rom": 421680,
-   "asm": "asm/nonmatchings/cod/func_00166F30.s"
+   "asm": "asm/nonmatchings/cod/func_00166F30.s",
+   "c": "src/cod/func_00166F30.c",
+   "own": {}
   },
   {
    "name": "func_00166F48",
    "seg": "cod",
    "vram": 1470280,
    "rom": 421704,
-   "asm": "asm/nonmatchings/cod/func_00166F48.s"
+   "asm": "asm/nonmatchings/cod/func_00166F48.s",
+   "c": "src/cod/func_00166F48.c",
+   "own": {}
   },
   {
    "name": "func_00166F98",
@@ -8988,7 +9038,9 @@
    "seg": "cod",
    "vram": 1642880,
    "rom": 594304,
-   "asm": "asm/nonmatchings/cod/func_00191180.s"
+   "asm": "asm/nonmatchings/cod/func_00191180.s",
+   "c": "src/cod/func_00191180.c",
+   "own": {}
   },
   {
    "name": "func_001911C8",
@@ -9096,28 +9148,36 @@
    "seg": "cod",
    "vram": 1644592,
    "rom": 596016,
-   "asm": "asm/nonmatchings/cod/func_00191830.s"
+   "asm": "asm/nonmatchings/cod/func_00191830.s",
+   "c": "src/cod/func_00191830.c",
+   "own": {}
   },
   {
    "name": "func_00191868",
    "seg": "cod",
    "vram": 1644648,
    "rom": 596072,
-   "asm": "asm/nonmatchings/cod/func_00191868.s"
+   "asm": "asm/nonmatchings/cod/func_00191868.s",
+   "c": "src/cod/func_00191868.c",
+   "own": {}
   },
   {
    "name": "func_001918A0",
    "seg": "cod",
    "vram": 1644704,
    "rom": 596128,
-   "asm": "asm/nonmatchings/cod/func_001918A0.s"
+   "asm": "asm/nonmatchings/cod/func_001918A0.s",
+   "c": "src/cod/func_001918A0.c",
+   "own": {}
   },
   {
    "name": "func_001918D8",
    "seg": "cod",
    "vram": 1644760,
    "rom": 596184,
-   "asm": "asm/nonmatchings/cod/func_001918D8.s"
+   "asm": "asm/nonmatchings/cod/func_001918D8.s",
+   "c": "src/cod/func_001918D8.c",
+   "own": {}
   },
   {
    "name": "func_00191938",
@@ -11531,7 +11591,9 @@
    "seg": "cod",
    "vram": 1904712,
    "rom": 856136,
-   "asm": "asm/nonmatchings/cod/func_001D1048.s"
+   "asm": "asm/nonmatchings/cod/func_001D1048.s",
+   "c": "src/cod/func_001D1048.c",
+   "own": {}
   },
   {
    "name": "func_001D1100",
@@ -11621,7 +11683,9 @@
    "seg": "cod",
    "vram": 1907192,
    "rom": 858616,
-   "asm": "asm/nonmatchings/cod/func_001D19F8.s"
+   "asm": "asm/nonmatchings/cod/func_001D19F8.s",
+   "c": "src/cod/func_001D19F8.c",
+   "own": {}
   },
   {
    "name": "func_001D1A60",
@@ -13049,21 +13113,29 @@
    "seg": "cod",
    "vram": 2039944,
    "rom": 991368,
-   "asm": "asm/nonmatchings/cod/func_001F2088.s"
+   "asm": "asm/nonmatchings/cod/func_001F2088.s",
+   "c": "src/cod/func_001F2088.c",
+   "own": {}
   },
   {
    "name": "func_001F20B0",
    "seg": "cod",
    "vram": 2039984,
    "rom": 991408,
-   "asm": "asm/nonmatchings/cod/func_001F20B0.s"
+   "asm": "asm/nonmatchings/cod/func_001F20B0.s",
+   "c": "src/cod/func_001F20B0.c",
+   "own": {}
   },
   {
    "name": "func_001F20D8",
    "seg": "cod",
    "vram": 2040024,
    "rom": 991448,
-   "asm": "asm/nonmatchings/cod/func_001F20D8.s"
+   "asm": "asm/nonmatchings/cod/func_001F20D8.s",
+   "c": "src/cod/func_001F20D8.c",
+   "own": {
+    ".rodata": 4644608
+   }
   },
   {
    "name": "func_001F2148",
@@ -13271,7 +13343,9 @@
    "seg": "cod",
    "vram": 2061752,
    "rom": 1013176,
-   "asm": "asm/nonmatchings/cod/func_001F75B8.s"
+   "asm": "asm/nonmatchings/cod/func_001F75B8.s",
+   "c": "src/cod/func_001F75B8.c",
+   "own": {}
   },
   {
    "name": "func_001F75E0",
@@ -13315,7 +13389,9 @@
    "seg": "cod",
    "vram": 2063416,
    "rom": 1014840,
-   "asm": "asm/nonmatchings/cod/func_001F7C38.s"
+   "asm": "asm/nonmatchings/cod/func_001F7C38.s",
+   "c": "src/cod/func_001F7C38.c",
+   "own": {}
   },
   {
    "name": "func_001F7C60",
@@ -13343,7 +13419,9 @@
    "seg": "cod",
    "vram": 2064480,
    "rom": 1015904,
-   "asm": "asm/nonmatchings/cod/func_001F8060.s"
+   "asm": "asm/nonmatchings/cod/func_001F8060.s",
+   "c": "src/cod/func_001F8060.c",
+   "own": {}
   },
   {
    "name": "func_001F8088",
@@ -13371,7 +13449,9 @@
    "seg": "cod",
    "vram": 2067296,
    "rom": 1018720,
-   "asm": "asm/nonmatchings/cod/func_001F8B60.s"
+   "asm": "asm/nonmatchings/cod/func_001F8B60.s",
+   "c": "src/cod/func_001F8B60.c",
+   "own": {}
   },
   {
    "name": "func_001F8B88",
@@ -13972,14 +14052,18 @@
    "seg": "cod",
    "vram": 2132384,
    "rom": 1083808,
-   "asm": "asm/nonmatchings/cod/func_002089A0.s"
+   "asm": "asm/nonmatchings/cod/func_002089A0.s",
+   "c": "src/cod/func_002089A0.c",
+   "own": {}
   },
   {
    "name": "func_00208A28",
    "seg": "cod",
    "vram": 2132520,
    "rom": 1083944,
-   "asm": "asm/nonmatchings/cod/func_00208A28.s"
+   "asm": "asm/nonmatchings/cod/func_00208A28.s",
+   "c": "src/cod/func_00208A28.c",
+   "own": {}
   },
   {
    "name": "func_00208A80",
@@ -14230,7 +14314,9 @@
    "seg": "cod",
    "vram": 2161040,
    "rom": 1112464,
-   "asm": "asm/nonmatchings/cod/func_0020F990.s"
+   "asm": "asm/nonmatchings/cod/func_0020F990.s",
+   "c": "src/cod/func_0020F990.c",
+   "own": {}
   },
   {
    "name": "func_0020F9B8",
@@ -15050,7 +15136,9 @@
    "seg": "cod",
    "vram": 2213736,
    "rom": 1165160,
-   "asm": "asm/nonmatchings/cod/func_0021C768.s"
+   "asm": "asm/nonmatchings/cod/func_0021C768.s",
+   "c": "src/cod/func_0021C768.c",
+   "own": {}
   },
   {
    "name": "func_0021C7D0",
@@ -15092,7 +15180,9 @@
    "seg": "cod",
    "vram": 2214480,
    "rom": 1165904,
-   "asm": "asm/nonmatchings/cod/func_0021CA50.s"
+   "asm": "asm/nonmatchings/cod/func_0021CA50.s",
+   "c": "src/cod/func_0021CA50.c",
+   "own": {}
   },
   {
    "name": "func_0021CAD8",
@@ -15670,7 +15760,9 @@
    "seg": "cod",
    "vram": 2247936,
    "rom": 1199360,
-   "asm": "asm/nonmatchings/cod/func_00224D00.s"
+   "asm": "asm/nonmatchings/cod/func_00224D00.s",
+   "c": "src/cod/func_00224D00.c",
+   "own": {}
   },
   {
    "name": "func_00224D18",
@@ -16229,7 +16321,9 @@
    "seg": "cod",
    "vram": 2275800,
    "rom": 1227224,
-   "asm": "asm/nonmatchings/cod/func_0022B9D8.s"
+   "asm": "asm/nonmatchings/cod/func_0022B9D8.s",
+   "c": "src/cod/func_0022B9D8.c",
+   "own": {}
   },
   {
    "name": "func_0022BA60",
@@ -17180,7 +17274,9 @@
    "seg": "cod",
    "vram": 2373120,
    "rom": 1324544,
-   "asm": "asm/nonmatchings/cod/func_00243600.s"
+   "asm": "asm/nonmatchings/cod/func_00243600.s",
+   "c": "src/cod/func_00243600.c",
+   "own": {}
   },
   {
    "name": "func_00243628",
@@ -17880,7 +17976,9 @@
    "seg": "cod",
    "vram": 2420200,
    "rom": 1371624,
-   "asm": "asm/nonmatchings/cod/func_0024EDE8.s"
+   "asm": "asm/nonmatchings/cod/func_0024EDE8.s",
+   "c": "src/cod/func_0024EDE8.c",
+   "own": {}
   },
   {
    "name": "func_0024EE18",
@@ -18652,14 +18750,18 @@
    "seg": "cod",
    "vram": 2472712,
    "rom": 1424136,
-   "asm": "asm/nonmatchings/cod/func_0025BB08.s"
+   "asm": "asm/nonmatchings/cod/func_0025BB08.s",
+   "c": "src/cod/func_0025BB08.c",
+   "own": {}
   },
   {
    "name": "func_0025BB70",
    "seg": "cod",
    "vram": 2472816,
    "rom": 1424240,
-   "asm": "asm/nonmatchings/cod/func_0025BB70.s"
+   "asm": "asm/nonmatchings/cod/func_0025BB70.s",
+   "c": "src/cod/func_0025BB70.c",
+   "own": {}
   },
   {
    "name": "func_0025BBA8",
@@ -18684,21 +18786,27 @@
    "seg": "cod",
    "vram": 2472944,
    "rom": 1424368,
-   "asm": "asm/nonmatchings/cod/func_0025BBF0.s"
+   "asm": "asm/nonmatchings/cod/func_0025BBF0.s",
+   "c": "src/cod/func_0025BBF0.c",
+   "own": {}
   },
   {
    "name": "func_0025BC88",
    "seg": "cod",
    "vram": 2473096,
    "rom": 1424520,
-   "asm": "asm/nonmatchings/cod/func_0025BC88.s"
+   "asm": "asm/nonmatchings/cod/func_0025BC88.s",
+   "c": "src/cod/func_0025BC88.c",
+   "own": {}
   },
   {
    "name": "func_0025BD20",
    "seg": "cod",
    "vram": 2473248,
    "rom": 1424672,
-   "asm": "asm/nonmatchings/cod/func_0025BD20.s"
+   "asm": "asm/nonmatchings/cod/func_0025BD20.s",
+   "c": "src/cod/func_0025BD20.c",
+   "own": {}
   },
   {
    "name": "func_0025BD48",
@@ -20694,7 +20802,9 @@
    "seg": "cod",
    "vram": 2629648,
    "rom": 1581072,
-   "asm": "asm/nonmatchings/cod/func_00282010.s"
+   "asm": "asm/nonmatchings/cod/func_00282010.s",
+   "c": "src/cod/func_00282010.c",
+   "own": {}
   },
   {
    "name": "func_00282038",
@@ -21662,7 +21772,9 @@
    "seg": "cod",
    "vram": 2701432,
    "rom": 1652856,
-   "asm": "asm/nonmatchings/cod/func_00293878.s"
+   "asm": "asm/nonmatchings/cod/func_00293878.s",
+   "c": "src/cod/func_00293878.c",
+   "own": {}
   },
   {
    "name": "func_002938A0",
@@ -22498,7 +22610,9 @@
    "seg": "cod",
    "vram": 2745192,
    "rom": 1696616,
-   "asm": "asm/nonmatchings/cod/func_0029E368.s"
+   "asm": "asm/nonmatchings/cod/func_0029E368.s",
+   "c": "src/cod/func_0029E368.c",
+   "own": {}
   },
   {
    "name": "func_0029E438",
@@ -22593,7 +22707,9 @@
    "seg": "cod",
    "vram": 2751480,
    "rom": 1702904,
-   "asm": "asm/nonmatchings/cod/func_0029FBF8.s"
+   "asm": "asm/nonmatchings/cod/func_0029FBF8.s",
+   "c": "src/cod/func_0029FBF8.c",
+   "own": {}
   },
   {
    "name": "func_0029FCC8",
@@ -22688,7 +22804,9 @@
    "seg": "cod",
    "vram": 2755632,
    "rom": 1707056,
-   "asm": "asm/nonmatchings/cod/func_002A0C30.s"
+   "asm": "asm/nonmatchings/cod/func_002A0C30.s",
+   "c": "src/cod/func_002A0C30.c",
+   "own": {}
   },
   {
    "name": "func_002A0D00",
@@ -23147,7 +23265,9 @@
    "seg": "cod",
    "vram": 2776224,
    "rom": 1727648,
-   "asm": "asm/nonmatchings/cod/func_002A5CA0.s"
+   "asm": "asm/nonmatchings/cod/func_002A5CA0.s",
+   "c": "src/cod/func_002A5CA0.c",
+   "own": {}
   },
   {
    "name": "func_002A5D28",
@@ -23278,7 +23398,9 @@
    "seg": "cod",
    "vram": 2780992,
    "rom": 1732416,
-   "asm": "asm/nonmatchings/cod/func_002A6F40.s"
+   "asm": "asm/nonmatchings/cod/func_002A6F40.s",
+   "c": "src/cod/func_002A6F40.c",
+   "own": {}
   },
   {
    "name": "func_002A6FC8",
@@ -23358,7 +23480,9 @@
    "seg": "cod",
    "vram": 2781984,
    "rom": 1733408,
-   "asm": "asm/nonmatchings/cod/func_002A7320.s"
+   "asm": "asm/nonmatchings/cod/func_002A7320.s",
+   "c": "src/cod/func_002A7320.c",
+   "own": {}
   },
   {
    "name": "func_002A73C0",
@@ -23418,7 +23542,9 @@
    "seg": "cod",
    "vram": 2786096,
    "rom": 1737520,
-   "asm": "asm/nonmatchings/cod/func_002A8330.s"
+   "asm": "asm/nonmatchings/cod/func_002A8330.s",
+   "c": "src/cod/func_002A8330.c",
+   "own": {}
   },
   {
    "name": "func_002A83B8",
@@ -23448,7 +23574,9 @@
    "seg": "cod",
    "vram": 2786448,
    "rom": 1737872,
-   "asm": "asm/nonmatchings/cod/func_002A8490.s"
+   "asm": "asm/nonmatchings/cod/func_002A8490.s",
+   "c": "src/cod/func_002A8490.c",
+   "own": {}
   },
   {
    "name": "func_002A8530",
@@ -23538,7 +23666,9 @@
    "seg": "cod",
    "vram": 2789544,
    "rom": 1740968,
-   "asm": "asm/nonmatchings/cod/func_002A90A8.s"
+   "asm": "asm/nonmatchings/cod/func_002A90A8.s",
+   "c": "src/cod/func_002A90A8.c",
+   "own": {}
   },
   {
    "name": "func_002A9170",
@@ -23648,7 +23778,9 @@
    "seg": "cod",
    "vram": 2793048,
    "rom": 1744472,
-   "asm": "asm/nonmatchings/cod/func_002A9E58.s"
+   "asm": "asm/nonmatchings/cod/func_002A9E58.s",
+   "c": "src/cod/func_002A9E58.c",
+   "own": {}
   },
   {
    "name": "func_002A9E80",
@@ -23692,7 +23824,9 @@
    "seg": "cod",
    "vram": 2798336,
    "rom": 1749760,
-   "asm": "asm/nonmatchings/cod/func_002AB300.s"
+   "asm": "asm/nonmatchings/cod/func_002AB300.s",
+   "c": "src/cod/func_002AB300.c",
+   "own": {}
   },
   {
    "name": "func_002AB390",
@@ -23738,7 +23872,9 @@
    "seg": "cod",
    "vram": 2798792,
    "rom": 1750216,
-   "asm": "asm/nonmatchings/cod/func_002AB4C8.s"
+   "asm": "asm/nonmatchings/cod/func_002AB4C8.s",
+   "c": "src/cod/func_002AB4C8.c",
+   "own": {}
   },
   {
    "name": "func_002AB4F0",
@@ -23963,7 +24099,9 @@
    "seg": "cod",
    "vram": 2808488,
    "rom": 1759912,
-   "asm": "asm/nonmatchings/cod/func_002ADAA8.s"
+   "asm": "asm/nonmatchings/cod/func_002ADAA8.s",
+   "c": "src/cod/func_002ADAA8.c",
+   "own": {}
   },
   {
    "name": "func_002ADB38",
@@ -24129,7 +24267,9 @@
    "seg": "cod",
    "vram": 2811672,
    "rom": 1763096,
-   "asm": "asm/nonmatchings/cod/func_002AE718.s"
+   "asm": "asm/nonmatchings/cod/func_002AE718.s",
+   "c": "src/cod/func_002AE718.c",
+   "own": {}
   },
   {
    "name": "func_002AE7A0",
@@ -24201,7 +24341,9 @@
    "seg": "cod",
    "vram": 2814768,
    "rom": 1766192,
-   "asm": "asm/nonmatchings/cod/func_002AF330.s"
+   "asm": "asm/nonmatchings/cod/func_002AF330.s",
+   "c": "src/cod/func_002AF330.c",
+   "own": {}
   },
   {
    "name": "func_002AF368",
@@ -24261,7 +24403,9 @@
    "seg": "cod",
    "vram": 2817320,
    "rom": 1768744,
-   "asm": "asm/nonmatchings/cod/func_002AFD28.s"
+   "asm": "asm/nonmatchings/cod/func_002AFD28.s",
+   "c": "src/cod/func_002AFD28.c",
+   "own": {}
   },
   {
    "name": "func_002AFDC8",
@@ -24284,7 +24428,9 @@
    "seg": "cod",
    "vram": 2817792,
    "rom": 1769216,
-   "asm": "asm/nonmatchings/cod/func_002AFF00.s"
+   "asm": "asm/nonmatchings/cod/func_002AFF00.s",
+   "c": "src/cod/func_002AFF00.c",
+   "own": {}
   },
   {
    "name": "func_002AFF88",
@@ -24307,7 +24453,9 @@
    "seg": "cod",
    "vram": 2818400,
    "rom": 1769824,
-   "asm": "asm/nonmatchings/cod/func_002B0160.s"
+   "asm": "asm/nonmatchings/cod/func_002B0160.s",
+   "c": "src/cod/func_002B0160.c",
+   "own": {}
   },
   {
    "name": "func_002B0208",
@@ -24356,7 +24504,9 @@
    "seg": "cod",
    "vram": 2822488,
    "rom": 1773912,
-   "asm": "asm/nonmatchings/cod/func_002B1158.s"
+   "asm": "asm/nonmatchings/cod/func_002B1158.s",
+   "c": "src/cod/func_002B1158.c",
+   "own": {}
   },
   {
    "name": "func_002B11D0",
@@ -24515,7 +24665,9 @@
    "seg": "cod",
    "vram": 2829856,
    "rom": 1781280,
-   "asm": "asm/nonmatchings/cod/func_002B2E20.s"
+   "asm": "asm/nonmatchings/cod/func_002B2E20.s",
+   "c": "src/cod/func_002B2E20.c",
+   "own": {}
   },
   {
    "name": "func_002B2E48",
@@ -24720,7 +24872,9 @@
    "seg": "cod",
    "vram": 2840600,
    "rom": 1792024,
-   "asm": "asm/nonmatchings/cod/func_002B5818.s"
+   "asm": "asm/nonmatchings/cod/func_002B5818.s",
+   "c": "src/cod/func_002B5818.c",
+   "own": {}
   },
   {
    "name": "func_002B5840",
@@ -24871,7 +25025,9 @@
    "seg": "cod",
    "vram": 2845648,
    "rom": 1797072,
-   "asm": "asm/nonmatchings/cod/func_002B6BD0.s"
+   "asm": "asm/nonmatchings/cod/func_002B6BD0.s",
+   "c": "src/cod/func_002B6BD0.c",
+   "own": {}
   },
   {
    "name": "func_002B6C58",
@@ -25127,7 +25283,9 @@
    "seg": "cod",
    "vram": 2860648,
    "rom": 1812072,
-   "asm": "asm/nonmatchings/cod/func_002BA668.s"
+   "asm": "asm/nonmatchings/cod/func_002BA668.s",
+   "c": "src/cod/func_002BA668.c",
+   "own": {}
   },
   {
    "name": "func_002BA730",
@@ -25429,7 +25587,9 @@
    "seg": "cod",
    "vram": 2875968,
    "rom": 1827392,
-   "asm": "asm/nonmatchings/cod/func_002BE240.s"
+   "asm": "asm/nonmatchings/cod/func_002BE240.s",
+   "c": "src/cod/func_002BE240.c",
+   "own": {}
   },
   {
    "name": "func_002BE308",
@@ -25869,7 +26029,9 @@
    "seg": "cod",
    "vram": 2915136,
    "rom": 1866560,
-   "asm": "asm/nonmatchings/cod/func_002C7B40.s"
+   "asm": "asm/nonmatchings/cod/func_002C7B40.s",
+   "c": "src/cod/func_002C7B40.c",
+   "own": {}
   },
   {
    "name": "func_002C7BD0",
@@ -25968,7 +26130,9 @@
    "seg": "cod",
    "vram": 2918688,
    "rom": 1870112,
-   "asm": "asm/nonmatchings/cod/func_002C8920.s"
+   "asm": "asm/nonmatchings/cod/func_002C8920.s",
+   "c": "src/cod/func_002C8920.c",
+   "own": {}
   },
   {
    "name": "func_002C89A8",
@@ -31779,14 +31943,18 @@
    "seg": "cod",
    "vram": 3059544,
    "rom": 2010968,
-   "asm": "asm/nonmatchings/cod/func_002EAF58.s"
+   "asm": "asm/nonmatchings/cod/func_002EAF58.s",
+   "c": "src/cod/func_002EAF58.c",
+   "own": {}
   },
   {
    "name": "func_002EB028",
    "seg": "cod",
    "vram": 3059752,
    "rom": 2011176,
-   "asm": "asm/nonmatchings/cod/func_002EB028.s"
+   "asm": "asm/nonmatchings/cod/func_002EB028.s",
+   "c": "src/cod/func_002EB028.c",
+   "own": {}
   },
   {
    "name": "func_002EB0F8",
@@ -34341,7 +34509,9 @@
    "seg": "cod",
    "vram": 3166936,
    "rom": 2118360,
-   "asm": "asm/nonmatchings/cod/func_003052D8.s"
+   "asm": "asm/nonmatchings/cod/func_003052D8.s",
+   "c": "src/cod/func_003052D8.c",
+   "own": {}
   },
   {
    "name": "func_00305328",
@@ -34726,7 +34896,9 @@
    "seg": "cod",
    "vram": 3192712,
    "rom": 2144136,
-   "asm": "asm/nonmatchings/cod/func_0030B788.s"
+   "asm": "asm/nonmatchings/cod/func_0030B788.s",
+   "c": "src/cod/func_0030B788.c",
+   "own": {}
   },
   {
    "name": "func_0030B848",
@@ -36562,7 +36734,9 @@
    "seg": "cod",
    "vram": 3219024,
    "rom": 2170448,
-   "asm": "asm/nonmatchings/cod/func_00311E50.s"
+   "asm": "asm/nonmatchings/cod/func_00311E50.s",
+   "c": "src/cod/func_00311E50.c",
+   "own": {}
   },
   {
    "name": "func_00311EC0",
@@ -36578,7 +36752,9 @@
    "seg": "cod",
    "vram": 3219216,
    "rom": 2170640,
-   "asm": "asm/nonmatchings/cod/func_00311F10.s"
+   "asm": "asm/nonmatchings/cod/func_00311F10.s",
+   "c": "src/cod/func_00311F10.c",
+   "own": {}
   },
   {
    "name": "func_00311F90",
@@ -36594,7 +36770,9 @@
    "seg": "cod",
    "vram": 3219424,
    "rom": 2170848,
-   "asm": "asm/nonmatchings/cod/func_00311FE0.s"
+   "asm": "asm/nonmatchings/cod/func_00311FE0.s",
+   "c": "src/cod/func_00311FE0.c",
+   "own": {}
   },
   {
    "name": "func_00312060",
@@ -37353,7 +37531,9 @@
    "seg": "cod",
    "vram": 3226304,
    "rom": 2177728,
-   "asm": "asm/nonmatchings/cod/func_00313AC0.s"
+   "asm": "asm/nonmatchings/cod/func_00313AC0.s",
+   "c": "src/cod/func_00313AC0.c",
+   "own": {}
   },
   {
    "name": "func_00313B38",
@@ -37385,7 +37565,9 @@
    "seg": "cod",
    "vram": 3226544,
    "rom": 2177968,
-   "asm": "asm/nonmatchings/cod/func_00313BB0.s"
+   "asm": "asm/nonmatchings/cod/func_00313BB0.s",
+   "c": "src/cod/func_00313BB0.c",
+   "own": {}
   },
   {
    "name": "func_00313C28",
@@ -38191,7 +38373,9 @@
    "seg": "cod",
    "vram": 3235192,
    "rom": 2186616,
-   "asm": "asm/nonmatchings/cod/func_00315D78.s"
+   "asm": "asm/nonmatchings/cod/func_00315D78.s",
+   "c": "src/cod/func_00315D78.c",
+   "own": {}
   },
   {
    "name": "func_00315E08",
@@ -38205,7 +38389,9 @@
    "seg": "cod",
    "vram": 3235472,
    "rom": 2186896,
-   "asm": "asm/nonmatchings/cod/func_00315E90.s"
+   "asm": "asm/nonmatchings/cod/func_00315E90.s",
+   "c": "src/cod/func_00315E90.c",
+   "own": {}
   },
   {
    "name": "func_00315F08",
@@ -38255,7 +38441,9 @@
    "seg": "cod",
    "vram": 3236184,
    "rom": 2187608,
-   "asm": "asm/nonmatchings/cod/func_00316158.s"
+   "asm": "asm/nonmatchings/cod/func_00316158.s",
+   "c": "src/cod/func_00316158.c",
+   "own": {}
   },
   {
    "name": "func_003161D0",
@@ -38271,7 +38459,9 @@
    "seg": "cod",
    "vram": 3236384,
    "rom": 2187808,
-   "asm": "asm/nonmatchings/cod/func_00316220.s"
+   "asm": "asm/nonmatchings/cod/func_00316220.s",
+   "c": "src/cod/func_00316220.c",
+   "own": {}
   },
   {
    "name": "func_00316290",
@@ -38800,7 +38990,9 @@
    "seg": "cod",
    "vram": 3240640,
    "rom": 2192064,
-   "asm": "asm/nonmatchings/cod/func_003172C0.s"
+   "asm": "asm/nonmatchings/cod/func_003172C0.s",
+   "c": "src/cod/func_003172C0.c",
+   "own": {}
   },
   {
    "name": "func_00317348",
@@ -38906,7 +39098,9 @@
    "seg": "cod",
    "vram": 3241680,
    "rom": 2193104,
-   "asm": "asm/nonmatchings/cod/func_003176D0.s"
+   "asm": "asm/nonmatchings/cod/func_003176D0.s",
+   "c": "src/cod/func_003176D0.c",
+   "own": {}
   },
   {
    "name": "func_00317758",
@@ -39579,7 +39773,9 @@
    "seg": "cod",
    "vram": 3247872,
    "rom": 2199296,
-   "asm": "asm/nonmatchings/cod/func_00318F00.s"
+   "asm": "asm/nonmatchings/cod/func_00318F00.s",
+   "c": "src/cod/func_00318F00.c",
+   "own": {}
   },
   {
    "name": "func_00318F80",
@@ -40241,7 +40437,9 @@
    "seg": "cod",
    "vram": 3253840,
    "rom": 2205264,
-   "asm": "asm/nonmatchings/cod/func_0031A650.s"
+   "asm": "asm/nonmatchings/cod/func_0031A650.s",
+   "c": "src/cod/func_0031A650.c",
+   "own": {}
   },
   {
    "name": "func_0031A6D0",
