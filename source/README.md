@@ -1,7 +1,7 @@
 # SLUS-20565 (decompilation)
 
 A matching decompilation of SLUS-20565 for the PlayStation 2, started with [decomp.wtf](https://decomp.wtf).
-1496 of 5388 functions are C that compiles to exactly the original code; the rest are still assembly.
+1497 of 5388 functions are C that compiles to exactly the original code; the rest are still assembly.
 `build.py` rebuilds the game from this tree and checks it against your original, byte for byte.
 
 ## Build
