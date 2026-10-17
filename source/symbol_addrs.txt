@@ -4413,6 +4413,7 @@ func_002F9FA8 = 0x002F9FA8; // type:func
 func_002F9FE0 = 0x002F9FE0; // type:func
 func_002F9FF8 = 0x002F9FF8; // type:func
 func_002FA010 = 0x002FA010; // type:func
+func_002FA028 = 0x002FA028; // type:func
 func_002FA058 = 0x002FA058; // type:func
 func_002FA060 = 0x002FA060; // type:func
 func_002FA0B8 = 0x002FA0B8; // type:func
