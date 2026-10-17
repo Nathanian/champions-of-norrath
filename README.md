@@ -4,6 +4,14 @@ A work-in-progress **matching decompilation** of *Champions of Norrath* (PlaySta
 
 The goal: C code that, when compiled with the original EE-GCC toolchain and linked at the original addresses, reproduces the retail executable **byte for byte**.
 
+<a href="https://www.patreon.com/Sapra">
+  <img
+    src="https://raw.githubusercontent.com/elsiehupp/patron-buttons/master/svg/become_a_patron_4x1_coral_logo_white_text_on_black.svg"
+    alt="Become a Patron"
+    width="300"
+  />
+</a>
+
 ## How this was made
 
 **Most of the progress is AI-driven, not hand-written.** The functions under `source/src/cod/` were recovered by AI agents running under [decomp.wtf](https://decomp.wtf), which:
