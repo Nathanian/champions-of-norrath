@@ -1,16 +1,29 @@
+<div align="center">
+
+  <!-- Website -->
+  <a href="https://ensapra.com">
+    <img src="https://img.shields.io/badge/Website-Visit-1999?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ensapra Website" />
+  </a>
+
+  <!-- Discord -->
+  <a href="https://ensapra.com/links/discord">
+    <img src="https://img.shields.io/badge/Discord-Join_Server-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join Ensapra Discord" />
+  </a>
+
+  <!-- Patreon -->
+  <a href="https://ensapra.com/links/patreon">
+    <img src="https://img.shields.io/badge/Patreon-Support-FF424D?style=for-the-badge&logo=patreon&logoColor=white" alt="Support Ensapra on Patreon" />
+  </a>
+
+</div>
+
 # Champions of Norrath (SLUS-20565) — MIPS Decompilation
 
 A work-in-progress **matching decompilation** of *Champions of Norrath* (PlayStation 2, SLUS-20565) back to C source.
 
 The goal: C code that, when compiled with the original EE-GCC toolchain and linked at the original addresses, reproduces the retail executable **byte for byte**.
 
-<a href="https://www.ensapra.com/links/patreon">
-  <img
-    src="https://raw.githubusercontent.com/elsiehupp/patron-buttons/master/svg/become_a_patron_4x1_coral_logo_white_text_on_black.svg"
-    alt="Become a Patron"
-    width="300"
-  />
-</a>
+
 
 ## How this was made
 
