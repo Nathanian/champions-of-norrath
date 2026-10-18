@@ -1,0 +1,24 @@
+s32 func_002D50F0(s32); s32 func_002D5100(s32); s32 func_002D5120(s32,s32);
+s32 func_002D8270(void *,s32,s32,void *,s32,void *,s32,s32,s32);
+s32 func_002EAE08(s32,s32);
+extern s32 D_00447F70, D_00447F7C;
+extern s32 (*D_00447F84)(s32);
+extern u8 D_008EA780[];
+extern u8 D_008EA7C0[];
+s32 func_002EA080(void) {
+    s32 x=D_00447F7C;
+    if (x != -1) {
+        func_002D5120(x,-1);
+        func_002EAE08(0,0);
+        if (D_00447F70 != 0) {
+            if (D_00447F84 != 0) D_00447F84(D_00447F70);
+            D_00447F70=0;
+        }
+        func_002D8270(D_008EA780,0x16,0,D_008EA7C0,0x20,D_008EA7C0,0,0,0);
+        *(s32 *)(D_008EA780+0x24)=0;
+        func_002D5100(D_00447F7C);
+        func_002D50F0(D_00447F7C);
+        D_00447F7C=-1;
+    }
+    return 0;
+}
