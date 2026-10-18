@@ -1,0 +1,4 @@
+__asm__(".text\n.align 3");
+#include "common.h"
+
+extern u8 D_008D8650[]; void func_00180D78(u8*,s32,s32,s32,s32,s32,s32,s32,f32,f32,f32,s32,s32,s32,s32,s32); void func_002CA240(s32 a0,s32 a1){if(a1==0xFFFF&&a0==1)func_00180D78(D_008D8650,0xE1,0x14,0,0xFF,0x73,0xA,0,20.0f,0.0f,1.0f,0xFF,0,2,0xF,0);}

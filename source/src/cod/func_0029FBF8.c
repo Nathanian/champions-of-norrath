@@ -1,5 +1,10 @@
+__asm__(".text\n.align 3");
 #include "common.h"
 
+/* identical to func_0029E368 (matched), with its names changed by decomp.wtf */
+typedef struct { s32 unk0; s32 unk4; f32 unk8; } S12;
+void *func_001441B8(s32);
+void func_0029E6A8(void *, void *, s16, s32, s32, void *);
 s32 func_0029FBF8(void *arg0, s32 arg1, s32 arg2, void *arg3, s16 arg4) {
     S12 tmp;
     void *v;

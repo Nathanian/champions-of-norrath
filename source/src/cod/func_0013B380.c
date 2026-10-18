@@ -1,4 +1,9 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+s32 func_00138758(s32, s32, s32 *);
+void func_00138900(void *, s32);
+void *func_00143A58(void *);
 
 s32 func_0013B380(void *a0, void *a1) {
     s32 v;

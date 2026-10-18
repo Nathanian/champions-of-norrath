@@ -1,4 +1,12 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+typedef struct { s32 a; s32 b; s32 c; } C12;
+typedef struct { s16 off; s16 pad; void (*fn)(void *, s32, s32); } Hdl;
+
+u8 *func_00143D38();
+void func_001137B0(void *, s32);
+void func_00194390(void *, s32);
 
 void func_001F1910(u8 *arg0, s32 arg1) {
     Hdl *h;

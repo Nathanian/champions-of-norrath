@@ -1,4 +1,25 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+struct Inner {
+    u8 pad1[0x14];
+    f32 unk14;
+    u8 unk18;
+    u8 pad2[3];
+    f32 unk1C;
+    u8 unk20;
+    u8 pad3[3];
+    f32 unk24;
+    u8 unk28;
+    u8 pad4[3];
+    f32 unk2C;
+    u8 unk30;
+};
+
+struct Outer {
+    u8 pad[4];
+    struct Inner *unk4;
+};
 
 void func_00112900(void *arg0, struct Outer *arg1, s32 arg2, s8 arg3, s8 arg4, s8 arg5, s8 arg6, f32 fparg0, f32 fparg1, f32 fparg2, f32 fparg3) {
     struct Inner *ptr1;

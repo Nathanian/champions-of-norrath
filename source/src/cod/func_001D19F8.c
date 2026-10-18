@@ -1,4 +1,11 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+#include "context.h"
+
+extern char D_0044C958[];
+
+void func_001411F0(void *, void *, s32, s32);
 
 void func_001D19F8(void *arg0, void *arg1, s32 arg2) {
     typedef struct { u32 a, b, c; } Tmp;

@@ -1,4 +1,35 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+typedef struct Node {
+    char pad[0x1C];
+    s16 f1C;
+    s16 pad2;
+    f32 f20;
+    f32 f24;
+    s32 pad3;
+    f32 f2C;
+    f32 f30;
+} Node;
+typedef struct Slot {
+    void *f0;
+    Node *f4;
+    f32 f8;
+    s32 fC;
+    f32 f10;
+    s32 f14;
+    f32 f18;
+    s16 f1C;
+    s16 pad;
+} Slot;
+
+typedef struct Obj {
+    void *f0;
+    s8 count;
+    u8 pad[3];
+} Obj;
+
+void func_00161528(void *);
 
 void func_00163AE0(Obj *arg0) {
     s8 n = arg0->count;

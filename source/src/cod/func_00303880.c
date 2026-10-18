@@ -1,4 +1,8 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+extern s32 func_002D57E0(s32);
+extern s32 D_00486DF0[4];
 
 s32 func_00303880(s32 *arg0, s32 arg1) {
     s32 ret;

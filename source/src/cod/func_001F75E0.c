@@ -1,4 +1,17 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+void func_00109808(void*, s32, s32, s32);
+s32 func_0030F110(void);
+s32 func_002FD2E0(s32, s32);
+
+void func_001F75B8(void *arg0) {
+    void *t;
+    t = *(void**)((char*)arg0 + 0x24);
+    func_00109808(arg0, *(s32*)((char*)t + 0xC), *(s32*)((char*)t + 0x14), 0);
+}
+
+typedef struct { s32 a; s32 b; s32 c; } S12;
 
 void func_001F75E0(void *arg0, s32 arg1, void *arg2, void *arg3) {
     char *a0 = (char*)arg0;

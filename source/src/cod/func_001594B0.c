@@ -1,4 +1,7 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+/* identical to func_00159410 (matched), with its names changed by decomp.wtf */
 
 void func_001594B0(void *arg0, f32 fparg0, f32 fparg1, f32 fparg2, f32 fparg3, f32 fparg4, f32 fparg5, f32 fparg6) {
     f32 *p = (f32 *)arg0;

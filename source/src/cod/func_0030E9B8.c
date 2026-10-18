@@ -1,4 +1,11 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+/* identical to func_002255A8 (matched), with its names changed by decomp.wtf */
+
+extern u8 D_0044C350[];
+void func_00112340(void *a, s32 b);
+void func_001447D8(void *a);
 
 void func_0030E9B8(void *a, s32 b) {
     *(void **)((char *)a + 0x48) = (void *)D_0044C350;

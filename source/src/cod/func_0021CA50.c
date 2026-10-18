@@ -1,5 +1,13 @@
+__asm__(".text\n.align 3");
 #include "common.h"
 
+extern char D_00470800[];
+extern char D_00485380[];
+extern s32 func_00153FA8(void);
+extern void func_00303EB8(void *, void *, s32, ...);
+extern void *func_00165DC0(void *, void *);
+extern void func_0024D308(void *, void *, f32);
+extern void func_00143830(void *);
 void func_0021CA50(void *arg0) {
     s32 val;
     s32 r;

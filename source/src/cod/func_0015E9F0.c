@@ -1,3 +1,4 @@
+__asm__(".text\n.align 3");
 #include "common.h"
 
 void func_0015E9F0(volatile void *arg0) {

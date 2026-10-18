@@ -1,4 +1,9 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+extern void func_00180D78(void *, s32, s32, s32, s32, s32, s32, s32, f32, f32, f32, s32, s32, s32, s32, s32);
+extern char D_008D6B40[];
+extern f32 D_004827C8;
 
 void func_002980D0(s32 arg0, s32 arg1) {
     if (arg1 == 0xFFFF && arg0 == 1) {

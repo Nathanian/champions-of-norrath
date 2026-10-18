@@ -1,4 +1,7 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+typedef struct { f32 e[4][4]; } Mat44;
 
 void func_00159D80(Mat44 *dst, f32 *m, f32 *v) {
     dst->e[0][0] = m[0];

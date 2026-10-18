@@ -1,4 +1,7 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+s32 func_00165DC0(s32, s32);
 
 s32 func_00166F48(void *arg0) {
     if (*(s32 *)arg0 != D_00483F88) {

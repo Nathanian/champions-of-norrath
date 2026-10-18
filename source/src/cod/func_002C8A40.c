@@ -1,5 +1,9 @@
+__asm__(".text\n.align 3");
 #include "common.h"
 
+/* identical to func_002A5DC8 (matched), with its names changed by decomp.wtf */
+s32 func_001671F8(void *); void func_001C7600(s32, s32, s32, s32);
+extern char D_00479C00[];
 s32 func_002C8A40(s32 arg0, void *arg1) {
   s32 var_5 = 1;
   if ((*(s32 *)((char *)arg1 + 0xC) & 0x40) &&

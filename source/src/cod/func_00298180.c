@@ -1,4 +1,31 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+extern f32 D_004827CC;
+extern f32 D_004827D0;
+extern f32 D_004827D4;
+extern f32 D_004827D8;
+extern f32 D_004827DC;
+
+typedef struct T98180 {
+    u8 pad[0xE];
+    s16 unkE;
+    s16 unk10;
+    s16 unk12;
+    s16 unk14;
+    s16 unk16;
+    s16 unk18;
+    s16 unk1A;
+    s16 unk1C;
+    s16 unk1E;
+    s16 unk20;
+    s16 pad2;
+    f32 unk24;
+    f32 unk28;
+    f32 unk2C;
+    f32 unk30;
+    f32 unk34;
+} T98180;
 
 void func_00298180(T98180 *p) {
     p->unk18 = 0x32;

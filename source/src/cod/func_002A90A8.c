@@ -1,5 +1,9 @@
+__asm__(".text\n.align 3");
 #include "common.h"
 
+s32 func_001671F8(char *);
+void func_00190E20(s32, s32, f32, f32, f32, f32, f32, f32, f32, f32);
+extern char D_00478A88[];
 void func_002A90A8(void *arg0, s32 arg1, s32 arg2) {
     char *p1 = (char *)(*(s32 *)((char *)arg0 + 0x60)) + 0x58;
     s32 (*fn1)(void *, s32, s32) = *(s32 (**)(void *, s32, s32))(p1 + 4);

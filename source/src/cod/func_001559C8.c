@@ -1,4 +1,10 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+/* identical to func_00154AB8 (matched), with its names changed by decomp.wtf */
+s32 func_00148480(s32, void *);
+
+s32 D_00484538;
 
 void func_001559C8(void *arg0, s32 arg1) {
     s32 i;

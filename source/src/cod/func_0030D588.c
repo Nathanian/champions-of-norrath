@@ -1,4 +1,12 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+extern char D_0044D408[];
+
+void func_00194300(void *);
+void func_0013EAC8(void *, s32);
+void func_00141658(void *, s32);
+void func_001447D8(void *);
 
 void func_0030D588(void *arg0, s32 arg1) {
     *(void **)((char *)arg0 + 0x48) = &D_0044D408;

@@ -1,3 +1,4 @@
+__asm__(".text\n.align 3");
 #include "common.h"
 
 void func_00113738(void *unused, s32 *arg1) {

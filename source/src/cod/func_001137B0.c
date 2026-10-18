@@ -1,4 +1,10 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+extern s32 func_00143A80(void *, const void *, s32);
+extern s32 func_001D38F0(void);
+extern void func_001D3E88(s32);
+extern u8 D_00460850[13];
 
 void func_001137B0(void *arg0) {
     s32 *ptr = (s32 *)((u8 *)arg0 + 0x37C);

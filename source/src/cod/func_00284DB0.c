@@ -1,4 +1,7 @@
+__asm__(".text\n.align 3");
 #include "common.h"
+
+void func_0024D708(s32, f32);
 
 void func_00284DB0(void *arg0) {
     s32 *ptr = (s32 *)arg0;

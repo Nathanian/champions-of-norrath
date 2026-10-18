@@ -1,0 +1,25 @@
+__asm__(".text\n.align 3");
+#include "common.h"
+
+void func_00134F68(s32,void *,s32);
+s32 D_00486AD0,D_00484538,D_00486AE0;
+s8 D_00483F38[3],D_00483F55;
+u8 D_004282A0[16],D_007D08D0[16];
+void func_001C7F68(void) { u8 b[0x100]; b[0]=0; func_00134F68(D_00486AD0,b,1); }
+void func_001C7F90(void) {
+ s32 i=0; u8 b[0x100]; u8 *p=b;
+ while(i<D_00484538 && func_001353A8(i)==0)i++;
+ *p++=1; *p++=(u8)i;
+ func_00134F68(D_00486AD0,b,(s32)(p-b));
+}
+s32 func_001353A8(s32);
+void func_001C8008(void) {
+ s32 i;
+ for(i=0;i<D_00484538;i++){
+ D_00483F38[i]=0;
+ ((u8 *)&D_00486AE0)[i]=1;
+ *(s32 *)(D_007D08D0+i*4)=0;
+ *(s32 *)(D_004282A0+i*4)=3;
+ }
+ D_00483F55=0;
+}

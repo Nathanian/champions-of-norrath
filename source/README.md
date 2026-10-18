@@ -1,13 +1,13 @@
 # SLUS-20565 (decompilation)
 
-A matching decompilation of SLUS-20565 for the PlayStation 2, started with [decomp.wtf](https://decomp.wtf).
-1539 of 5389 functions are C that compiles to exactly the original code; the rest are still assembly.
+A matching decompilation of SLUS-20565 for the PlayStation 2, started with [decompdecomp](https://github.com/n-delic/decompdecomp).
+1707 of 5389 functions are C that compiles to exactly the original code; the rest are still assembly.
 `build.py` rebuilds the game from this tree and checks it against your original, byte for byte.
 
 ## Build
 
 1. Put your own copy of the game here as `baserom.bin` (it is in `.gitignore`; never commit it).
-2. `python build.py` (needs decomp.wtf installed for the period compiler and assembler).
+2. `python build.py` (needs decompdecomp installed for the period compiler and assembler).
 
 ## Layout
 
@@ -32,3 +32,4 @@ share it.
 - `mat3x3_scale`: kept as assembly, no longer matches
 - `mat3x3_mul_vec3`: kept as assembly, no longer matches
 - `mat3x3_transposed_mul_vec3`: kept as assembly, no longer matches
+- `func_002D7B98`: kept as assembly, no longer matches
