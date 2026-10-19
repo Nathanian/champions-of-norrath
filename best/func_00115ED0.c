@@ -1,14 +1,18 @@
 extern void *func_001441B8(s32);
-extern void func_00194498(void *, void *, s32);
+extern void func_00194498(s32 *);
 extern u32 D_0044D498[];
 extern u32 D_0044C830[];
 
-struct __attribute__((aligned(4))) Obj {
-    u32 n0;
-    u32 n1;
-    u32 n2;
+struct __attribute__((packed)) U64 {
+    u64 val;
+};
+
+struct Obj {
+    u32 f0;
+    u32 f4;
+    u32 f8;
     u32 f0xC;
-    u64 f10;
+    struct U64 f10;
     u32 f18;
     f32 f1C;
     f32 f20;
@@ -25,20 +29,19 @@ struct __attribute__((aligned(4))) Obj {
     u32 vt;
 };
 
-struct Obj *func_00115ED0(struct Obj *arg0) {
-    struct Obj *in = arg0;
+struct Obj *func_00115ED0(struct Obj *in) {
     struct Obj *out = (struct Obj *)func_001441B8(0x4C);
     if (out != NULL) {
-        func_00194498(out, in, 0);
         out->vt = D_0044D498;
-        func_00194498((char *)out + 4, (char *)in + 4, 0);
-        func_00194498((char *)out + 8, (char *)in + 8, 0);
+        func_00194498(&out->f0);
+        func_00194498(&out->f4);
+        func_00194498(&out->f8);
         out->f0xC = in->f0xC;
-        out->f10 = in->f10;
+        out->f10.val = in->f10.val;
         out->f18 = in->f18;
         out->f1C = in->f1C;
-        out->f20 = in->f20;
         out->f24 = in->f24;
+        out->f20 = in->f20;
         out->b28 = in->b28;
         out->vt = D_0044C830;
         out->b29 = in->b29;

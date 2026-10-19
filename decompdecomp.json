@@ -1,6 +1,6 @@
 {
  "format": 1,
- "saved_at": 1792364672.8850884,
+ "saved_at": 1792416027.1983643,
  "title": "SLUS-20565",
  "platform": "ps2",
  "game": {
@@ -76,8 +76,8 @@
   },
   "func_001080D8": {
    "vram": 1081560,
-   "best_score": 705,
-   "best_by": "opencode-3"
+   "matched_by": "codex-gpt-6-luna-2",
+   "readable": false
   },
   "func_00108178": {
    "vram": 1081720,
@@ -104,10 +104,15 @@
    "best_score": 500,
    "best_by": "opencode-4"
   },
+  "func_00108308": {
+   "vram": 1082120,
+   "best_score": 2843,
+   "best_by": "opencode-1"
+  },
   "func_001083E8": {
    "vram": 1082344,
-   "best_score": 110,
-   "best_by": "opencode-11"
+   "matched_by": "opencode-1",
+   "readable": false
   },
   "func_00108408": {
    "vram": 1082376,
@@ -166,8 +171,8 @@
   },
   "func_001127B0": {
    "vram": 1124272,
-   "best_score": 2287,
-   "best_by": "autopilot"
+   "best_score": 1184,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_001128A8": {
    "vram": 1124520,
@@ -241,8 +246,8 @@
   },
   "func_00112DA8": {
    "vram": 1125800,
-   "best_score": 250,
-   "best_by": "autopilot"
+   "matched_by": "codex-gpt-6-luna-2",
+   "readable": false
   },
   "func_00112E08": {
    "vram": 1125896,
@@ -276,8 +281,8 @@
   },
   "func_00113460": {
    "vram": 1127520,
-   "best_score": 430,
-   "best_by": "opencode-30"
+   "matched_by": "opencode-2",
+   "readable": false
   },
   "func_00113488": {
    "vram": 1127560,
@@ -411,8 +416,8 @@
   },
   "func_00115ED0": {
    "vram": 1138384,
-   "best_score": 3000,
-   "best_by": "opencode-longcat-2.5-preview-free-5"
+   "best_score": 2445,
+   "best_by": "opencode-5"
   },
   "func_00115FD0": {
    "vram": 1138640,
@@ -986,8 +991,8 @@
   },
   "func_0013B220": {
    "vram": 1290784,
-   "best_score": 2348,
-   "best_by": "autopilot"
+   "best_score": 1755,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_0013B320": {
    "vram": 1291040,
@@ -1141,8 +1146,8 @@
   },
   "func_0013BDA0": {
    "vram": 1293728,
-   "best_score": 40,
-   "best_by": "codex-gpt-6-luna-5"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0013BE28": {
    "vram": 1293864,
@@ -1446,8 +1451,8 @@
   },
   "func_00142158": {
    "vram": 1319256,
-   "best_score": 3995,
-   "best_by": "autopilot"
+   "best_score": 2735,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_00143498": {
    "vram": 1324184,
@@ -1751,13 +1756,13 @@
   },
   "func_001542B0": {
    "vram": 1393328,
-   "best_score": 2608,
-   "best_by": "autopilot"
+   "best_score": 2425,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_001547B8": {
    "vram": 1394616,
-   "best_score": 15,
-   "best_by": "codex-gpt-6-luna-5"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00154828": {
    "vram": 1394728,
@@ -2121,8 +2126,8 @@
   },
   "func_0015A100": {
    "vram": 1417472,
-   "best_score": 110,
-   "best_by": "opencode-8"
+   "best_score": 15,
+   "best_by": "permuter"
   },
   "func_0015A198": {
    "vram": 1417624,
@@ -2291,8 +2296,8 @@
   },
   "func_0015E970": {
    "vram": 1436016,
-   "best_score": 30,
-   "best_by": "opencode-34"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0015E9A0": {
    "vram": 1436064,
@@ -2301,8 +2306,8 @@
   },
   "func_0015E9C0": {
    "vram": 1436096,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-5"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_0015E9F0": {
    "vram": 1436144,
@@ -2311,8 +2316,8 @@
   },
   "func_0015EA10": {
    "vram": 1436176,
-   "best_score": 30,
-   "best_by": "opencode-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0015EA40": {
    "vram": 1436224,
@@ -2321,8 +2326,8 @@
   },
   "func_0015EA60": {
    "vram": 1436256,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0015EA90": {
    "vram": 1436304,
@@ -2331,8 +2336,8 @@
   },
   "func_0015EAB0": {
    "vram": 1436336,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-9"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0015EAE0": {
    "vram": 1436384,
@@ -2341,8 +2346,8 @@
   },
   "func_0015EB10": {
    "vram": 1436432,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0015EB40": {
    "vram": 1436480,
@@ -2511,8 +2516,8 @@
   },
   "func_00163BA0": {
    "vram": 1457056,
-   "best_score": 20,
-   "best_by": "opencode-3"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00163C58": {
    "vram": 1457240,
@@ -2801,8 +2806,8 @@
   },
   "func_0016C970": {
    "vram": 1493360,
-   "best_score": 10,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0016C9C8": {
    "vram": 1493448,
@@ -2966,8 +2971,8 @@
   },
   "func_001726C8": {
    "vram": 1517256,
-   "best_score": 22,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00172708": {
    "vram": 1517320,
@@ -3066,8 +3071,8 @@
   },
   "func_00172DC0": {
    "vram": 1519040,
-   "best_score": 1830,
-   "best_by": "autopilot"
+   "best_score": 1575,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_00172E88": {
    "vram": 1519240,
@@ -3296,8 +3301,8 @@
   },
   "func_0017DCC0": {
    "vram": 1563840,
-   "best_score": 75,
-   "best_by": "opencode-7"
+   "best_score": 40,
+   "best_by": "permuter"
   },
   "func_0017DD48": {
    "vram": 1563976,
@@ -3526,8 +3531,8 @@
   },
   "func_0018CDA8": {
    "vram": 1625512,
-   "best_score": 2040,
-   "best_by": "autopilot"
+   "matched_by": "codex-gpt-6-luna-2",
+   "readable": false
   },
   "func_0018E1C0": {
    "vram": 1630656,
@@ -3636,8 +3641,8 @@
   },
   "func_00191310": {
    "vram": 1643280,
-   "best_score": 30,
-   "best_by": "opencode-6"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001913A0": {
    "vram": 1643424,
@@ -3926,13 +3931,13 @@
   },
   "func_001AB878": {
    "vram": 1751160,
-   "best_score": 10,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001AB8E0": {
    "vram": 1751264,
-   "best_score": 70,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001AB988": {
    "vram": 1751432,
@@ -3966,8 +3971,8 @@
   },
   "func_001ABBE0": {
    "vram": 1752032,
-   "best_score": 60,
-   "best_by": "opencode-nemotron-3-ultra-free-3"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001ABC60": {
    "vram": 1752160,
@@ -4076,8 +4081,8 @@
   },
   "func_001B0508": {
    "vram": 1770760,
-   "best_score": 45,
-   "best_by": "opencode-nemotron-3-ultra-free-4"
+   "best_score": 40,
+   "best_by": "permuter"
   },
   "func_001B1528": {
    "vram": 1774888,
@@ -4271,8 +4276,8 @@
   },
   "func_001BC1C0": {
    "vram": 1819072,
-   "best_score": 24,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001BC248": {
    "vram": 1819208,
@@ -4361,8 +4366,8 @@
   },
   "func_001C1988": {
    "vram": 1841544,
-   "best_score": 1741,
-   "best_by": "autopilot"
+   "best_score": 660,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_001C1A60": {
    "vram": 1841760,
@@ -4536,8 +4541,8 @@
   },
   "func_001C7EB8": {
    "vram": 1867448,
-   "best_score": 20,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001C7F68": {
    "vram": 1867624,
@@ -4581,8 +4586,8 @@
   },
   "func_001CA878": {
    "vram": 1878136,
-   "best_score": 15,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001CA8D0": {
    "vram": 1878224,
@@ -4676,8 +4681,8 @@
   },
   "func_001CD898": {
    "vram": 1890456,
-   "best_score": 215,
-   "best_by": "codex-gpt-6-luna-8"
+   "best_score": 25,
+   "best_by": "permuter"
   },
   "func_001CD998": {
    "vram": 1890712,
@@ -4731,8 +4736,8 @@
   },
   "func_001D0CC8": {
    "vram": 1903816,
-   "best_score": 10,
-   "best_by": "opencode-nemotron-3-ultra-free-5"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001D0D20": {
    "vram": 1903904,
@@ -4771,8 +4776,8 @@
   },
   "func_001D0FF8": {
    "vram": 1904632,
-   "best_score": 5,
-   "best_by": "codex-gpt-6-luna-3"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001D1008": {
    "vram": 1904648,
@@ -4871,8 +4876,8 @@
   },
   "func_001D3830": {
    "vram": 1914928,
-   "best_score": 60,
-   "best_by": "codex-gpt-6-luna-1"
+   "best_score": 40,
+   "best_by": "permuter"
   },
   "func_001D38B0": {
    "vram": 1915056,
@@ -4906,8 +4911,8 @@
   },
   "func_001D3940": {
    "vram": 1915200,
-   "best_score": 22,
-   "best_by": "codex-gpt-6-luna-1"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001D3970": {
    "vram": 1915248,
@@ -5066,8 +5071,8 @@
   },
   "func_001E5988": {
    "vram": 1989000,
-   "best_score": 60,
-   "best_by": "opencode-33"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001E5B58": {
    "vram": 1989464,
@@ -5121,8 +5126,8 @@
   },
   "func_001E6190": {
    "vram": 1991056,
-   "best_score": 40,
-   "best_by": "codex-gpt-6-luna-4"
+   "best_score": 5,
+   "best_by": "permuter"
   },
   "func_001E6330": {
    "vram": 1991472,
@@ -5146,8 +5151,8 @@
   },
   "func_001E6690": {
    "vram": 1992336,
-   "best_score": 15,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001E6700": {
    "vram": 1992448,
@@ -5226,8 +5231,8 @@
   },
   "func_001EB3B8": {
    "vram": 2012088,
-   "best_score": 665,
-   "best_by": "autopilot"
+   "best_score": 175,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_001EB400": {
    "vram": 2012160,
@@ -5241,13 +5246,13 @@
   },
   "func_001EBA20": {
    "vram": 2013728,
-   "best_score": 1866,
-   "best_by": "autopilot"
+   "best_score": 26,
+   "best_by": "permuter"
   },
   "func_001EE0A0": {
    "vram": 2023584,
-   "best_score": 2705,
-   "best_by": "autopilot"
+   "best_score": 975,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_001EE1E8": {
    "vram": 2023912,
@@ -5291,8 +5296,8 @@
   },
   "func_001EED90": {
    "vram": 2026896,
-   "best_score": 25,
-   "best_by": "codex-gpt-6-luna-3"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_001EEDF0": {
    "vram": 2026992,
@@ -5686,8 +5691,8 @@
   },
   "func_00208870": {
    "vram": 2132080,
-   "best_score": 665,
-   "best_by": "autopilot"
+   "best_score": 175,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_002088B8": {
    "vram": 2132152,
@@ -5751,8 +5756,8 @@
   },
   "func_0020F720": {
    "vram": 2160416,
-   "best_score": 1853,
-   "best_by": "autopilot"
+   "best_score": 1313,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_0020F808": {
    "vram": 2160648,
@@ -5931,8 +5936,8 @@
   },
   "func_00215BE8": {
    "vram": 2186216,
-   "best_score": 2092,
-   "best_by": "autopilot"
+   "best_score": 1185,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_00215E28": {
    "vram": 2186792,
@@ -6026,8 +6031,8 @@
   },
   "func_0021BF90": {
    "vram": 2211728,
-   "best_score": 10,
-   "best_by": "codex-gpt-6-luna-1"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0021BFC8": {
    "vram": 2211784,
@@ -6091,8 +6096,8 @@
   },
   "func_0021C3D0": {
    "vram": 2212816,
-   "best_score": 1745,
-   "best_by": "autopilot"
+   "best_score": 985,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_0021C4A0": {
    "vram": 2213024,
@@ -6101,8 +6106,8 @@
   },
   "func_0021C4E0": {
    "vram": 2213088,
-   "best_score": 120,
-   "best_by": "opencode-nemotron-3-ultra-free-2"
+   "best_score": 20,
+   "best_by": "permuter"
   },
   "func_0021C558": {
    "vram": 2213208,
@@ -6176,8 +6181,8 @@
   },
   "func_0021CC10": {
    "vram": 2214928,
-   "best_score": 30,
-   "best_by": "opencode-6"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0021CC70": {
    "vram": 2215024,
@@ -6188,6 +6193,11 @@
    "vram": 2215112,
    "best_score": 615,
    "best_by": "autopilot"
+  },
+  "func_0021CD08": {
+   "vram": 2215176,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_0021CD68": {
    "vram": 2215272,
@@ -6211,8 +6221,8 @@
   },
   "func_0021CE00": {
    "vram": 2215424,
-   "best_score": 120,
-   "best_by": "opencode-6"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0021CE78": {
    "vram": 2215544,
@@ -6301,8 +6311,8 @@
   },
   "func_0021DB90": {
    "vram": 2218896,
-   "best_score": 2274,
-   "best_by": "autopilot"
+   "matched_by": "codex-gpt-6-luna-1",
+   "readable": false
   },
   "func_0021DC80": {
    "vram": 2219136,
@@ -6361,8 +6371,8 @@
   },
   "func_00221040": {
    "vram": 2232384,
-   "best_score": 1899,
-   "best_by": "autopilot"
+   "best_score": 1280,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_00221870": {
    "vram": 2234480,
@@ -6601,8 +6611,8 @@
   },
   "func_002263E8": {
    "vram": 2253800,
-   "best_score": 60,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00226468": {
    "vram": 2253928,
@@ -6611,8 +6621,8 @@
   },
   "func_002264E8": {
    "vram": 2254056,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00226548": {
    "vram": 2254152,
@@ -6641,13 +6651,13 @@
   },
   "func_00229C20": {
    "vram": 2268192,
-   "best_score": 120,
-   "best_by": "opencode-space-bunny-free-3"
+   "best_score": 60,
+   "best_by": "permuter"
   },
   "func_00229F90": {
    "vram": 2269072,
-   "best_score": 2306,
-   "best_by": "autopilot"
+   "best_score": 621,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_0022B440": {
    "vram": 2274368,
@@ -6771,8 +6781,8 @@
   },
   "func_0022F240": {
    "vram": 2290240,
-   "best_score": 2394,
-   "best_by": "autopilot"
+   "best_score": 1874,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_0022F350": {
    "vram": 2290512,
@@ -6836,8 +6846,8 @@
   },
   "func_00231160": {
    "vram": 2298208,
-   "best_score": 1880,
-   "best_by": "autopilot"
+   "best_score": 255,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_00231240": {
    "vram": 2298432,
@@ -6916,8 +6926,8 @@
   },
   "func_00235338": {
    "vram": 2315064,
-   "best_score": 20,
-   "best_by": "opencode-longcat-2.5-preview-free-1"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002353B0": {
    "vram": 2315184,
@@ -7161,8 +7171,8 @@
   },
   "func_00247310": {
    "vram": 2388752,
-   "best_score": 1940,
-   "best_by": "autopilot"
+   "best_score": 260,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_002473F0": {
    "vram": 2388976,
@@ -7276,8 +7286,8 @@
   },
   "func_0024A430": {
    "vram": 2401328,
-   "best_score": 3410,
-   "best_by": "autopilot"
+   "best_score": 1530,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_0024A5D0": {
    "vram": 2401744,
@@ -7346,8 +7356,8 @@
   },
   "func_0024CF80": {
    "vram": 2412416,
-   "best_score": 2825,
-   "best_by": "autopilot"
+   "best_score": 2725,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_0024D308": {
    "vram": 2413320,
@@ -7451,8 +7461,8 @@
   },
   "func_0024F0A8": {
    "vram": 2420904,
-   "best_score": 20,
-   "best_by": "codex-gpt-6-luna-1"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0024F138": {
    "vram": 2421048,
@@ -7621,8 +7631,8 @@
   },
   "func_00251058": {
    "vram": 2429016,
-   "best_score": 39,
-   "best_by": "codex-gpt-6-luna-1"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002510B8": {
    "vram": 2429112,
@@ -7636,8 +7646,8 @@
   },
   "func_00251370": {
    "vram": 2429808,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002562D8": {
    "vram": 2450136,
@@ -7946,8 +7956,8 @@
   },
   "func_00265DC0": {
    "vram": 2514368,
-   "best_score": 205,
-   "best_by": "codex-gpt-6-luna-5"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00265E90": {
    "vram": 2514576,
@@ -8001,8 +8011,8 @@
   },
   "func_00266708": {
    "vram": 2516744,
-   "best_score": 50,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00266768": {
    "vram": 2516840,
@@ -8166,8 +8176,8 @@
   },
   "func_0026BE00": {
    "vram": 2539008,
-   "best_score": 3915,
-   "best_by": "autopilot"
+   "best_score": 3555,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_0026BFE0": {
    "vram": 2539488,
@@ -8386,8 +8396,8 @@
   },
   "func_002778E0": {
    "vram": 2586848,
-   "best_score": 1770,
-   "best_by": "autopilot"
+   "best_score": 1480,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_002779B0": {
    "vram": 2587056,
@@ -8641,8 +8651,8 @@
   },
   "func_00280610": {
    "vram": 2622992,
-   "best_score": 22,
-   "best_by": "codex-gpt-6-luna-3"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00280660": {
    "vram": 2623072,
@@ -8671,8 +8681,8 @@
   },
   "func_00280908": {
    "vram": 2623752,
-   "best_score": 60,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00280978": {
    "vram": 2623864,
@@ -8681,8 +8691,8 @@
   },
   "func_002809C0": {
    "vram": 2623936,
-   "best_score": 60,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00280A68": {
    "vram": 2624104,
@@ -8921,8 +8931,8 @@
   },
   "func_0028BC08": {
    "vram": 2669576,
-   "best_score": 65,
-   "best_by": "codex-gpt-6-luna-2"
+   "best_score": 45,
+   "best_by": "permuter"
   },
   "func_0028BF78": {
    "vram": 2670456,
@@ -8951,8 +8961,8 @@
   },
   "func_0028D5E8": {
    "vram": 2676200,
-   "best_score": 2900,
-   "best_by": "autopilot"
+   "best_score": 660,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_0028D720": {
    "vram": 2676512,
@@ -8961,12 +8971,12 @@
   },
   "func_0028D810": {
    "vram": 2676752,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0028D840": {
    "vram": 2676800,
-   "best_score": 30,
+   "best_score": 20,
    "best_by": "permuter"
   },
   "func_0028D8B0": {
@@ -8996,8 +9006,8 @@
   },
   "func_0028DF70": {
    "vram": 2678640,
-   "best_score": 2517,
-   "best_by": "autopilot"
+   "best_score": 915,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_0028EFF8": {
    "vram": 2682872,
@@ -9031,8 +9041,8 @@
   },
   "func_00290888": {
    "vram": 2689160,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-6"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002908B8": {
    "vram": 2689208,
@@ -9081,8 +9091,8 @@
   },
   "func_00291F98": {
    "vram": 2695064,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00291FC8": {
    "vram": 2695112,
@@ -9126,8 +9136,8 @@
   },
   "func_00293738": {
    "vram": 2701112,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00293768": {
    "vram": 2701160,
@@ -9181,8 +9191,8 @@
   },
   "func_00295428": {
    "vram": 2708520,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-9"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00295458": {
    "vram": 2708568,
@@ -9236,8 +9246,8 @@
   },
   "func_00296760": {
    "vram": 2713440,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00296790": {
    "vram": 2713488,
@@ -9301,8 +9311,8 @@
   },
   "func_00298150": {
    "vram": 2720080,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00298180": {
    "vram": 2720128,
@@ -9336,8 +9346,8 @@
   },
   "func_00298A78": {
    "vram": 2722424,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-10"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00298AA8": {
    "vram": 2722472,
@@ -9376,8 +9386,8 @@
   },
   "func_002994D0": {
    "vram": 2725072,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00299500": {
    "vram": 2725120,
@@ -9411,8 +9421,8 @@
   },
   "func_0029A710": {
    "vram": 2729744,
-   "best_score": 30,
-   "best_by": "opencode-3"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0029A740": {
    "vram": 2729792,
@@ -9456,8 +9466,8 @@
   },
   "func_0029AEA8": {
    "vram": 2731688,
-   "best_score": 20,
-   "best_by": "opencode-3"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0029AED8": {
    "vram": 2731736,
@@ -9511,8 +9521,8 @@
   },
   "func_0029D190": {
    "vram": 2740624,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-6"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_0029D1C0": {
    "vram": 2740672,
@@ -9551,8 +9561,8 @@
   },
   "func_0029E2C8": {
    "vram": 2745032,
-   "best_score": 30,
-   "best_by": "opencode-9"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0029E2F8": {
    "vram": 2745080,
@@ -9596,13 +9606,13 @@
   },
   "func_0029FB40": {
    "vram": 2751296,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-10"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0029FB70": {
    "vram": 2751344,
-   "best_score": 80,
-   "best_by": "opencode-9"
+   "best_score": 20,
+   "best_by": "permuter"
   },
   "func_0029FBF8": {
    "vram": 2751480,
@@ -9646,8 +9656,8 @@
   },
   "func_002A0B80": {
    "vram": 2755456,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-6"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002A0BB0": {
    "vram": 2755504,
@@ -9681,8 +9691,8 @@
   },
   "func_002A1BB0": {
    "vram": 2759600,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-1"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002A1BE0": {
    "vram": 2759648,
@@ -9701,8 +9711,8 @@
   },
   "func_002A1D98": {
    "vram": 2760088,
-   "best_score": 3054,
-   "best_by": "autopilot"
+   "best_score": 2151,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_002A1E58": {
    "vram": 2760280,
@@ -9716,8 +9726,8 @@
   },
   "func_002A2648": {
    "vram": 2762312,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002A2678": {
    "vram": 2762360,
@@ -9741,8 +9751,8 @@
   },
   "func_002A2B38": {
    "vram": 2763576,
-   "best_score": 30,
-   "best_by": "opencode-5"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002A2B68": {
    "vram": 2763624,
@@ -9786,8 +9796,8 @@
   },
   "func_002A4858": {
    "vram": 2771032,
-   "best_score": 110,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002A4888": {
    "vram": 2771080,
@@ -9826,8 +9836,8 @@
   },
   "func_002A49F8": {
    "vram": 2771448,
-   "best_score": 20,
-   "best_by": "opencode-20"
+   "best_score": 5,
+   "best_by": "permuter"
   },
   "func_002A4F70": {
    "vram": 2772848,
@@ -9836,8 +9846,8 @@
   },
   "func_002A5058": {
    "vram": 2773080,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002A5088": {
    "vram": 2773128,
@@ -9891,8 +9901,8 @@
   },
   "func_002A5D28": {
    "vram": 2776360,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-5"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002A5D58": {
    "vram": 2776408,
@@ -9946,8 +9956,8 @@
   },
   "func_002A6DE8": {
    "vram": 2780648,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-9"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002A6E18": {
    "vram": 2780696,
@@ -9996,13 +10006,13 @@
   },
   "func_002A71C0": {
    "vram": 2781632,
-   "best_score": 995,
-   "best_by": "codex-gpt-6-luna-9"
+   "best_score": 990,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_002A72C0": {
    "vram": 2781888,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002A72F0": {
    "vram": 2781936,
@@ -10051,8 +10061,8 @@
   },
   "func_002A83F0": {
    "vram": 2786288,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-1"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002A8420": {
    "vram": 2786336,
@@ -10106,8 +10116,8 @@
   },
   "func_002A9040": {
    "vram": 2789440,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-9"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002A9070": {
    "vram": 2789488,
@@ -10156,8 +10166,8 @@
   },
   "func_002A9D20": {
    "vram": 2792736,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002A9D50": {
    "vram": 2792784,
@@ -10166,8 +10176,8 @@
   },
   "func_002A9DC0": {
    "vram": 2792896,
-   "best_score": 535,
-   "best_by": "opencode-nemotron-3-ultra-free-2"
+   "best_score": 400,
+   "best_by": "opencode-5"
   },
   "func_002A9E48": {
    "vram": 2793032,
@@ -10211,8 +10221,8 @@
   },
   "func_002AB390": {
    "vram": 2798480,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002AB3C0": {
    "vram": 2798528,
@@ -10266,8 +10276,8 @@
   },
   "func_002AC330": {
    "vram": 2802480,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-5"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002AC360": {
    "vram": 2802528,
@@ -10311,8 +10321,8 @@
   },
   "func_002ACE88": {
    "vram": 2805384,
-   "best_score": 240,
-   "best_by": "autopilot"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002ACEB8": {
    "vram": 2805432,
@@ -10371,8 +10381,8 @@
   },
   "func_002ADB70": {
    "vram": 2808688,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002ADBA0": {
    "vram": 2808736,
@@ -10426,8 +10436,8 @@
   },
   "func_002AE440": {
    "vram": 2810944,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002AE470": {
    "vram": 2810992,
@@ -10456,8 +10466,8 @@
   },
   "func_002AE6B8": {
    "vram": 2811576,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-6"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002AE6E8": {
    "vram": 2811624,
@@ -10501,8 +10511,8 @@
   },
   "func_002AF208": {
    "vram": 2814472,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-6"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002AF238": {
    "vram": 2814520,
@@ -10541,8 +10551,8 @@
   },
   "func_002AFCA0": {
    "vram": 2817184,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-5"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002AFCD0": {
    "vram": 2817232,
@@ -10596,8 +10606,8 @@
   },
   "func_002B11D0": {
    "vram": 2822608,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002B1200": {
    "vram": 2822656,
@@ -10661,8 +10671,8 @@
   },
   "func_002B2CD8": {
    "vram": 2829528,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-5"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002B2D08": {
    "vram": 2829576,
@@ -10706,8 +10716,8 @@
   },
   "func_002B3170": {
    "vram": 2830704,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-9"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002B31A0": {
    "vram": 2830752,
@@ -10726,8 +10736,8 @@
   },
   "func_002B34E0": {
    "vram": 2831584,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002B3510": {
    "vram": 2831632,
@@ -10766,8 +10776,8 @@
   },
   "func_002B5790": {
    "vram": 2840464,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002B57C0": {
    "vram": 2840512,
@@ -10821,8 +10831,8 @@
   },
   "func_002B69E0": {
    "vram": 2845152,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-9"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002B6A10": {
    "vram": 2845200,
@@ -10861,8 +10871,8 @@
   },
   "func_002B6B58": {
    "vram": 2845528,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-6"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002B6B88": {
    "vram": 2845576,
@@ -10911,8 +10921,8 @@
   },
   "func_002B9368": {
    "vram": 2855784,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-1"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002B9398": {
    "vram": 2855832,
@@ -11016,13 +11026,13 @@
   },
   "func_002BA600": {
    "vram": 2860544,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-10"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002BA630": {
    "vram": 2860592,
-   "best_score": 50,
-   "best_by": "codex-gpt-6-luna-1"
+   "best_score": 20,
+   "best_by": "permuter"
   },
   "func_002BA668": {
    "vram": 2860648,
@@ -11076,8 +11086,8 @@
   },
   "func_002BBC18": {
    "vram": 2866200,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-9"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002BBC48": {
    "vram": 2866248,
@@ -11136,8 +11146,8 @@
   },
   "func_002BE008": {
    "vram": 2875400,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-1"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002BE038": {
    "vram": 2875448,
@@ -11176,8 +11186,8 @@
   },
   "func_002BE1B8": {
    "vram": 2875832,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-10"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002BE1E8": {
    "vram": 2875880,
@@ -11226,8 +11236,8 @@
   },
   "func_002BF198": {
    "vram": 2879896,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-6"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002BF1C8": {
    "vram": 2879944,
@@ -11316,8 +11326,8 @@
   },
   "func_002C6158": {
    "vram": 2908504,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-4"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002C6188": {
    "vram": 2908552,
@@ -11361,8 +11371,8 @@
   },
   "func_002C6DD0": {
    "vram": 2911696,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-5"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002C6E00": {
    "vram": 2911744,
@@ -11421,8 +11431,8 @@
   },
   "func_002C7BD0": {
    "vram": 2915280,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-7"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002C7C00": {
    "vram": 2915328,
@@ -11471,8 +11481,8 @@
   },
   "func_002C89A8": {
    "vram": 2918824,
-   "best_score": 90,
-   "best_by": "codex-gpt-6-luna-3"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_002C89D8": {
    "vram": 2918872,
@@ -11616,8 +11626,8 @@
   },
   "func_002CB438": {
    "vram": 2929720,
-   "best_score": 10,
-   "best_by": "opencode-2"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002CB460": {
    "vram": 2929760,
@@ -11656,18 +11666,18 @@
   },
   "func_002CBF30": {
    "vram": 2932528,
-   "best_score": 40,
-   "best_by": "codex-gpt-6-luna-5"
+   "best_score": 30,
+   "best_by": "permuter"
   },
   "func_002CBF88": {
    "vram": 2932616,
-   "best_score": 15,
-   "best_by": "codex-gpt-6-luna-5"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002CBFD8": {
    "vram": 2932696,
-   "best_score": 75,
-   "best_by": "codex-gpt-6-luna-5"
+   "best_score": 45,
+   "best_by": "permuter"
   },
   "func_002CC070": {
    "vram": 2932848,
@@ -11746,8 +11756,8 @@
   },
   "func_002CCFC8": {
    "vram": 2936776,
-   "best_score": 30,
-   "best_by": "codex-gpt-6-luna-1"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002CD028": {
    "vram": 2936872,
@@ -13051,8 +13061,8 @@
   },
   "func_002D5D80": {
    "vram": 2973056,
-   "best_score": 300,
-   "best_by": "autopilot"
+   "best_score": 260,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_002D5DA0": {
    "vram": 2973088,
@@ -13186,8 +13196,8 @@
   },
   "func_002D76D0": {
    "vram": 2979536,
-   "best_score": 1080,
-   "best_by": "codex-gpt-6-luna-4"
+   "best_score": 870,
+   "best_by": "autopilot"
   },
   "func_002D7858": {
    "vram": 2979928,
@@ -13516,8 +13526,8 @@
   },
   "func_002DD4B8": {
    "vram": 3003576,
-   "best_score": 500,
-   "best_by": "opencode-3"
+   "best_score": 380,
+   "best_by": "autopilot"
   },
   "func_002DD4E0": {
    "vram": 3003616,
@@ -13751,8 +13761,8 @@
   },
   "func_002DE9F8": {
    "vram": 3009016,
-   "best_score": 1080,
-   "best_by": "opencode-5"
+   "best_score": 1030,
+   "best_by": "autopilot"
   },
   "func_002DEA48": {
    "vram": 3009096,
@@ -14031,7 +14041,7 @@
   },
   "func_002DFD68": {
    "vram": 3013992,
-   "best_score": 1070,
+   "best_score": 370,
    "best_by": "autopilot"
   },
   "func_002E0320": {
@@ -14121,7 +14131,7 @@
   },
   "func_002E1668": {
    "vram": 3020392,
-   "best_score": 2170,
+   "best_score": 2075,
    "best_by": "autopilot"
   },
   "func_002E16C0": {
@@ -14196,7 +14206,7 @@
   },
   "func_002E2498": {
    "vram": 3024024,
-   "best_score": 9251,
+   "best_score": 8966,
    "best_by": "autopilot"
   },
   "func_002E27A8": {
@@ -14241,8 +14251,8 @@
   },
   "func_002E3158": {
    "vram": 3027288,
-   "best_score": 4250,
-   "best_by": "opencode-deepseek-v4.1-flash-free-1"
+   "best_score": 3370,
+   "best_by": "autopilot"
   },
   "func_002E3AC8": {
    "vram": 3029704,
@@ -14261,12 +14271,12 @@
   },
   "func_002E40E0": {
    "vram": 3031264,
-   "best_score": 980,
+   "best_score": 690,
    "best_by": "autopilot"
   },
   "func_002E4110": {
    "vram": 3031312,
-   "best_score": 1100,
+   "best_score": 890,
    "best_by": "autopilot"
   },
   "func_002E4148": {
@@ -14536,7 +14546,7 @@
   },
   "func_002E62E0": {
    "vram": 3039968,
-   "best_score": 1075,
+   "best_score": 535,
    "best_by": "autopilot"
   },
   "func_002E6318": {
@@ -14551,7 +14561,7 @@
   },
   "func_002E63A8": {
    "vram": 3040168,
-   "best_score": 480,
+   "best_score": 200,
    "best_by": "autopilot"
   },
   "func_002E63D0": {
@@ -14751,8 +14761,8 @@
   },
   "func_002EA080": {
    "vram": 3055744,
-   "best_score": 1441,
-   "best_by": "codex-gpt-6-luna-5"
+   "best_score": 10,
+   "best_by": "codex-gpt-6-luna-2"
   },
   "func_002EA150": {
    "vram": 3055952,
@@ -14886,8 +14896,8 @@
   },
   "func_002EB790": {
    "vram": 3061648,
-   "best_score": 10,
-   "best_by": "opencode-33"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_002EC298": {
    "vram": 3064472,
@@ -15196,8 +15206,8 @@
   },
   "func_002FA130": {
    "vram": 3121456,
-   "best_score": 345,
-   "best_by": "codex-gpt-6-luna-4"
+   "best_score": 210,
+   "best_by": "permuter"
   },
   "func_002FA338": {
    "vram": 3121976,
@@ -15736,8 +15746,8 @@
   },
   "func_002FFBB8": {
    "vram": 3144632,
-   "best_score": 230,
-   "best_by": "codex-gpt-6-luna-5"
+   "best_score": 35,
+   "best_by": "permuter"
   },
   "func_002FFDC0": {
    "vram": 3145152,
@@ -15761,7 +15771,7 @@
   },
   "func_002FFF98": {
    "vram": 3145624,
-   "best_score": 30,
+   "best_score": 20,
    "best_by": "permuter"
   },
   "func_002FFFF8": {
@@ -15791,8 +15801,8 @@
   },
   "func_00300238": {
    "vram": 3146296,
-   "best_score": 55,
-   "best_by": "opencode-25"
+   "best_score": 35,
+   "best_by": "permuter"
   },
   "func_003003D0": {
    "vram": 3146704,
@@ -15821,8 +15831,8 @@
   },
   "func_00300F80": {
    "vram": 3149696,
-   "best_score": 2220,
-   "best_by": "autopilot"
+   "best_score": 1400,
+   "best_by": "codex-gpt-6-luna-1"
   },
   "func_00301088": {
    "vram": 3149960,
@@ -15981,8 +15991,8 @@
   },
   "func_00303A08": {
    "vram": 3160584,
-   "best_score": 20,
-   "best_by": "opencode-15"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_00303A88": {
    "vram": 3160712,
@@ -16266,8 +16276,8 @@
   },
   "func_0030B118": {
    "vram": 3191064,
-   "best_score": 10,
-   "best_by": "codex-gpt-6-luna-9"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0030B2E0": {
    "vram": 3191520,
@@ -17736,8 +17746,8 @@
   },
   "func_00313788": {
    "vram": 3225480,
-   "best_score": 30,
-   "best_by": "opencode-3"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_003137E8": {
    "vram": 3225576,
@@ -17781,8 +17791,8 @@
   },
   "func_00313A58": {
    "vram": 3226200,
-   "best_score": 1081,
-   "best_by": "opencode-4"
+   "matched_by": "opencode-5",
+   "readable": false
   },
   "func_00313AC0": {
    "vram": 3226304,
@@ -17801,8 +17811,8 @@
   },
   "func_00313B48": {
    "vram": 3226440,
-   "best_score": 1984,
-   "best_by": "autopilot"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00313BB0": {
    "vram": 3226544,
@@ -17821,13 +17831,13 @@
   },
   "func_00313C38": {
    "vram": 3226680,
-   "best_score": 1984,
-   "best_by": "autopilot"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00313CA0": {
    "vram": 3226784,
-   "best_score": 110,
-   "best_by": "opencode-4"
+   "best_score": 100,
+   "best_by": "permuter"
   },
   "func_00313D10": {
    "vram": 3226896,
@@ -19456,8 +19466,8 @@
   },
   "func_0031A990": {
    "vram": 3254672,
-   "best_score": 15,
-   "best_by": "opencode-26"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0031A9A8": {
    "vram": 3254696,
@@ -19476,8 +19486,8 @@
   },
   "func_0031AA20": {
    "vram": 3254816,
-   "best_score": 15,
-   "best_by": "opencode-15"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0031AA30": {
    "vram": 3254832,
@@ -19491,8 +19501,8 @@
   },
   "func_0031AAB8": {
    "vram": 3254968,
-   "best_score": 115,
-   "best_by": "autopilot"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_0031AAC8": {
    "vram": 3254984,
@@ -19511,8 +19521,8 @@
   },
   "func_0031ABB8": {
    "vram": 3255224,
-   "best_score": 305,
-   "best_by": "autopilot"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_0031ABD0": {
    "vram": 3255248,
@@ -19556,8 +19566,8 @@
   },
   "func_0031AD40": {
    "vram": 3255616,
-   "best_score": 15,
-   "best_by": "opencode-4"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0031AD58": {
    "vram": 3255640,
@@ -19651,8 +19661,8 @@
   },
   "func_0031B378": {
    "vram": 3257208,
-   "best_score": 115,
-   "best_by": "autopilot"
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_0031B388": {
    "vram": 3257224,
@@ -19666,8 +19676,8 @@
   },
   "func_0031B410": {
    "vram": 3257360,
-   "best_score": 15,
-   "best_by": "codex-gpt-6-luna-10"
+   "matched_by": "permuter",
+   "readable": false
   },
   "func_0031B420": {
    "vram": 3257376,
@@ -56791,6 +56801,681 @@
    "function": "func_002D9230",
    "text": "Best prior source score 1454 (about 54%) remains best. Tried nested short-circuit form with unsized globals and explicit helper prototype; score 1608. Main irreducible issue is target 0x50 frame with s0-s3/ra saved at 16-byte intervals, while GCC emits 0x30 frame. Target also uses D_00444A08 address in $s0 with lw offset, plus distinct argument setup/order. Prior 23 attempts also found no route; release for next agent.",
    "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_002D4C40",
+   "text": "Range check #2: is this part of the game built by CodeWarrior PS2 3.0.1 -O2 -sdatathreshold 8? An agent's C for a function next to func_002D4C40 matches with it. Match func_002D4C40 as usual; then try_compiler(\"func_002D4C40\", \"mwcps2-3.0.1\", \"-O2 -sdatathreshold 8\"). Matching with CodeWarrior PS2 3.0.1 -O2 -sdatathreshold 8 and not with the project's compiler confirms the range; matching with the project's compiler only shows it was a quirk. Either answer helps.",
+   "by": "autopilot"
+  },
+  {
+   "function": "func_0030DB68",
+   "text": "Stuck at score 200 (93.9%). Only difference: target emits `bnel $v1,$zero,0x58` at the D_008EADB8[0] check, ee-gcc 2.96 -O2 -G8 emits `bnez $v1,0x58`. All 33 other instructions, registers, control flow, and data addressing match exactly. Tried: best-known source shape, `!D_008EADB8[0]` variant (same score), __builtin_expect (worse, 425/35 insns). 35+ prior agents confirmed this is an unfixable ee-gcc 2.96 block-finalization quirk \u2014 the compiler never emits `bnel` (likely branch) from pure C. The bnel/bnez difference has no semantic effect here (delay slot value is overwritten after jal), it's purely an opcode encoding difference.",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_0015E970",
+   "text": "func_0015E970 (0x0015E970, 44 bytes, 11 insns). Score 30/97.2% \u2014 byte-identical except ONE instruction position.\n\nMATCHES PERFECTLY (all 11 instructions, regalloc, operands, store order):\n- extern u8 D_0044D7F8[];  extern char D_00463218[];  (unsized arrays -> lui+%lo full address, required)\n- struct: +0x0 name(char*), +0x4 a(s32), +0x8 b(s32), +0xC c(s16), +0x60 data(void*)  (pad 0x0E-0x5F)\n- volatile stores in order: p->c=0x1E; p->data=&D_0044D7F8; p->name=D_00463218; p->b=0; p->a=0\n- Stores match target exactly: sh 0xC, sw 0x60, sw 0x0, sw 0x8, sw 0x4 (delay slot)\n- Registers match: $v1/$a1/$v0 = $3/$5/$2\n\nREMAINING DIFF (scheduling only):\n- Target:  lui %hi(D_0044D7F8); lui %hi(D_00463218); addiu $v0,$zero,0x1e; addiu %lo(D_0044D7F8); addiu %lo(D_00463218)\n- GCC 2.96: lui %hi(D_0044D7F8); lui %hi(D_00463218); addiu %lo(D_0044D7F8); addiu %lo(D_00463218); addiu $v0,$zero,0x1e\n  i.e. addiu $v0,$zero,0x1e is emitted right before the sh instead of between the two lui's.\n\nWHAT WAS TRIED (all failed to move the addiu):\n- volatile struct stores (best, score 30)\n- non-volatile plain assignments (score 110, worse)\n- s16 local = 0x1E then store (score 110, no change)\n- search_flags: -O3, -Os, -G0, -fno-strength-reduce, -fno-common \u2014 all score 30; flags not the problem\n- try_compiler ee-gcc-2.9-991111: score 665, not match\n- try_compiler ee-gcc-2.95.2 / 2.95.3 / 3.2 / mwcps2: all error out (toolchain not installed)\n\nCONCLUSION: ee-gcc 2.96 -O2 -G8 scheduler places immediate materialization adjacent to its store use; cannot be forced earlier in pure C. Known compiler scheduling limitation documented by 80+ prior attempts. Needs either a different compiler that schedules immediates early, or accepting score 30.",
+   "by": "opencode-5"
+  },
+  {
+   "function": "func_0029E2C8",
+   "text": "Stuck at score 30 (97.5%). Only difference: instruction scheduling. Target emits addiu $v0,0x1E between the two lui and the %lo addi\u016bs (lui,lui,addiu const,addiu lo,addiu lo), but ee-gcc 2.96 -O2 -G8 always emits it after both %lo addi\u016bs (lui,lui,addiu lo,addiu lo,addiu const). All 12 instructions match, same registers, same structure, just reordered. Tried: best-known source (5 field stores), reversed statement order (worse, 280), local variable for 0x1E (same score 30). 50+ prior agents confirmed this is a fundamental scheduler tie-break limitation \u2014 pure C cannot flip it. Affects func_0015E970, func_0029E2F8, func_0029FB70 (same pattern).",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_002A2B38",
+   "text": "Stuck at score 30 (97.5%). Identical scheduler quirk to func_0029E2C8: target places addiu $v0,0x1E between the two lui and %lo addi\u016bs, ee-gcc 2.96 -O2 -G8 always schedules both %lo addi\u016bs first. All 12 instructions, registers, stores, and operands match perfectly \u2014 only independent addiu scheduling differs. Tried: direct field stores (score 30), local variable for constant (same score). 45+ prior agents confirmed fundamental scheduler tie-break limitation, unresolvable in pure C. Same pattern as func_0015E970, func_0029E2C8, func_0029E2F8, func_0029FB70.",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_002D5D60",
+   "text": "Unmatchable with pure C + ee-gcc 2.96. Target: addiu sp,-0x10; sd ra,0(sp); jal func_002D4E80; nop; sync; ld ra,0(sp); jr ra; addiu sp,0x10 (delay slot). Best achieved: score 260 \u2014 jal+nop+frame match, but missing `sync` instruction (ee-gcc 2.96 cannot emit sync in pure C; __sync_synchronize lowers to unresolved jump). Also addiu sp,0x10 lands before jr ra instead of in its delay slot with nop after. This function is in the CodeWarrior range 0x2D5000-0x2EA000 (mwcps2-3.0.1 -O2 -sdatathreshold 8), but MWCC PS2 toolchain is not installed (try_compiler errors out). 19+ prior agents confirmed unmatchable without inline asm. Best possible with ee-gcc: score ~100 (frame+call, missing sync).",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_0030DE38",
+   "text": "Stuck at score 200 (95.4%). Same fundamental compiler quirk as func_0030DB68: target emits bnel $v1,$zero,0x6c at the innermost D_008EADB8[0] test, ee-gcc 2.96 -O2 -G8 emits bnez $v1,0x6c. All 44 other instructions match perfectly. Tried: nested if/==0/!=0 (score 200), !var chains (score 200), __builtin_expect (worse, 435/46 insns). 30+ prior agents confirmed this is an unfixable ee-gcc 2.96 branch-likely quirk. Same issue affects func_0030DB68 and func_00315228 (clone family). Best C form: nested if(!AE78){if(!B248){if(!ADB8){312DD0();2FD348(ADB8,483918,&486DC8);}2FD348(B248,483920,ADB8);}2FD348(AE78,483928,B248);}return AE78;",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_0015EA10",
+   "text": "BEST: score 30/12 (97.5%), all 5 stores + registers + immediates identical to ROM. REMAINING DIFF: pure instruction scheduling of 3 independent addiu instructions. Target ROM: lui a1,%hi(D_0044D6D8); lui a2,%hi(D_00463238); addiu v0,0x1e; addiu a1,lo(D1); addiu a2,lo(D2); addiu v1,1. EE-GCC 2.96 -O2 -G8 always emits: lui a1,%hi(D1); lui a2,%hi(D2); addiu a1,lo(D1); addiu a2,lo(D2); addiu v0,0x1e; addiu v1,1. Target materializes constant 0x1e BETWEEN the two %lo addends; GCC emits both addresses first then both constants. TRIED (all score 30): direct field stores (best), struct field access, interleaved locals, typed locals, reversed store order (275), struct-typed arg (455). search_flags ee-gcc 2.96: -O2/-O3/-Os x -G8/-G0, -fno-strength-reduce, -fno-common: all score 30. Flags are not the problem. try_compiler() errors in this environment, so other ee-gcc versions (2.9-991111, 2.95.2, 2.95.3, 3.2) and MWCC could not be tested. compiler_map attributes 0x15EA10 to EE-GCC 2.96 (only 0x2D5000-0x2EA000 is CodeWarrior). CONCLUSION: fixed -O2 -G8 scheduler tie-break; no pure-C source form found after 58+ attempts across agents. Needs a different compiler/version for this address, or accept 97.5%. Source to keep: direct stores in order 0xC, 0x8, 0x60, 0x0, 0x4 with extern u8 D_0044D6D8[]; extern u8 D_00463238[];",
+   "by": "opencode-1"
+  },
+  {
+   "function": "func_0031AA20",
+   "text": "BEST: score 15/4 (96.2%), all 4 instructions identical to ROM except register allocation: target uses $v1 for the lui/addiu/sw address sequence, EE-GCC 2.96 -O2 -G8 uses $v0. TRIED (all score 15): direct void* store via unsized extern D_00453830[] (baseline), struct field access (Obj0->unk0), char pointer cast, sized vs unsized symbol, register asm('v1') (REJECTED: inline assembly not allowed). 41+ prior attempts across agents confirm this is a fixed GCC 2.96 register allocator quirk for void functions loading addresses; unfixable in pure C. search_flags not yet run on this function but the regalloc difference is flag-independent by nature. try_compiler() errors in this environment, so other ee-gcc versions (2.9-991111, 2.95.2, 2.95.3, 3.2) and MWCC could not be tested. compiler_map attributes 0x31AA20 to EE-GCC 2.96 (only 0x2D5000-0x2EA000 is CodeWarrior). CONCLUSION: fixed regalloc; no pure-C source form found after 41+ attempts. Needs a different compiler/version for this address, or accept 96.2%. Source to keep: void func_0031AA20(void *arg0) { *(void **)arg0 = (void *)D_00453830; } with extern u8 D_00453830[]; (or extern char D_00453830[]).",
+   "by": "opencode-1"
+  },
+  {
+   "function": "copy_words",
+   "text": "BEST: score 190/14 (86.4%), 13 of 14 target instructions present; only 2 scheduling differences remain. Address 0x2DD718 is inside CodeWarrior range 0x2D5000-0x2EA000, built with mwcps2-3.0.1 -O2 -sdatathreshold 8 (per project_info and claim). HOWEVER compile_and_diff here builds with EE-GCC 2.96 -O2 -G8 (MWCC toolchain not installed; try_compiler errors: 'Error executing tool try_compiler'), so this function CANNOT match with the available toolchain. REMAINING DIFF vs EE-GCC: (1) target loop increments counter i BEFORE src pointer (addiu a3,1 then addiu a1,4); EE-GCC emits src++ then i++; (2) target places dst++ (addiu a0,4) BEFORE bnez with an empty nop delay slot; EE-GCC hoists bnez above dst++ and fills the delay slot with addiu a0,4. Result: target 14 insns, EE-GCC 13. TRIED: for/while/do-while, *dst++=*src++, post-increments, temp vars, block reordering \u2014 all converge to same 13-insn GCC pattern (38+ attempts across agents). search_flags not useful (compiler, not flags, is the issue). CONTEXT: open suggestion #2 already proposes mwcps2-3.0.1 -O2 -sdatathreshold 8 for 0x2D5000-0x2EA000; range check #2 is testing neighbour func_002D4C40. copy_words is called by func_002DD7D8. Source to keep: s32 copy_words(s32 *dst, s32 *src, u32 size){ u32 n=size>>2, i=0; while(i<n){ *dst=*src; i++; dst++; src++; } return 0; } \u2014 matches the target's exact statement order (i++ before src++, dst++ before branch) but EE-GCC reschedules it. Needs MWCC to reach score 0.",
+   "by": "opencode-1"
+  },
+  {
+   "function": "func_002D57A0",
+   "text": "BEST: score 60/10 (94%), all 10 target instructions present except epilogue ordering. Address 0x2D57A0 is inside CodeWarrior range 0x2D5000-0x2EA000, built with mwcps2-3.0.1 -O2 -sdatathreshold 8. compile_and_diff here builds with EE-GCC 2.96 -O2 -G8 (MWCC toolchain not installed; try_compiler errors), so this function CANNOT reach score 0 with the available toolchain. REMAINING DIFF vs EE-GCC: target epilogue does `addiu $v1,5` (materialize 5) BEFORE `ld $ra,($sp)`, then `sw $v1,($v0)`; EE-GCC emits `ld $ra,($sp)` BEFORE `addiu $v1,5`. This is a GCC 2.96 RTL epilogue scheduler quirk; 40+ attempts across agents (direct assign, volatile, locals, K&R, comma operator) all produce the same reorder. C is functionally correct: s32 *p = func_002FFAF8(); *p = 5; return -1;. Open suggestion #2 already proposes mwcps2-3.0.1 -O2 -sdatathreshold 8 for 0x2D5000-0x2EA000 (range check #2 testing neighbour func_002D4C40). Called by func_00302410; calls func_002FFAF8. Needs MWCC to reach score 0. Source to keep: the *p = 5; return -1; form with s32 *func_002FFAF8(void); prototype.",
+   "by": "opencode-1"
+  },
+  {
+   "function": "func_002D8F28",
+   "text": "BEST: score 460 (3 target insns vs 7 EE-GCC insns). Frameless sibling jump: lui $v0,%hi(D_004449FC); j func_002D5100; lw $a0,%lo(D_004449FC)($v0). EE-GCC 2.96 always wraps the tail call in a 0x16 stack frame (addiu sp,-0x10 / sd ra / ... / ld ra / j / addiu sp,0x10), ignoring noreturn/volatile. Address 0x2D8F28 is inside CodeWarrior range 0x2D5000-0x2EA000 (mwcps2-3.0.1 -O2 -sdatathreshold 8); MWCC toolchain not installed here, try_compiler errors, compile_and_diff uses EE-GCC. UNMATCHABLE with available toolchain \u2014 26+ prior attempts confirm. Semantics: void func_002D8F28(void){ func_002D5100(D_004449FC[0]); } where D_004449FC (4 bytes, 0xFFFFFFFF) is set by func_002D8EA8 to func_002D50E0(stk) result; func_002D5100 is a syscall-0x42 kernel wrapper. Called by many func_002D8F38/002D92F8/... stubs. Needs MWCC for score 0. Open suggestion #2 proposes mwcps2-3.0.1 for 0x2D5000-0x2EA000. Source to keep: void func_002D8F28(void){ func_002D5100(D_004449FC[0]); } with extern s32 D_004449FC[3]; (sized [3] array makes the lui materialization work) and void func_002D5100(s32);.",
+   "by": "opencode-1"
+  },
+  {
+   "function": "func_002D5A58",
+   "text": "BEST: score 760/5 (0% insn match). Frameless sibling jump: lui $v0,(0xFFFFFFC0>>16); ori $v0,$v0,(0xFFFFFFC0&0xFFFF); and $a1,$a1,$v0; j func_002D5930; and $a0,$a0,$v0. EE-GCC 2.96 materializes 0xFFFFFFC0 as addiu -0x40 (1 insn) instead of the lui/ori pair (2 insns), and wraps the call in a stack frame instead of a frameless tail-j with ANDs in delay slots. Tried literal/const/global/~0x3F/shift-OR \u2014 all optimize to addiu. Cannot force lui/ori or remove frame with pure C. Address 0x2D5A58 is inside CodeWarrior range 0x2D5000-0x2EA000 (mwcps2-3.0.1 -O2 -sdatathreshold 8); MWCC toolchain not installed, try_compiler errors, compile_and_diff uses EE-GCC. UNMATCHABLE with available toolchain \u2014 29 prior attempts. Semantics: void func_002D5A58(s32 a0, s32 a1){ func_002D5930(a0 & 0xFFFFFFC0, a1 & 0xFFFFFFC0); }. Calls func_002D5930. Needs MWCC. Open suggestion #2 proposes mwcps2-3.0.1 for 0x2D5000-0x2EA000. Source to keep: void func_002D5A58(s32 arg0, s32 arg1){ s32 m=(s32)0xFFFFFFC0; func_002D5930(arg0&m, arg1&m); } with void func_002D5930(s32,s32); prototype.",
+   "by": "opencode-1"
+  },
+  {
+   "function": "func_002DE9A8",
+   "text": "Stuck at score 25 (98.6%). Body logic and all 19 instructions match perfectly; only stack frame layout differs: target frame 0x30 with saves at 0/0x10/0x20 (16-byte MWCC spacing), EE-GCC 2.96 gives frame 0x20 with saves at 0/8/0x10 (8-byte spacing). This is in the CodeWarrior/libnet range 0x2D5000-0x2EA000 (mwcps2-3.0.1 -O2 -sdatathreshold 8); MWCC toolchain unavailable (try_compiler errors out). 25+ prior agents confirmed EE-GCC 2.96 cannot reproduce 16-byte callee-save spacing. Tried: best-known nested-call source (score 25), simplified call-only source (score 2592 - compiler produced MMI garbage, likely mwcps2 misfire). Body C: func_002DD640(); r = func_002DE908(arg0); if(r!=0) func_002DD698(); return r; Best possible with EE-GCC: score 25.",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_0031A990",
+   "text": "Range check #4: this function's C matches with CodeWarrior PS2 3.0.1 -O3 -sdatathreshold 8, but its neighbours are built by the project's compiler (func_0031A990's C matches the game with today's compiler too: it says nothing about the compiler). Look for C that matches with the project's compiler.",
+   "by": "autopilot"
+  },
+  {
+   "function": "func_0031A990",
+   "text": "func_0031A990 (0x0031A990, 20 bytes, 5 insns). MATCHED via compiler suggestion.\n\nSOURCE (matches with mwcps2-3.0.1 -O3 -sdatathreshold 8):\nextern s32 D_00453850[];\nvoid func_0031A990(s32 *arg0, s32 arg1) {\n    arg0[0] = arg1;\n    arg0[1] = (s32)D_00453850;\n}\n\nTARGET ASSEMBLY:\n  lui $v1, %hi(D_00453850)\n  sw $a1, 0x0($4)\n  addiu $v1, $v1, %lo(D_00453850)\n  jr $31\n  sw $v1, 0x4($4)\n\nEE-GCC 2.96 -O2 -G8: score 15 (97%) \u2014 only diff is regalloc: GCC uses $v0 for the address temp, target uses $v1. 80+ prior attempts could not force $v1 in pure C. Flags don't help (all 8 variants score 15).\n\nCodeWarrior PS2 3.0.1 -O2 -sdatathreshold 8: score 370, uses $v1 but leaves nop in delay slot (doesn't fill delay slots at -O2).\n\nCodeWarrior PS2 3.0.1 -O3 -sdatathreshold 8: MATCHES byte-for-byte. Uses $v1 for address, fills delay slot with sw $v1, 4($a0). Suggested compiler mwcps2-3.0.1 -O3 -sdatathreshold 8 for range 0x31A990-0x31A9B4. Range check #4 in progress.\n\nFamily clones func_0031ABB8 etc. share the same $v1 anomaly \u2014 likely same compiler needed.",
+   "by": "opencode-5"
+  },
+  {
+   "function": "copy_words",
+   "text": "Score 190/14 (86.4%), best by me and 6+ prior agents. Function at 0x2DD718 is in CodeWarrior range 0x2D5000-0x2EA000 (mwcps2-3.0.1 -O2 -sdatathreshold 8). Neither EE-GCC 2.96 nor mwcps2-3.0.1 (via try_compiler) can reproduce target scheduling: (1) beqz $a2 before i=0 init, (2) loop body order: lw, i++, src++, sltu, sw, dst++, bnez (i++ before src++, store after compare), (3) dst++ before bnez with nop delay slot (not in delay slot), (4) return 0 in jr delay slot. Tried: while/do-while/for, if(n==0) before/after i=0, tmp var vs direct *dst=*src, post-increments, separate i/src/dst increments \u2014 all converge to GCC/MWCC 13-insn pattern with src++ before i++ and dst++ in bnez delay slot. MWCC toolchain not actually installed (try_compiler errors per project_info). Needs MWCC to match. Best source: s32 copy_words(s32 *dst, s32 *src, u32 size){u32 n=size>>2; u32 i=0; while(i<n){s32 tmp=*src; i++; src++; *dst=tmp; dst++;} return 0;}",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_002D57A0",
+   "text": "Score 220/10 best (78%), 6+ prior agents had 60/10 (94%). Function at 0x2D57A0 in CodeWarrior range 0x2D5000-0x2EA000 (mwcps2-3.0.1 -O2 -sdatathreshold 8). Neither EE-GCC 2.96 nor mwcps2-3.0.1 (try_compiler) can reproduce epilogue scheduling: ROM has `addiu $v1,5` then `ld $ra,($sp)` then `sw $v1,($v0)` then `addiu $v0,-1` then `jr $ra` with `addiu $sp,0x10` in delay slot; GCC emits `addiu $v1,5`, `sw $v1,($v0)`, `addiu $v0,-1`, `ld $ra,($sp)`, `addiu $sp,0x10`, `jr $ra`, `nop`. C is correct: s32 *p = func_002FFAF8(); *p = 5; return -1;. Tried: direct assign, volatile, local temp var, separate return value, comma operator \u2014 all same reorder. Needs MWCC. Prototype: s32 *func_002FFAF8(void);",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_002D8F28",
+   "text": "Score 460 best (0%), unmatchable with EE-GCC 2.96. Function at 0x2D8F28 in CodeWarrior range 0x2D5000-0x2EA000 (mwcps2-3.0.1 -O2 -sdatathreshold 8). Target is 3-instruction frameless sibling jump: lui $v0,%hi(D_004449FC); j func_002D5100; lw $a0,%lo(D_004449FC)($v0). EE-GCC 2.96 always wraps tail call in 0x10 stack frame (10 insns: addiu sp,-0x10 / sd ra / lui / jal / nop / ld ra / addiu sp,0x10 / jr ra / nop), 26+ prior attempts confirm. MWCC toolchain unavailable (try_compiler errors). C is correct: void func_002D8F28(void){ func_002D5100(D_004449FC[0]); } with extern s32 D_004449FC[3]; and void func_002D5100(s32);. Needs MWCC to match.",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_002D5A58",
+   "text": "Score 760 best (0%), unmatchable with EE-GCC 2.96. Function at 0x2D5A58 in CodeWarrior range 0x2D5000-0x2EA000 (mwcps2-3.0.1 -O2 -sdatathreshold 8). Target is 5-instruction frameless sibling jump: lui $v0,0xffff; ori $v0,$v0,0xffc0; and $a1,$a1,$v0; j func_002D5930; and $a0,$a0,$v0. EE-GCC 2.96 materializes 0xFFFFFFC0 as addiu -0x40 (1 insn vs target's 2), adds stack frame (sd/ld ra, addiu sp), uses jal instead of j, and puts ANDs in wrong argument order. 29+ prior attempts confirm. C is correct: void func_002D5A58(s32 arg0, s32 arg1){ s32 m=0xFFFFFFC0; func_002D5930(arg0&m, arg1&m); } with void func_002D5930(s32,s32);. Needs MWCC.",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_0015E970",
+   "text": "func_0015E970 (0x0015E970, 11 insns). Best score 30 / 97.2% - byte-identical EXCEPT for the position of ONE instruction.\n\nTARGET order: lui $v1,%hi(D_0044D7F8) lui $a1,%hi(D_00463218) addiu $v0,$zero,0x1e addiu $v1,%lo(D_0044D7F8) addiu $a1,%lo(D_00463218) sh $v0,0xc($a0) sw $v1,0x60($a0) sw $a1,0($a0) sw $zero,8($a0) jr $ra [sw $zero,4($a0) delay]\n\nGCC 2.96 order: same but addiu $v0,$zero,0x1e is emitted right before the sh (after both %lo addiu's), instead of between the two lui's.\n\nBEST SOURCE (volatile struct stores, matches everything except addiu position):\nextern u8 D_0044D7F8[]; extern char D_00463218[];\nstruct { char *name; s32 a; s32 b; s16 c; char pad[0x52]; void *data; };\nvoid func_0015E970(struct S *p){ p->c = 0x1E; p->data = &D_0044D7F8; p->name = D_00463218; p->b = 0; p->a = 0; } (volatile stores, in that order)\nStruct: +0x0 name(char*), +0x4 a(s32), +0x8 b(s32), +0xC c(s16), pad 0x0E-0x5F, +0x60 data(void*). Unsized extern arrays required (lui+%lo full address, not $gp).\n\nTRIED (all failed to move the addiu):\n- volatile struct stores (best, score 30)  - plain assignments (score 110)  - s16 local then store (score 110)\n- search_flags: 8 variants (-O2/-O3/-Os, -G8/-G0, -fno-strength-reduce, -fno-common): all score 30. Flags not the problem.\n- try_compiler ee-gcc-2.9-991111 -O2 -G8: score 665, totally different codegen, not a match.\n- try_compiler ee-gcc-2.95.2/2.95.3/3.2, mwcps2-2.3.3/3.0.1: all error out (toolchain not installed).\n\nCONCLUSION: ee-gcc 2.96 -O2 -G8 scheduler materializes the immediate adjacent to its store use (late scheduling); pure C cannot force it earlier between the lui's. Known compiler scheduling limitation (80+ prior attempts). Not a flags or compiler-selection issue. A different/earlier GCC that schedules immediates early, or inline asm (not allowed), would be needed. func_0015E970 is at 0x15E970 (not in the mwcps2 CodeWarrior range 0x2D5000-0x2EA000).",
+   "by": "opencode-4"
+  },
+  {
+   "function": "func_001E9A00",
+   "text": "Score 175 best (90.2%), 36+ prior attempts, stuck. Function at 0x1E9A00 (EE-GCC range, not MWCC). Target 18 insns, best C produces 17. Logic correct: p=arg1+func_001119D8(arg0,arg1); *(s32*)p=*(s32*)(arg0+0xD0); p+=4; return p-arg1. Remaining diffs are register allocation: target uses $s1=arg0 (saved sp+8), $s0=arg1/base (saved sp+0), `move $a0,$s0` after call to save base for final subu, then `ld $s1` mid-function before store; EE-GCC uses $s0=arg0 (sp+0), $s1=arg1 (sp+8), no `move $a0`, keeps arg1 in $s1 and subs it directly. Missing `move $a0,$s0` and swapped s0/s1 allocation cannot be forced from C source. Tried: val-before-call, explicit base variable, p2=p+4, u8*/void*/s32* types \u2014 all same swapped allocation. Best source: s32 func_001119D8(void*,void*); s32 func_001E9A00(void *arg0, u8 *arg1){u8 *p=arg1+func_001119D8(arg0,arg1);*(s32*)p=*(s32*)((u8*)arg0+0xD0);p+=4;return p-arg1;}",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_002A2B38",
+   "text": "func_002A2B38 (0x002A2B38, 12 insns). Best score 30 / 97.5% - byte-identical EXCEPT for the position of ONE instruction.\n\nTARGET order: lui $5,%hi(D_00451910) lui $6,%hi(D_004862B0) addiu $2,$zero,0x1e addiu $5,%lo(D_00451910) addiu $6,%lo(D_004862B0) addiu $3,$zero,3 sh $2,0xc($4) sw $3,8($4) sw $5,0x60($4) sw $6,0($4) jr $ra [sw $zero,4($4) delay]\n\nGCC 2.96 order: same but addiu $2,$zero,0x1e is emitted AFTER both %lo addius (with addiu $3,$zero,3), instead of between the two lui's.\n\nData: D_00451910 (144 bytes), D_004862B0 (string archery, 15 bytes).\n\nBEST SOURCE (volatile struct stores, matches everything except addiu position):\n#include context.h\nextern char D_00451910[];\nextern char D_004862B0[];\ntypedef struct { void *name; s32 a; s32 b; s16 c; char pad[0x52]; void *data; } S_D_00603C20;\nvoid func_002A2B38(S_D_00603C20 *arg0){ arg0->c = 0x1E; arg0->b = 3; arg0->data = (void*)D_00451910; arg0->name = (void*)D_004862B0; arg0->a = 0; } (volatile stores in that order)\nStruct: +0x0 name(char*), +0x4 a(s32), +0x8 b(s32), +0xC c(s16), pad 0x0E-0x5F, +0x60 data(void*). Unsized extern arrays required (lui+%lo full address, not $gp).\n\nTRIED (all failed to move the addiu):\n- volatile struct stores (best, score 30) - plain assignments (score 110) - s16/s32 locals then stores (score 110) - statement reorder variants\n- search_flags: 8 variants (-O2/-O3/-Os, -G8/-G0, -fno-strength-reduce, -fno-common): all score 30. Flags not the problem.\n- try_compiler ee-gcc-2.9-991111 -O2 -G8: fails (context.h typedef redefinition in toolchain header).\n- try_compiler ee-gcc-2.95.2/2.95.3/3.2, mwcps2-2.3.3/3.0.1: all error out.\n\nCONCLUSION: ee-gcc 2.96 -O2 -G8 scheduler materializes immediates adjacent to their store uses; pure C cannot force addiu $2,$zero,0x1e earlier between the lui's. Known compiler scheduling limitation (45+ prior attempts). Identical quirk to func_0015E970, func_0029E2C8, func_0029E2F8, func_0029FB70. func_002A2B38 at 0x2A2B38 (NOT in mwcps2 CodeWarrior range 0x2D5000-0x2EA000).",
+   "by": "opencode-4"
+  },
+  {
+   "function": "func_002D4C40",
+   "text": "RPC wrapper (sceMtapGetModVersion): calls func_002D8270(client=&D_008DDBE0, cmd=0, inbuf=&D_008DDC40, insize=0x80, outbuf=&D_008DDC40, outsize=0x80, ...9 args, 9th=0 on stack) and returns the s32 at D_008DDC40[0] on success (>=0), else prints D_0047B638 via func_002D4818 and returns 0. Same family as func_002D4A80/func_002D4BD0 (libnet, 0x2D5000-0x2EA000 CodeWarrior region; func_002D4C40 sits just below 0x2D5000 but shares the exact ABI).\n\nC that is logically correct (best attempt retained):\n  extern s8 D_008DDBE0[96]; extern s8 D_008DDC40[128]; extern char D_0047B638[];\n  s32 func_002D8270(void*,s32,s32,void*,s32,void*,s32,s32,s32); void func_002D4818(char*);\n  s32 func_002D4C40(void){ s32 ret; void *buf=D_008DDC40; if(func_002D8270(D_008DDBE0,1,0,buf,0x80,buf,0x80,0,0)>=0){ret=*(s32*)buf;}else{func_002D4818(D_0047B638);ret=0;}return ret;}\n\nWhy it cannot match with available tools (EE-GCC 2.96 -O2 -G8 via compile_and_diff; mwcps2-3.0.1 -O2 -sdatathreshold 8 via try_compiler):\n  1) Frame: target uses 0x30 frame, $s0 saved @0x10, $ra @0x20, 8-byte gap @0x18 (outgoing-arg area for the 9-arg call); EE-GCC emits 0x20 frame, $ra@0x18. MWCC gets 0x30/$ra@0x20 right.\n  2) Addressing: target uses lo_sum \u2014 keeps HI of D_008DDC40 in $s0 across the call, uses %lo(D_008DDC40)($s0) for the store/load; EE-GCC materializes the full address into one register ($s0 = lui+addiu result) and uses ($s0)+0.\n  3) Branch: target bgez $v0,+0x54 with the buffer load in the branch delay slot (executed on both paths); EE-GCC emits bltzl plus an extra b/nop pair.\n  4) 9-arg custom convention: args 5-8 in $t0-$t3, arg 9 on stack at sp+0 (sw $zero,0($sp)).\n\nBest score so far: 672 (opencode-9, 73%). My GCC attempts: 1827 (worse). MWCC 3.0.1: 2955 (wrong frame codegen: no $s0 save, emits MIPS-3D addu.qb/aver_u.h, uses `b` not bgez) \u2014 likely needs a different MWCC version or flags, but mwcps2-2.3.3 try_compiler errors out here.\n\nVerdict: unfixable in pure C with EE-GCC 2.96 (ABI-specific frame/lo_sum/9-arg convention). Needs MWCC PS2 toolchain enabled and a matching flags investigation, then `suggest(mwcps2-3.0.1, -O2 -sdatathreshold 8, func_002D4C40, ...)`. Neighbor func_002D4A80 has the identical blocker.",
+   "by": "opencode-2"
+  },
+  {
+   "function": "func_002D4BD0",
+   "text": "Range check #2: is this part of the game built by CodeWarrior PS2 3.0.1 -O2 -sdatathreshold 8? An agent's C for a function next to func_002D4BD0 matches with it. Match func_002D4BD0 as usual; then try_compiler(\"func_002D4BD0\", \"mwcps2-3.0.1\", \"-O2 -sdatathreshold 8\"). Matching with CodeWarrior PS2 3.0.1 -O2 -sdatathreshold 8 and not with the project's compiler confirms the range; matching with the project's compiler only shows it was a quirk. Either answer helps.",
+   "by": "autopilot"
+  },
+  {
+   "function": "func_00309360",
+   "text": "Score 410 best (82.9%), 26+ prior attempts, stuck. Function at 0x309360 (EE-GCC range). Target 24 insns, best C produces 24. Logic: d_ptr=D_00486DF0; *d_ptr=0; ret=func_002D56A8(arg1,arg2,arg3); if (ret==-1 && *d_ptr!=0) *arg0=*d_ptr; return ret. Remaining diffs: 1) regalloc: target keeps ret in $v1, -1 in $a0 (`move $v1,$v0`; `addiu $a0,-1`); GCC puts ret in $a0, -1 in $v1 (`move $a0,$v0`; `addiu $v1,-1`). 2) branch encoding: target `bne $v1,$a0` (not likely), GCC `bnel $a0,$v1` (likely). 3) delay slot: target `move $v0,$v1`, GCC `ld $s0,($sp)`. These are EE-GCC 2.96-specific choices unfixable from C source. Best source matches sibling func_0030AF30: s32 func_002D56A8(s32,s32,s32); extern s32 D_00486DF0[4]; s32 func_00309360(s32 *arg0, s32 arg1, s32 arg2, s32 arg3){s32 *d_ptr=(s32*)D_00486DF0;s32 ret;*d_ptr=0;ret=func_002D56A8(arg1,arg2,arg3);if((ret==-1)&&(*d_ptr!=0))*arg0=*d_ptr;return ret;}",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_002D4BD0",
+   "text": "sceMtapChangeThreadPriority RPC wrapper: stores arg0->D_008DDC40[0], arg1->D_008DDC40[1], calls func_002D8270(D_008DDBB8,1,0,&D_008DDC40,0x80,&D_008DDC40,0x80,0,0) [9-arg, 9th=0 on stack], returns D_008DDC40[2] on success (>=0), else prints D_0047B610 via func_002D4818 and returns 0. Same libnet/CodeWarrior family as func_002D4C40/func_002D4A80.\n\nLogically-correct C (best attempt retained):\n  extern s32 D_008DDC40[32]; extern s32 D_008DDBB8[10]; extern char D_0047B610[];\n  s32 func_002D8270(void*,s32,s32,void*,s32,void*,s32,s32,s32); void func_002D4818(char*);\n  s32 func_002D4BD0(s32 arg0, s32 arg1){ s32 ret; D_008DDC40[0]=arg0; D_008DDC40[1]=arg1; if(func_002D8270(D_008DDBB8,1,0,D_008DDC40,0x80,D_008DDC40,0x80,0,0)>=0){ret=D_008DDC40[2];}else{func_002D4818(D_0047B610);ret=0;}return ret;}\n\nUnmatchable with EE-GCC 2.96 -O2 -G8 (only compiler available via compile_and_diff; mwcps2-3.0.1 try_compiler errors/toolchain incomplete). Identical blockers to func_002D4C40:\n  1) 0x30 frame, $s0@0x10, $ra@0x20, 8-byte gap @0x18; EE-GCC gives 0x20/$ra@0x18.\n  2) lo_sum: HI of D_008DDC40 kept in a reg, %lo(D)() offsets; EE-GCC materializes full address then (+0).\n  3) bgezl $v0,+0x60 with buffer load in the branch-likely delay slot (annulled on not-taken); EE-GCC emits bltz + b/nop.\n  4) 9-arg convention: args 5-8 in $t0-$t3, arg9 on stack at sp+0.\n\nBest score 1817 (35%). Next agent: wait for MWCC PS2 toolchain, then try_compiler/suggest mwcps2-3.0.1 -O2 -sdatathreshold 8 for this function (a neighbor in the range reportedly matches with it). func_002D4C40 has the same blocker and was released with the same notes.",
+   "by": "opencode-2"
+  },
+  {
+   "function": "func_002D4B60",
+   "text": "Range check #2: is this part of the game built by CodeWarrior PS2 3.0.1 -O2 -sdatathreshold 8? An agent's C for a function next to func_002D4B60 matches with it. Match func_002D4B60 as usual; then try_compiler(\"func_002D4B60\", \"mwcps2-3.0.1\", \"-O2 -sdatathreshold 8\"). Matching with CodeWarrior PS2 3.0.1 -O2 -sdatathreshold 8 and not with the project's compiler confirms the range; matching with the project's compiler only shows it was a quirk. Either answer helps.",
+   "by": "autopilot"
+  },
+  {
+   "function": "func_002D5D60",
+   "text": "func_002D5D60 (0x002D5D60, 8 insns). Best score 100 / 87.5% - byte-identical EXCEPT for ONE missing instruction.\n\nTARGET: addiu $29,$29,-0x10 sd $31,0($29) jal func_002D4E80 nop sync ld $31,0($29) jr $31 addiu $29,$29,0x10(delay)\n\nCodeWarrior mwcps2-3.0.1 -O3 -sdatathreshold 8: matches ALL except sync. Everything else identical including delay slot. Score 100.\nmwcps2-3.0.1 -O2 -sdatathreshold 8: score 260 (addiu not in delay slot). -O3 fixes delay slot.\n\nCONCLUSION: The sync instruction (MIPS memory barrier) cannot be emitted from pure C by ANY compiler:\n- ee-gcc 2.96: __sync_synchronize lowers to unresolved jump\n- mwcps2-3.0.1: __sync_synchronize compiles to a call\n- __builtin_mips_sync: unknown symbol\n- Inline asm: not allowed\n\n19+ prior agents confirmed unmatchable without inline asm. Best score is 100 (7/8 insns).\n\nBEST SOURCE:\nextern void func_002D4E80(void);\nvoid func_002D5D60(void) { func_002D4E80(); }\nCompiled with mwcps2-3.0.1 -O3 -sdatathreshold 8.\n\nThis function IS in CodeWarrior range 0x2D5000-0x2EA000. Current range suggestion uses mwcps2-3.0.1 -O2 -sdatathreshold 8; -O3 produces better codegen but still cannot emit sync.",
+   "by": "opencode-4"
+  },
+  {
+   "function": "func_002D4B60",
+   "text": "sceMtapGetConnection RPC wrapper: stores arg0->D_008DDC40[0], calls func_002D8270(D_008DDB90,1,0,&D_008DDC40,0x80,&D_008DDC40,0x80,0,0) [9-arg, 9th=0 on stack], returns D_008DDC40[1] on success (>=0), else prints D_0047B5E8 via func_002D4818 and returns 0. Same libnet/CodeWarrior family as func_002D4C40/func_002D4BD0/func_002D4A80.\n\nLogically-correct C (best attempt retained):\n  extern s32 D_008DDC40[32]; extern s32 D_008DDB90[10]; extern char D_0047B5E8[];\n  s32 func_002D8270(void*,s32,s32,void*,s32,void*,s32,s32,s32); void func_002D4818(char*);\n  s32 func_002D4B60(s32 arg0){ s32 ret; D_008DDC40[0]=arg0; if(func_002D8270(D_008DDB90,1,0,D_008DDC40,0x80,D_008DDC40,0x80,0,0)>=0){ret=D_008DDC40[1];}else{func_002D4818(D_0047B5E8);ret=0;}return ret;}\n\nUnmatchable with EE-GCC 2.96 (identical blockers to func_002D4C40/func_002D4BD0): 0x30 frame ($s0@0x10, $ra@0x20, gap@0x18), lo_sum addressing (%lo(D)() from a HI base), bgezl delay-slot load, 9-arg stack arg. EE-GCC emits 0x20 frame/full-address/bltz. MWCC PS2 toolchain not available for try_compiler here. Best score 1527. Next agent: wait for MWCC, then suggest mwcps2-3.0.1 -O2 -sdatathreshold 8 for this libnet range.",
+   "by": "opencode-2"
+  },
+  {
+   "function": "func_002D5570",
+   "text": "Range check #2: is this part of the game built by CodeWarrior PS2 3.0.1 -O2 -sdatathreshold 8? An agent's C for a function next to func_002D5570 matches with it. Match func_002D5570 as usual; then try_compiler(\"func_002D5570\", \"mwcps2-3.0.1\", \"-O2 -sdatathreshold 8\"). Matching with CodeWarrior PS2 3.0.1 -O2 -sdatathreshold 8 and not with the project's compiler confirms the range; matching with the project's compiler only shows it was a quirk. Either answer helps.",
+   "by": "autopilot"
+  },
+  {
+   "function": "func_0030DE38",
+   "text": "func_0030DE38 (0x0030DE38, 44 insns). Best score 200 / 95.4% - byte-identical EXCEPT for ONE instruction.\n\nTARGET: bnel $v1, $zero, 0x6c  (branch-likely on D_008EADB8[0])\nGCC:    bnez $v1, 0x6c          (regular branch)\n\nAll other 43 instructions match perfectly including register allocation, operands, stores, calls.\n\nBEST SOURCE:\nextern char D_00483918[];\nextern char D_00483920[];\nextern char D_00483928[];\nextern s32 D_008EADB8[];\nextern s32 D_008EAE78[];\nextern s32 D_008EB248[];\ns64 D_00486DC8;\nvoid func_00312DD0(void);\nvoid func_002FD348(s32 *, char *, void *);\ns32 *func_0030DE38(void) {\n    if (D_008EAE78[0] == 0) {\n        if (D_008EB248[0] == 0) {\n            if (D_008EADB8[0] == 0) {\n                func_00312DD0();\n                func_002FD348(D_008EADB8, D_00483918, &D_00486DC8);\n            }\n            func_002FD348(D_008EB248, D_00483920, D_008EADB8);\n        }\n        func_002FD348(D_008EAE78, D_00483928, D_008EB248);\n    }\n    return D_008EAE78;\n}\n\nTRIED (all produce bnez, not bnel):\n- nested if/==0/!=0 (best, score 200)  - !var chains  - && chains  - computed goto  - __builtin_expect (worse)\n- search_flags: 8 variants, all score 200 (project flags -O2 -G8 optimal)\n- try_compiler ee-gcc-2.9-991111: score 1754, totally different codegen\n- try_compiler ee-gcc-2.95.2/2.95.3/3.2, mwcps2-2.3.3/3.0.1: all error out (toolchain not installed)\n\nCONCLUSION: ee-gcc 2.96 -O2 -G8 cannot emit branch-likely (bnel/bne) instructions for this pattern; always emits bnez. Known compiler limitation (30+ prior attempts). Same issue affects clone family func_0030DB68 and func_00315228. Not a flags or compiler-selection issue.\n\nfunc_0030DE38 at 0x30DE38 (NOT in mwcps2 CodeWarrior range 0x2D5000-0x2EA000).",
+   "by": "opencode-4"
+  },
+  {
+   "function": "func_002D5570",
+   "text": "SIF wait sequence: t=func_002DD640(); *0x1000F000=4; sync; if(t)func_002DD698(); while(*0x1000F000&4==0){}; t=func_002DD640(); *0x1000F000=4; sync; if(t) func_002DD698(); (2nd is tail call). Same func_002D5D60 family. UNMATCHABLE in pure C: the raw `sync` (0x0000000F) cannot be emitted by any compiler (__sync_synchronize->libcall/jal ?__sync_synchronize, unknown symbol at link; __asm__ rejected; __builtin_mips_sync unknown). 19+ prior agents confirmed. Best score 1380 (61.6%) with everything but sync matching under MWCC. Same blocker as func_002D5D60 (best 100, 8 insns, missing sync). Release; do not spend more compiles unless sync emission becomes possible.",
+   "by": "opencode-2"
+  },
+  {
+   "function": "func_002D5570",
+   "text": "Sync blocker, unmatchable. Releasing to claim a matchable function.",
+   "by": "opencode-2"
+  },
+  {
+   "function": "func_002DE9A8",
+   "text": "func_002DE9A8 (0x002DE9A8, 19 insns). Best score 25 / 98.6% - byte-identical EXCEPT for stack frame layout.\n\nTARGET frame: addiu $29,$29,-0x30  sd $16,0($29)  sd $17,0x10($29)  sd $31,0x20($29)  ...  ld $31,0x20($29)  ld $17,0x10($29)  ld $16,0($29)  jr $31  addiu $29,$29,0x30\nEE-GCC frame: addiu $sp,$sp,-0x20  sd $s0,0($sp)  sd $s1,8($sp)  sd $ra,0x10($sp)  ...  ld $ra,0x10($sp)  ld $s1,8($sp)  ld $s0,0($sp)  jr $ra  addiu $sp,$sp,0x20\n\nAll 19 body instructions match perfectly (calls, moves, beqz, delay slots, return). Only frame size (0x30 vs 0x20) and save offsets (0/0x10/0x20 vs 0/8/0x10) differ.\n\nBEST SOURCE:\ns32 func_002DD640(void);\nvoid func_002DD698(void);\ns32 func_002DE908(s32 arg0);\ns32 func_002DE9A8(s32 arg0) {\n    s32 temp17 = func_002DD640();\n    s32 temp16 = func_002DE908(arg0);\n    if (temp17 != 0) func_002DD698();\n    return temp16;\n}\n\nTRIED:\n- best-known nested-call source (score 25) - body matches perfectly\n- dummy locals, padding locals, register pressure tricks - cannot force 16-byte callee-save spacing with EE-GCC\n- try_compiler mwcps2-3.0.1 -O2 -sdatathreshold 8: produces MMI garbage (addu.qb, ext, aver_u.h, xori.b) - toolchain not properly installed\n- try_compiler ee-gcc-2.9-991111/2.95.2/2.95.3/3.2: all error out\n\nCONCLUSION: This is in CodeWarrior/libnet range 0x2D5000-0x2EA000. Target uses MWCC frame layout (0x30, 16-byte saves). EE-GCC 2.96 cannot reproduce this (0x20, 8-byte saves). 25+ prior agents confirmed unresolvable in pure C without MWCC toolchain.\n\nfunc_002DE9A8 at 0x2DE9A8 (IN the mwcps2 CodeWarrior range 0x2D5000-0x2EA000).",
+   "by": "opencode-4"
+  },
+  {
+   "function": "func_00100248",
+   "text": "func_00100248 (0x00100248, 2 insns). Best score 200 / 0.0% - byte-identical EXCEPT for control flow.\n\nTARGET: j func_002DDCE8; nop  (direct tail jump, frameless)\nGCC:    jr $ra; nop             (return via $ra)\n\nGCC 2.96 cannot emit a direct `j func` tail jump from pure C for a void function - it always uses `jr $ra`.\n\nTRIED:\n- void func_00100248(void) { func_002DDCE8; } (best, score 200): emits jr $ra; nop\n- s32 func_00100248(void) { return func_002DDCE8(); } (score 500): emits j func_002DDCE8 but with unwanted frame (addiu sp, sd ra, ld ra, addiu sp)\n- 75+ prior attempts all confirmed unmatchable\n\nCONCLUSION: ee-gcc 2.96 cannot emit direct tail jump (`j func`) from pure C. Control flow difference (j vs jr $ra) cannot be expressed without inline asm. Inline asm prohibited.\n\nfunc_00100248 at 0x100248 (NOT in mwcps2 CodeWarrior range 0x2D5000-0x2EA000).",
+   "by": "opencode-4"
+  },
+  {
+   "function": "func_002AD058",
+   "text": "Best score 1075/41 (73.7%), prior best 1055 (74%). Function at 0x2AD058 (EE-GCC range). Complex function: LCG state init (D_00483E5C = D_00483E5C * 0x19660D + 0x3C6EF35F), multiple struct stores, func_00180260 call, vtable dispatch through *(a3+0x60)+0x58. Target 41 insns. Remaining diffs: 1) Dead store &D_0044E670 at p+0x14 (overwritten by &D_00452180) \u2014 needed to keep score down, removing it worsens score. 2) Register allocation: target uses $a0 for 0x19660D, $a1 for &D_00452180, $ac3 for mult; GCC uses $v1, $a2, $ac2. 3) Epilogue: target restores $s0 then $ra; GCC restores $ra then $s0. 4) GCC reloads a3 from stack ($s1) vs target uses $a3 directly. These are EE-GCC 2.96-specific regalloc/scheduling choices unfixable from C. Best source pattern: s32 func_00180260(s32,void*); extern u32 D_00483E5C; extern u8 D_0044E670[48], D_00452180[48]; s32 func_002AD058(void *p, s8 a1, s32 a2, void *a3){u32 temp;s16 off;s32 (*fp)(void*,s32,s32);void *t7;*(s8*)p=a1;*(void**)((u8*)p+0x14)=&D_0044E670;*(s32*)((u8*)p+0xC)=a2;*(void**)((u8*)p+8)=a3;*(s32*)((u8*)p+4)=0;temp=D_00483E5C*0x19660D+0x3C6EF35F;D_00483E5C=temp;*(void**)((u8*)p+0x14)=&D_00452180;*(u32*)((u8*)p+0x10)=temp>>16;*(s32*)((u8*)p+0x1C)=0;*(s32*)((u8*)p+0x24)=func_00180260(0x19660D,&D_00452180);t7=*(void**)((u8*)p+8);{char*sub=(char*)*(void**)((u8*)t7+0x60)+0x58;off=*(s16*)sub;fp=*(s32(**)(void*,s32,s32))(sub+4);*(s32*)((u8*)p+0x20)=fp((u8*)t7+off,1,*(s8*)p);}return *(s32*)((u8*)p+0x20);}",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_002684F0",
+   "text": "Score 130 best (93.8%), 42+ prior attempts, stuck. Function at 0x2684F0 (EE-GCC range). Target 21 insns, best C produces 20. Logic: if (D_00482084 < arg0 || arg0 < D_00482088) D_00485C80 = 1; then func_002FBB50(func_002F0860(func_002FB320())). Remaining diffs: 1) Missing `mov.s $f1, $f12` \u2014 GCC uses $f12 directly for float compares instead of copying $f12 to $f1 first. Tried: volatile local, separate ifs, direct arg0 use \u2014 all optimize away the mov.s. 2) Float regalloc: target uses $f1, GCC uses $f12. 3) Branch offsets differ due to missing instruction. These are EE-GCC 2.96 float register allocation quirks unfixable from pure C. Data: f32 D_00482084 (=0x4EEE6B28), f32 D_00482088 (=0x2CEE6B28), s32 D_00485C80 (=0). Best source: void func_002684F0(f32 arg0){if(D_00482084<arg0||arg0<D_00482088)D_00485C80=1;s32 x=func_002FB320();x=func_002F0860(x);func_002FBB50(x);} with extern s32 func_002FB320(void);extern s32 func_002F0860(s32);extern void func_002FBB50(s32); and f32 D_00482084;f32 D_00482088;s32 D_00485C80; (non-extern for $gp-rel access).",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_0030DB68",
+   "text": "Best-known source (opencode-5) compiles to score 200 (93.9%): all 33 instructions, registers, control flow, and data addressing match exactly EXCEPT the target emits `bnel $v1,$zero,0x58` at the D_008EADB8[0] check while ee-gcc 2.96 -O2 -G8 emits `bnez $v1,0x58`. This is a known EE-GCC 2.96 block-finalization codegen quirk; the compiler never emits bnel from pure C. 35+ prior agents exhausted C source shapes (if/if, !operator, early return, goto, __builtin_expect) without changing the diff. Semantically identical (delay slot overwritten after jal); purely an opcode-encoding difference. Not fixable in pure C with this compiler. Baseline score 200 accepted.",
+   "by": "opencode-1"
+  },
+  {
+   "function": "func_002D1380",
+   "text": "Score 64 best (97.5%), 23+ prior attempts, stuck. Function at 0x2D1380 (EE-GCC range). Target 26 insns, best C produces 26. Logic: p[7]=f(p[7]); p[6]=f(p[6]); p[5]=f(p[5]); p[3]=f(p[3]); p[2]=f(p[2]); p[1]=f(p[1]); where f=func_002D1360(u8). Remaining diff: stack frame. Target uses 0x20 frame with s0@0, ra@0x10; EE-GCC uses 0x10 frame with s0@0, ra@8. Tried: dummy u64/u32[2]/u8[16] locals \u2014 increases frame to 0x20 but shifts s0 to 0x10 and ra to 0x18. Save order differs: target sd $s0 then move $s0,$a0 then sd $ra; GCC move $s0,$a0 then sd $ra. Core logic matches perfectly (all 6 calls and stores). Best source: u8 func_002D1360(u8); void func_002D1380(void *arg0){u8 *p=(u8*)arg0;p[7]=func_002D1360(p[7]);p[6]=func_002D1360(p[6]);p[5]=func_002D1360(p[5]);p[3]=func_002D1360(p[3]);p[2]=func_002D1360(p[2]);p[1]=func_002D1360(p[1]);}",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_00108498",
+   "text": "Reads s64 v at arg0+8; if bit 36 (mask (s64)0x8000<<21) set, returns *(s16*)(base+0x34) + ((v>>11)&0x1F), else returns *(s16*)(base+0x34), where base = *(u32*)arg0. GCC range (ee-gcc 2.96 -O2 -G8), 17 insns.\n\nBest C (score 25, 98.5% match, 17/17 insns):\n  s32 func_00108498(void *arg0) {\n      s64 v = *(s64 *)((char *)arg0 + 8);\n      if (v & ((s64)0x8000 << 21)) {\n          return *(s16 *)((char *)*(u32 *)arg0 + 0x34) + (s32)((v >> 11) & 0x1F);\n      }\n      return *(s16 *)((char *)*(u32 *)arg0 + 0x34);\n  }\n\nRemaining diff: 5 regalloc differences only \u2014 target keeps `base` in $v0 and `short` in $v1 (`lw $v0,($a1); lh $v1,0x34($v0); addu $v0,$v1,$a0`), GCC puts `base` in $v1 and `short` in $v0 (`lw $v1,($a1); lh $v0,0x34($v1); addu $v0,$v0,$a0`). All other insns identical (first 8 of 17 match; mask build, shift, test, branch, sign-extensions, epilogue all identical).\n\nTried (no improvement): u32 vs s32 pointer read, explicit u32 base local (broke structure\u2192950), s16 `sh` local (no effect). opencode-1 (14 prior attempts) confirmed regalloc can't be flipped without inline asm.\n\nNext agent: try one more regalloc nudge (e.g. reordering the `+` operands, or a struct-typed arg0); otherwise accept score 25 or release.",
+   "by": "opencode-2"
+  },
+  {
+   "function": "func_00100248",
+   "text": "Direct tail-jump thunk (j func_002DDCE8; nop), frameless. GCC 2.96 cannot emit a direct tail jump from pure C (void\u2192jr $ra; valued return\u2192adds frame). 76+ prior attempts confirmed unmatchable; inline asm prohibited. Best score 200.",
+   "by": "opencode-2"
+  },
+  {
+   "function": "func_002D7B78",
+   "text": "func_002D7B78 (0x002D7B78, 7 insns). Best score 10 (prior agents) / my best 380 - byte-identical EXCEPT for mask constant high half and register allocation.\n\nTARGET: lw $v1,0x10($4) lui $2,0xFFFF ori $2,$2,0xFFFE sw $0,0x18($4) and $3,$3,$2 jr $31 sw $3,0x10($4)\nMY best (u32 tmp = o->f10 & 0x7FFFFFFEu; o->f18 = 0; o->f10 = tmp;): score 380\n  lw $a1,0x10($a0) lui $v1,0x7FFF ori $v1,$v1,0xFFFE and $v1,$a1,$v1 sw $0,0x18($a0) sw $v1,0x10($a0) jr $ra nop\n\nDifferences:\n1. lui 0x7FFF vs 0xFFFF (operand) - fundamental blocker\n2. regalloc: $a1/$v1 vs $v1/$v0\n3. order: and before sw_zero (target: sw_zero before and)\n4. nop vs sw in delay slot\n\nBEST SOURCE (score 10, prior agents):\ntypedef struct unk10 { s32 pad[4]; u32 f10; u32 pad1; s32 f18; } unk10;\nvoid func_002D7B78(void *obj) {\n    unk10 *o = (unk10 *)obj;\n    o->f18 = 0;\n    o->f10 &= 0x7FFFFFFE;\n}\nStruct: +0x10 f10(u32), +0x18 f18(s32).\n\nTRIED (all blocked by constant canonicalization):\n- 0xFFFFFFFE, 0xFFFFFFFEu, ~(u32)1, ~1u, (u32)~(s32)1, (s32)-2, (s64)-2, (s64)x&0xFFFFFFFE, (u64)x&0xFFFFFFFE, (long)x&~1L, (unsigned long)x&~1UL - all produce addiu -2\n- 0x7FFFFFFE - gives lui+ori but wrong high half (0x7fff vs 0xffff)\n- volatile struct stores, statement reorder variants, temporaries - score 10-530\n- search_flags: all score 10 (flags not the problem)\n\nCONCLUSION: ee-gcc 2.96 canonicalizes 0xFFFFFFFE to addiu -2 (signed 16-bit fit, skips lui+ori path). 0x7FFFFFFE forces lui+ori but with high half 0x7fff instead of target's 0xffff. Pure C cannot produce the target constant materialization. 46 prior attempts confirm unfixable.\n\nfunc_002D7B78 at 0x2D7B78 (IN mwcps2 CodeWarrior range 0x2D5000-0x2EA000, but MWCC toolchain errors out).",
+   "by": "opencode-4"
+  },
+  {
+   "function": "func_00298A78",
+   "text": "func_00298A78 (0x00298A78, 11 insns). Best score 90 / 91.8% - byte-identical EXCEPT for ONE instruction position.\n\nTARGET order: lui $3,%hi(D_00450E90) lui $5,%hi(D_00477DE0) addiu $2,$zero,0x258 addiu $3,%lo(D_00450E90) addiu $5,%lo(D_00477DE0) sh $2,0xc($4) sw $3,0x60($4) sw $5,0($4) sw $0,4($4) jr $ra [sw $0,8($4) delay]\n\nGCC 2.96 order: same but addiu $2,$zero,0x258 is emitted AFTER both %lo addius, instead of between the two lui's.\n\nData: D_00450E90 (144 bytes), D_00477DE0 (string convertenemy, 13 bytes).\n\nBEST SOURCE (volatile struct stores, matches everything except addiu position):\nextern u8 D_00450E90[];\nextern char D_00477DE0[];\nvoid func_00298A78(void *arg0) {\n    *(volatile u16 *)((u8 *)arg0 + 0xC) = 0x258;\n    *(volatile void **)((u8 *)arg0 + 0x60) = (void *)D_00450E90;\n    *(volatile void **)((u8 *)arg0 + 0x0) = D_00477DE0;\n    *(volatile u32 *)((u8 *)arg0 + 0x4) = 0;\n    *(volatile u32 *)((u8 *)arg0 + 0x8) = 0;\n}\nStruct: +0x0 name(char*), +0x4 s32, +0x8 s32, +0xC s16, +0x60 void*.\n\nTRIED (all failed to move the addiu):\n- volatile struct stores in target order (best, score 90)\n- plain assignments (score 110)\n- statement reorder variants\n- search_flags: 8 variants (-O2/-O3/-Os, -G8/-G0, -fno-strength-reduce, -fno-common): all score 90. Flags not the problem.\n- try_compiler ee-gcc-2.9-991111 -O2 -G8: score 650, totally different codegen.\n- try_compiler ee-gcc-2.95.2/2.95.3/3.2, mwcps2-2.3.3/3.0.1: all error out.\n\nCONCLUSION: ee-gcc 2.96 -O2 -G8 scheduler materializes immediates adjacent to their store use; pure C cannot force addiu $2,$zero,0x258 earlier between the lui's. Known compiler scheduling limitation (20+ prior attempts). Same quirk as func_0015E970, func_002A2B38, func_0029E2C8, func_0029E2F8, func_0029FB70.\n\nfunc_00298A78 at 0x298A78 (NOT in mwcps2 CodeWarrior range 0x2D5000-0x2EA000).",
+   "by": "opencode-4"
+  },
+  {
+   "function": "func_00298BA0",
+   "text": "Best score 332 (94.8%), 44+ prior attempts, stuck. Function at 0x298BA0 (EE-GCC range). Target 65 insns. Logic: 3 virtual calls via vtable at object+0x60+0x58 with indices 0,1,2 and arg2; r=func_001671F8(D_00477DF0); func_00190E20(arg1, r, f32(result0), f32(func_0015E908(result0)), f32(result1), f32(result2), 0,0,0,0). Remaining diffs: 1) volatile s32 vtable needed to force reloads but adds stack slot (frame 0x40 vs target 0x30) and 3 sw $v1 spills; without volatile score drops to 1470. 2) Register allocation: target keeps vtable base in $v1 and prior result in $v0; GCC saves prior result early and reuses $v0 as base. 3) Target schedules addiu a1=1/2 late; GCC does it early. Best source matches notes: volatile s32 vtable + block-scoped final call. Data: extern char D_00477DF0[] (=string \"convertenemy_rankdesc\"). Prototypes: extern s32 func_0015E908(s32); extern s32 func_001671F8(char *); extern void func_00190E20(u16*,u16*,f32,f32,f32,f32,f32,f32,f32,f32);",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_00113828",
+   "text": "Vtable callback dispatcher: base=*(u32*)(a+0x48); p=base+0x80; offset=*(s16*)p; fn=*(s32(**)(void*))(p+4); if (fn((char*)a+offset)) { reload base/p/fn; *(s64*)(a+0x228)=func_0016C970(fn((char*)a+offset), *(s32*)(a+0xF4)); }. GCC range (ee-gcc 2.96 -O2 -G8), 26 insns.\n\nBest C (score 40, 98.4% match, 26/26 insns):\n  s64 func_0016C970(s32, s32);\n  void func_00113828(void *a) {\n      char *v = (char *)*(void **)((char *)a + 0x48) + 0x80;\n      s32 (*fn)(void *) = *(s32 (**)(void *))(v + 4);\n      if (fn((char *)a + *(s16 *)v)) {\n          v = (char *)*(void **)((char *)a + 0x48) + 0x80;\n          fn = *(s32 (**)(void *))(v + 4);\n          *(s64 *)((char *)a + 0x228) = func_0016C970(fn((char *)a + *(s16 *)v), *(s32 *)((char *)a + 0xF4));\n      }\n  }\n\nRemaining diff: 8 regalloc differences only \u2014 target keeps vtable-base/p in $v1 and callback fn in $v0 (`lw $v1,0x48($s0); addiu $v1,$v1,0x80; lh $a0,($v1); lw $v0,4($v1); jalr $v0`), GCC reuses $v0 for base\u2192p\u2192fn (`lw $v0,...; addiu $v0,...; lw $v0,4($v0)`). All control flow, operands, and the func_0016C970 call/store match.\n\nTried (no effect): explicit u32 `base` local. Same regalloc wall as func_00108498; not flippable without inline asm.\n\nNext agent: try regalloc nudges (e.g. force fn into a separate variable, or volatile), otherwise accept score 40.",
+   "by": "opencode-2"
+  },
+  {
+   "function": "func_00115ED0",
+   "text": "Best score: 2445 (61.7%), 59 vs 64 target insns.\n\nKEY TECHNIQUE THAT WORKS: packed struct member at offset 0x10 forces ldl/ldr/sdl/sdr (unaligned 64-bit copy):\n  struct __attribute__((packed)) U64 { u64 val; };\n  struct Obj { ...; struct U64 f10; ... };  // f10 at +0x10\nProduces exact target ldl $v0,0x17($s1) / ldr $v0,0x10($s1) / sdl $v0,0x17($s0) / sdr $v0,0x10($s0).\n\nDeclare vtable symbols as sized arrays (extern u32 D_0044D498[]; extern u32 D_0044C830[];) \u2014 sized array forces lui/%lo addressing matching target's %gp_rel avoidance.\n\nPlace out->vt = D_0044D498 BEFORE the func_00194498 calls so GCC schedules sw $v0,0x48($s0) into call 1's delay slot (matches target).\n\nfunc_00194498 is matched as void func_00194498(s32 *) (1 arg: *ptr = 0). Called 3x to zero f0, f4, f8.\n\nREMAINING DIFF (can't resolve with C source):\n- Target sets up call args as 3-arg pattern: move $a2,zero / move $a0,$s0 / move $a1,$s1 before call 1; addiu $a0,$s0,4 / addiu $a1,$s1,4 before call 2; addiu $a0,$s0,8 / addiu $a1,$s1,8 before call 3. My 1-arg declaration doesn't emit these; 3-arg declaration emits them but with wrong ordering/extra moves (score 2515-2670, worse).\n- Field store ordering/register allocation: target uses \"load both then store both\" (lw f1C + lw f24, then swc1 f1C + sw f24) and reuses $a0 for vt then f2C. My GCC emits separate load/store per field with different regalloc.\n- search_flags: all variants same or worse (project's -O2 -G8 is best).\n- try_compiler/suggest: tool calls errored out, unavailable.\n\nVtables: D_0044D498 = +0x4: func_00312DD0, +0xC: func_00141658 (vtable). D_0044C830 = +0x7C: func_00115ED0 (vtable, self-referential).",
+   "by": "opencode-5"
+  },
+  {
+   "function": "func_00306A60",
+   "text": "Score 450 best (84.4%), 25+ prior attempts, stuck. Function at 0x306A60 (EE-GCC range). Target 29 insns, best C produces 29. Logic: p=*(void**)(arg0+0x54); if(p==NULL){p=*(u32*)D_00448480;*(void**)(arg0+0x54)=p;} if(*(s32*)(p+0x38)==0){func_003001A8(p,arg0);p=*(void**)(arg0+0x54);} return func_00306AD8(p,arg0,arg1,arg2). Remaining diffs: 1) Regalloc: target move $s1,$a1/move $s2,$a2; GCC move $s1,$a2/move $s2,$a1 (swapped, no source lever). 2) Null path: target lw $v0,%lo(D_00448480)/sw $v0,0x54/move $a0,$v0; GCC lw $a0,%lo/sw $a0,0x54 (no move). 3) Branch: target bnez $v0; GCC bnel $v0,$zero. 4) Restore: target ld $s1 then ld $s2; GCC ld $s2 then ld $s1. Data: extern u8 D_00448480[9] (9 bytes forces lui/addiu access). Prototypes: s32 func_003001A8(void*,void*); s32 func_00306AD8(void*,void*,s32,s32); Best source matches the saved one.",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_0029E2C8",
+   "text": "Best-known source: ArrowObj struct {s32 unk0; s32 unk4; s32 unk8; u16 unkC; u8 pad[0x60-0xE]; s32 unk60;} with extern u8 D_00478188[]; extern s32 D_00451400[]; and five direct field stores. Score 30 (97.5%), 12/12 insns, same registers, same structure, same data addressing. Only remaining diff: target emits `addiu $v0,$zero,0x1e` BETWEEN the two lui instructions ('lui a1;lui a2;addiu v0,0x1e;addiu a1,%lo;addiu a2,%lo'), but ee-gcc 2.96 -O2 -G8 ALWAYS emits it AFTER both %lo addi\u016bs ('lui a1;lui a2;addiu a1,%lo;addiu a2,%lo;addiu v0,0x1e'). Fundamental -O2 -G8 scheduler tie-break: constant materialization one slot late. Tried: best-known source (5 field stores), reversed statement order (unkC last), local var for 0x1E, struct field type changes \u2014 scheduler never flips. 50+ prior agents across func_0029E2C8 and siblings func_0015E970/func_0029E2F8/func_0029FB70 confirm this is unfixable in pure C; requires different compiler/flags. Accepted baseline score 30.",
+   "by": "opencode-1"
+  },
+  {
+   "function": "func_003069A8",
+   "text": "Score 480 best (89.3%), 17+ prior attempts, stuck. Function at 0x3069A8 (EE-GCC range). Target 45 insns, best C produces 45. All instruction count/control flow matches exactly. Remaining diffs are 100% regalloc/scheduling: (1) ROM uses $t2/$t3 for 0x400/&m.buf, GCC uses $t0/$t1. (2) ROM groups two lhu loads first (hC, hE), GCC schedules unk54 lw before unkE lhu. (3) ROM hoists p10 store (0x10) into prologue, GCC hoists self store (0x0). (4) ROM tail store order: 0x14, 0x0, 0x8, 0x18; GCC: 0x0, 0x8, 0x14, 0x18. Statement reordering, field type changes, volatile casts \u2014 all produce identical GCC output (scheduler is deterministic). These are GCC 2.96 internal scheduling heuristics unfixable from C. Best source: matches saved attempt with s32 func_00306A60(void*); s32 func_002FFDE8(void*); Ent and M structs as shown.",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_002D4A80",
+   "text": "libnet RPC wrapper (sceMtapPortOpen). Signature: s32 func_002D4A80(s32 port). At 0x2D4A80, just outside the suggested MWCC range 0x2D5000-0x2EA000 (range suggestion pending a neighbour match).\n\nTarget ABI (27 insns, frame 0x30): saves $s0@0x10 and $ra@0x20 (8-byte gap at 0x18 = outgoing 9th stack arg slot), keeps HI of D_008DDC40 in $v0 with lo_sum addressing (sw $a0,%lo(D)($v0)), keeps full D_008DDC40 base in $s0 for lw $v0,4($s0), 9-arg RPC call with args 5-8 in $t0-$t3 and arg9=0 on stack (sw $zero in jal delay slot), branch bgezl (success path in delay slot: lw $v0,4($s0)).\n\nEE-GCC 2.96 -O2 -G8: best score 972 (64%). Cannot reproduce: custom 9-arg calling convention ($t regs for args 5-8), lo_sum addressing, $s0-callee-saved frame, bgezl, 0x30 frame layout. Unfixable in pure C with EE-GCC (23+ prior agents confirmed).\n\nMWCC PS2 3.0.1 (toolchain IS available):\n- -O2 -sdatathreshold 8/0/4: score 2702 (0.0%)\n- -O3 -sdatathreshold 8/0: score 1488 (44.9%) \u2014 closest\nMWCC -O3 still differs: frame 0x20 (no $s0 save, $ra at 0x10 vs 0x20), bltz vs bgezl, 9th arg in $t3 not on stack, %lo(D_008DDC40+0x4)($v0) addressing vs lw 4($s0). No flag combo tried fixes the frame/$s0/branch differences.\n\nBest source: direct array access (no pointer var) with extern s32 D_008DDB40[10]; extern s32 D_008DDC40[32]; extern char D_0047B5A8[]; and prototypes s32 func_002D8270(void*,s32,s32,void*,s32,void*,s32,s32,s32); void func_002D4818(char*);.\n\nNeeds: MWCC range extended to include 0x2D4A80, OR a neighbour match to settle the range suggestion, OR different MWCC flags/source that produce $s0 save + 0x30 frame + bgezl + stack 9th arg.",
+   "by": "opencode-1"
+  },
+  {
+   "function": "func_0029A710",
+   "text": "Best score 30 (97.5%), 12/12 instructions. All stores, operands, and registers match the target exactly. Remaining diff is pure scheduling: target emits `addiu $v0, $zero, 0x1e` BETWEEN the two `lui`/low-part address pairs, while EE-GCC 2.96 -O2 schedules both address low addius before the constant. Tried: statement reordering (worse regalloc, score 275), local s16 temporary for 0x1e (still 30), volatile stores (75, worse). Confirmed EE-GCC 2.96 scheduler limitation by multiple prior agents (opencode-3, codex-gpt-6-luna-3/4, opencode-nemotron). Not fixable in pure C with project compiler. Source used:\n  *(s16 *)(arg0+0xC)=0x1E; *(s32 *)(arg0+0x4)=1; *(void **)(arg0+0x60)=D_00451040; *(void **)(arg0+0x0)=D_00486208; *(s32 *)(arg0+0x8)=0;\nData: D_00451040 (144 bytes, full address via lui), D_00486208 (string \"cyclone\", full address via lui). Struct: arg0 +0x0 s32 ptr, +0x4 s32, +0x8 s32, +0xC s16, +0x60 s32 ptr.",
+   "by": "opencode-4"
+  },
+  {
+   "function": "func_001CD898",
+   "text": "Claimed as closest and retained the prior best attempt (score 215 after 9 attempts). Recompiling a cleaned version scored 325 (94.8%, 61 vs 63 instructions); simplifying the return paths scored 2315. Reverted conceptually to best prior attempt. Main unresolved issue is the loop setup/register allocation and global base: target loads count into $a2, copies to $a3, and builds D_00408600 base +0x5570; attempts allocated count/pointer to $a1/$a2 and folded address to D_0040DB70. No code saved as matched.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002A71C0",
+   "text": "Started from inherited 995 attempt. Corrected table fields to record +0xA0, fields +0x0C/+0x10 and got best score 990 (84.2%). Other attempts with volatile base / direct absolute indexing were worse (1085, 1185). Remaining mismatches: address formation/register allocation around D_00408600 and multiplier; float conditional branch shape/register ordering; halfword write scheduling; virtual callback vtable uses target +8 offset before LH/LW, while current C folds offsets into displacement. Best source is latest nonvolatile version using u8 *base = D_00408600 + idx; f32 *p=(f32*)(base+0xa0); lo=p[3], hi=p[4]; if(lo+1.0f<=hi) p[3]=lo+arg0->field20; remaining original stores/callback as inherited attempt.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_002EA080",
+   "text": "Improved score from 1441 to 10 (99.8%): declaring D_00447F70/7C/84 as unsized extern u8 arrays and accessing through casts forces the target lui/addiu full-address sequences; sized scalar externs incorrectly use gp-relative addressing. Best source is the 99.8% attempt: s32 funcs declarations; extern u8 D_00447F70[], D_00447F7C[], D_00447F84[], D_008EA780[], D_008EA7C0[]; load/store globals through (s32*) casts and call function pointer through D_00447F84. Remaining two differences are only register allocation/order for func_002EAE08(0,0): target emits move $a1,$zero before jal with move $a0,$zero in delay slot, current compiler emits $a0 then $a1. Tried equivalent second argument expression derived from D_00447F70; no improvement. All other instructions match.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_003003F8",
+   "text": "Varargs float-register spiller (libnet). Target (21 insns, frame 0x60): saves $a2,$a3,$t0-$t3 at sp+0x30..0x58 and $f12-$f19 at sp+0x10..0x2C, computes ap=sp+0x30, calls func_00306A60(ap). At 0x3003F8, in libnet MWCC territory (just outside suggested range 0x2D5000-0x2EA000).\n\nEE-GCC 2.96 -O2 -G8: best score 1072 (48.9%, 14 attempts). GCC varargs lowering saves only integer arg regs (0x50 frame), completely misses $f12-$f19 float saves. Known GCC 2.96 limitation, unfixable in pure C.\n\nMWCC PS2 3.0.1 (toolchain available):\n- -O2 -sdatathreshold 8/0: score 1771 (15.7%)\n- -O3 -sdatathreshold 8: score 1197 (43.0%) \u2014 closest\nMWCC saves $a0-$a3/$t0-$t3 as ints, only $f19 as float (missing $f12-$f18), 0xd0 frame vs 0x60. No flag combo produces the target's $f12-$f19 saves + 0x60 frame.\n\nBest source: void func_003003F8(f32 a0..a7, ...) { void *ap = __builtin_next_arg(a7); func_00306A60(ap); } with extern void func_00306A60(void *);\n\nNeeds: compiler that saves float varargs registers (not EE-GCC 2.96, not MWCC 3.0.1 -O2/-O3 with any sdatathreshold tried). Or hand-written register saves (would add instructions, not byte-identical).",
+   "by": "opencode-1"
+  },
+  {
+   "function": "func_001E1918",
+   "text": "Tried explicit local scratch buffers, corrected func_0013E730 to accept the packed 64-bit D_00485100 value, and changed buffer organization. None beat the inherited m2c attempt (2365); my best was 3062. Main unresolved issue is stack layout/frame size and matching the compiler's unaligned 64-bit D_00485100 copy sequence (LDL/LDR then SDL/SDR), plus correct argument order/prototypes and locals at sp+0x10/+0x40/+0x50. Preserve inherited best.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_0017C448",
+   "text": "Started from m2c draft and tried a pointer-based rewrite. Compile scored 6325 (58.6%, 127 instructions vs target 153), worse than prior best 4970. Major issue: loop/control-flow shape and register allocation diverged; inner clearing flag logic incorrectly branches, and arrays/global declaration layout needs refinement. No near-match progress; release so closest-to-complete work can be prioritized.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00313A58",
+   "text": "Matched at score 0. Key technique: declaring local pointer variables (s32 *base = D_008EB2F8; s32 *dd = D_00486DD0;) instead of using globals directly influenced GCC register allocation to use 2 saved regs ($s0 for base address, $v0 scratch for hi) matching the target. Declaring D_00486DD0 as tentative definition s32 D_00486DD0[2] (small data, gp-rel), D_008EB2F8 and strings as extern unsized arrays (full address via lui/addiu). Returning D_008EB2F8 directly (not via local) caused GCC to keep hi in saved reg and recompute at return.",
+   "by": "opencode-5"
+  },
+  {
+   "function": "func_0020F720",
+   "text": "Inherited score 1853; corrected control flow to separate repeated arg0==1 conditions under arg1==0xffff and matched 1313 (76.9%) on both equivalent source shapes. Remaining differences are larger frame/prologue (target saves s0/s1 and 0x50 frame; compile uses 0x40 and omits them), helper call argument instruction ordering and second call's repeated arg0 check. Helper draft prototype ordering seems plausible; target sets stack args 2/4 before register args and uses f12-f14; mine schedules v0/v1 after registers. No better score on second compile; preserve best 1313.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_0026BE00",
+   "text": "Reached 3555 (70.3%, 122 instructions vs 120), an improvement over autopilot's 3915. The function is initializer for a large object. Source preserves the current best. Remaining diff is mainly statement scheduling/register allocation and stores in the b!=0 block: target sets up address/branch delay before constants, then stores fields in a particular order. The later initialization also differs in store scheduling (0x8A, 0xA0, table lookup, flags). Consider restructuring declarations/assignment order or matching the original struct layout to reduce diffs.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_001C1988",
+   "text": "The inherited score 1741 had incorrect pointer scaling (`&D_004281A8 + arg1*0x74`, scaling by sizeof(s32)). Using byte pointer `D_004281A8 + arg1*0x74` improves to 660 (87.5%). Best source calls setup helpers and indexes fields at +0/+8. Remaining diff is mostly instruction scheduling around func_00173C08 args and tail-call optimization: compiler moves func_001671F8 result to a2 earlier than target and tail-calls func_0016EC08, omitting the target epilogue/jr. No improvement on follow-up compile.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_0030DE38",
+   "text": "Best remains 200/44 (95.4%). Sole mismatch is target bnel $3,$0 at D_008EADB8[0] versus ee-GCC 2.96 emitting bnez. The previous best source and >30 attempts are recorded; nested conditional source is optimal, other tested forms/flags/compilers did not improve. No further viable pure-C change identified.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_001EE0A0",
+   "text": "Corrected all three helper calls to separate `if (arg0 == 1)` checks under arg1 == 0xffff and used -6.0f/80.0f/-14.5f as float args. Score improves from 2705 to 975 (88.1%). Remaining diff includes callee-saved register allocation order, omitted repeated arg0 checks between helper calls, and argument setup scheduling/stack operand assignment. Best source is the separated condition version used in the last compile; preserve score 975.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001ADCF0",
+   "text": "Autopilot best is 4822 on a 584-byte function (146 instructions), with an M2C draft but no strong prior attempt. I did not find a high-match path in this pass; no new source was compiled. Highest-priority user preference is unfinished high-percentage work, so releasing for a closer candidate.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00100248",
+   "text": "Best score 200/2 is a direct tail-jump thunk that ee-GCC cannot express in pure C; 76 prior attempts include return-valued tail-call variants. No viable improvement found; releasing to prioritize more actionable near-matches.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_0024A430",
+   "text": "Fixed the inherited pointer arithmetic to use byte stride 0x50 and rewrote the candidate scan/selection logic. Best compile score is 1530 (85.1%), improved from 3410. A more explicit goto/loop rewrite scored worse (1975); preserve first version. Remaining differences are loop/branch shape around random selection and substantial register allocation shifts, including the target's increment-and-retest path after a rejected candidate.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00313A58",
+   "text": "Matched at score 0. Key technique: local pointer variables (s32 *base = D_008EB2F8; s32 *dd = D_00486DD0;) instead of using globals directly influenced GCC register allocation to match target's saved reg count. D_00486DD0 as tentative def s32 D_00486DD0[2] (small data, gp-rel); D_008EB2F8 and strings as extern unsized arrays (full address via lui/addiu). Return D_008EB2F8 directly (not via local) so GCC keeps hi in saved reg and recomputes at return.",
+   "by": "opencode-5"
+  },
+  {
+   "function": "func_002E86D8",
+   "text": "Target uses MWCPS2 3.0.1 -O2 -sdatathreshold 8. The inherited M2C source scored 3722. I tried correcting D_008EBDD8's declared base to an unsized byte array and explicit byte offsets; this compiled to 11125 and was much worse. Preserve inherited attempt. Likely needs a full struct layout and careful reconstruction of the table loops; do not use my byte-array variant.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001D34D0",
+   "text": "Claimed as the eighth function in this batch. No compile attempt: it is a 180-instruction function with inherited score 5993 and lower match percentage than the functions improved earlier in this batch. Main likely issue in the draft is pointer arithmetic for D_00486B7C/table and local string buffer handling. Preserve inherited attempt; focus on correcting base pointer and scratch-buffer layouts if revisited.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001E9A00",
+   "text": "Confirmed the retained best at score 175 (90.2%) with the canonical byte-pointer implementation. Logic is correct; remaining diffs are saved-register allocation/order ($s0/$s1 swapped), missing move $a0,$s0 and one instruction, plus restore scheduling. Prior history records 40+ variants across pointer/integer types and local aliases without improvement; this target appears stuck on EE-GCC register allocation. No source improvement found.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00309360",
+   "text": "Existing best score 410 (82.9%) matches the shared-flag logic and sibling implementations. This function has 30 prior attempts. Remaining differences are branch-likely encoding (BNEL vs target BNE), result/comparison register allocation, and delay-slot scheduling; previous attempts found no pure-C variant. Released without further compile.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001080D8",
+   "text": "Matched byte-identically with this C shape: load f2 from *(float *)(*(void **)arg0 + 8), clamp via if (f2 > 15.0f) f2 -= (f2 - 15.0f)*D_0047FB44; then scale=*(s16 *)(arg0+4); base2=arg0+6; marker=0x24; advance arg0 by 4; count=0; offset=0x20; temp=f2*(float)scale; while loop tests *(s16 *)(arg0+offset)==marker, stores result into distinct s16 found on both matching and exhausted paths (found is separate from loop counter); return ((float)found*D_0047FB48*temp)+temp. Exact key: assign marker after base2, and keep found separate from count; this yields the target's $a3 base2, $t0 marker, and $v0 loaded result.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002A1D98",
+   "text": "Adapted matched func_001554E8 with the two helper calls and Vec3 copies. Score improved from 3054 to 2151 (55.1%), 43 vs 48 instructions. Remaining major issue is stack layout: target frame is 0x90 with call buffers at sp+0x10, +0x50, +0x60; current frame is 0x80 and buffer/register assignment differs. The source also forms -0x4000 as an extra ori/addu instead of addiu. Further work should model output temporary and helper signatures/locals to force target stack layout and register setup.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00108260",
+   "text": "Best remains 415/17 (75.5%), from existing nested early-return source. A fresh structured conditional variant scored 740/18 and was worse. 33 previous attempts report the remaining issue is compiler control-flow/register selection (target's return-value values are placed in branch delay slots and final bit test differs); no high-confidence improvement found.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00160490",
+   "text": "Autopilot M2C draft scores 3830/115 instructions; no focused C refinement attempted. This is a larger multi-stage RNG/float function, so releasing to pursue the visibly closer unfinished 17-instruction candidate func_00108498 (best score 25).",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00229F90",
+   "text": "Best score 621/69 (91.0%) after two pure-C attempts. Added a Vec3 {s32,s32,s32} temporary copied from arg0+0x10 twice, function calls with inferred ABI prototypes, and a local 16-byte pad to force the 0x60 frame; this improved from 631 to 621. Remaining differences are mostly register allocation/order around first helper call (target computes address in v0 then moves to a3; current C passes directly in a3), initial load order for arg0+0x24 and flag, and second temporary at sp+0x30 instead of sp+0x20. No matched function or confirmed shared struct/prototype learned; calls' exact prototypes remain uncertain.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_0015EB80",
+   "text": "Released without a new compile: the existing autopilot source is the only attempt (score 3410), and this is a 102-instruction linked-list routine with a substantially worse match than the prior 91% candidate. No additional source or declarations were confirmed.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00108498",
+   "text": "Best remains 25/17 instructions (98.5%); sole remaining differences are five register-allocation swaps around the base pointer and loaded short. Tried reversed addition operands, explicitly hoisted base value, and struct-typed argument forms; best score remained 25. The hoisted value worsened code to 1005. No source-level route identified for desired register assignment.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_0022B440",
+   "text": "One rewrite compiled at score 2811, worse than the retained autopilot score 2281, so the autopilot remains best. The rewrite used a 19-word zeroing loop, a func_00180D78 call with inferred numeric arguments, and a reverse cleanup loop calling func_00194300. The diff suggests branch/likely-delay-slot shape and ABI argument typing are the main unresolved issues; no shared declarations confirmed.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_002ADBF8",
+   "text": "func_002ADBF8 (0x2ADBF8, EE-GCC territory). s32 func(s32 a0,s32 a1,s32 a2,void *a3). Best score 615 (81.3%). Target (33 insns, frame 0x40): saves $s0-$s3+$ra, does a DEAD 8-byte unaligned stack copy from a3+7 (ldl/ldr then sdl/sdr to sp+0) that nothing reads, calls func_001441B8(0x5C,a1,a2,*(s32*)(a3+8)), conditionally calls func_002AD3F8(ret,a1,a2,a0), returns ret.\n\nThe dead ldl/ldr/sdl/sdr unaligned-copy idiom is unmatchable in pure C: EE-GCC -O2 removes dead struct copies, and volatile u64 forces regular ld/sd (not ldl/ldr/sdl/sdr) plus worse register allocation (score 845).\n\nBest source: s32 func_002ADBF8(s32 a0,s32 a1,s32 a2,void *a3){ s32 r=func_001441B8(0x5C,a1,a2,*(s32 *)((char *)a3+8)); if(r) func_002AD3F8(r,a1,a2,a0); return r; }\n\nMissing vs target: ldl,ldr,sdl,sdr (4 dead unaligned copy insns) + frame offset differences (target uses sp+0x10/0x18/0x20/0x28/0x30, GCC uses sp+0/8/0x10/0x18/0x20 due to missing 0x40->0x30 frame adjustment). No C idiom produces ldl/ldr/sdl/sdr for dead copies.",
+   "by": "opencode-1"
+  },
+  {
+   "function": "func_00112DA8",
+   "text": "Matched byte-identically by retaining two explicit vector base pointers: `f32 *a = (f32 *)((char *)arg0 + 0x10); f32 *b = (f32 *)((char *)arg0 + 0x308);` then compute component differences a[0..2]-b[0..2] and compare the sum of their squares against `*(f32 *)((char *)arg0 + 0x314)` squared. Explicit pointers are required to retain the target's addiu base calculations.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00300F80",
+   "text": "Best score 1400 (78.4%); a later s64/global declaration variant regressed to 1550. The first rewrite improved over autopilot 2220 by reducing unnecessary locals and expressing the flag branches directly. Target has an indirect callback at +0x28 with args (+0x1C, 0, 1), while the s32 version remained closer overall. The target uses 64-bit dsubu for arithmetic but 32-bit subu in the final flagged-size adjustment; further tuning needed around pointer register allocation, global D_00448480's full-address load, and likely-branch delay slots. No confirmed shared declarations.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00231160",
+   "text": "Best score 255 (95.3%) using void* arg, scale 22.0f, signed s8 counter comparison, direct stores at offsets 0x68/0x70/0x74/0x6c. Attempt with explicit inner struct worsened score to 1502; revert to best. Remaining diff is mostly FPU register allocation, store base/offset formation (ROM builds base arg+0x4c), one branch target displacement, plus likely two instruction count/control-flow differences. Try reshaping fields through a subobject at +0x4c and reorder float locals; current best is recorded.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_0021C3D0",
+   "text": "Best score 985 (80.6%) from source with u8* p, separate start pointer, initial p += 4; load *(s32 *)(p - 4); increment p before subsequent byte reads; return p-start. Explicit volatile pointers worsened to 1265. Remaining differences center on compiler folding cursor increments into constant offsets (target maintains $s1 and $s2 and computes pointer difference), altered branch displacement from a couple fewer instructions, call-side statement scheduling, and signed byte loads. Preserve the 985 source.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_0025E0E0",
+   "text": "No new compile attempt: 177-instruction function, autopilot best score 6125; current m2c has questionable switch/loop reconstruction and pointer arithmetic, so I did not risk overwriting it without first rebuilding a typed layout. No C or diff improvements made.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_0024CF80",
+   "text": "Attempted a direct C translation with globals declared to force full-address vs gp-relative accesses; score improved from autopilot 2825 to 2725 (79 instructions). Main remaining mismatch is pointer arithmetic and address calculation for D_007D8110 records: target computes id*0x4C using sequence (id*5-id)*4, then adds base; current C id*0x4C folds/reorders differently. Control-flow branch around record flag should preserve target bne + conditional clear. Remaining low-branch section also has substantial register/order/address differences. Not near matched; prioritize near-zero tasks.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_002778E0",
+   "text": "Best score 1480 (70.9%) from explicit early-return C, better than goto version (1495). It matches prologue, global/field store and initial guards. Remaining mismatch: generated branches are shorter due collapsed return paths, compiler delays saving arg1 into $s2, and the VehicleDrive/VehicleRide duplicate message call sequences are factored/ordered differently. Keep first source.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002ED700",
+   "text": "No new compile attempt. 143-instruction arithmetic quantizer; autopilot best 4970/5 attempts. Existing draft captures scale, bias and clamp math but uses signed 64-bit expressions and questionable constants/control-flow; exact matching likely requires reconstructing each coefficient as the shift/add chain in assembly. No changes made.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00279300",
+   "text": "Tried the provided machine draft and a struct-based point-copy translation; no improvement (best remains autopilot 3160). Struct attempt got 5810 because it reordered args/fields and generated word loops instead of target's 64-byte-stride indexed copies. Target function appears to create a point list, copy 12-byte records at stride 0x40, assign index at +0x3C, then tail-call func_00279470. Need preserve pointer-at-offset 0x14 in output and source point pointers at +0x14; current candidate struct layout incorrectly placed points at +0x18. No high-match solution reached.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001BBBF0",
+   "text": "No new compile attempt. 91-instruction initializer, autopilot best 3172. Current draft has likely incorrect pointer arithmetic in nested loops (s16* offsets mixed with byte offsets) and duplicated conditions that do not reflect the assembly's branch layout. No improvements made.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00287610",
+   "text": "No source iteration attempted: best provided attempt is 3344/95 insns and this is a large, multi-call function with manually marshalled floating-point and stack arguments. Based on the user's priority, this is not a high-match candidate. Target context indicates arg0 fields at 0x3C4, 0x3C8, 0x458 are conditional item indices; it may be more productive for an agent specializing in larger struct/call matching.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001A46A8",
+   "text": "Large 249-instruction function, best attempt score 8773 with unresolved inline data copies and many call prototypes. Does not meet high-match priority; released without changing source.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00100248",
+   "text": "Released based on extensive prior evidence (76+ attempts): direct `j func_002DDCE8; nop` cannot be produced frameless by project ee-GCC from pure C. Existing score 200 differs only in terminal control flow; no new attempt warranted.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001EBA20",
+   "text": "Best score 61 (98.8%) using typed MethodEBA20 indirect call, with a volatile local assigned after func_0016CD20() to block tail-call optimization. Removing that local yields 835; a volatile field read instead yields 135. Remaining best diff: stack frame is 0x30 instead of 0x20 (save slots shifted by 0x10), plus two groups of pointer-address register allocation differences (target uses $v1, ours $v0) and one operand/address discrepancy. Adding volatile u8* table did not change score.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00108260",
+   "text": "Confirmed existing best source at score 415/17 (75.5%). Target logic is exact; remaining differences are jump offsets from one missing instruction, using $v0 for constant 3 and branch-delay return assignments, plus target branch on the bit test vs GCC's andi/movz. A fresh compile reproduced 415; earlier agents report 33+ structural attempts with no better result. Released.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_002D7AD0",
+   "text": "Released immediately: tool identifies this address range as mwcps2-3.0.1 -O2, while current project compiler is ee-GCC 2.96; prior notes explicitly say not to spend compiles here. Best score 1215/42 exists under wrong compiler and previous attempts did not help.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00247310",
+   "text": "Best score 260 (95.2%) from source where saved=D_00484CAC occurs after func_00246598, cursor p starts at arg1+func_00111B90(), pointer increments then fields are read/stored, and function restores global after func_001092F0. Moving cursor origin before func_00111B90 and forcing volatile s32 first load worsened to 300. Earlier score 510 had same instruction count but reordered f20 save and global load. Best remaining diff: initial cursor copy to $s2 is scheduled after func_00111B90, first word is loaded as lbu instead of lw, and one branch offset differs.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_0029D288",
+   "text": "Large 156-instruction routine; inherited best score 5535. Not pursued because user's priority is near-matched work; no new attempt or code changes.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00100248",
+   "text": "Best score 200 after 76+ attempts; prior notes establish frameless j+nop is not expressible with project ee-GCC pure C. No new attempts; user prioritizes near-matched functions.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00215BE8",
+   "text": "Best score 1185 (79.9%). Typed helper prototypes corrected implicit-int errors; best version computes both helper products from offsets 0x38/0x50 and updates fields. Later attempt restored final integer adjustment but regressed to 1330; best source retained. Remaining diff: frame/register allocation in count update, wrong control-flow offset due count re-read, and final float sequence (target uses 200.0f, reads global D_00481594, updates speed then converts prior s16 minus speed*200). No further attempt after best because following variants regressed/stagnated. Consider struct pointer alias to get address-based count load/store and arrange final expressions in target order.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001C3BC0",
+   "text": "Inherited score 6781 on a 191-instruction function. The closest-strategy claim still produced a large, weakly matched routine, outside user's near-matched priority. No new code attempt.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002DE9A8",
+   "text": "Recompiled inherited C once. Best remains score 25; current judge build emits MMI garbage (addu.qb/ext/aver_u.h/xori.b), while prior notes identify only MWCC frame spacing as the mismatch. This lies in the mwcps2 libnet range and needs the unavailable matching compiler. No better attempt.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_0022F240",
+   "text": "Best score 1874 (72.0%); current best saved. Corrected prototypes and reconstructed vtable calls. Tried do/while with index and entry pointer, but compiler optimized it to pointer increment; target maintains an index in s4, computes index*4 each pass, and uses s3 as original list. Remaining mismatch includes smaller frame/register set, branch offsets, first vtable call delay slot, and second callback argument placement. Candidate next step: use original m2c's explicit count/index + `entry = (s8*)arg1 + count*4` structure and exact callback prototype (target passes adjusted object, arg0, 1, object; float 1.0 in f12).",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_002F5B10",
+   "text": "Best score remains the autopilot draft at 1830; my C attempts scored 2110/2065. This is a hand-written IEEE-754 square-root routine. A union bitcast introduces different register allocation; a direct float-to-int cast compiles as cvt.w.s and cannot match mfc1 bit reinterpretation. Remaining work needs a compiler-friendly bitcast pattern and explicit unsigned arithmetic to reproduce target's MIPS registers/loop. No matching attempt achieved.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_0029F9F8",
+   "text": "Best remains autopilot score 2973. I tried explicit prototypes for the 16-argument helper and got worse scores (5459/4728). The main obstacle is reconstructing func_00180D78's mixed integer/float calling convention and stack argument order; target sets integer regs a1-a3,t0-t3, float regs f12-f14, and stack args at 0,8,0x10,0x18,0x20. Current source's globals/constant args shift the call schedule and frame. Retain autopilot draft until prototype/argument positions are established.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00221040",
+   "text": "Best source is the last attempt using volatile f32 scratch[16], and helper prototype func_001757D8(s32,s32,f32*,s32,f32,f32); best score 1280 (75.8%). Added scratch[4]/scratch[12] to place vector pointers at sp+0x10/+0x30, matching target pointers and 0x50 frame. Remaining diffs: branch offsets/control flow are shorter by about 0x10; helper argument stores land at wrong stack offsets and are reordered; float register allocation differs; target emits explicit mtc1 zero and vector store. Prior 1390-scoring version used scratch at indexes 0/8. D_004844A0 must be a non-extern small-data global. No exact match.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002A7068",
+   "text": "Released without compiling: 85-instruction function, autopilot score 3091 with unresolved aggregate-copy instructions and suspect prototypes. Read target shows setup fields at offsets 0..0x20, LCG update of D_00483E5C, calls to animation/resource helpers, an unaligned 12-byte copy into sp+0x10, a virtual call through arg3+0x60, then a float expression using D_004086B0 and two small-data constants. Needs corrected pointer/return prototypes and explicit copy representation before useful matching iteration.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002BF0B0",
+   "text": "Best remains autopilot score 2103; attempts with the inferred func_00180D78 prototype scored worse (2888, 2757). The helper's mixed argument ABI is unresolved, and defining BSS as sized arrays fixed address relocation but not argument ordering. Target keeps arg0 in s0 and literal 1 in s1 for later checks; exact target call setup has f12=global/1.0, f13=0/10.0, f14=0 and stack values at 0,8,0x10,0x18,0x20. Continue from the m2c draft unless helper prototype is known from matched callers.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_0013E818",
+   "text": "Score 800 best (75.7%), 27+ prior attempts, stuck. Function at 0x13E818 (EE-GCC range). Target 33 insns. Logic: copy 12 bytes from arg0 to local buffer (unaligned 8-byte via ldl/ldr/sdl/sdr, word via lw/sw); copy 4 u16 from arg1 to D_00486858; call func_00159B98(&D_004F40D0, D_0037EF00, local); negate D_004F40D0.f. Remaining diff: GCC uses lwl/lwr/swl/swr for packed struct's u32 member at offset 8 instead of target's lw/sw. Packed struct is needed for ldl/ldr/sdl/sdr on the 8-byte part, but makes GCC treat the u32 member as unaligned. Non-packed struct gives ld/sd instead of ldl/ldr/sdl/sdr. No pure-C solution found. Best source: typedef struct __attribute__((packed)){u64 q;u32 c;} Copy12; ... Copy12 tmp=*(Copy12*)arg0; ...",
+   "by": "opencode-3"
+  },
+  {
+   "function": "func_0013DE48",
+   "text": "Best score 1160 (71.7%), perfect 41/41 instruction count. Remaining diff is pure register allocation + one dead instruction: target emits post-loop `addiu $t0, $t0, 4` (r1 += 4 after loop, dead code) that EE-GCC 2.96 -O2 DCEs; my C (r1 += 1 after loop) loses it. Also regalloc: target assigns gp-base=$t1, D[0]=$a2, 0x14000024=$a3, r1=$t0, r2=$a0, counter=$a1; GCC assigns $t0/$a1/$a2/$t2 instead \u2014 declaration-order tweaks (r1 first, reversed t-decls) had zero effect. Straight-line store order and loop structure match target exactly. Source baseline (41 insns) is correct; only regalloc/dead-code remains. Data: s16 D_00486850[4] (gp-relative small data, 8 bytes, all zeros). Twin: func_0013DEF0 identical with D_00486858 instead of D_00486850. Tried: baseline temp-var structure (1160), r1+=1 inside loop (1160), r1+=1 after loop (1680, worse), declaration reorder (1160, no effect), volatile (prior agents: worse). Not fixable by C source tweaks with project compiler.",
+   "by": "opencode-4"
+  },
+  {
+   "function": "func_0031AA20",
+   "text": "Score 15/16 (96.2%), 4/4 instructions identical. Only diff is regalloc: target uses $v1 ($3) for lui/addiu/sw address materialization of D_00453830, ee-gcc 2.96 -O2 -G8 uses $v0 ($2). Tried: 40+ source variations (direct void* store, struct field, char pointer, sized/unsized extern, returning arg0 - adds instruction), all flag variants (-O1/-O2/-O3/-Os, -G0/-G8, -fno-strength-reduce) - all score 15 with $v0. try_compiler() errors in this environment so other ee-gcc versions (2.9-991111, 2.95.2, 2.95.3, 3.2) and MWCC could not be tested. Best C: void func_0031AA20(void *arg0) { *(void **)arg0 = (void *)D_00453830; } with extern char D_00453830[];. Needs a compiler that allocates $v1 for this pattern, or accept 96.2%.",
+   "by": "opencode-2"
+  },
+  {
+   "function": "func_002B9A20",
+   "text": "Released without compiling: autopilot score 4061; 111-instruction function includes unaligned 12-byte argument copy, function-pointer callbacks, and a large stack scratch buffer. Core control flow is comparison of global threshold vs arg0+0x18, then positive float check and global%30 gate. In true branch callback returns integer used in float calculation and func_001CE218 call; else optional callback via arg0+0x14. Needs accurate aggregate arg/callback types and stack array before productive matching.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_0028DF70",
+   "text": "Best 915 (86.7%) saved and kept after a regression test; search_flags found no improvement, with -O2 -G8 tied to O3 and other flag variants worse. Remaining diff: extra beql/break around unsigned division by constant 300; compiler schedules field/flag stores differently; helper func_00144368 args shift a2/a3 and else branch target offsets differ. C uses unsigned modulo then signed conversion, and branch writes fields directly. Likely compiler emits divide-by-zero check by default, unlike target.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00172DC0",
+   "text": "Best revised attempt scores 1575 (68.5%). Corrected D_00486994 to u16* and recovered the initial lhu, but pointer ring-buffer arithmetic/packed 64-bit command constants still allocate registers and instruction sequences differently. Target command values include 0x8000 shifted left 45 bits, opcode 0xE, 0x240000008000, and 0x53. Global updates, counter reset, ring pointer increments, tag OR, and conditional global stores are represented. Remaining diff is substantial (register allocation/order and constant materialization), no match.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002E18B0",
+   "text": "Released without compiling: 83-instruction Metrowerks 3.0.1 -O2 function, autopilot score 3048. Assembly outlines resource request setup and return codes -100/-200/-210 with string validation, struct initialization/copy, optional helper if arg4 >= 0, then resource allocation and cleanup. Existing draft has likely incorrect struct offsets in string copy and argument prototypes. Compiler range is explicitly MW; no iteration attempted.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_001FE8D0",
+   "text": "Released without compiling: 137-instruction function, autopilot score 5051. Control flow parallels func_002B9A20 (threshold check, guarded object callback, timer modulo 30, scratch array, callback-derived float passed to func_001CE218), with extra initialization and func_001DBBB0 call. Current draft has unresolved unaligned loads/stores and likely faulty callback prototypes/layout; extensive stack/register work needed.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00142158",
+   "text": "Best score 2735 (74.9%) after correcting arg2/radius to s32 and initializing D_00483AC9=1. Main mismatch is register allocation and float load/operation order; the target does `addiu $3,$16,0x10` once and accesses arg floats through it, while this C uses direct per-field loads. Target also uses `ori $a3,0xABE0` followed by movz, and emits `mult` into $a0 for squared threshold; source gets same high-level logic but allocates `$t0` and extra conversion/operations. Saved best C for next agent.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001EB3B8",
+   "text": "Best attempt score 175 (90.2%), using byte-pointer arg1, calling func_001119D8 for a byte offset, copying arg0+0xD0 to dest, then returning bytes written (offset + 4). Later ordering variants scored worse (570) or no change; reverted conceptually to best. Remaining mismatch is mostly reversed s0/s1 allocation and resulting pointer arithmetic/register use; target also has a move arg0,s0 and computes end in s0. Needs source expression/liveness change to preserve arg0 in s1 and output pointer in s0.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00208870",
+   "text": "Improved autopilot 665 to 175 (90.2%) with byte-pointer buffer and end-pointer difference. Best source uses `u8 *start=arg1; u8 *p=start+func_001119D8(); *(s32 *)(p)=*(s32 *)((u8 *)arg0+0xD0); p+=4; return p-start;`. Remaining diff is mainly register allocation: compiler keeps arg0 in $s0 and arg1 in $s1, opposite target; target also explicitly moves original buffer to $a0 after restoring struct and computes result from incremented pointer. Three compile attempts plateaued at 175.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_002EFCE0",
+   "text": "Large 248-instruction function; no new compile attempted. Existing autopilot source is score 9218. It appears to be a fixed-point 8-tap filter with clipping and state updates; improve struct/prototype types and output pointer types before tuning register allocation.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00135CC8",
+   "text": "Tried a direct binary-search reconstruction with a 0x20-byte temporary and entry stride 0x18. Best known attempt remains autopilot score 2636; my adjusted C scored 2826 (60.1%) after correcting the helper destination to a 32-byte local array. Main remaining mismatch is frame/register layout: target frame 0x90 and preserves s0-s7, while C emits 0x60 and fewer saved registers. Control flow is close, but target also keeps separate stack slots at 0, 0x10, and 0x30 and copies the entry's first word after func_00304640. Further work should focus on reproducing those object lifetimes/temporaries.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_0028D5E8",
+   "text": "Best score 660 (91.5%), improved from autopilot 2900. Candidate source was straightforward pointer traversal, float squared distance check, predicate call, best-candidate selection, then recursive updates. A do/while restructuring and explicit coordinate locals scored 660 and 790 respectively; retain best 660 source. Remaining differences are loop branch layout/branch target offsets, candidate coordinate load order, register/argument ordering at func_0028DA08, plus some recursive-tail schedule. No improvement in three attempts.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001542B0",
+   "text": "Improved score from autopilot 2608 to 2425 (65.3%) across three C attempts. Corrected the two virtual calls to use return values as arguments to func_002FD2E0 and added the null check for the object at arg0+0x4C. Still substantial differences in register allocation/stack saves and ordering around first calls and RNG block; function pointer signatures and call arg conventions remain uncertain. No match.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00173C08",
+   "text": "Released without additional compile because the existing autopilot attempt is only ~? score 5910 on a 158-instruction function, far from the requested high-match priority. Draft is a reasonable control-flow starting point; stack locals, global declarations/calling conventions and branch structure remain unverified.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_00212520",
+   "text": "No additional attempt: existing 61-instruction draft has score 2286 and contains M2C_ERROR placeholders for the 12-byte structure copies, so it is not near the requested high-match threshold. Likely target performs two 12-byte copies into stack buffers and forwards a variadic-looking 16-argument call to func_001450E8; exact prototype/calling convention is unresolved.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_0013B220",
+   "text": "Correcting the missing this/arg0 parameter and helper argument positions reduced autopilot score 2348 to 1755 (72.1%) on one compile. Best source now models func_00138758(arg0, arg1->4, &out) and func_001441B8(0xBC); remaining major issues are frame/layout, local coordinate buffer placement, and float argument ABI/ordering for func_001E5278. No further attempt made because this is below the requested high-match priority.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_001127B0",
+   "text": "Reached score 1184 (80.5%) in first compile, then a minor worse attempt (1188); best source has correct float argument placement and call constants. Remaining differences: frame is 0x40 vs target 0x50, target saves s1 and uses it for constant 1, stack argument positions differ, and target reloads D_00483824 with lui/lwc1 while current declaration emits gp-relative load. Need preserve target's redundant second arg0==1 check / control flow.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002D5DA0",
+   "text": "This MWCC -O2 function is an 8-instruction wrapper. Best autopilot score is 300; my matched-wrapper source with M2C_SYNC()/__sync_synchronize() linked as unresolved helper calls and scored worse (460). Remaining obstacle is expressing the target `sync` in accepted pure C; call/return structure otherwise mirrors matched 93%-similar wrappers.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002D5DC0",
+   "text": "Same 8-instruction MWCC wrapper pattern as func_002D5DA0. Autopilot score 300; __builtin_sync is treated as an unresolved function and worsens score to 460. Pure-C representation for required sync remains the obstacle; call/return wrapper is straightforward.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_001B1528",
+   "text": "Released without compile: current autopilot score 3456 for 92 instructions is well below the requested high-match priority. The draft captures broad flow but has questionable loop bounds/pointer arithmetic and mismatched float/call arguments. No better attempt made.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002D5D80",
+   "text": "Tried direct no-arg call and indirect function pointer call modeled after matched func_00312E28. Best score 260/300 (67.5%): call/frame match; missing target `sync`, and epilogue scheduling differs (stack adjustment before jr vs in delay slot). `__asm__ volatile(\"sync\")` rejected. `__sync_synchronize()` compiled as unresolved helper call, worse. Likely needs compiler-supported intrinsic or project convention to emit sync.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00123168",
+   "text": "Tried m2c draft and a straightforward field-copy rewrite. Best remains autopilot score 4025/4280; my rewrite worsened to 7090. Main unresolved codegen issue is source struct copy at +0x10 using ldl/ldr + sdl/sdr, plus ordered mixed field copies and exact loops (target copies 10 bytes then 16 halfwords). Target stores D_0044D498 at +0x48 before first three helper calls, then overwrites with D_0044AA50. Use original m2c as baseline.",
+   "by": "codex-gpt-6-luna-1"
+  },
+  {
+   "function": "func_00115368",
+   "text": "Tried typed field-by-field copy plus an explicit 5-iteration 12-byte tail copy. Score worsened from the autopilot best 3470 to 5245 (42.9%); do not use this version. The main remaining issue is that the target's hand-scheduled field copy order and unaligned ldl/ldr+sdl/sdr pairs differ from ordinary C assignments. Also func_00162BF0's effective arguments need confirmation: target sets a0=dst+0x58, a1=src+0x58, a2=&D_0044CD48; D_0044CD48 is likely its third argument.",
+   "by": "codex-gpt-6-luna-2"
+  },
+  {
+   "function": "func_002A2B98",
+   "text": "Score 15 best (99.5%), 23+ prior attempts, stuck. Function at 0x2A2B98 (EE-GCC range). Target 34 insns, best C produces 34. All instructions match except 3 regalloc diffs: target uses $a3 for arg0 copy ($a3 = $a0; lw $v1, 0x60($a3); addu $a0, $a3, $a0); GCC uses $a2 ($a2 = $a0; lw $v1, 0x60($a2); addu $a0, $a2, $a0). All 3 remaining diffs are the same $a3 vs $a2 register choice. Tried: 3rd parameter (no effect), register asm (rejected as inline asm), ee-gcc-2.9 (score 983, worse), other compilers error out. This is a fundamental EE-GCC 2.96 vs MWCC register allocator difference. No pure-C source lever found. Best source: extern char D_00478568[]; s32 func_001671F8(char *); void func_00190E20(s32,s32,f32,f32,f32,f32,f32,f32,f32,f32); void func_002A2B98(void *arg0, s32 arg1){void (*f)(...);char *p=(char*)(*(s32*)((char*)arg0+0x60))+0x58;s32 (*fp)(void*,s32)=*(s32(**)(void*,s32))(p+4);s32 r=fp((char*)arg0+*(s16*)p,0);f32 fr=(f32)r;s32 id=func_001671F8(D_00478568);f=func_00190E20;f(arg1,id,fr,0,0,0,0,0,0,0);}",
+   "by": "opencode-3"
   }
  ]
 }

@@ -1,9 +1,0 @@
-extern u8 D_00450AD0[];
-extern char D_00477BB8[];
-void func_00295428(void *arg0) {
- *(volatile s16 *)((char *)arg0+0xC)=0x1E;
- *(volatile u8 **)((char *)arg0+0x60)=D_00450AD0;
- *(volatile char **)arg0=D_00477BB8;
- *(volatile s32 *)((char *)arg0+8)=0;
- *(volatile s32 *)((char *)arg0+4)=0;
-}
