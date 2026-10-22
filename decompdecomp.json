@@ -1,6 +1,6 @@
 {
  "format": 1,
- "saved_at": 1792698839.9509165,
+ "saved_at": 1792699175.8041542,
  "title": "SLUS-20565",
  "platform": "ps2",
  "game": {
@@ -84,6 +84,11 @@
    "best_score": 110,
    "best_by": "autopilot"
   },
+  "func_001016A8": {
+   "vram": 1054376,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00101728": {
    "vram": 1054504,
    "matched_by": "autopilot",
@@ -102,6 +107,11 @@
   "func_00101D88": {
    "vram": 1056136,
    "best_score": 110,
+   "best_by": "autopilot"
+  },
+  "func_00101DC0": {
+   "vram": 1056192,
+   "best_score": 270,
    "best_by": "autopilot"
   },
   "func_001039F0": {
@@ -154,6 +164,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00104348": {
+   "vram": 1065800,
+   "best_score": 190,
+   "best_by": "autopilot"
+  },
   "func_001047E0": {
    "vram": 1066976,
    "matched_by": "autopilot",
@@ -173,6 +188,21 @@
    "vram": 1069200,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00106170": {
+   "vram": 1073520,
+   "best_score": 240,
+   "best_by": "autopilot"
+  },
+  "func_00106220": {
+   "vram": 1073696,
+   "best_score": 40,
+   "best_by": "autopilot"
+  },
+  "func_001065B0": {
+   "vram": 1074608,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_00106C08": {
    "vram": 1076232,
@@ -329,6 +359,11 @@
    "best_score": 2250,
    "best_by": "autopilot"
   },
+  "func_0010B7E8": {
+   "vram": 1095656,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_0010CC58": {
    "vram": 1100888,
    "best_score": 15,
@@ -347,6 +382,11 @@
   "func_00110880": {
    "vram": 1116288,
    "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00111360": {
+   "vram": 1119072,
+   "best_score": 10,
    "best_by": "autopilot"
   },
   "func_00111830": {
@@ -659,6 +699,16 @@
    "best_score": 15,
    "best_by": "autopilot"
   },
+  "func_00117050": {
+   "vram": 1142864,
+   "best_score": 330,
+   "best_by": "autopilot"
+  },
+  "func_00117070": {
+   "vram": 1142896,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_00117388": {
    "vram": 1143688,
    "best_score": 15,
@@ -667,6 +717,36 @@
   "func_001176B0": {
    "vram": 1144496,
    "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_001176C0": {
+   "vram": 1144512,
+   "best_score": 320,
+   "best_by": "autopilot"
+  },
+  "func_001176D8": {
+   "vram": 1144536,
+   "best_score": 330,
+   "best_by": "autopilot"
+  },
+  "func_001176F8": {
+   "vram": 1144568,
+   "best_score": 320,
+   "best_by": "autopilot"
+  },
+  "func_00117710": {
+   "vram": 1144592,
+   "best_score": 330,
+   "best_by": "autopilot"
+  },
+  "func_00117A78": {
+   "vram": 1145464,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_00118140": {
+   "vram": 1147200,
+   "best_score": 20,
    "best_by": "autopilot"
   },
   "func_001185E8": {
@@ -684,6 +764,16 @@
    "best_score": 20625,
    "best_by": "opencode-33"
   },
+  "func_0011A6D0": {
+   "vram": 1156816,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0011AD68": {
+   "vram": 1158504,
+   "best_score": 410,
+   "best_by": "autopilot"
+  },
   "func_0011AD80": {
    "vram": 1158528,
    "best_score": 15,
@@ -694,10 +784,20 @@
    "best_score": 400,
    "best_by": "autopilot"
   },
+  "func_0011BCA0": {
+   "vram": 1162400,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0011C218": {
    "vram": 1163800,
    "best_score": 15,
    "best_by": "autopilot"
+  },
+  "func_0011C278": {
+   "vram": 1163896,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_0011C328": {
    "vram": 1164072,
@@ -718,6 +818,11 @@
    "vram": 1164144,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0011C388": {
+   "vram": 1164168,
+   "best_score": 5,
+   "best_by": "autopilot"
   },
   "func_0011C3A0": {
    "vram": 1164192,
@@ -744,6 +849,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0011E358": {
+   "vram": 1172312,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0011E420": {
+   "vram": 1172512,
+   "best_score": 220,
+   "best_by": "autopilot"
+  },
   "func_0011E5A0": {
    "vram": 1172896,
    "matched_by": "autopilot",
@@ -763,6 +878,21 @@
    "vram": 1173296,
    "best_score": 21580,
    "best_by": "opencode-9"
+  },
+  "func_0011E7F8": {
+   "vram": 1173496,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0011E810": {
+   "vram": 1173520,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0011E828": {
+   "vram": 1173544,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_0011ED70": {
    "vram": 1174896,
@@ -789,6 +919,16 @@
    "best_score": 6115,
    "best_by": "opencode-4"
   },
+  "func_001207C0": {
+   "vram": 1181632,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_001207E0": {
+   "vram": 1181664,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_00120828": {
    "vram": 1181736,
    "matched_by": "autopilot",
@@ -798,6 +938,16 @@
    "vram": 1181840,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00121AB8": {
+   "vram": 1186488,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00121AD8": {
+   "vram": 1186520,
+   "best_score": 205,
+   "best_by": "autopilot"
   },
   "func_00121B60": {
    "vram": 1186656,
@@ -817,6 +967,16 @@
   "func_001226A0": {
    "vram": 1189536,
    "best_score": 18895,
+   "best_by": "autopilot"
+  },
+  "func_001229C0": {
+   "vram": 1190336,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_001229E0": {
+   "vram": 1190368,
+   "best_score": 205,
    "best_by": "autopilot"
   },
   "func_00122A28": {
@@ -849,6 +1009,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00123B28": {
+   "vram": 1194792,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00123B48": {
+   "vram": 1194824,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_00123C88": {
    "vram": 1195144,
    "matched_by": "autopilot",
@@ -879,6 +1049,16 @@
    "best_score": 325,
    "best_by": "opencode-deepseek-v4.1-flash-free-8"
   },
+  "func_00124DB0": {
+   "vram": 1199536,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00124DD0": {
+   "vram": 1199568,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_00124EB0": {
    "vram": 1199792,
    "matched_by": "autopilot",
@@ -893,6 +1073,16 @@
    "vram": 1203136,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00126D00": {
+   "vram": 1207552,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00126D20": {
+   "vram": 1207584,
+   "best_score": 205,
+   "best_by": "autopilot"
   },
   "func_00126D40": {
    "vram": 1207616,
@@ -929,6 +1119,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00128860": {
+   "vram": 1214560,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_00128978": {
    "vram": 1214840,
    "best_score": 7791,
@@ -949,10 +1144,30 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00128FA0": {
+   "vram": 1216416,
+   "best_score": 330,
+   "best_by": "autopilot"
+  },
+  "func_00128FB8": {
+   "vram": 1216440,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00129130": {
    "vram": 1216816,
    "best_score": 4795,
    "best_by": "autopilot"
+  },
+  "func_00129290": {
+   "vram": 1217168,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_001293A8": {
+   "vram": 1217448,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00129B78": {
    "vram": 1219448,
@@ -979,6 +1194,16 @@
    "best_score": 1518,
    "best_by": "autopilot"
   },
+  "func_0012A3F8": {
+   "vram": 1221624,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_0012A418": {
+   "vram": 1221656,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_0012A438": {
    "vram": 1221688,
    "matched_by": "autopilot",
@@ -987,6 +1212,16 @@
   "func_0012B198": {
    "vram": 1225112,
    "best_score": 1053,
+   "best_by": "autopilot"
+  },
+  "func_0012B560": {
+   "vram": 1226080,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_0012B580": {
+   "vram": 1226112,
+   "best_score": 205,
    "best_by": "autopilot"
   },
   "func_0012B5E0": {
@@ -1004,6 +1239,16 @@
    "best_score": 100,
    "best_by": "autopilot"
   },
+  "func_0012BFA8": {
+   "vram": 1228712,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_0012BFC8": {
+   "vram": 1228744,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_0012C028": {
    "vram": 1228840,
    "matched_by": "autopilot",
@@ -1014,10 +1259,25 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0012C7F8": {
+   "vram": 1230840,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0012D308": {
    "vram": 1233672,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0012D5A0": {
+   "vram": 1234336,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_0012D5C0": {
+   "vram": 1234368,
+   "best_score": 205,
+   "best_by": "autopilot"
   },
   "func_0012D5E0": {
    "vram": 1234400,
@@ -1044,6 +1304,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0012E668": {
+   "vram": 1238632,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_0012E688": {
+   "vram": 1238664,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_0012E6E8": {
    "vram": 1238760,
    "matched_by": "autopilot",
@@ -1069,10 +1339,35 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0012F910": {
+   "vram": 1243408,
+   "best_score": 210,
+   "best_by": "autopilot"
+  },
+  "func_00130930": {
+   "vram": 1247536,
+   "best_score": 200,
+   "best_by": "autopilot"
+  },
+  "func_00130A00": {
+   "vram": 1247744,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00130F90": {
    "vram": 1249168,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00131800": {
+   "vram": 1251328,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00131820": {
+   "vram": 1251360,
+   "best_score": 205,
+   "best_by": "autopilot"
   },
   "func_00131840": {
    "vram": 1251392,
@@ -1094,6 +1389,21 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00132600": {
+   "vram": 1254912,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00132620": {
+   "vram": 1254944,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00132640": {
+   "vram": 1254976,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00132660": {
    "vram": 1255008,
    "matched_by": "autopilot",
@@ -1106,6 +1416,21 @@
   },
   "func_00132F18": {
    "vram": 1257240,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_001332A0": {
+   "vram": 1258144,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_001332C0": {
+   "vram": 1258176,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_001332E0": {
+   "vram": 1258208,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -1129,6 +1454,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001340E8": {
+   "vram": 1261800,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00134108": {
+   "vram": 1261832,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_001341D0": {
    "vram": 1262032,
    "matched_by": "autopilot",
@@ -1143,6 +1478,21 @@
    "vram": 1264528,
    "best_score": 11889,
    "best_by": "autopilot"
+  },
+  "func_00134C08": {
+   "vram": 1264648,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00134C28": {
+   "vram": 1264680,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00134C48": {
+   "vram": 1264712,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00134D18": {
    "vram": 1264920,
@@ -1224,6 +1574,16 @@
    "best_score": 780,
    "best_by": "autopilot"
   },
+  "func_00135408": {
+   "vram": 1266696,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00135428": {
+   "vram": 1266728,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_00135438": {
    "vram": 1266744,
    "best_score": 1450,
@@ -1294,6 +1654,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00135B10": {
+   "vram": 1268496,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00135B30": {
+   "vram": 1268528,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_00135B50": {
    "vram": 1268560,
    "matched_by": "autopilot",
@@ -1324,10 +1694,30 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00136608": {
+   "vram": 1271304,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00136628": {
+   "vram": 1271336,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_001366A8": {
    "vram": 1271464,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00137740": {
+   "vram": 1275712,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00137760": {
+   "vram": 1275744,
+   "best_score": 205,
+   "best_by": "autopilot"
   },
   "func_00137780": {
    "vram": 1275776,
@@ -1338,6 +1728,16 @@
    "vram": 1275864,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00137DB8": {
+   "vram": 1277368,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00137DD8": {
+   "vram": 1277400,
+   "best_score": 205,
+   "best_by": "autopilot"
   },
   "func_00137DF8": {
    "vram": 1277432,
@@ -1351,6 +1751,16 @@
   },
   "func_00137F30": {
    "vram": 1277744,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00138118": {
+   "vram": 1278232,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00138158": {
+   "vram": 1278296,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -1474,6 +1884,11 @@
    "best_score": 400,
    "best_by": "autopilot"
   },
+  "func_001389A0": {
+   "vram": 1280416,
+   "best_score": 130,
+   "best_by": "autopilot"
+  },
   "func_00138A90": {
    "vram": 1280656,
    "matched_by": "autopilot",
@@ -1489,6 +1904,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00138AC8": {
+   "vram": 1280712,
+   "best_score": 105,
+   "best_by": "autopilot"
+  },
   "func_00138F20": {
    "vram": 1281824,
    "best_score": 4250,
@@ -1499,6 +1919,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00139550": {
+   "vram": 1283408,
+   "best_score": 300,
+   "best_by": "autopilot"
+  },
+  "func_00139570": {
+   "vram": 1283440,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_001397E0": {
    "vram": 1284064,
    "best_score": 397,
@@ -1508,6 +1938,11 @@
    "vram": 1284224,
    "best_score": 602,
    "best_by": "opencode-nemotron-3-ultra-free-5"
+  },
+  "func_00139AD8": {
+   "vram": 1284824,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_0013A180": {
    "vram": 1286528,
@@ -1538,6 +1973,11 @@
    "vram": 1287912,
    "best_score": 1883,
    "best_by": "opencode-nemotron-3-ultra-free-5"
+  },
+  "func_0013A6F0": {
+   "vram": 1287920,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_0013A798": {
    "vram": 1288088,
@@ -1764,10 +2204,20 @@
    "best_score": 200,
    "best_by": "opencode-14"
   },
+  "func_0013B768": {
+   "vram": 1292136,
+   "best_score": 210,
+   "best_by": "autopilot"
+  },
   "func_0013B788": {
    "vram": 1292168,
    "matched_by": "codex-gpt-6-luna-3",
    "readable": false
+  },
+  "ovl_ntgui2_func_0013B788": {
+   "vram": 1292168,
+   "best_score": 210,
+   "best_by": "autopilot"
   },
   "func_0013B7B8": {
    "vram": 1292216,
@@ -1934,6 +2384,11 @@
    "best_score": 125,
    "best_by": "opencode-6"
   },
+  "func_0013C260": {
+   "vram": 1294944,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_0013C2E0": {
    "vram": 1295072,
    "matched_by": "opencode-6",
@@ -2019,6 +2474,11 @@
    "matched_by": "opencode-19",
    "readable": false
   },
+  "func_0013D2A0": {
+   "vram": 1299104,
+   "best_score": 220,
+   "best_by": "autopilot"
+  },
   "func_0013D2B8": {
    "vram": 1299128,
    "best_score": 15,
@@ -2087,6 +2547,11 @@
   "func_0013E340": {
    "vram": 1303360,
    "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0013E6B0": {
+   "vram": 1304240,
+   "best_score": 210,
    "best_by": "autopilot"
   },
   "func_0013E6B8": {
@@ -2229,6 +2694,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0013FFF8": {
+   "vram": 1310712,
+   "best_score": 290,
+   "best_by": "autopilot"
+  },
   "func_00140010": {
    "vram": 1310736,
    "best_score": 15,
@@ -2237,6 +2707,11 @@
   "func_00140020": {
    "vram": 1310752,
    "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00140030": {
+   "vram": 1310768,
+   "best_score": 330,
    "best_by": "autopilot"
   },
   "func_00140050": {
@@ -2254,9 +2729,19 @@
    "best_score": 75,
    "best_by": "autopilot"
   },
+  "func_001403D8": {
+   "vram": 1311704,
+   "best_score": 210,
+   "best_by": "autopilot"
+  },
   "func_00140450": {
    "vram": 1311824,
    "best_score": 20,
+   "best_by": "autopilot"
+  },
+  "func_001404D0": {
+   "vram": 1311952,
+   "best_score": 210,
    "best_by": "autopilot"
   },
   "func_001404F0": {
@@ -2274,6 +2759,11 @@
    "best_score": 6370,
    "best_by": "autopilot"
   },
+  "func_00141074": {
+   "vram": 1314932,
+   "best_score": 100,
+   "best_by": "autopilot"
+  },
   "func_001410A0": {
    "vram": 1314976,
    "best_score": 6415,
@@ -2289,10 +2779,35 @@
    "best_score": 15,
    "best_by": "autopilot"
   },
+  "func_00141F80": {
+   "vram": 1318784,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_00142158": {
    "vram": 1319256,
    "best_score": 2735,
    "best_by": "codex-gpt-6-luna-1"
+  },
+  "func_00142658": {
+   "vram": 1320536,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00142888": {
+   "vram": 1321096,
+   "best_score": 230,
+   "best_by": "autopilot"
+  },
+  "func_00142B38": {
+   "vram": 1321784,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_001432F0": {
+   "vram": 1323760,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_00143498": {
    "vram": 1324184,
@@ -2352,6 +2867,11 @@
   "func_00143A80": {
    "vram": 1325696,
    "best_score": 4780,
+   "best_by": "autopilot"
+  },
+  "func_00143AA8": {
+   "vram": 1325736,
+   "best_score": 10,
    "best_by": "autopilot"
   },
   "func_00143BB0": {
@@ -2424,6 +2944,11 @@
    "best_score": 1065,
    "best_by": "opencode-7"
   },
+  "func_00144260": {
+   "vram": 1327712,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_00144278": {
    "vram": 1327736,
    "best_score": 2415,
@@ -2488,6 +3013,11 @@
    "vram": 1329688,
    "matched_by": "opencode-13",
    "readable": false
+  },
+  "ovl_ntgui2_func_00144A18": {
+   "vram": 1329688,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_00144A48": {
    "vram": 1329736,
@@ -2619,6 +3149,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00148850": {
+   "vram": 1345616,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
+  "func_00148870": {
+   "vram": 1345648,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_00148890": {
    "vram": 1345680,
    "matched_by": "autopilot",
@@ -2628,6 +3168,16 @@
    "vram": 1345688,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_001488D8": {
+   "vram": 1345752,
+   "best_score": 220,
+   "best_by": "autopilot"
+  },
+  "func_001488F8": {
+   "vram": 1345784,
+   "best_score": 110,
+   "best_by": "autopilot"
   },
   "func_00148910": {
    "vram": 1345808,
@@ -2689,6 +3239,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00149658": {
+   "vram": 1349208,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_001498A4": {
    "vram": 1349796,
    "matched_by": "autopilot",
@@ -2696,6 +3251,16 @@
   },
   "func_00149BBC": {
    "vram": 1350588,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00149BC4": {
+   "vram": 1350596,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0014A3E8": {
+   "vram": 1352680,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -2709,15 +3274,30 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0014A90C": {
+   "vram": 1353996,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_0014A910": {
    "vram": 1354000,
    "best_score": 3186,
+   "best_by": "autopilot"
+  },
+  "func_0014A94C": {
+   "vram": 1354060,
+   "best_score": 10,
    "best_by": "autopilot"
   },
   "func_0014A98C": {
    "vram": 1354124,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0014A994": {
+   "vram": 1354132,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_0014ABF0": {
    "vram": 1354736,
@@ -2739,6 +3319,31 @@
    "best_score": 10962,
    "best_by": "autopilot"
   },
+  "func_0014CA18": {
+   "vram": 1362456,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0014CE44": {
+   "vram": 1363524,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0014CEF0": {
+   "vram": 1363696,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0014CF9C": {
+   "vram": 1363868,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0014D120": {
+   "vram": 1364256,
+   "best_score": 5,
+   "best_by": "autopilot"
+  },
   "func_0014D2F4": {
    "vram": 1364724,
    "matched_by": "@autopilot",
@@ -2747,6 +3352,11 @@
   "func_0014D3DC": {
    "vram": 1364956,
    "best_score": 20,
+   "best_by": "autopilot"
+  },
+  "func_0014D3E8": {
+   "vram": 1364968,
+   "best_score": 210,
    "best_by": "autopilot"
   },
   "func_0014D3FC": {
@@ -2768,6 +3378,11 @@
    "vram": 1365452,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0014D5E0": {
+   "vram": 1365472,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_0014D9E4": {
    "vram": 1366500,
@@ -2799,10 +3414,45 @@
    "matched_by": "@autopilot",
    "readable": false
   },
+  "func_0014E4BC": {
+   "vram": 1369276,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0014E54C": {
+   "vram": 1369420,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0014E560": {
+   "vram": 1369440,
+   "best_score": 30,
+   "best_by": "autopilot"
+  },
+  "func_0014E574": {
+   "vram": 1369460,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_0014E690": {
    "vram": 1369744,
    "matched_by": "@autopilot",
    "readable": false
+  },
+  "func_0014E69C": {
+   "vram": 1369756,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0014E6B8": {
+   "vram": 1369784,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0014E6CC": {
+   "vram": 1369804,
+   "best_score": 60,
+   "best_by": "autopilot"
   },
   "func_0014E6E0": {
    "vram": 1369824,
@@ -2834,6 +3484,21 @@
    "matched_by": "@autopilot",
    "readable": false
   },
+  "func_0014F18C": {
+   "vram": 1372556,
+   "best_score": 30,
+   "best_by": "autopilot"
+  },
+  "func_0014F378": {
+   "vram": 1373048,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0014F580": {
+   "vram": 1373568,
+   "best_score": 40,
+   "best_by": "autopilot"
+  },
   "func_0014F598": {
    "vram": 1373592,
    "matched_by": "autopilot",
@@ -2844,6 +3509,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0014F5B0": {
+   "vram": 1373616,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0014F66C": {
+   "vram": 1373804,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0014FEE8": {
    "vram": 1375976,
    "matched_by": "@autopilot",
@@ -2851,6 +3526,16 @@
   },
   "func_0014FEF0": {
    "vram": 1375984,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0014FEF8": {
+   "vram": 1375992,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0014FF98": {
+   "vram": 1376152,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -2874,6 +3559,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001516A8": {
+   "vram": 1382056,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_00151754": {
    "vram": 1382228,
    "matched_by": "autopilot",
@@ -2883,6 +3573,11 @@
    "vram": 1384572,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_001520D4": {
+   "vram": 1384660,
+   "best_score": 280,
+   "best_by": "autopilot"
   },
   "func_0015217C": {
    "vram": 1384828,
@@ -2939,6 +3634,11 @@
    "best_score": 10,
    "best_by": "autopilot"
   },
+  "func_00152888": {
+   "vram": 1386632,
+   "best_score": 20,
+   "best_by": "autopilot"
+  },
   "func_001528A0": {
    "vram": 1386656,
    "matched_by": "@autopilot",
@@ -2969,6 +3669,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00152930": {
+   "vram": 1386800,
+   "best_score": 40,
+   "best_by": "autopilot"
+  },
   "ovl_ntgui2_func_00152A68": {
    "vram": 1387112,
    "matched_by": "autopilot",
@@ -2984,6 +3689,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "ovl_ntgui2_func_00152E30": {
+   "vram": 1388080,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_00152E4C": {
    "vram": 1388108,
    "matched_by": "@autopilot",
@@ -2994,6 +3704,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00152E90": {
+   "vram": 1388176,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_00152EAC": {
+   "vram": 1388204,
+   "best_score": 500,
+   "best_by": "autopilot"
+  },
   "func_00153714": {
    "vram": 1390356,
    "matched_by": "autopilot",
@@ -3003,6 +3723,11 @@
    "vram": 1390752,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_001538A8": {
+   "vram": 1390760,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_00153940": {
    "vram": 1390912,
@@ -3033,6 +3758,11 @@
    "vram": 1394364,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_001546C4": {
+   "vram": 1394372,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_001547B8": {
    "vram": 1394616,
@@ -3119,14 +3849,29 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "ovl_ntgui2_func_001551B8": {
+   "vram": 1397176,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_001551B8": {
    "vram": 1397176,
    "best_score": 575,
    "best_by": "autopilot"
   },
+  "func_001551D4": {
+   "vram": 1397204,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_001551F0": {
    "vram": 1397232,
    "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_001551F8": {
+   "vram": 1397240,
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00155200": {
@@ -3168,6 +3913,11 @@
    "vram": 1398560,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00155728": {
+   "vram": 1398568,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_00155750": {
    "vram": 1398608,
@@ -3244,6 +3994,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00156470": {
+   "vram": 1401968,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_00156610": {
    "vram": 1402384,
    "best_score": 9595,
@@ -3253,6 +4008,11 @@
    "vram": 1402636,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00156714": {
+   "vram": 1402644,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_00156794": {
    "vram": 1402772,
@@ -3289,6 +4049,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00156E68": {
+   "vram": 1404520,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_00156EB8": {
    "vram": 1404600,
    "best_score": 11910,
@@ -3314,13 +4079,43 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00157248": {
+   "vram": 1405512,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_00157264": {
+   "vram": 1405540,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00157280": {
    "vram": 1405568,
    "matched_by": "@autopilot",
    "readable": false
   },
+  "func_00157288": {
+   "vram": 1405576,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_001572D8": {
    "vram": 1405656,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_001572E0": {
+   "vram": 1405664,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_001572FC": {
+   "vram": 1405692,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00157340": {
+   "vram": 1405760,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -3329,6 +4124,11 @@
    "best_score": 6520,
    "best_by": "autopilot"
   },
+  "func_00157830": {
+   "vram": 1407024,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00157848": {
    "vram": 1407048,
    "matched_by": "autopilot",
@@ -3336,6 +4136,11 @@
   },
   "func_00157850": {
    "vram": 1407056,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0015786C": {
+   "vram": 1407084,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -3393,6 +4198,11 @@
    "vram": 1413884,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00159304": {
+   "vram": 1413892,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_00159330": {
    "vram": 1413936,
@@ -3549,6 +4359,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0015A424": {
+   "vram": 1418276,
+   "best_score": 50,
+   "best_by": "autopilot"
+  },
   "func_0015A460": {
    "vram": 1418336,
    "best_score": 1045,
@@ -3609,6 +4424,21 @@
    "matched_by": "@autopilot",
    "readable": false
   },
+  "func_0015B6F4": {
+   "vram": 1423092,
+   "best_score": 20,
+   "best_by": "autopilot"
+  },
+  "func_0015B710": {
+   "vram": 1423120,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0015BBCC": {
+   "vram": 1424332,
+   "best_score": 40,
+   "best_by": "autopilot"
+  },
   "func_0015BCD0": {
    "vram": 1424592,
    "best_score": 6522,
@@ -3618,6 +4448,11 @@
    "vram": 1425144,
    "best_score": 1030,
    "best_by": "codex-gpt-6-luna-3"
+  },
+  "func_0015BF84": {
+   "vram": 1425284,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_0015BF98": {
    "vram": 1425304,
@@ -3639,6 +4474,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0015BFEC": {
+   "vram": 1425388,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_0015C038": {
    "vram": 1425464,
    "best_score": 1435,
@@ -3651,6 +4491,21 @@
   },
   "func_0015C2C8": {
    "vram": 1426120,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0015C2D0": {
+   "vram": 1426128,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0015C314": {
+   "vram": 1426196,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0015C32C": {
+   "vram": 1426220,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -3674,6 +4529,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0015C944": {
+   "vram": 1427780,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_0015D7A4": {
    "vram": 1431460,
    "matched_by": "autopilot",
@@ -3691,6 +4551,16 @@
   },
   "func_0015DCD0": {
    "vram": 1432784,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0015DCD8": {
+   "vram": 1432792,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0015DD60": {
+   "vram": 1432928,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -3834,6 +4704,11 @@
    "best_score": 3410,
    "best_by": "autopilot"
   },
+  "func_0015EF98": {
+   "vram": 1437592,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0015EFB0": {
    "vram": 1437616,
    "matched_by": "autopilot",
@@ -3841,6 +4716,11 @@
   },
   "func_0015EFB8": {
    "vram": 1437624,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0015EFD4": {
+   "vram": 1437652,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -3894,6 +4774,26 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0015FCD0": {
+   "vram": 1440976,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0015FCEC": {
+   "vram": 1441004,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0015FD08": {
+   "vram": 1441032,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0015FD20": {
+   "vram": 1441056,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0015FD98": {
    "vram": 1441176,
    "best_score": 5009,
@@ -3929,10 +4829,20 @@
    "best_score": 42629,
    "best_by": "autopilot"
   },
+  "func_00162010": {
+   "vram": 1450000,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00162028": {
    "vram": 1450024,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00162030": {
+   "vram": 1450032,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_001627A0": {
    "vram": 1451936,
@@ -3964,8 +4874,18 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00162E5C": {
+   "vram": 1453660,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_00162EA0": {
    "vram": 1453728,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00162EB4": {
+   "vram": 1453748,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -4018,6 +4938,16 @@
    "vram": 1456312,
    "best_score": 665,
    "best_by": "autopilot"
+  },
+  "func_001638C0": {
+   "vram": 1456320,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_001638DC": {
+   "vram": 1456348,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00163930": {
    "vram": 1456432,
@@ -4134,6 +5064,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00164964": {
+   "vram": 1460580,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_00164B40": {
    "vram": 1461056,
    "best_score": 6178,
@@ -4143,6 +5078,11 @@
    "vram": 1461156,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00164BAC": {
+   "vram": 1461164,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_00164E58": {
    "vram": 1461848,
@@ -4159,15 +5099,45 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00165774": {
+   "vram": 1464180,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_00165790": {
+   "vram": 1464208,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00165B34": {
    "vram": 1465140,
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00165B70": {
+   "vram": 1465200,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_00165B8C": {
+   "vram": 1465228,
+   "best_score": 30,
+   "best_by": "autopilot"
+  },
+  "func_00165BA0": {
+   "vram": 1465248,
+   "best_score": 5,
+   "best_by": "autopilot"
+  },
   "func_00165BB8": {
    "vram": 1465272,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00165BC8": {
+   "vram": 1465288,
+   "best_score": 5,
+   "best_by": "autopilot"
   },
   "func_00165BE0": {
    "vram": 1465312,
@@ -4176,6 +5146,21 @@
   },
   "func_00165BF0": {
    "vram": 1465328,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00165BF8": {
+   "vram": 1465336,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_00165C3C": {
+   "vram": 1465404,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00165C54": {
+   "vram": 1465428,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -4236,6 +5221,16 @@
   },
   "func_00166C44": {
    "vram": 1469508,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00166C4C": {
+   "vram": 1469516,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_00166C68": {
+   "vram": 1469544,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -4489,6 +5484,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0016D0DC": {
+   "vram": 1495260,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0016D0F8": {
+   "vram": 1495288,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0016D410": {
    "vram": 1496080,
    "best_score": 5020,
@@ -4501,6 +5506,16 @@
   },
   "func_0016D5B8": {
    "vram": 1496504,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0016D5C0": {
+   "vram": 1496512,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0016D5DC": {
+   "vram": 1496540,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -4519,10 +5534,25 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0016DE38": {
+   "vram": 1498680,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0016DE54": {
+   "vram": 1498708,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0016E6B8": {
    "vram": 1500856,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0016E6F4": {
+   "vram": 1500916,
+   "best_score": 5,
+   "best_by": "autopilot"
   },
   "func_0016E70C": {
    "vram": 1500940,
@@ -4531,6 +5561,16 @@
   },
   "func_0016E71C": {
    "vram": 1500956,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0016E724": {
+   "vram": 1500964,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0016E790": {
+   "vram": 1501072,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -4549,10 +5589,25 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0016EF18": {
+   "vram": 1503000,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0016EF30": {
    "vram": 1503024,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0016EF38": {
+   "vram": 1503032,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0016FAF0": {
+   "vram": 1506032,
+   "best_score": 20,
+   "best_by": "autopilot"
   },
   "func_0016FB0C": {
    "vram": 1506060,
@@ -4578,6 +5633,16 @@
    "vram": 1508524,
    "best_score": 210,
    "best_by": "autopilot"
+  },
+  "func_00170530": {
+   "vram": 1508656,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00170568": {
+   "vram": 1508712,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00170F88": {
    "vram": 1511304,
@@ -4619,6 +5684,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00171840": {
+   "vram": 1513536,
+   "best_score": 620,
+   "best_by": "autopilot"
+  },
   "func_00171A70": {
    "vram": 1514096,
    "matched_by": "autopilot",
@@ -4643,6 +5713,11 @@
    "vram": 1515272,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00171F18": {
+   "vram": 1515288,
+   "best_score": 20,
+   "best_by": "autopilot"
   },
   "func_00172108": {
    "vram": 1515784,
@@ -4874,6 +5949,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00174658": {
+   "vram": 1525336,
+   "best_score": 190,
+   "best_by": "autopilot"
+  },
   "func_00174D98": {
    "vram": 1527192,
    "best_score": 15,
@@ -4939,6 +6019,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00177650": {
+   "vram": 1537616,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00177A48": {
    "vram": 1538632,
    "best_score": 4896,
@@ -4953,6 +6038,31 @@
    "vram": 1540488,
    "best_score": 4362,
    "best_by": "autopilot"
+  },
+  "func_00178408": {
+   "vram": 1541128,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00178420": {
+   "vram": 1541152,
+   "best_score": 285,
+   "best_by": "autopilot"
+  },
+  "func_001787F8": {
+   "vram": 1542136,
+   "best_score": 200,
+   "best_by": "autopilot"
+  },
+  "func_00178CE8": {
+   "vram": 1543400,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00178D20": {
+   "vram": 1543456,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00179520": {
    "vram": 1545504,
@@ -4987,6 +6097,11 @@
   "func_0017B740": {
    "vram": 1554240,
    "best_score": 3535,
+   "best_by": "autopilot"
+  },
+  "func_0017C1F0": {
+   "vram": 1556976,
+   "best_score": 500,
    "best_by": "autopilot"
   },
   "func_0017C368": {
@@ -5129,6 +6244,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "ovl_ntgui2_func_0017DD90": {
+   "vram": 1564048,
+   "best_score": 700,
+   "best_by": "autopilot"
+  },
   "func_0017E320": {
    "vram": 1565472,
    "best_score": 310,
@@ -5144,6 +6264,16 @@
    "best_score": 10,
    "best_by": "autopilot"
   },
+  "func_0017FCD0": {
+   "vram": 1572048,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0017FD10": {
+   "vram": 1572112,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
   "func_0017FD6C": {
    "vram": 1572204,
    "matched_by": "@autopilot",
@@ -5153,6 +6283,16 @@
    "vram": 1572216,
    "matched_by": "@autopilot",
    "readable": false
+  },
+  "func_0017FD84": {
+   "vram": 1572228,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0017FDCC": {
+   "vram": 1572300,
+   "best_score": 15,
+   "best_by": "autopilot"
   },
   "func_0017FE48": {
    "vram": 1572424,
@@ -5289,6 +6429,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00181E08": {
+   "vram": 1580552,
+   "best_score": 600,
+   "best_by": "autopilot"
+  },
+  "func_00181E20": {
+   "vram": 1580576,
+   "best_score": 600,
+   "best_by": "autopilot"
+  },
   "func_00181E38": {
    "vram": 1580600,
    "matched_by": "@autopilot",
@@ -5308,6 +6458,16 @@
    "vram": 1580624,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00182030": {
+   "vram": 1581104,
+   "best_score": 515,
+   "best_by": "autopilot"
+  },
+  "func_00182130": {
+   "vram": 1581360,
+   "best_score": 210,
+   "best_by": "autopilot"
   },
   "func_001828D8": {
    "vram": 1583320,
@@ -5346,6 +6506,16 @@
   },
   "func_00182A98": {
    "vram": 1583768,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00183568": {
+   "vram": 1586536,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00183588": {
+   "vram": 1586568,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -5404,10 +6574,25 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001864E0": {
+   "vram": 1598688,
+   "best_score": 220,
+   "best_by": "autopilot"
+  },
   "func_00186A70": {
    "vram": 1600112,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00186AC0": {
+   "vram": 1600192,
+   "best_score": 220,
+   "best_by": "autopilot"
+  },
+  "func_00186DC0": {
+   "vram": 1600960,
+   "best_score": 40,
+   "best_by": "autopilot"
   },
   "func_00186F60": {
    "vram": 1601376,
@@ -5439,6 +6624,11 @@
    "matched_by": "@autopilot",
    "readable": false
   },
+  "func_0018A8E8": {
+   "vram": 1616104,
+   "best_score": 220,
+   "best_by": "autopilot"
+  },
   "func_0018A9C0": {
    "vram": 1616320,
    "best_score": 400,
@@ -5454,9 +6644,29 @@
    "best_score": 400,
    "best_by": "autopilot"
   },
+  "func_0018ADC8": {
+   "vram": 1617352,
+   "best_score": 120,
+   "best_by": "autopilot"
+  },
+  "func_0018ADD8": {
+   "vram": 1617368,
+   "best_score": 120,
+   "best_by": "autopilot"
+  },
+  "func_0018ADE8": {
+   "vram": 1617384,
+   "best_score": 120,
+   "best_by": "autopilot"
+  },
   "func_0018ADF8": {
    "vram": 1617400,
    "best_score": 315,
+   "best_by": "autopilot"
+  },
+  "func_0018AE08": {
+   "vram": 1617416,
+   "best_score": 620,
    "best_by": "autopilot"
   },
   "func_0018B078": {
@@ -5464,9 +6674,19 @@
    "best_score": 500,
    "best_by": "autopilot"
   },
+  "func_0018B080": {
+   "vram": 1618048,
+   "best_score": 605,
+   "best_by": "autopilot"
+  },
   "func_0018B090": {
    "vram": 1618064,
    "best_score": 310,
+   "best_by": "autopilot"
+  },
+  "func_0018B098": {
+   "vram": 1618072,
+   "best_score": 410,
    "best_by": "autopilot"
   },
   "func_0018B0A8": {
@@ -5474,9 +6694,19 @@
    "best_score": 310,
    "best_by": "autopilot"
   },
+  "func_0018B0B0": {
+   "vram": 1618096,
+   "best_score": 410,
+   "best_by": "autopilot"
+  },
   "func_0018B0C0": {
    "vram": 1618112,
    "best_score": 310,
+   "best_by": "autopilot"
+  },
+  "func_0018B0C8": {
+   "vram": 1618120,
+   "best_score": 410,
    "best_by": "autopilot"
   },
   "func_0018BF30": {
@@ -5509,9 +6739,24 @@
    "matched_by": "@autopilot",
    "readable": false
   },
+  "func_0018CFE0": {
+   "vram": 1626080,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0018CFF0": {
    "vram": 1626096,
    "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0018D230": {
+   "vram": 1626672,
+   "best_score": 315,
+   "best_by": "autopilot"
+  },
+  "func_0018D2D8": {
+   "vram": 1626840,
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0018D7A8": {
@@ -5634,6 +6879,16 @@
    "best_score": 3628,
    "best_by": "autopilot"
   },
+  "func_00191248": {
+   "vram": 1643080,
+   "best_score": 30,
+   "best_by": "autopilot"
+  },
+  "func_00191258": {
+   "vram": 1643096,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00191300": {
    "vram": 1643264,
    "matched_by": "opencode-10",
@@ -5668,6 +6923,16 @@
    "vram": 1644104,
    "best_score": 4440,
    "best_by": "autopilot"
+  },
+  "func_00191658": {
+   "vram": 1644120,
+   "best_score": 30,
+   "best_by": "autopilot"
+  },
+  "func_00191668": {
+   "vram": 1644136,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00191738": {
    "vram": 1644344,
@@ -5739,6 +7004,21 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00191D00": {
+   "vram": 1645824,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_00191DB0": {
+   "vram": 1646000,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_00191DC8": {
+   "vram": 1646024,
+   "best_score": 205,
+   "best_by": "autopilot"
+  },
   "func_00191DE0": {
    "vram": 1646048,
    "best_score": 1285,
@@ -5748,6 +7028,16 @@
    "vram": 1650432,
    "matched_by": "opencode-nemotron-3-ultra-free-4",
    "readable": false
+  },
+  "func_00193170": {
+   "vram": 1651056,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00193A88": {
+   "vram": 1653384,
+   "best_score": 10,
+   "best_by": "autopilot"
   },
   "func_00193E20": {
    "vram": 1654304,
@@ -5839,6 +7129,11 @@
    "best_score": 1840,
    "best_by": "opencode-deepseek-v4.1-flash-free-5"
   },
+  "func_00194EF8": {
+   "vram": 1658616,
+   "best_score": 300,
+   "best_by": "autopilot"
+  },
   "func_00195560": {
    "vram": 1660256,
    "best_score": 1920,
@@ -5859,6 +7154,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00197054": {
+   "vram": 1667156,
+   "best_score": 610,
+   "best_by": "autopilot"
+  },
   "func_0019706C": {
    "vram": 1667180,
    "best_score": 10,
@@ -5867,6 +7167,16 @@
   "func_00197320": {
    "vram": 1667872,
    "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00197958": {
+   "vram": 1669464,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00197970": {
+   "vram": 1669488,
+   "best_score": 125,
    "best_by": "autopilot"
   },
   "func_00197A90": {
@@ -5944,6 +7254,16 @@
    "best_score": 110,
    "best_by": "autopilot"
   },
+  "func_0019BB5C": {
+   "vram": 1686364,
+   "best_score": 120,
+   "best_by": "autopilot"
+  },
+  "func_0019BB70": {
+   "vram": 1686384,
+   "best_score": 130,
+   "best_by": "autopilot"
+  },
   "func_0019BC7C": {
    "vram": 1686652,
    "matched_by": "autopilot",
@@ -5978,6 +7298,11 @@
    "vram": 1687556,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0019C030": {
+   "vram": 1687600,
+   "best_score": 515,
+   "best_by": "autopilot"
   },
   "func_0019C048": {
    "vram": 1687624,
@@ -6028,6 +7353,11 @@
    "vram": 1706176,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_001A1550": {
+   "vram": 1709392,
+   "best_score": 400,
+   "best_by": "autopilot"
   },
   "func_001A15A0": {
    "vram": 1709472,
@@ -6484,6 +7814,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001AE098": {
+   "vram": 1761432,
+   "best_score": 805,
+   "best_by": "autopilot"
+  },
+  "func_001AE1D8": {
+   "vram": 1761752,
+   "best_score": 805,
+   "best_by": "autopilot"
+  },
   "func_001AF770": {
    "vram": 1767280,
    "matched_by": "autopilot",
@@ -6494,8 +7834,23 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001AF7A0": {
+   "vram": 1767328,
+   "best_score": 325,
+   "best_by": "autopilot"
+  },
   "func_001AF7D8": {
    "vram": 1767384,
+   "best_score": 20,
+   "best_by": "autopilot"
+  },
+  "func_001AFAA0": {
+   "vram": 1768096,
+   "best_score": 20,
+   "best_by": "autopilot"
+  },
+  "func_001AFAB8": {
+   "vram": 1768120,
    "best_score": 20,
    "best_by": "autopilot"
   },
@@ -6696,6 +8051,21 @@
   },
   "func_001B6268": {
    "vram": 1794664,
+   "best_score": 500,
+   "best_by": "autopilot"
+  },
+  "func_001B6550": {
+   "vram": 1795408,
+   "best_score": 500,
+   "best_by": "autopilot"
+  },
+  "func_001B6560": {
+   "vram": 1795424,
+   "best_score": 500,
+   "best_by": "autopilot"
+  },
+  "func_001B6570": {
+   "vram": 1795440,
    "best_score": 500,
    "best_by": "autopilot"
   },

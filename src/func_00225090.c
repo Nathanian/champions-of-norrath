@@ -1,0 +1,1 @@
+extern void func_00143830(void*);typedef struct {u8 pad00[0xC];s32 flags0c;u8 pad10[0x114];s32 flags124;u8 pad128[8];s32 v130; s32 v134; s32 v138; s32 v13c;} Obj25090;void func_00225090(Obj25090*p){if(p->flags124&4){s32 t=p->v13c;p->flags0c&=0xFFEFFFFF;if(t==0){p->v13c=3;func_00143830(p);p->v130=0xB4;}}}
