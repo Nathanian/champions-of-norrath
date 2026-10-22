@@ -1,86 +1,22 @@
-extern char D_00478B28[];
-extern char D_00478B48[];
-s32 func_001671F8(char *);
-void func_00190E20(s32, s32, f32, f32, f32, f32, f32, f32, f32, f32);
-
-f32 D_00482B64;
-f32 D_00482B68;
-f32 D_00482B6C;
-
-void func_002A9AD0(void *arg0, s32 arg1, s32 arg2) {
-    s32 r0, r1, r2, r3;
-    s32 ret167;
-    void *inner;
-    s16 off;
-    void *fp;
-    void (*fp2)(s32, s32, f32, f32, f32, f32, f32, f32, f32, f32);
-
-    inner = *(void **)((char *)arg0 + 0x60);
-    inner = (char *)inner + 0x58;
-    off = *(s16 *)inner;
-    fp = *(void **)((char *)inner + 4);
-    r0 = ((s32 (*)(void *, s32))fp)((char *)arg0 + off, 0);
-
-    inner = *(void **)((char *)arg0 + 0x60);
-    inner = (char *)inner + 0x58;
-    off = *(s16 *)inner;
-    fp = *(void **)((char *)inner + 4);
-    r1 = ((s32 (*)(void *, s32, s32))fp)((char *)arg0 + off, 1, arg2);
-
-    inner = *(void **)((char *)arg0 + 0x60);
-    inner = (char *)inner + 0x58;
-    off = *(s16 *)inner;
-    fp = *(void **)((char *)inner + 4);
-    r2 = ((s32 (*)(void *, s32, s32))fp)((char *)arg0 + off, 2, arg2);
-
-    inner = *(void **)((char *)arg0 + 0x60);
-    inner = (char *)inner + 0x58;
-    off = *(s16 *)inner;
-    fp = *(void **)((char *)inner + 4);
-    r3 = ((s32 (*)(void *, s32, s32))fp)((char *)arg0 + off, 3, arg2);
-
-    if (r2 == 0) {
-        f32 f12, t, f2, f13;
-        s32 rnd;
-        ret167 = func_001671F8(D_00478B28);
-        f12 = (f32)r0;
-        t = f12 * D_00482B64;
-        f2 = f12 + t;
-        if (f2 >= 0.0f) {
-            rnd = (s32)(f2 + 0.5f);
-        } else {
-            rnd = (s32)(f2 - 0.5f);
-        }
-        f13 = (f32)rnd;
-        func_00190E20(arg1, ret167, f12, f13, (f32)r1, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-        return;
-    }
-
-    {
-        f32 f12, t, f2, f13, f16, f17;
-        s32 rnd;
-        ret167 = func_001671F8(D_00478B48);
-        f12 = (f32)r0;
-        t = f12 * D_00482B68;
-        f2 = f12 + t;
-        if (f2 >= 0.0f) {
-            rnd = (s32)(f2 + 0.5f);
-        } else {
-            rnd = (s32)(f2 - 0.5f);
-        }
-        f13 = (f32)rnd;
-
-        f16 = (f32)r3;
-        t = f16 * D_00482B6C;
-        f2 = f16 + t;
-        if (f2 >= 0.0f) {
-            rnd = (s32)(f2 + 0.5f);
-        } else {
-            rnd = (s32)(f2 - 0.5f);
-        }
-        f17 = (f32)rnd;
-
-        fp2 = func_00190E20;
-        fp2(arg1, ret167, f12, f13, (f32)r1, (f32)r2, (f32)r3, f17, 0.0f, 0.0f);
-    }
+extern char D_00478B28[],D_00478B48[];
+s32 func_001671F8(char*);
+void func_00190E20(s32,s32,f32,f32,f32,f32,f32,f32,f32,f32);
+f32 D_00482B64,D_00482B68,D_00482B6C;
+typedef struct { s16 off; s16 pad; s32 (*fn)(); } VEntry;
+void func_002A9AD0(void*arg0,s32 arg1,s32 arg2) {
+void (*fn2)(s32,s32,f32,f32,f32,f32,f32,f32,f32,f32); VEntry *e; s32 r0,r1,r2,r3,ret; f32 x,y,w,h,t,z;
+e=(VEntry*)(*(char**)((char*)arg0+0x60)+0x58); r0=e->fn((void*)((s32)arg0+e->off),0);
+e=(VEntry*)(*(char**)((char*)arg0+0x60)+0x58); r1=e->fn((void*)((s32)arg0+e->off),1,arg2);
+e=(VEntry*)(*(char**)((char*)arg0+0x60)+0x58); r2=e->fn((void*)((s32)arg0+e->off),2,arg2);
+e=(VEntry*)(*(char**)((char*)arg0+0x60)+0x58); r3=e->fn((void*)((s32)arg0+e->off),3,arg2);
+if(!r2) {
+ ret=func_001671F8(D_00478B28); x=(f32)r0;
+ t=x+x*D_00482B64; if(t>=0.0f) y=(f32)(s32)(t+0.5f); else y=(f32)(s32)(t-0.5f);
+ func_00190E20(arg1,ret,x,y,(f32)r1,0.0f,0.0f,0.0f,0.0f,0.0f); return;
+}
+ret=func_001671F8(D_00478B48); x=(f32)r0;
+t=x+x*D_00482B68; if(t>=0.0f) y=(f32)(s32)(t+0.5f); else y=(f32)(s32)(t-0.5f);
+w=(f32)r3;
+t=w+w*D_00482B6C; if(t>=0.0f) h=(f32)(s32)(t+0.5f); else h=(f32)(s32)(t-0.5f);
+fn2=func_00190E20; fn2(arg1,ret,x,y,(f32)r1,(f32)r2,w,h,0.0f,0.0f);
 }
