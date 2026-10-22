@@ -1,6 +1,6 @@
 {
  "format": 1,
- "saved_at": 1792690314.4794133,
+ "saved_at": 1792698839.9509165,
  "title": "SLUS-20565",
  "platform": "ps2",
  "game": {
@@ -34,6 +34,11 @@
   "": "common.h"
  },
  "functions": {
+  "func_001001C8": {
+   "vram": 1049032,
+   "best_score": 500,
+   "best_by": "autopilot"
+  },
   "func_00100248": {
    "vram": 1049160,
    "best_score": 200,
@@ -74,6 +79,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001015B0": {
+   "vram": 1054128,
+   "best_score": 110,
+   "best_by": "autopilot"
+  },
   "func_00101728": {
    "vram": 1054504,
    "matched_by": "autopilot",
@@ -89,6 +99,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00101D88": {
+   "vram": 1056136,
+   "best_score": 110,
+   "best_by": "autopilot"
+  },
   "func_001039F0": {
    "vram": 1063408,
    "best_score": 5065,
@@ -103,6 +118,11 @@
    "vram": 1065008,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00104040": {
+   "vram": 1065024,
+   "best_score": 15,
+   "best_by": "autopilot"
   },
   "func_001040B8": {
    "vram": 1065144,
@@ -153,6 +173,31 @@
    "vram": 1069200,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00106C08": {
+   "vram": 1076232,
+   "matched_by": "opencode-deepseek-v4.1-flash-free-3",
+   "readable": false
+  },
+  "func_00106C48": {
+   "vram": 1076296,
+   "matched_by": "opencode-deepseek-v4.1-flash-free-3",
+   "readable": false
+  },
+  "func_00106C58": {
+   "vram": 1076312,
+   "matched_by": "opencode-deepseek-v4.1-flash-free-3",
+   "readable": false
+  },
+  "func_00106C78": {
+   "vram": 1076344,
+   "matched_by": "opencode-deepseek-v4.1-flash-free-3",
+   "readable": false
+  },
+  "func_00107BF0": {
+   "vram": 1080304,
+   "best_score": 15,
+   "best_by": "autopilot"
   },
   "func_00107CE8": {
    "vram": 1080552,
@@ -282,6 +327,26 @@
   "func_0010B4A8": {
    "vram": 1094824,
    "best_score": 2250,
+   "best_by": "autopilot"
+  },
+  "func_0010CC58": {
+   "vram": 1100888,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0010DB88": {
+   "vram": 1104776,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00110870": {
+   "vram": 1116272,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00110880": {
+   "vram": 1116288,
+   "best_score": 15,
    "best_by": "autopilot"
   },
   "func_00111830": {
@@ -524,6 +589,11 @@
    "best_score": 8825,
    "best_by": "autopilot"
   },
+  "func_00114740": {
+   "vram": 1132352,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_001148F0": {
    "vram": 1132784,
    "best_score": 13100,
@@ -574,15 +644,60 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001167E0": {
+   "vram": 1140704,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_00116AD8": {
    "vram": 1141464,
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00116BC8": {
+   "vram": 1141704,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00117388": {
+   "vram": 1143688,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_001176B0": {
+   "vram": 1144496,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_001185E8": {
+   "vram": 1148392,
+   "best_score": 75,
+   "best_by": "autopilot"
+  },
+  "func_001185F8": {
+   "vram": 1148408,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_00118E78": {
    "vram": 1150584,
    "best_score": 20625,
    "best_by": "opencode-33"
+  },
+  "func_0011AD80": {
+   "vram": 1158528,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0011BAB8": {
+   "vram": 1161912,
+   "best_score": 400,
+   "best_by": "autopilot"
+  },
+  "func_0011C218": {
+   "vram": 1163800,
+   "best_score": 15,
+   "best_by": "autopilot"
   },
   "func_0011C328": {
    "vram": 1164072,
@@ -634,6 +749,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0011E608": {
+   "vram": 1173000,
+   "best_score": 400,
+   "best_by": "autopilot"
+  },
+  "func_0011E618": {
+   "vram": 1173016,
+   "best_score": 400,
+   "best_by": "autopilot"
+  },
   "func_0011E730": {
    "vram": 1173296,
    "best_score": 21580,
@@ -643,6 +768,11 @@
    "vram": 1174896,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0011ED78": {
+   "vram": 1174904,
+   "best_score": 400,
+   "best_by": "autopilot"
   },
   "func_0011F270": {
    "vram": 1176176,
@@ -746,8 +876,8 @@
   },
   "func_00124B80": {
    "vram": 1198976,
-   "best_score": 3750,
-   "best_by": "autopilot"
+   "best_score": 325,
+   "best_by": "opencode-deepseek-v4.1-flash-free-8"
   },
   "func_00124EB0": {
    "vram": 1199792,
@@ -868,6 +998,11 @@
    "vram": 1226312,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0012BBB4": {
+   "vram": 1227700,
+   "best_score": 100,
+   "best_by": "autopilot"
   },
   "func_0012C028": {
    "vram": 1228840,
@@ -1334,10 +1469,20 @@
    "matched_by": "codex-gpt-6-luna-2",
    "readable": false
   },
+  "func_00138990": {
+   "vram": 1280400,
+   "best_score": 400,
+   "best_by": "autopilot"
+  },
   "func_00138A90": {
    "vram": 1280656,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00138A98": {
+   "vram": 1280664,
+   "best_score": 400,
+   "best_by": "autopilot"
   },
   "func_00138AA8": {
    "vram": 1280680,
@@ -1634,6 +1779,11 @@
    "best_score": 533,
    "best_by": "codex-gpt-6-luna-3"
   },
+  "func_0013B998": {
+   "vram": 1292696,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_0013BA30": {
    "vram": 1292848,
    "best_score": 5,
@@ -1849,6 +1999,11 @@
    "best_score": 4415,
    "best_by": "autopilot"
   },
+  "func_0013CB90": {
+   "vram": 1297296,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_0013CCC8": {
    "vram": 1297608,
    "best_score": 9423,
@@ -1864,10 +2019,35 @@
    "matched_by": "opencode-19",
    "readable": false
   },
+  "func_0013D2B8": {
+   "vram": 1299128,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_0013D2F8": {
    "vram": 1299192,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0013D430": {
+   "vram": 1299504,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0013D440": {
+   "vram": 1299520,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0013D450": {
+   "vram": 1299536,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0013DBE0": {
+   "vram": 1301472,
+   "best_score": 15,
+   "best_by": "autopilot"
   },
   "func_0013DE28": {
    "vram": 1302056,
@@ -1879,6 +2059,16 @@
    "best_score": 1160,
    "best_by": "opencode-18"
   },
+  "func_0013DE70": {
+   "vram": 1302128,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0013DE80": {
+   "vram": 1302144,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_0013DEF0": {
    "vram": 1302256,
    "best_score": 3375,
@@ -1887,6 +2077,16 @@
   "func_0013E160": {
    "vram": 1302880,
    "best_score": 4880,
+   "best_by": "autopilot"
+  },
+  "func_0013E330": {
+   "vram": 1303344,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0013E340": {
+   "vram": 1303360,
+   "best_score": 15,
    "best_by": "autopilot"
   },
   "func_0013E6B8": {
@@ -1899,10 +2099,20 @@
    "matched_by": "opencode-18",
    "readable": false
   },
+  "func_0013E6D0": {
+   "vram": 1304272,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_0013E6F0": {
    "vram": 1304304,
    "best_score": 100,
    "best_by": "opencode-9"
+  },
+  "func_0013E700": {
+   "vram": 1304320,
+   "best_score": 15,
+   "best_by": "autopilot"
   },
   "func_0013E718": {
    "vram": 1304344,
@@ -1939,9 +2149,24 @@
    "best_score": 800,
    "best_by": "codex-gpt-6-luna-5"
   },
+  "func_0013E918": {
+   "vram": 1304856,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "ovl_ntgui2_func_0013E928": {
+   "vram": 1304872,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_0013E928": {
    "vram": 1304872,
    "best_score": 5607,
+   "best_by": "autopilot"
+  },
+  "func_0013E938": {
+   "vram": 1304888,
+   "best_score": 15,
    "best_by": "autopilot"
   },
   "func_0013EA18": {
@@ -1974,10 +2199,70 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0013EEC0": {
+   "vram": 1306304,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "ovl_ntgui2_func_0013F158": {
+   "vram": 1306968,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0013F168": {
+   "vram": 1306984,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0013F178": {
+   "vram": 1307000,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_0013F450": {
+   "vram": 1307728,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_0013FBA0": {
    "vram": 1309600,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00140010": {
+   "vram": 1310736,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00140020": {
+   "vram": 1310752,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00140050": {
+   "vram": 1310800,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_001403B8": {
+   "vram": 1311672,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_001403C8": {
+   "vram": 1311688,
+   "best_score": 75,
+   "best_by": "autopilot"
+  },
+  "func_00140450": {
+   "vram": 1311824,
+   "best_score": 20,
+   "best_by": "autopilot"
+  },
+  "func_001404F0": {
+   "vram": 1311984,
+   "best_score": 15,
+   "best_by": "autopilot"
   },
   "func_00140580": {
    "vram": 1312128,
@@ -1997,6 +2282,11 @@
   "func_001411F0": {
    "vram": 1315312,
    "best_score": 18793,
+   "best_by": "autopilot"
+  },
+  "func_001412A8": {
+   "vram": 1315496,
+   "best_score": 15,
    "best_by": "autopilot"
   },
   "func_00142158": {
@@ -2239,6 +2529,46 @@
    "best_score": 940,
    "best_by": "opencode-nemotron-3-ultra-free-4"
   },
+  "func_00144FC0": {
+   "vram": 1331136,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00144FD0": {
+   "vram": 1331152,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00144FE0": {
+   "vram": 1331168,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00144FF0": {
+   "vram": 1331184,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00145000": {
+   "vram": 1331200,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00145010": {
+   "vram": 1331216,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00145020": {
+   "vram": 1331232,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_001451C0": {
+   "vram": 1331648,
+   "best_score": 75,
+   "best_by": "autopilot"
+  },
   "func_00145638": {
    "vram": 1332792,
    "best_score": 1135,
@@ -2319,14 +2649,39 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0014947C": {
+   "vram": 1348732,
+   "best_score": 420,
+   "best_by": "opencode-deepseek-v4.1-flash-free-12"
+  },
   "func_001494B0": {
    "vram": 1348784,
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001494B8": {
+   "vram": 1348792,
+   "matched_by": "opencode-deepseek-v4.1-flash-free-12",
+   "readable": false
+  },
+  "func_001494D4": {
+   "vram": 1348820,
+   "matched_by": "opencode-deepseek-v4.1-flash-free-12",
+   "readable": false
+  },
   "func_001494E8": {
    "vram": 1348840,
    "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_001494F0": {
+   "vram": 1348848,
+   "best_score": 10,
+   "best_by": "opencode-deepseek-v4.1-flash-free-12"
+  },
+  "func_0014957C": {
+   "vram": 1348988,
+   "matched_by": "@autopilot",
    "readable": false
   },
   "func_00149650": {
@@ -2364,6 +2719,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0014ABF0": {
+   "vram": 1354736,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_0014B328": {
    "vram": 1356584,
    "best_score": 2782,
@@ -2378,6 +2738,26 @@
    "vram": 1360368,
    "best_score": 10962,
    "best_by": "autopilot"
+  },
+  "func_0014D2F4": {
+   "vram": 1364724,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0014D3DC": {
+   "vram": 1364956,
+   "best_score": 20,
+   "best_by": "autopilot"
+  },
+  "func_0014D3FC": {
+   "vram": 1364988,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0014D404": {
+   "vram": 1364996,
+   "matched_by": "@autopilot",
+   "readable": false
   },
   "func_0014D410": {
    "vram": 1365008,
@@ -2404,6 +2784,31 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0014D9FC": {
+   "vram": 1366524,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0014DA7C": {
+   "vram": 1366652,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0014DA8C": {
+   "vram": 1366668,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0014E690": {
+   "vram": 1369744,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0014E6E0": {
+   "vram": 1369824,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_0014EC94": {
    "vram": 1371284,
    "matched_by": "autopilot",
@@ -2419,9 +2824,29 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0014EE68": {
+   "vram": 1371752,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0014EE74": {
+   "vram": 1371764,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0014F598": {
+   "vram": 1373592,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0014F5A8": {
    "vram": 1373608,
    "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0014FEE8": {
+   "vram": 1375976,
+   "matched_by": "@autopilot",
    "readable": false
   },
   "func_0014FEF0": {
@@ -2454,8 +2879,93 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0015207C": {
+   "vram": 1384572,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0015217C": {
    "vram": 1384828,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00152808": {
+   "vram": 1386504,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00152814": {
+   "vram": 1386516,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00152820": {
+   "vram": 1386528,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0015282C": {
+   "vram": 1386540,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00152838": {
+   "vram": 1386552,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00152848": {
+   "vram": 1386568,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00152854": {
+   "vram": 1386580,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00152860": {
+   "vram": 1386592,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0015286C": {
+   "vram": 1386604,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00152878": {
+   "vram": 1386616,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_001528A0": {
+   "vram": 1386656,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_001528AC": {
+   "vram": 1386668,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_001528B8": {
+   "vram": 1386680,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00152908": {
+   "vram": 1386760,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00152914": {
+   "vram": 1386772,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00152920": {
+   "vram": 1386784,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -2472,6 +2982,11 @@
   "func_00152E28": {
    "vram": 1388072,
    "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00152E4C": {
+   "vram": 1388108,
+   "matched_by": "@autopilot",
    "readable": false
   },
   "func_00152E88": {
@@ -2526,7 +3041,7 @@
   },
   "func_00154828": {
    "vram": 1394728,
-   "best_score": 830,
+   "best_score": 310,
    "best_by": "opencode-deepseek-v4.1-flash-free-1"
   },
   "func_00154960": {
@@ -2608,6 +3123,11 @@
    "vram": 1397176,
    "best_score": 575,
    "best_by": "autopilot"
+  },
+  "func_001551F0": {
+   "vram": 1397232,
+   "matched_by": "@autopilot",
+   "readable": false
   },
   "func_00155200": {
    "vram": 1397248,
@@ -2784,9 +3304,19 @@
    "best_score": 10600,
    "best_by": "autopilot"
   },
+  "func_00157158": {
+   "vram": 1405272,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_00157240": {
    "vram": 1405504,
    "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00157280": {
+   "vram": 1405568,
+   "matched_by": "@autopilot",
    "readable": false
   },
   "func_001572D8": {
@@ -2804,10 +3334,20 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00157850": {
+   "vram": 1407056,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_00157EDC": {
    "vram": 1408732,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00157FE4": {
+   "vram": 1408996,
+   "best_score": 15,
+   "best_by": "autopilot"
   },
   "func_00158068": {
    "vram": 1409128,
@@ -2818,6 +3358,11 @@
    "vram": 1411576,
    "best_score": 30905,
    "best_by": "autopilot"
+  },
+  "func_00158DB0": {
+   "vram": 1412528,
+   "matched_by": "autopilot",
+   "readable": false
   },
   "func_00158F10": {
    "vram": 1412880,
@@ -2838,6 +3383,11 @@
    "vram": 1413376,
    "best_score": 290,
    "best_by": "autopilot"
+  },
+  "func_001592F4": {
+   "vram": 1413876,
+   "matched_by": "@autopilot",
+   "readable": false
   },
   "func_001592FC": {
    "vram": 1413884,
@@ -3054,6 +3604,11 @@
    "best_score": 1200,
    "best_by": "autopilot"
   },
+  "func_0015AFAC": {
+   "vram": 1421228,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_0015BCD0": {
    "vram": 1424592,
    "best_score": 6522,
@@ -3064,10 +3619,20 @@
    "best_score": 1030,
    "best_by": "codex-gpt-6-luna-3"
   },
+  "func_0015BF98": {
+   "vram": 1425304,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_0015BFC8": {
    "vram": 1425352,
    "best_score": 3120,
    "best_by": "opencode-11"
+  },
+  "func_0015BFDC": {
+   "vram": 1425372,
+   "matched_by": "@autopilot",
+   "readable": false
   },
   "func_0015BFE4": {
    "vram": 1425380,
@@ -3271,6 +3836,11 @@
   },
   "func_0015EFB0": {
    "vram": 1437616,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0015EFB8": {
+   "vram": 1437624,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -3591,6 +4161,16 @@
   },
   "func_00165B34": {
    "vram": 1465140,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00165BB8": {
+   "vram": 1465272,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00165BE0": {
+   "vram": 1465312,
    "matched_by": "autopilot",
    "readable": false
   },
@@ -3944,6 +4524,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0016E70C": {
+   "vram": 1500940,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_0016E71C": {
    "vram": 1500956,
    "matched_by": "autopilot",
@@ -3968,6 +4553,31 @@
    "vram": 1503024,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0016FB0C": {
+   "vram": 1506060,
+   "best_score": 20,
+   "best_by": "autopilot"
+  },
+  "func_0016FB18": {
+   "vram": 1506072,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0016FB20": {
+   "vram": 1506080,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00170480": {
+   "vram": 1508480,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_001704AC": {
+   "vram": 1508524,
+   "best_score": 210,
+   "best_by": "autopilot"
   },
   "func_00170F88": {
    "vram": 1511304,
@@ -4018,6 +4628,11 @@
    "vram": 1514208,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00171C30": {
+   "vram": 1514544,
+   "best_score": 400,
+   "best_by": "autopilot"
   },
   "func_00171EF8": {
    "vram": 1515256,
@@ -4259,6 +4874,26 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00174D98": {
+   "vram": 1527192,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00174FC0": {
+   "vram": 1527744,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00175168": {
+   "vram": 1528168,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_001752F0": {
+   "vram": 1528560,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
   "func_001752F8": {
    "vram": 1528568,
    "best_score": 2542,
@@ -4272,6 +4907,16 @@
   "func_001755F0": {
    "vram": 1529328,
    "best_score": 9552,
+   "best_by": "autopilot"
+  },
+  "func_00175C28": {
+   "vram": 1530920,
+   "best_score": 400,
+   "best_by": "autopilot"
+  },
+  "func_00175C38": {
+   "vram": 1530936,
+   "best_score": 400,
    "best_by": "autopilot"
   },
   "func_001769E0": {
@@ -4296,8 +4941,8 @@
   },
   "func_00177A48": {
    "vram": 1538632,
-   "best_score": 12981,
-   "best_by": "autopilot"
+   "best_score": 4896,
+   "best_by": "opencode-deepseek-v4.1-flash-free-5"
   },
   "func_001780D8": {
    "vram": 1540312,
@@ -4309,6 +4954,11 @@
    "best_score": 4362,
    "best_by": "autopilot"
   },
+  "func_00179520": {
+   "vram": 1545504,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_001798F0": {
    "vram": 1546480,
    "matched_by": "autopilot",
@@ -4318,6 +4968,11 @@
    "vram": 1546672,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0017A088": {
+   "vram": 1548424,
+   "best_score": 600,
+   "best_by": "autopilot"
   },
   "func_0017B6B8": {
    "vram": 1554104,
@@ -4474,6 +5129,31 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0017E320": {
+   "vram": 1565472,
+   "best_score": 310,
+   "best_by": "autopilot"
+  },
+  "func_0017EBF8": {
+   "vram": 1567736,
+   "best_score": 600,
+   "best_by": "autopilot"
+  },
+  "func_0017F910": {
+   "vram": 1571088,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_0017FD6C": {
+   "vram": 1572204,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0017FD78": {
+   "vram": 1572216,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_0017FE48": {
    "vram": 1572424,
    "matched_by": "codex-gpt-6-luna-5",
@@ -4494,6 +5174,11 @@
    "best_score": 810,
    "best_by": "autopilot"
   },
+  "func_0017FF68": {
+   "vram": 1572712,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_0017FF78": {
    "vram": 1572728,
    "best_score": 1275,
@@ -4504,6 +5189,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00180130": {
+   "vram": 1573168,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_00180140": {
+   "vram": 1573184,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_00180228": {
    "vram": 1573416,
    "matched_by": "codex-gpt-6-luna-1",
@@ -4511,8 +5206,8 @@
   },
   "func_00180260": {
    "vram": 1573472,
-   "best_score": 2435,
-   "best_by": "autopilot"
+   "best_score": 1743,
+   "best_by": "opencode-deepseek-v4.1-flash-free-10"
   },
   "func_00180338": {
    "vram": 1573688,
@@ -4594,6 +5289,21 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_00181E38": {
+   "vram": 1580600,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00181E40": {
+   "vram": 1580608,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00181E48": {
+   "vram": 1580616,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_00181E50": {
    "vram": 1580624,
    "matched_by": "autopilot",
@@ -4608,6 +5318,11 @@
    "vram": 1583352,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_00182908": {
+   "vram": 1583368,
+   "best_score": 400,
+   "best_by": "autopilot"
   },
   "func_001829D8": {
    "vram": 1583576,
@@ -4634,6 +5349,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001835A0": {
+   "vram": 1586592,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_001835B0": {
+   "vram": 1586608,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_00183730": {
    "vram": 1586992,
    "best_score": 770,
@@ -4642,6 +5367,11 @@
   "func_00184080": {
    "vram": 1589376,
    "best_score": 560,
+   "best_by": "autopilot"
+  },
+  "func_00184150": {
+   "vram": 1589584,
+   "best_score": 400,
    "best_by": "autopilot"
   },
   "func_00184188": {
@@ -4704,6 +5434,51 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001883F0": {
+   "vram": 1606640,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0018A9C0": {
+   "vram": 1616320,
+   "best_score": 400,
+   "best_by": "autopilot"
+  },
+  "func_0018A9D0": {
+   "vram": 1616336,
+   "matched_by": "autopilot",
+   "readable": false
+  },
+  "func_0018AA60": {
+   "vram": 1616480,
+   "best_score": 400,
+   "best_by": "autopilot"
+  },
+  "func_0018ADF8": {
+   "vram": 1617400,
+   "best_score": 315,
+   "best_by": "autopilot"
+  },
+  "func_0018B078": {
+   "vram": 1618040,
+   "best_score": 500,
+   "best_by": "autopilot"
+  },
+  "func_0018B090": {
+   "vram": 1618064,
+   "best_score": 310,
+   "best_by": "autopilot"
+  },
+  "func_0018B0A8": {
+   "vram": 1618088,
+   "best_score": 310,
+   "best_by": "autopilot"
+  },
+  "func_0018B0C0": {
+   "vram": 1618112,
+   "best_score": 310,
+   "best_by": "autopilot"
+  },
   "func_0018BF30": {
    "vram": 1621808,
    "best_score": 5612,
@@ -4712,6 +5487,31 @@
   "func_0018CDA8": {
    "vram": 1625512,
    "matched_by": "codex-gpt-6-luna-2",
+   "readable": false
+  },
+  "func_0018CE78": {
+   "vram": 1625720,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0018CF98": {
+   "vram": 1626008,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0018CFD0": {
+   "vram": 1626064,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0018CFD8": {
+   "vram": 1626072,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_0018CFF0": {
+   "vram": 1626096,
+   "matched_by": "@autopilot",
    "readable": false
   },
   "func_0018D7A8": {
@@ -5059,6 +5859,31 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0019706C": {
+   "vram": 1667180,
+   "best_score": 10,
+   "best_by": "autopilot"
+  },
+  "func_00197320": {
+   "vram": 1667872,
+   "best_score": 15,
+   "best_by": "autopilot"
+  },
+  "func_00197A90": {
+   "vram": 1669776,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
+  "func_00197A9C": {
+   "vram": 1669788,
+   "best_score": 20,
+   "best_by": "autopilot"
+  },
+  "func_00197AA8": {
+   "vram": 1669800,
+   "matched_by": "@autopilot",
+   "readable": false
+  },
   "func_0019A4C8": {
    "vram": 1680584,
    "matched_by": "autopilot",
@@ -5074,6 +5899,21 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_0019B720": {
+   "vram": 1685280,
+   "best_score": 110,
+   "best_by": "autopilot"
+  },
+  "func_0019B72C": {
+   "vram": 1685292,
+   "best_score": 110,
+   "best_by": "autopilot"
+  },
+  "func_0019B738": {
+   "vram": 1685304,
+   "best_score": 110,
+   "best_by": "autopilot"
+  },
   "func_0019BA28": {
    "vram": 1686056,
    "matched_by": "autopilot",
@@ -5088,6 +5928,21 @@
    "vram": 1686072,
    "matched_by": "autopilot",
    "readable": false
+  },
+  "func_0019BA40": {
+   "vram": 1686080,
+   "best_score": 110,
+   "best_by": "autopilot"
+  },
+  "func_0019BB44": {
+   "vram": 1686340,
+   "best_score": 110,
+   "best_by": "autopilot"
+  },
+  "func_0019BB50": {
+   "vram": 1686352,
+   "best_score": 110,
+   "best_by": "autopilot"
   },
   "func_0019BC7C": {
    "vram": 1686652,
@@ -5384,6 +6239,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001AB1B8": {
+   "vram": 1749432,
+   "matched_by": "autopilot",
+   "readable": false
+  },
   "func_001AB1E8": {
    "vram": 1749480,
    "best_score": 6227,
@@ -5634,6 +6494,16 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001AF7D8": {
+   "vram": 1767384,
+   "best_score": 20,
+   "best_by": "autopilot"
+  },
+  "func_001AFF44": {
+   "vram": 1769284,
+   "best_score": 200,
+   "best_by": "autopilot"
+  },
   "func_001B01D8": {
    "vram": 1769944,
    "matched_by": "autopilot",
@@ -5652,6 +6522,11 @@
   "func_001B1528": {
    "vram": 1774888,
    "best_score": 3456,
+   "best_by": "autopilot"
+  },
+  "func_001B1568": {
+   "vram": 1774952,
+   "best_score": 600,
    "best_by": "autopilot"
   },
   "func_001B1698": {
@@ -5819,6 +6694,11 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_001B6268": {
+   "vram": 1794664,
+   "best_score": 500,
+   "best_by": "autopilot"
+  },
   "func_001B71D8": {
    "vram": 1798616,
    "best_score": 2460,
@@ -5951,8 +6831,8 @@
   },
   "func_001BE250": {
    "vram": 1827408,
-   "best_score": 11307,
-   "best_by": "autopilot"
+   "best_score": 6030,
+   "best_by": "opencode-deepseek-v4.1-flash-free-1"
   },
   "func_001BE638": {
    "vram": 1828408,
@@ -7046,8 +7926,8 @@
   },
   "func_001F7478": {
    "vram": 2061432,
-   "best_score": 3591,
-   "best_by": "autopilot"
+   "best_score": 1330,
+   "best_by": "opencode-deepseek-v4.1-flash-free-8"
   },
   "func_001F75B8": {
    "vram": 2061752,
@@ -7476,8 +8356,8 @@
   },
   "func_00212428": {
    "vram": 2171944,
-   "best_score": 2669,
-   "best_by": "autopilot"
+   "best_score": 60,
+   "best_by": "opencode-deepseek-v4.1-flash-free-6"
   },
   "func_00212518": {
    "vram": 2172184,
@@ -8176,8 +9056,8 @@
   },
   "func_00225CC0": {
    "vram": 2251968,
-   "best_score": 3432,
-   "best_by": "autopilot"
+   "best_score": 2455,
+   "best_by": "opencode-deepseek-v4.1-flash-free-3"
   },
   "func_00225DF0": {
    "vram": 2252272,
@@ -8721,8 +9601,8 @@
   },
   "func_002446F8": {
    "vram": 2377464,
-   "best_score": 4392,
-   "best_by": "autopilot"
+   "best_score": 1435,
+   "best_by": "opencode-deepseek-v4.1-flash-free-7"
   },
   "func_00245938": {
    "vram": 2382136,
@@ -8986,8 +9866,8 @@
   },
   "func_0024E3C8": {
    "vram": 2417608,
-   "best_score": 7928,
-   "best_by": "autopilot"
+   "best_score": 2125,
+   "best_by": "opencode-deepseek-v4.1-flash-free-9"
   },
   "func_0024EAA8": {
    "vram": 2419368,
@@ -10791,8 +11671,8 @@
   },
   "func_00295168": {
    "vram": 2707816,
-   "best_score": 3814,
-   "best_by": "autopilot"
+   "best_score": 2440,
+   "best_by": "opencode-deepseek-v4.1-flash-free-11"
   },
   "func_00295428": {
    "vram": 2708520,
@@ -10836,7 +11716,7 @@
   },
   "func_002955C0": {
    "vram": 2708928,
-   "best_score": 2675,
+   "best_score": 815,
    "best_by": "opencode-deepseek-v4.1-flash-free-5"
   },
   "func_00296480": {
@@ -11651,8 +12531,8 @@
   },
   "func_002A81E0": {
    "vram": 2785760,
-   "best_score": 3855,
-   "best_by": "autopilot"
+   "best_score": 2856,
+   "best_by": "opencode-deepseek-v4.1-flash-free-16"
   },
   "func_002A8330": {
    "vram": 2786096,
@@ -13649,6 +14529,11 @@
    "best_score": 6499,
    "best_by": "autopilot"
   },
+  "func_002D2B50": {
+   "vram": 2960208,
+   "best_score": 582,
+   "best_by": "opencode-deepseek-v4.1-flash-free-4"
+  },
   "func_002D2BC0": {
    "vram": 2960320,
    "best_score": 444,
@@ -14974,6 +15859,11 @@
    "best_score": 22,
    "best_by": "codex-gpt-6-luna-4"
   },
+  "func_002DC0B0": {
+   "vram": 2998448,
+   "best_score": 3031,
+   "best_by": "opencode-deepseek-v4.1-flash-free-4"
+  },
   "func_002DC138": {
    "vram": 2998584,
    "best_score": 1287,
@@ -16063,6 +16953,11 @@
    "vram": 3038440,
    "best_score": 1078,
    "best_by": "opencode-big-pickle-3"
+  },
+  "func_002E5E28": {
+   "vram": 3038760,
+   "best_score": 2717,
+   "best_by": "opencode-deepseek-v4.1-flash-free-4"
   },
   "func_002E5EA8": {
    "vram": 3038888,
@@ -17886,8 +18781,8 @@
   },
   "func_0030BD50": {
    "vram": 3194192,
-   "best_score": 70,
-   "best_by": "opencode-deepseek-v4.1-flash-free-2"
+   "matched_by": "opencode-deepseek-v4.1-flash-free-2",
+   "readable": false
   },
   "func_0030BEE0": {
    "vram": 3194592,
@@ -82304,6 +83199,66 @@
    "function": "func_00211AD0",
    "text": "MATCHED 2026-10-22. Key tricks for ee-gcc 2.96:\n- Local temp structs a (sp+0x10) and b (sp+0x40) are accessed through a scoped pointer (`Vec3 *ap = &a;`) so the a.x store is not forwarded and reloads from memory, exactly like target; the pointer is callee-saved and reused ($s2) across both blocks.\n- Keep a.x / a.y in f32 locals across the second call: `f32 ax = call1 * -5.0f; f32 ay = call2 * -5.0f; ap->x = ax; ap->z = 30.0f; ap->y = ay;` -> f20 holds ax (in delay slot of second jal), 30.0f in f22.\n- Vector updates must be written x,y,z order (`pos->x +=; pos->y +=; pos->z +=;`) so the target load order x(f3),y(f2),z(f1) appears; scheduler then emits stores z,y,x.\n- Pass the by-value struct with assignment inside the args: `func_001815C8(draw = *pos, ...)`. Args are evaluated right-to-left, so the last arg (func_0015A100(...)*1000 + D_00481548) is computed BEFORE the *pos copy; a separate `draw = *pos;` statement forces the copy first and shifts regalloc.\n- `volatile Vec3 pad;` is needed to force the 0x90 frame. Layout: saved sp+0, a sp+0x10, pad sp+0x20, draw sp+0x30, b sp+0x40.\n- func_001815C8 is EABI: Vec3 by value passed as hidden pointer in a0 (copy at sp+0x30), then a1=0xFA,a2=0x96,a3=0,t0=0x28,t1=D_00484F70,t2=0,t3=2,f12=5.0f,f13=last arg.\n- s32 D_004844A4 (<<14), s32 D_00484F70, f32 D_00481548 are gp-relative; declare as non-extern.",
    "by": "opencode-deepseek-v4.1-flash-free-8"
+  },
+  {
+   "function": "func_002909D8",
+   "text": "Best score 865/60 insns (85.5%), 62 insns emitted. The BEST source is the one with ascending field order (0x14,0x18,0x1C,0x20,0x24,0x28,0x2C,0x30) and `s32 k4=4,k8=8;` at function top used for both *(s8*)(p+0x28/0x30) and the func_00160010 a3/t0 args. Do NOT reorder to 0x20-first (1210), 0x2C-before-0x28 (905), or literals (1055); typed struct (2460) and block-local k4/k8 (1483) are worse.\n\nRemaining diffs (all scheduling/regalloc, semantics correct):\n1. Target computes ALL constants up front (0.25/f0, 0.5/f1, 0.75/f2, D_004826C4->f3, D_004826C8->f12, then addiu $a3,4 / $a0,2 / $t0,8) and then interleaves the field stores with the func_00160010 arg setup. Our 865 version interleaves constant materialization with stores.\n2. Consequence: target reuses $a3=4 and $t0=8 for BOTH the sb 0x28/0x30 stores AND the call args a3/t0 (2 insns saved). Ours rematerializes 4 and 8 (two extra addiu) -> 62 vs 60 insns, and the beqz offset differs by 8 (0xe4 vs 0xdc).\n3. Target does `addiu $a0,$zero,2; sb $a0,0x20; addiu $a0,$s0,0x120` (reuses a0); ours uses $a3=2 then $a3=4.\n\nConfirmed semantics (all good, keep them):\n- `if (*(s32*)(arg2+0xC) & 0x40) { ... } return 0;` gives the single shared epilogue.\n- p = func_00165DC0(**(void ***)(arg2+0x24), \"dha_quake.anm\"); // TWO derefs, target has lw $v1,0x24; lw $a0,($v1).\n- *(s32*)(arg2+0x578)=10;\n- fields of p: 0x14=0.25f, 0x18=(s8)1, 0x1C=0.5f, 0x20=(s8)2, 0x24=0.75f, 0x28=(s8)4, 0x2C=D_004826C4(=1.4782f), 0x30=(s8)8.\n- func_00160010(arg2+0x120, p, 10, 4, 8, D_004826C8, D_004826C8) (D_004826C8=0.1f in f12 and f13).\n- func_0024D308(func_00165DC0(\"fx.lmp\",\"spel_bw_pound.anm\"), arg2, 1.0f).\n- 4th param is a by-value 12-byte struct (copied *a3 to sp+0); declaring `Vec3 arg3` reproduces the entry ldl/ldr/lw/sdl/sdr/sw copy. arg0/arg1 unused.\nSuggested next idea: force GCC to schedule call-arg constants first, e.g. build the args via local variables assigned before the stores but non-constant-foldable, or find the original struct-typed expression form. Not worth more time at 85.5%.",
+   "by": "opencode-deepseek-v4.1-flash-free-8"
+  },
+  {
+   "function": "func_00154828",
+   "text": "Best score 310 (77/77 insns, first 41 instructions identical). Source that got 310: typed object struct (p10 at 0x10, u16 0x38, s32 0x4C/0x50, s64 0xE8, s32 0x104, buf at 0x110, u16 0x140), local `struct { u8 pad[0x10]; P12 p; } sp20` (this is what creates the target's 0x80 frame: real first local at 0x0x10 is 16 dead bytes, P12 copy at sp+0x20), `u8 sp30[0x10]` at 0x30, `P12 sp40` at 0x40. `s32 t = o->f140; if ((t ^ 1) & 1)` matches the lhu/xori/andi/beqz (using o->f140 directly adds an extra andi 0xffff). Remaining diff is regalloc/scheduling only: target keeps v0 = &sp40 and puts 0x20 in v1 (`addiu v1,$0,0x20; ...; sh v1,0x36(sp)`), mine clobbers v0; target final call setup order is a0,a1,t0(buf),t2(fE8),a2=1,copy,t1=0,t3=0,a3=&sp40,sw t5,8(v0),jal,sw 0,0(sp), mine sets a3 early and a2 late; last if target uses v1 for D_004844A4 and v0 for 0x104, mine swapped. Tried: untyped u8* version (830), named arg locals, P12* params, sp40 copy before the if (worse), p40 pointer live across if (worse/callee-saved), s16 vs u16 buffer store, s16 buffer with sp30[3], reordered final-if condition \u2014 all produce byte-identical output to the 310 build or worse. Needs someone to find the source shape that makes GCC keep v0 live across the second if block (maybe the real original has an 0x10 local there that is actually referenced).",
+   "by": "opencode-deepseek-v4.1-flash-free-1"
+  },
+  {
+   "function": "func_001F7478",
+   "text": "Why it cannot get closer with this toolchain: the target contains a redundant SECOND null test (`beql $s1,$0,.L001F7590` before the temp->0x1C4 increment, plus a duplicate `lw $v0,0x24($s0)` at .L001F758C). That is the two-sequential-`if (temp != NULL)` shape. ee-gcc-2.96 (this project's only compiler, per compiler_map there is no other range covering 0x1F7478) constant-folds/folds the duplicate condition in all forms tested: nested if, two sequential ifs, by-value struct + local, pointer-to-local - the second test always disappears (our best is 79 insns vs target 80, first difference is exactly that `beql`). Making the address live in $s3 to force it only breaks the frame/jump-table (score 1928, ?local jtbl ref). So the missing test is not expressible in C here; the same double test blocks the sibling func_00211790 (identical idiom), so whoever solves one solves both.\n\nBest attempt (1400, 82.5%) is the raw-cast version described in the earlier note on this function:\n- `Vec3 v = *(Vec3 *)(arg0 + 0x10);` reproduces the target ldl/ldr/sdl/sdr/sw copy (contrary to the old func_00211790 note); frame 0x50, v at sp+0x20.\n- `func_001E5190(void *a0, Vec3 *a1, s16 a2, s32 a3, void *t0, s32 t1, s32 t2, s32 t3, f32 f12, s64 s0, s32 s1, s32 s2)`.\n- Call: func_001E5190(temp, &v, *(s16*)(arg0+0x38), *(s32*)(p+0xC), arg0+0x120, *(s32*)p, *(s32*)(p+8), *(s32*)(p+0x10), 1.0f, var18, 7, 0).\n- switch cases 0..4 -> var18 = 8,0x10,0x20,0x40,2 and *(s32*)(arg0+0xF4) |= 2,4,8,0x10,1.\n- Tail: *(s64*)(arg0+0x228) = func_0016C970(p->0xC, arg0->0xF4) with p = arg0->0x24.\nOther residual diffs (after the beql): call-argument evaluation order (target loads arg0->0x24 first, copies v using $a1 as base, then args; ours evaluates args earlier and copies via $v0 + `move $a1,$v0`), and final p load in $v0 vs $a0. A source form that makes `&v` the early a1 operand without lengthening v's life (a named `Vec3 *pv` at function scope is wrong: grows frame to 0x60 and turns the jump table into ?local) would fix the rest.",
+   "by": "opencode-deepseek-v4.1-flash-free-8"
+  },
+  {
+   "function": "func_00177A48",
+   "text": "Released because its agent stopped (decompdecomp closed while it worked); its attempts are kept.",
+   "by": "opencode-deepseek-v4.1-flash-free-1"
+  },
+  {
+   "function": "func_001FE790",
+   "text": "Released because its agent stopped (the app restarted); its attempts are kept.",
+   "by": "opencode-deepseek-v4.1-flash-free-7"
+  },
+  {
+   "function": "func_002955C0",
+   "text": "Released because its agent stopped (the app restarted); its attempts are kept.",
+   "by": "opencode-deepseek-v4.1-flash-free-5"
+  },
+  {
+   "function": "func_002D2B50",
+   "text": "Released because its agent stopped (the app restarted); its attempts are kept.",
+   "by": "opencode-deepseek-v4.1-flash-free-8"
+  },
+  {
+   "function": "func_002DC0B0",
+   "text": "Released because its agent stopped (the app restarted); its attempts are kept.",
+   "by": "opencode-deepseek-v4.1-flash-free-8"
+  },
+  {
+   "function": "func_002E47A8",
+   "text": "Released because its agent stopped (the app restarted); its attempts are kept.",
+   "by": "opencode-deepseek-v4.1-flash-free-8"
+  },
+  {
+   "function": "func_002E5E28",
+   "text": "Released because its agent stopped (the app restarted); its attempts are kept.",
+   "by": "opencode-deepseek-v4.1-flash-free-8"
+  },
+  {
+   "function": "func_00180260",
+   "text": "Best attempt 1743 uses a for-loop over `*(s32*)(D_006F5AD0 + 0x130 + i*0x138)` (no separate base var). Closest structural match so far:\n- Loop shape that matches target exactly: `while (i < 16 && *p != 0) { i++; p = (s32*)((u8*)p + 0x138); }` with p initialized to `base + 0x130` and a local `u8 *base = D_006F5AD0`. That produced the target's exact sequence (slti/sltiu, p+=0x138, lw, bnel with i++ delay slot). Remaining loop diffs were only regalloc (target i=$a3, p=$v1, base addr temp $v0 then `move $v1,$v0`) and target's extra `nop` after `addiu i,i,1`.\n- Target 2nd block computed as: off=i*0x138 (a0), count via `addiu $a2,$gp,%gp_rel(D_00484308); lw $v1,($a2)`, value=(count<<8)|i, `addiu $s2,$a0,0x130`, `addu $s1,$s2,$s0` (s0=base), `addiu $a1,$s0,0x100`, `sw value,($s1)`, `sw count+1,($a2)`, jal func_001590C0(arg=base+0x100+i*0x138), delay `addu $s0,$s0,$s2`, then `sw zero,4($s0)`, `lw $v0,($s1)`.\n- I could not stop GCC from either (a) folding `D_006F5AD0+0x130` into one relocation (symbol D_006F5C00) when no base local is used, or (b) grouping slot as `(base + i*0x138) + 0x130` when a base local is used, or (c) accessing D_00484308 as direct `lw %gp_rel($gp)` instead of through a register. Tried: for/while/do-while; pointer induction var; i-first vs base-first addition order; `s32 *cntp=&D_00484308`; `if(i==16)return 0;` vs result var; p reassigned/reused. Score history: 3717,3681,3921,3033,1743,2037,3206,3206,2037.\n- Next idea: declare D_006F5AD0 as a sized struct/array in context.h so the +0x130 comes from a member offset rather than a folded constant, and make base a `struct *` whose size is 0x138 with id at +0x30 (entry base = D_006F5AD0+0x100). Target epilogue is shared; `if (i == 16) return 0;` gave the right `move $v0,$zero` in the beq delay slot.",
+   "by": "opencode-deepseek-v4.1-flash-free-10"
+  },
+  {
+   "function": "func_00225CC0",
+   "text": "Best 2455 (initial simple draft); my best structured version 2520. Structure is fully right: func_0017D348(D_004844A0, a->0x18C, 1), then if(a->0x178==0){vec at sp+0x10; func_001757D8(...,&vec,0); func_0017D410(...,a->0x190);} then if(a->0x178==1){vec at sp+0x30 {0,-350,0}; 1757D8; 17D410(...,0x190-350.0f); return;} else if(a->0x178==2){vec at sp+0x50 {0,-350,0}; 1757D8; 17D410(...,0x190+256.0f);} Use if/else-if (branch forms bne/bnel already match). D_004844A0 must be non-extern s32 (gp-rel).\n\nFrame: use `volatile f32 s[24]` (96 bytes) -> exact 0x70 frame, vecs at s[4]/s[12]/s[20] (sp+0x10/0x30/0x50). That part is confirmed correct.\n\nREMAINING BLOCKER (causes all 7 missing insns): target materializes a float zero with `mtc1 $zero,$f0` (or $f1) and stores with `swc1`, i.e. one mtc1 per block + 3 swc1. GCC 2.96 folds every zero I tried into `sw $zero`: literal 0.0f, integer 0, `f32 z=0.0f` reused, volatile f32 array, volatile f32* pointer, chained/individual stores, store order 0,8,4. This is the same pattern seen in func_00225DF0/func_00226338 (unmatched). Next idea: get the zero from something not provably the constant 0.0 to GCC while still emitting `mtc1 $zero` (e.g. a float value that GCC rematerializes as an integer-0 mtc1, a struct/union copy of a zero word, or an inlined helper's result). Once the 3 mtc1 appear, instruction count is 75 and the remaining b/bne offsets align. Everything else (scheduling/regorder, the extra `nop` after case1's b/ld) should follow.",
+   "by": "opencode-deepseek-v4.1-flash-free-3"
   }
  ]
 }

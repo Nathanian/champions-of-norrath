@@ -1,160 +1,154 @@
-/* machine draft (m2c), tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+extern u8 D_00408600[];
+extern u8 D_0040DBD8[];
+extern u8 D_004278B8[];
+extern u8 D_004278F0[];
+extern u8 D_00484A88[];
 
-s32 func_003044FC(void *, M2C_UNK *);               /* extern */
-M2C_UNK func_00304640(void *, void *);              /* extern */
-extern M2C_UNK D_00408600;
-extern M2C_UNK D_0040DBD8;
-extern M2C_UNK D_004278B8;
-extern M2C_UNK D_004278F0;
-extern M2C_UNK D_00484A88;
+s32 func_003044FC(const void *a, const void *b);
+void *func_00304640(void *dst, const void *src);
 
-void func_001BE250(s32 arg0, s32 arg1, s32 arg2) {
-    s32 sp0;
-    f32 temp_f0;
-    f32 temp_f1;
-    f32 temp_f2;
-    s32 *var_3_3;
-    s32 *var_4_2;
-    s32 temp_16;
-    s32 temp_2_3;
-    s32 temp_2_4;
-    s32 var_18;
-    s32 var_5;
-    s32 var_5_2;
-    s32 var_5_3;
-    s32 var_5_4;
-    s32 var_7;
-    s64 temp_6;
-    u16 *var_3;
-    u16 *var_3_2;
-    u16 *var_4;
-    u16 *var_9;
-    u16 temp_2;
-    u16 temp_2_2;
-    void *temp_16_2;
-    void *temp_17;
-    void *temp_19;
-    void *temp_21;
-    void *temp_2_5;
-    void *temp_2_6;
+typedef struct {
+    s16 type;
+    u16 unk02;
+    u8 unk04;
+    u8 unk05;
+    u16 unk06;
+    u16 unk08;
+    f32 unk0C;
+} ItemParam;
 
-    var_7 = -1;
-    temp_21 = &D_00408600 + (arg1 * 0x5DB0);
-    sp0 = arg1;
-    if (arg2 == -1) {
-        temp_6 = M2C_FIELD(temp_21, s64 *, 0x140);
-        var_5 = 0;
-        if (!(temp_6 & arg0) && (M2C_FIELD(temp_21, s16 *, 0x55F8) == -1)) {
-            var_7 = 0;
-        } else {
-loop_5:
-            var_5 += 1;
-            if (var_5 < 0xF) {
-                if (!(temp_6 & arg0) && (M2C_FIELD(((var_5 * 0x68) + temp_21), s16 *, 0x55F8) == -1)) {
-                    var_7 = var_5;
-                } else {
-                    goto loop_5;
-                }
+typedef struct {
+    u16 v[4];
+} Half4;
+
+typedef struct {
+    s32 v[4];
+} Word4;
+
+typedef struct {
+    char name[0x20];
+    ItemParam prm;
+    Half4 arr30;
+    Half4 arr38;
+    f32 unk40;
+    s32 unk44;
+    s64 id;
+    Word4 arr50;
+    s32 unk60;
+} ItemDef;
+
+typedef struct {
+    f32 f0;
+    f32 f4;
+    f32 f8;
+} Trio;
+
+typedef struct {
+    u8 pad0[0xAC];
+    f32 unkAC[2];
+    u8 pad1[0xC0 - 0xB4];
+    Trio unkC0;
+    u8 pad2[0x130 - 0xCC];
+    Trio unk130;
+    s64 mask;
+    u8 pad3[0x55F8 - 0x148];
+    struct {
+        s16 type;
+        u8 rest[0x66];
+    } slots[15];
+} Player;
+
+void func_001BE250(s64 id, s32 player, s32 slot)
+{
+    Player *p;
+    ItemDef *dst;
+    ItemParam *prm;
+    Trio *t;
+    s32 i;
+    s32 j;
+    s32 k;
+    s32 found;
+    s64 mask;
+    f32 f0;
+    f32 f1;
+
+    found = -1;
+    p = (Player *)(D_00408600 + player * 0x5DB0);
+
+    if (slot == -1) {
+        mask = p->mask;
+        for (i = 0; i < 15; i++) {
+            if ((mask & id) == 0 && p->slots[i].type == -1) {
+                found = i;
+                break;
             }
         }
     } else {
-        var_7 = arg2;
+        found = slot;
     }
-    if (var_7 != -1) {
-        var_18 = 0;
-        temp_19 = &D_0040DBD8 + ((sp0 * 0x5DB0) + (var_7 * 0x68));
-loop_32:
-        temp_16 = var_18 * 0x68;
-        temp_17 = temp_16 + &D_004278B8;
-        if (func_003044FC(temp_17, &D_00484A88) == 0) {
 
-        } else {
-            if (arg0 != M2C_FIELD(temp_17, s64 *, 0x48)) {
-                var_18 += 1;
-                goto loop_32;
-            }
-            temp_16_2 = temp_16 + 0x20 + &D_004278B8;
-            if (M2C_FIELD(temp_16_2, s16 *, 0) != 0x1D) {
-                func_00304640(temp_19, temp_17);
-                M2C_FIELD(temp_19, u8 *, 0x24) = (u8) M2C_FIELD(temp_16_2, u8 *, 4);
-                var_3 = temp_19 + 0x30;
-                M2C_FIELD(temp_19, u8 *, 0x25) = (u8) M2C_FIELD(temp_16_2, u8 *, 5);
-                M2C_FIELD(temp_19, u16 *, 0x26) = (u16) M2C_FIELD(temp_16_2, u16 *, 6);
-                M2C_FIELD(temp_19, u16 *, 0x28) = (u16) M2C_FIELD(temp_16_2, u16 *, 8);
-                M2C_FIELD(temp_19, f32 *, 0x2C) = (f32) M2C_FIELD(temp_16_2, f32 *, 0xC);
-                M2C_FIELD(temp_19, u16 *, 0x20) = (u16) M2C_FIELD(temp_16_2, s16 *, 0);
-                var_9 = (var_18 << 6) + &D_004278B8 + (var_18 * 0x28) + 0x30;
-                M2C_FIELD(temp_19, u16 *, 0x22) = (u16) M2C_FIELD(temp_16_2, u16 *, 2);
-                var_5_2 = 3;
-                do {
-                    temp_2 = *var_9;
-                    var_9 += 2;
-                    var_5_2 -= 1;
-                    *var_3 = temp_2;
-                    var_3 += 2;
-                } while (var_5_2 >= 0);
-                var_4 = temp_19 + 0x38;
-                var_5_3 = 3;
-                var_3_2 = &D_004278F0 + (var_18 * 0x68);
-                do {
-                    temp_2_2 = *var_3_2;
-                    var_3_2 += 2;
-                    var_5_3 -= 1;
-                    *var_4 = temp_2_2;
-                    var_4 += 2;
-                } while (var_5_3 >= 0);
-                temp_2_3 = (var_18 * 0x68) + 0x40;
-                var_4_2 = temp_19 + 0x50;
-                M2C_FIELD(temp_19, f32 *, 0x40) = (f32) *(temp_2_3 + &D_004278B8);
-                var_3_3 = (var_18 << 6) + &D_004278B8 + (var_18 * 0x28) + 0x50;
-                M2C_FIELD(temp_19, s64 *, 0x48) = (s64) M2C_FIELD((&D_004278B8 + temp_2_3), s64 *, 8);
-                var_5_4 = 3;
-                do {
-                    temp_2_4 = *var_3_3;
-                    var_3_3 += 4;
-                    var_5_4 -= 1;
-                    *var_4_2 = temp_2_4;
-                    var_4_2 += 4;
-                } while (var_5_4 >= 0);
-                M2C_FIELD(temp_19, s32 *, 0x60) = (s32) M2C_FIELD(((var_18 * 0x68) + &D_004278B8), s32 *, 0x60);
-            }
-            switch (arg0) {                         /* irregular */
-            case 0x40:
-                temp_2_5 = (sp0 * 0x5DB0) + 0x130 + &D_00408600;
-                M2C_FIELD(temp_2_5, f32 *, 8) = (f32) (M2C_FIELD(temp_2_5, f32 *, 8) + 15.0f);
-                break;
-            case 0x80:
-                temp_f2 = M2C_FIELD(temp_21, f32 *, 0xB0) + 3.0f;
-                temp_f0 = M2C_FIELD(temp_21, f32 *, 0xAC) + 3.0f;
-                M2C_FIELD(temp_21, f32 *, 0xB0) = temp_f2;
-                M2C_FIELD(temp_21, f32 *, 0xAC) = temp_f0;
-                if (temp_f2 < temp_f0) {
-                    M2C_FIELD(temp_21, f32 *, 0xAC) = temp_f2;
+    if (found == -1)
+        return;
+
+    dst = (ItemDef *)(D_0040DBD8 + player * 0x5DB0 + found * 0x68);
+
+    j = 0;
+    while (func_003044FC((ItemDef *)(D_004278B8 + j * 0x68), D_00484A88) != 0) {
+        if (((ItemDef *)(D_004278B8 + j * 0x68))->id == id) {
+            prm = &((ItemDef *)(D_004278B8 + j * 0x68))->prm;
+            if (prm->type != 0x1D) {
+                func_00304640(dst, (ItemDef *)(D_004278B8 + j * 0x68));
+                dst->prm.type = prm->type;
+                dst->prm.unk04 = prm->unk04;
+                dst->prm.unk05 = prm->unk05;
+                dst->prm.unk06 = prm->unk06;
+                dst->prm.unk08 = prm->unk08;
+                dst->prm.unk0C = prm->unk0C;
+                dst->prm.unk02 = prm->unk02;
+                {
+                    u16 *sp = ((ItemDef *)(D_004278B8 + j * 0x68))->arr30.v;
+                    u16 *dp = dst->arr30.v;
+                    for (k = 3; k >= 0; k--)
+                        *dp++ = *sp++;
                 }
-                break;
-            case 0x100:
-                temp_2_6 = (sp0 * 0x5DB0) + 0xC0 + &D_00408600;
-                M2C_FIELD(temp_2_6, f32 *, 8) = (f32) (M2C_FIELD(temp_2_6, f32 *, 8) + 5.0f);
-                M2C_FIELD(temp_2_6, f32 *, 4) = (f32) (M2C_FIELD(temp_2_6, f32 *, 4) + 5.0f);
-                temp_f1 = M2C_FIELD(temp_21, f32 *, 0xC8);
-                if (temp_f1 < M2C_FIELD(temp_21, f32 *, 0xC4)) {
-                    M2C_FIELD(temp_21, f32 *, 0xC4) = temp_f1;
+                {
+                    u16 *sp = (u16 *)(D_004278F0 + j * 0x68);
+                    u16 *dp = dst->arr38.v;
+                    for (k = 3; k >= 0; k--)
+                        *dp++ = *sp++;
                 }
-                break;
+                dst->unk40 = ((ItemDef *)(D_004278B8 + j * 0x68))->unk40;
+                dst->id = ((ItemDef *)(D_004278B8 + j * 0x68))->id;
+                {
+                    s32 *sp = ((ItemDef *)(D_004278B8 + j * 0x68))->arr50.v;
+                    s32 *dp = dst->arr50.v;
+                    for (k = 3; k >= 0; k--)
+                        *dp++ = *sp++;
+                }
+                dst->unk60 = ((ItemDef *)(D_004278B8 + j * 0x68))->unk60;
             }
-            M2C_FIELD(temp_21, s64 *, 0x140) = (s64) (M2C_FIELD(temp_21, s64 *, 0x140) | arg0);
+            if (id == 0x40) {
+                t = &((Player *)(D_00408600 + player * 0x5DB0))->unk130;
+                t->f8 += 15.0f;
+            } else if (id == 0x80) {
+                f0 = p->unkAC[1] + 3.0f;
+                f1 = p->unkAC[0] + 3.0f;
+                p->unkAC[1] = f0;
+                p->unkAC[0] = f1;
+                if (f1 > f0)
+                    p->unkAC[0] = f0;
+            } else if (id == 0x100) {
+                t = &((Player *)(D_00408600 + player * 0x5DB0))->unkC0;
+                t->f8 += 5.0f;
+                t->f4 += 5.0f;
+                f0 = p->unkC0.f4;
+                f1 = p->unkC0.f8;
+                if (f0 > f1)
+                    p->unkC0.f4 = f1;
+            }
+            p->mask |= id;
+            return;
         }
+        j++;
     }
 }
