@@ -15,7 +15,7 @@ typedef s32 M2C_UNK32;
 M2C_UNK func_0013CE70();                            /* extern */
 M2C_UNK func_0015FAF0();                            /* extern */
 M2C_UNK func_0018FAC0(s32, s32, s32);               /* extern */
-M2C_UNK func_002D5360(M2C_UNK);                     /* extern */
+M2C_UNK FlushCache_2(M2C_UNK);                     /* extern */
 extern M2C_UNK D_0037F9E0;
 extern s32 D_004843E4;
 extern u8 D_0048443C;
@@ -30,7 +30,7 @@ void func_00191200(s32 arg0, s32 arg1) {
 
     func_0013CE70();
     func_0018FAC0(arg0, arg1, M2C_FIELD(&D_00790FF0, s32 *, 8));
-    func_002D5360(0);
+    FlushCache_2(0);
     func_0015FAF0();
     M2C_FIELD(&D_00790FF0, s32 *, 0xC) = 1;
     var_6 = 0;

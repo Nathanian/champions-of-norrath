@@ -12,7 +12,7 @@ typedef s32 M2C_UNK32;
 #define M2C_OVERFLOW(a) (0)
 #endif
 
-M2C_UNK func_002D5360(M2C_UNK, s64, s64 *, s64, s64 *, M2C_UNK, s64 *, s64 *); /* extern */
+M2C_UNK FlushCache_2(M2C_UNK, s64, s64 *, s64, s64 *, M2C_UNK, s64 *, s64 *); /* extern */
 extern s32 D_004844CC;
 extern s64 *D_00486A48;
 extern s64 *D_00486A4C;
@@ -220,5 +220,5 @@ loop_12:
         sp0 = var_11 + 0x30;
         sp4 = NULL;
     }
-    func_002D5360(0, temp_3_6, sp8, temp_7, temp_8, 1, temp_10_3, var_11);
+    FlushCache_2(0, temp_3_6, sp8, temp_7, temp_8, 1, temp_10_3, var_11);
 }

@@ -1,4 +1,4 @@
-void func_002D5D60(void) { func_002D4E80(); }
+void func_002D5D60(void) { _iEnableIntc_2(); }
 
 s32 D_0048385C;
 extern s8 D_004E6754[];

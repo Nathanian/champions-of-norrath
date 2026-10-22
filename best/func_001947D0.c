@@ -1,88 +1,46 @@
-/* machine draft (m2c), tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-M2C_UNK func_00112340(M2C_UNK *, M2C_UNK);          /* extern */
-M2C_UNK func_0013EAC8(void *, M2C_UNK);             /* extern */
-M2C_UNK func_001447D8(M2C_UNK *);                   /* extern */
-M2C_UNK func_00164050(void *, M2C_UNK);             /* extern */
-M2C_UNK func_00194300(void *);                      /* extern */
-M2C_UNK func_001CD528(M2C_UNK *, s32, M2C_UNK *, s32); /* extern */
-extern M2C_UNK D_00408600;
-extern M2C_UNK D_0040DB70;
-extern M2C_UNK D_0044C620;
+extern u8 D_0044C620[];
+extern s32 D_00408600[];
+extern u8 D_0040DB70[];
 extern s8 D_0048382D;
 extern s8 D_0048459C;
 
-void func_001947D0(M2C_UNK *arg0, s32 arg1, M2C_UNK *arg2, s32 arg3) {
-    M2C_UNK *temp_17;
-    M2C_UNK *var_4;
-    M2C_UNK *var_6;
-    s32 temp_19;
-    s32 temp_2;
-    s32 var_5;
-    s32 var_7;
-    void *temp_16;
-    void *temp_18;
-    void *var_16;
+void func_001CD528(void);
+void func_00194300(void *p);
+void func_00164050(void *p, s32 a);
+void func_0013EAC8(void *p, s32 a);
+void func_00112340(void *p, s32 a);
+void func_001447D8(void *p);
 
-    var_4 = arg0;
-    var_5 = arg1;
-    var_6 = arg2;
-    var_7 = arg3;
-    temp_17 = var_4;
-    temp_19 = var_5;
-    M2C_FIELD(temp_17, M2C_UNK **, 0x48) = &D_0044C620;
+void func_001947D0(u8 *arg0, s32 arg1) {
+    u8 *end;
+    u8 *p;
+    s32 i;
+
     if (D_0048382D == 0) {
-        if (M2C_FIELD(temp_17, s8 *, 0x452) != 0) {
-            D_0048459C = 0;
-            var_6 = &D_00408600;
-        } else {
-            *(&D_0040DB70 + (M2C_FIELD(temp_17, s32 *, 0x3C0) * 0x5DB0)) = 0;
-            var_6 = &D_00408600;
-        }
-        var_5 = 0;
-loop_8:
-        var_4 = &D_00408600;
-        var_7 = M2C_FIELD(temp_17, s32 *, 0x3C0) * 0x176C;
-        temp_2 = var_7 + var_5;
-        var_5 += 1;
-        M2C_FIELD(((temp_2 * 4) + &D_00408600), s32 *, 0x5574) = 0;
-        if (var_5 < 5) {
-            goto loop_8;
-        }
+        D_0048459C = 0;
+        if (*(s8 *)(arg0 + 0x452) == 0)
+            *(s32 *)(D_0040DB70 + *(s32 *)(arg0 + 0x3C0) * 0x5DB0) = 0;
+        for (i = 0; i < 5; i++)
+            D_00408600[*(s32 *)(arg0 + 0x3C0) * 0x176C + i + 0x155D] = 0;
     }
-    temp_18 = temp_17 + 0x3C8;
-    func_001CD528(var_4, var_5, var_6, var_7);
-    func_00194300(temp_17 + 0x574);
-    func_00164050(temp_17 + 0x54C, 2);
-    func_0013EAC8(temp_17 + 0x4F4, 2);
-    func_0013EAC8(temp_17 + 0x4B8, 2);
-    func_00194300(temp_17 + 0x4A8);
-    if (temp_18 != NULL) {
-        temp_16 = temp_17 + 0x440;
-        if (temp_18 != temp_16) {
-            var_16 = temp_16 - 0x18;
-loop_12:
-            func_00194300(var_16 + 8);
-            if (temp_18 != var_16) {
-                var_16 -= 0x18;
-                goto loop_12;
-            }
+    *(u8 **)(arg0 + 0x48) = D_0044C620;
+    end = arg0 + 0x3C8;
+    func_001CD528();
+    func_00194300(arg0 + 0x574);
+    func_00164050(arg0 + 0x54C, 2);
+    func_0013EAC8(arg0 + 0x4F4, 2);
+    func_0013EAC8(arg0 + 0x4B8, 2);
+    func_00194300(arg0 + 0x4A8);
+    if (end != NULL) {
+        p = arg0 + 0x440;
+        if (end != p) {
+            do {
+                p -= 0x18;
+                func_00194300(p + 8);
+            } while (end != p);
         }
     }
-    func_00112340(temp_17, 0);
-    if (temp_19 & 1) {
-        func_001447D8(temp_17);
-    }
+    func_00112340(arg0, 0);
+    if (arg1 & 1)
+        func_001447D8(arg0);
 }

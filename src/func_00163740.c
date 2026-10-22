@@ -1,8 +1,8 @@
 s32 D_004868E0;
-s32 func_002D5120(s32);
+s32 WaitSema_2(s32);
 
 void func_0015FAA0(void) {
-    func_002D5120(D_004868E0);
+    WaitSema_2(D_004868E0);
 }
 
 void func_00163740(s32 arg0, s32 arg1) {

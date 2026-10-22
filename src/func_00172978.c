@@ -1,10 +1,10 @@
 /* identical to func_0015FAA0 (matched), with its names changed by decomp.wtf */
 
 s32 D_00486968;
-extern s32 func_002D4F30(s32);
+extern s32 TerminateThread_2(s32);
 
 void func_00172978(void) {
-    void (*fp)(s32) = (void (*)(s32))func_002D4F30;
+    void (*fp)(s32) = (void (*)(s32))TerminateThread_2;
     fp(D_00486968);
 }
 

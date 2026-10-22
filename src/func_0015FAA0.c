@@ -1,8 +1,8 @@
 s32 D_004868E0;
-extern s32 func_002D5120(s32);
+extern s32 WaitSema_2(s32);
 
 void func_0015FAA0(void) {
-    void (*fp)(s32) = (void (*)(s32))func_002D5120;
+    void (*fp)(s32) = (void (*)(s32))WaitSema_2;
     fp(D_004868E0);
 }
 

@@ -18,9 +18,9 @@ M2C_UNK func_00167538();                            /* extern */
 M2C_UNK func_0018F118();                            /* extern */
 M2C_UNK func_0018F7D0();                            /* extern */
 M2C_UNK func_002D3040(s32, s32, u16);               /* extern */
-s32 func_002D4DC0(M2C_UNK, M2C_UNK *, M2C_UNK);     /* extern */
-M2C_UNK func_002D4F70(s32, M2C_UNK);                /* extern */
-s32 func_002D4FD0();                                /* extern */
+s32 AddIntcHandler_3(M2C_UNK, M2C_UNK *, M2C_UNK);     /* extern */
+M2C_UNK ChangeThreadPriority_2(s32, M2C_UNK);                /* extern */
+s32 GetThreadId_2();                                /* extern */
 M2C_UNK func_002D5C28(M2C_UNK);                     /* extern */
 extern M2C_UNK D_00464238;
 extern M2C_UNK D_00464248;
@@ -33,9 +33,9 @@ void func_001901E0(void) {
     s32 temp_5;
     void *temp_2;
 
-    D_004843EC = func_002D4DC0(2, &func_0018E4A0, 0);
+    D_004843EC = AddIntcHandler_3(2, &func_0018E4A0, 0);
     func_002D5C28(2);
-    func_002D4F70(func_002D4FD0(), 0xA);
+    ChangeThreadPriority_2(GetThreadId_2(), 0xA);
     func_0015F928();
     *(s32 *)0x10000010 = 0x82;
     *(s32 *)0x10000000 = 0;

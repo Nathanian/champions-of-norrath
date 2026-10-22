@@ -1,8 +1,8 @@
 s32 func_00144558(s32);
 void func_0016CE88(void);
 void func_0016D520(void);
-void func_002D4F00(s32, s32);
-void func_002D4F30(s32, s32, s32, s32, void *);
+void StartThread_2(s32, s32);
+void TerminateThread_2(s32, s32, s32, s32, void *);
 s32 D_00486968;
 s32 D_00486978;
 s32 D_0048697C;
@@ -55,8 +55,8 @@ void func_00170F88(void) {
  D_0048697C=0;
  D_00486978=D_0048697C;
  D_0048410C=0;
- func_002D4F30(D_00486968,0,0,-1,D_006E8680);
- func_002D4F00(D_00486968,0);
+ TerminateThread_2(D_00486968,0,0,-1,D_006E8680);
+ StartThread_2(D_00486968,0);
  D_00484110=0;
  func_0016CE88();
  func_0016D520();

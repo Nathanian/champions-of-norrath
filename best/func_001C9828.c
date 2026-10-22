@@ -1,61 +1,47 @@
-/* machine draft (m2c), tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-s32 func_001671F8(M2C_UNK *, u8);                   /* extern */
-M2C_UNK func_0018CE88();                            /* extern */
-M2C_UNK func_00191180();                            /* extern */
-M2C_UNK func_001911F8(M2C_UNK);                     /* extern */
-M2C_UNK func_00191648(M2C_UNK *);                   /* extern */
-M2C_UNK func_001D3AB0(M2C_UNK *, M2C_UNK);          /* extern */
-M2C_UNK func_0026FA88(s32, M2C_UNK);                /* extern */
-extern M2C_UNK D_0034B660;
-extern u8 D_004389B8;
-extern u8 D_004389F8;
-extern M2C_UNK D_0046C2D0;
-extern M2C_UNK D_0046C2E0;
-extern s32 D_00483F30;
-extern s8 D_00484AF8;
-extern u8 D_00484BA8;
-extern s8 D_00484BDD;
-extern s32 D_00484F50;
-extern s8 D_00486002;
-extern s8 D_00486003;
-extern s8 D_00486004;
-extern s32 D_00486008;
-extern s8 D_00486AF0;
-extern M2C_UNK func_001C8098;
-
-void func_001C9828(void) {
-    func_0018CE88();
-    func_00191648(&func_001C8098);
-    func_0026FA88(D_00484F50, 1);
-    D_00483F30 = 0;
-    D_004389B8 = D_00484BA8;
-    D_004389F8 = D_00484BA8;
-    D_00484BDD = 1;
-    D_00484AF8 = 0;
-    D_00486AF0 = 0;
-    D_00486008 = func_001671F8(&D_0046C2D0, D_00484BA8);
-    D_00486002 = 1;
-    D_00486003 = 0;
-    D_00486004 = 0;
-    func_001D3AB0(&D_0046C2E0, 1);
-    func_001911F8(0xA);
-    func_00191180();
-    M2C_ERROR(/* unknown instruction: ldl $a1, 0x7($a4) */);
-    M2C_ERROR(/* unknown instruction: ldr $a1, ($a4) */);
-    M2C_ERROR(/* unknown instruction: sdl $a1, 0x7($v1) */);
-    M2C_ERROR(/* unknown instruction: sdr $a1, ($v1) */);
-    M2C_FIELD(&D_0034B660, s8 *, 0x50) = -1;
+extern char D_00484C40[];
+extern u8 D_0034B660[];
+extern u8 D_00484BA8[];
+extern u8 D_004389B8[];
+extern u8 D_004389F8[];
+extern char D_0046C2D0[];
+extern char D_0046C2E0[];
+s32 D_00484F50;
+s32 D_00483F30;
+u8 D_00484BDD;
+u8 D_00484AF8;
+u8 D_00486AF0;
+s32 D_00486008;
+u8 D_00486002;
+u8 D_00486003;
+u8 D_00486004;
+void func_0018CE88(void);
+void func_00191648(void (*)(void));
+s32 func_0026FA88(s32, s32);
+s32 func_001671F8(char *, u8);
+void func_001D3AB0(char *, s32);
+void func_001911F8(s32);
+short func_00191180(void);
+void func_001C8098(void);
+void *memcpy(void *, const void *, unsigned int);
+void func_001C9828(void)
+{
+  s32 b;
+  func_0018CE88();
+  func_00191648(func_001C8098);
+  func_0026FA88(D_00484F50, 1);
+  D_00483F30 = 0;
+  b = (D_004389B8[0] = D_00484BA8[0]);
+  D_004389F8[0] = b;
+  D_00484BDD = 1;
+  D_00484AF8 = 0;
+  D_00486AF0 = 0;
+  D_00486008 = func_001671F8(D_0046C2D0, b);
+  D_00486002 = 1;
+  D_00486003 = 0;
+  D_00486004 = 0;
+  func_001D3AB0(D_0046C2E0, 1);
+  func_001911F8(0xA);
+  func_00191180();
+  memcpy(D_0034B660, D_00484C40, 8);
+  D_0034B660[0x50] = -1;
 }

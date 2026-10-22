@@ -1,4 +1,4 @@
-extern void func_002D5120(s32);
+extern void WaitSema_2(s32);
 
 volatile s32 D_00484438;
 volatile u8 D_0048443C;
@@ -7,7 +7,7 @@ s32 D_00486A60;
 s8 func_00191180(void) {
     s32 save = D_00484438;
     while (D_00484438 == save) {
-        func_002D5120(D_00486A60);
+        WaitSema_2(D_00486A60);
     }
     return (s8)D_0048443C;
 }

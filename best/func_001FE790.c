@@ -1,71 +1,90 @@
-/* machine draft (m2c), tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+typedef struct S_vec S_vec;
+typedef struct S_area S_area;
+typedef struct S_area_node S_area_node;
+typedef struct S_area_ctx S_area_ctx;
 
-M2C_UNK func_00194390(void *, void *, void *);      /* extern */
-s32 func_001FF6B8(void *, void *);                  /* extern */
-extern f32 D_0048107C;
+struct S_vec {
+    f32 x;
+    f32 y;
+};
 
-void func_001FE790(void *arg0, void *arg1) {
-    M2C_UNK *var_17;
-    f32 temp_f0;
-    f32 temp_f1;
-    f32 temp_f20;
-    f32 var_f21;
-    s8 temp_3;
-    void *var_16;
-    void *var_20;
+struct S_area_node {
+    S_area_node *next;   /* 0x00 */
+    s32 unk_04;
+    s32 unk_08;
+    S_area *area;        /* 0x0C */
+};
 
-    temp_3 = M2C_FIELD(arg0, s8 *, 0x182);
-    if ((temp_3 == 0) || (M2C_FIELD(arg0, s8 *, 0x183) != temp_3)) {
-        var_17 = M2C_FIELD(arg0, M2C_UNK **, 0x50);
-        var_f21 = D_0048107C;
-        var_20 = NULL;
-        if (var_17 != NULL) {
-            var_16 = M2C_FIELD(var_17, void **, 0xC);
-loop_4:
-            if (var_16 == NULL) {
-                var_17 = *var_17;
-            } else if (M2C_FIELD(var_16, s32 *, 0xC) & 8) {
-                var_17 = *var_17;
-            } else {
-                temp_f1 = M2C_FIELD((var_16 + 0x10), f32 *, 4) - M2C_FIELD(arg1, f32 *, 4);
-                temp_f0 = M2C_FIELD(var_16, f32 *, 0x10) - M2C_FIELD(arg1, f32 *, 0);
-                temp_f20 = (temp_f0 * temp_f0) + (temp_f1 * temp_f1);
-                if (!(temp_f20 < M2C_FIELD(arg0, f32 *, 0x184))) {
-                    var_17 = *var_17;
-                } else if (!(temp_f20 < var_f21)) {
-                    var_17 = *var_17;
-                } else {
-                    var_17 = *var_17;
-                    if (func_001FF6B8(arg0, var_16) == 0) {
-                        var_f21 = temp_f20;
-                        var_20 = var_16;
-                    }
-                }
+struct S_area {
+    s32 unk_00;
+    s32 unk_04;
+    s32 unk_08;
+    u32 flags;           /* 0x0C */
+    S_vec pos;           /* 0x10 */
+};
+
+struct S_area_ctx {
+    u8 unk_00[0x50];
+    S_area_node *list;   /* 0x50 */
+    u8 unk_54[0x182 - 0x54];
+    s8 unk_182;
+    s8 unk_183;
+    f32 radius;          /* 0x184 */
+};
+
+void func_00194390(void *, S_area *, S_area *);
+s32 func_001FF6B8(S_area_ctx *, S_area *);
+void func_001FE790(S_area_ctx *, f32 *);
+f32 D_0048107C;
+
+void func_001FE790(S_area_ctx *ctx, f32 *pos) {
+    S_area_node *n;
+    S_area *area;
+    S_vec *p;
+    S_area *found;
+    f32 best;
+    f32 dx;
+    f32 dz;
+    f32 d2;
+
+    if (ctx->unk_182 != 0 && ctx->unk_183 == ctx->unk_182) {
+        return;
+    }
+    n = ctx->list;
+    best = D_0048107C;
+    if (n != NULL) {
+        found = NULL;
+        do {
+            area = n->area;
+            if (area == NULL) {
+                continue;
             }
-            if (var_17 != NULL) {
-                var_16 = M2C_FIELD(var_17, void **, 0xC);
-                goto loop_4;
+            if (area->flags & 8) {
+                continue;
             }
-        }
-        if (var_20 != NULL) {
-            func_00194390(arg0 + 0x54, var_20, var_20);
-            if (M2C_FIELD(arg0, s8 *, 0x182) != 0) {
-                M2C_FIELD(arg0, s8 *, 0x183) = (s8) ((u8) M2C_FIELD(arg0, s8 *, 0x183) + 1);
-                func_001FE790(arg0, var_20 + 0x10);
-                func_001FE790(arg0, arg1);
+            p = &area->pos;
+            dx = p->x - pos[0];
+            dz = p->y - pos[1];
+            d2 = dx * dx + dz * dz;
+            if (!(d2 < ctx->radius)) {
+                continue;
             }
+            if (!(d2 < best)) {
+                continue;
+            }
+            if (func_001FF6B8(ctx, area) != 0) {
+                continue;
+            }
+            best = d2;
+            found = area;
+        } while ((n = n->next) != NULL);
+    }
+    if (found != NULL) {
+        func_00194390(&ctx->unk_54, found, found);
+        if (ctx->unk_182 != 0) {
+            ctx->unk_183++;
+            func_001FE790(ctx, &found->pos.x);
+            func_001FE790(ctx, pos);
         }
     }
 }

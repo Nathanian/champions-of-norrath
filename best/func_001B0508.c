@@ -3,7 +3,7 @@ extern u8 D_00408600[];
 extern s32 D_00484F44;
 extern u8 D_0042A3E8[];
 extern u32 D_00400000;
-extern void func_002D4E80(void);
+extern void _iEnableIntc_2(void);
 extern void func_003021B0(u8 *, s32, s32);
 extern s32 func_001353A8(s32);
 void func_002D5D60(void);
