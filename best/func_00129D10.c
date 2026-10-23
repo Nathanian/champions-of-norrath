@@ -1,36 +1,18 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-M2C_UNK func_001050A8(M2C_UNK *, s32, M2C_UNK, M2C_UNK, M2C_UNK, M2C_UNK, M2C_UNK, M2C_UNK, s32, s32); /* extern */
-M2C_UNK func_00105190(M2C_UNK *, s32);              /* extern */
-extern M2C_UNK func_00129CA8;
-extern M2C_UNK func_00129CF8;
+extern void func_001050A8(void *, s32, s32, s32, s32, s32, s32, s32, s32, s32);
+extern void func_00105190(void *, s32);
+extern void func_00129CA8(void);
+extern void func_00129CF8(void);
 
 void func_00129D10(s32 arg0, s32 arg1) {
-    M2C_UNK sp10;
-    s32 sp90;
-    M2C_UNK *spBC;
-    M2C_UNK *spC0;
-    s32 temp_5;
-
-    func_001050A8(&sp10, arg0, 0xB, 2, 6, 0, 0x10, 6, 0x150, 0x22);
-    temp_5 = arg1 + 1;
-    if (arg1 <= 0) {
-        spBC = &func_00129CA8;
-        sp90 = temp_5;
+    char sp[0xD0];
+    *(s32 *)(sp + 0x00) = 0x150;
+    *(s32 *)(sp + 0x08) = 0x22;
+    func_001050A8(sp + 0x10, arg0, 0xB, 2, 6, 0, 0x10, 6, 0x150, 0x22);
+    if (arg1 > 0) {
+        *(void **)(sp + 0xC0) = (void *)func_00129CF8;
     } else {
-        spC0 = &func_00129CF8;
+        *(void **)(sp + 0xBC) = (void *)func_00129CA8;
+        *(s32 *)(sp + 0x90) = arg1 + 1;
     }
-    func_00105190(&sp10, temp_5);
+    func_00105190(sp + 0x10, arg1 + 1);
 }

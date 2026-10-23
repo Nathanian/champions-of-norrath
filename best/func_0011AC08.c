@@ -1,29 +1,78 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+typedef struct Buf {
+    s32 *data;
+    s32 cap;
+    s32 unk8;
+    s32 count;
+} Buf;
 
-extern M2C_UNK func_01000000;
+void func_0011A478(Buf *);
+void *func_0011B8D0(s32);
+void func_0011B968(void *);
+void func_001A24AC(void *, void *, s32);
+
+extern u8 D_010C4BD0[];
+extern u8 D_010C4CD0[];
+
+void func_0011AAC0(Buf *arg0, s32 arg1, Buf *arg2) {
+    s32 n = arg2->count;
+    s32 end = arg1 + n;
+    if (arg0->cap < end) {
+        do {
+            func_0011A478(arg0);
+        } while (arg0->cap < end);
+    }
+    if (n > 0) {
+        s32 *dst = arg0->data + arg1;
+        s32 *src = arg2->data;
+        do {
+            *dst = *src;
+            src++;
+            n--;
+            dst++;
+        } while (n != 0);
+    }
+    arg0->count = end;
+}
+
+void func_0011AA08(Buf *arg0, Buf *arg1) {
+    s32 n = arg1->count;
+    s32 i;
+    while (arg0->cap < arg0->count + n) {
+        func_0011A478(arg0);
+    }
+    for (i = 0; i < n; i++) {
+        arg0->data[arg0->count + i] = arg1->data[i];
+    }
+    arg0->count += n;
+}
+
+s32 func_0011AB78(Buf *arg0) {
+    s32 n = arg0->cap;
+    if (n > 0) {
+        s32 *p = func_0011B8D0(n * 4);
+        s32 *old = arg0->data;
+        if ((s32)p < (s32)old) {
+            func_001A24AC(p, old, arg0->count * 4);
+            if (arg0->data != 0) {
+                func_0011B968(arg0->data);
+            }
+            arg0->data = p;
+            return 1;
+        }
+        func_0011B968(p);
+    }
+    return 0;
+}
 
 void func_0011AC08(void) {
-    s32 var_3;
-    s8 *var_2;
-
-    var_3 = 0xFF;
-    var_2 = &func_01000000 + 0xC4BD0 + 0xFF;
+    s32 i;
+    volatile u8 *p = (volatile u8 *)D_010C4BD0;
+    p += 0xFF;
+    i = 0xFF;
     do {
-        var_3 -= 1;
-        *var_2 = 0;
-        var_2 -= 1;
-    } while (var_3 >= 0);
-    M2C_FIELD(&func_01000000, s32 *, 0xC4CD0) = 0;
+        i--;
+        *p = 0;
+        p -= 1;
+    } while (i >= 0);
+    *(volatile s32 *)D_010C4CD0 = 0;
 }

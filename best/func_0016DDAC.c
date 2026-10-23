@@ -13,11 +13,11 @@ typedef s32 M2C_UNK32;
 #endif
 
 void func_0016DDAC(void *arg0) {
-    s32 temp_6;
     s32 temp_lo;
+    s32 temp_6;
 
     temp_6 = M2C_FIELD(arg0, s32 *, 0x9C4);
     temp_lo = (s32) ((((M2C_FIELD(arg0, s32 *, 0x5AC) - (M2C_FIELD(arg0, s32 *, 0x948) * 2)) - M2C_FIELD(arg0, s32 *, 0x950)) - M2C_FIELD(arg0, s32 *, 0x954)) - ((temp_6 - 1) * M2C_FIELD(arg0, s32 *, 0x9CC))) / temp_6;
-    M2C_FIELD(arg0, s32 *, 0x988) = temp_lo;
     M2C_FIELD(arg0, s32 *, 0x984) = temp_lo;
+    M2C_FIELD(arg0, s32 *, 0x988) = temp_lo;
 }

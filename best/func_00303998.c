@@ -1,4 +1,4 @@
-extern s32 func_00301840(s32);
+s32 func_00301840(void *, s32);
 
 s32 func_00303998(void *obj) {
     s32 r = *(s32 *)((u8 *)obj + 0x1D4);
@@ -7,20 +7,19 @@ s32 func_00303998(void *obj) {
     s32 *q;
 
     if (r != 0) {
-        return r;
+        return 0;
     }
-    p = func_00301840(0x80);
+    p = func_00301840(obj, 0x80);
     *(s32 *)((u8 *)obj + 0x1D4) = p;
-    r = -1;
-    if (p != 0) {
-        q = (s32 *)(p + 0x7C);
-        i = 0x1F;
-        do {
-            *q = 0;
-            q--;
-            i--;
-        } while (i >= 0);
-        r = 0;
+    if (p == 0) {
+        return -1;
     }
-    return r;
+    q = (s32 *)(p + 0x7C);
+    i = 0x1F;
+    do {
+        i--;
+        *q = 0;
+        q--;
+    } while (i >= 0);
+    return 0;
 }

@@ -27,8 +27,8 @@ void func_0014E44C(void *arg0, s32 arg1, s32 arg2) {
     }
 block_4:
     M2C_FIELD(arg0, s32 *, 0x5A0) = arg1;
-    M2C_FIELD(arg0, s32 *, 0x4D4) = arg2;
     M2C_FIELD(arg0, s32 *, 0x5A4) = arg2;
+    M2C_FIELD(arg0, s32 *, 0x4D4) = arg2;
     func_0014EE74();
     temp_2 = M2C_FIELD(arg0, s32 *, 0x50);
     if (temp_2 != 0) {

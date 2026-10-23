@@ -15,18 +15,18 @@ typedef s32 M2C_UNK32;
 M2C_UNK func_0014A2EC(s32, s32);                    /* extern */
 
 void func_0014A49C(s32 arg0, s32 *arg1, u32 arg2) {
-    s32 *var_16;
-    s32 temp_5;
     u32 var_17;
+    s32 temp_5;
+    s32 *var_16;
 
     var_17 = 0;
-    if (arg2 != 0) {
+    if (arg2) {
         var_16 = arg1;
         do {
             temp_5 = *var_16;
             var_16 += 4;
-            var_17 += 1;
             func_0014A2EC(arg0, temp_5);
+            var_17++;
         } while (var_17 < arg2);
     }
 }

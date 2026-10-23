@@ -1,29 +1,82 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+extern void (*D_001C8E00[])();
 
-M2C_UNK func_0014CA30(s32);                         /* extern */
-extern M2C_UNK func_001C8098;
+void func_00153310(void) {
+    void (*fn)(void) = D_001C8E00[0];
+    fn();
+}
 
-void func_001532A4(void *arg0) {
-    M2C_FIELD(&func_001C8098, M2C_UNK (**)(), 0xD68)();
-    if (M2C_FIELD(arg0, s32 *, 0x940) != 0) {
-        func_0014CA30(M2C_FIELD(arg0, s32 *, 0x910));
+extern s32 func_0014CA30(s32);
+
+typedef struct {
+    char pad_0[0x910];
+    s32 unk_910;
+    s32 unk_914;
+    s32 unk_918;
+    char pad_1[0x24];
+    s32 unk_940;
+    s32 unk_944;
+    s32 unk_948;
+} S_func_001532A4_arg0;
+
+void func_001532A4(S_func_001532A4_arg0 *arg0) {
+    void (*fn)(void) = D_001C8E00[0];
+    fn();
+    if (arg0->unk_940 != 0) {
+        func_0014CA30(arg0->unk_910);
     }
-    if (M2C_FIELD(arg0, s32 *, 0x944) != 0) {
-        func_0014CA30(M2C_FIELD(arg0, s32 *, 0x914));
+    if (arg0->unk_944 != 0) {
+        func_0014CA30(arg0->unk_914);
     }
-    if (M2C_FIELD(arg0, s32 *, 0x948) != 0) {
-        func_0014CA30(M2C_FIELD(arg0, s32 *, 0x918));
+    if (arg0->unk_948 != 0) {
+        func_0014CA30(arg0->unk_918);
     }
+}
+
+extern s32 func_0014B7F0(s32, s32);
+
+typedef struct {
+    char pad_0[0x910];
+    s32 unk_910;
+    s32 unk_914;
+    s32 unk_918;
+} S_func_0015325C_arg0;
+
+void func_0015325C(S_func_0015325C_arg0 *arg0, s32 arg1) {
+    func_0014B7F0(arg0->unk_910, arg1);
+    func_0014B7F0(arg0->unk_914, arg1);
+    func_0014B7F0(arg0->unk_918, arg1);
+}
+
+extern s32 func_0014CE60(s32, s32, s32);
+extern s32 func_0014CF0C(s32, s32, s32);
+
+typedef struct {
+    char pad_0[0x5A0];
+    s32 unk_5A0;
+    s32 unk_5A4;
+    char pad_1[0x8];
+    s32 unk_5AC;
+    s32 unk_5B0;
+    char pad_2[0x24];
+    s32 unk_5D4;
+    char pad_3[0x338];
+    s32 unk_910;
+    s32 unk_914;
+    s32 unk_918;
+} S_func_0015371C_arg0;
+
+void func_0015371C(S_func_0015371C_arg0 *arg0) {
+    s32 temp;
+
+    temp = arg0->unk_5D4;
+    func_0014CE60(arg0->unk_910, arg0->unk_5A0 + temp, arg0->unk_5A4 + temp);
+    func_0014CF0C(arg0->unk_910, arg0->unk_5AC, arg0->unk_5B0);
+
+    temp = arg0->unk_5D4;
+    func_0014CE60(arg0->unk_914, arg0->unk_5A0 + temp, arg0->unk_5A4 + temp);
+    func_0014CF0C(arg0->unk_914, arg0->unk_5AC, arg0->unk_5B0);
+
+    temp = arg0->unk_5D4;
+    func_0014CE60(arg0->unk_918, arg0->unk_5A0 + temp, arg0->unk_5A4 + temp);
+    func_0014CF0C(arg0->unk_918, arg0->unk_5AC, arg0->unk_5B0);
 }

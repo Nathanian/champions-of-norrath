@@ -17,12 +17,12 @@ s32 func_00151DB8(s32, s32, s32, s32, s32);         /* extern */
 extern s32 D_0047FBF4;
 
 s32 func_0014F200(s32 arg0, s32 arg1, s32 arg2, s32 arg3) {
-    s32 var_2;
+    register unsigned var_2;
 
     var_2 = 0;
-    if (arg0 != 0) {
-        var_2 = func_0014B41C(D_0047FBF4);
-        if (var_2 != 0) {
+    if (arg0) {
+        register var_2 = func_0014B41C(D_0047FBF4);
+        if (var_2) {
             return func_00151DB8(arg0 + 0x9D0, arg1, arg0, arg2, arg3);
         }
     }

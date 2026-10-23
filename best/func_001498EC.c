@@ -1,23 +1,36 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+/* Function declarations for called functions */
+void func_00149924(s32);
+void func_00149980(s32);
+void func_0014CA30(s32);
 
-M2C_UNK func_00149924(s32);                         /* extern */
-M2C_UNK func_00149980(s32);                         /* extern */
-extern M2C_UNK func_001C6788;
+/* External function pointers - use unsized array to force full address load (not $gp-relative) */
+extern void (*func_001C6998[])(void);  /* func_001C6788+0x210 */
+extern void (*func_001C698C[])(void *); /* func_001C6788+0x204 */
 
+/* func_001498EC */
 void func_001498EC(s32 arg0) {
-    M2C_FIELD(&func_001C6788, M2C_UNK (**)(), 0x210)();
+    func_001C6998[0]();
     func_00149924(arg0);
     func_00149980(arg0);
+}
+
+/* func_001498AC */
+void func_001498AC(void *arg0) {
+    func_0014CA30(*(s32 *)((u8 *)arg0 + 0x8A4));
+    func_0014CA30(*(s32 *)((u8 *)arg0 + 0x8A0));
+    func_001C698C[0](arg0);
+}
+
+/* func_00149A30 - reuse same variable for chained loads (proposal #8) */
+void func_00149A30(void *arg0) {
+    void *v0 = *(void **)((u8 *)arg0 + 0x4C);
+    v0 = *(void **)((u8 *)v0 + 0x13C);
+    ((void (*)(void))v0)();
+}
+
+/* func_00149A54 - reuse same variable for chained loads (proposal #8) */
+void func_00149A54(void *arg0) {
+    void *v0 = *(void **)((u8 *)arg0 + 0x4C);
+    v0 = *(void **)((u8 *)v0 + 0x140);
+    ((void (*)(void))v0)();
 }

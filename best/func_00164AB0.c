@@ -1,29 +1,57 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+/* Function declarations */
+void func_0014B558(s32, s32);
+void func_0014B558(s32, s32);
 
-extern M2C_UNK func_001C7AF8;
+/* func_00164964 - matches func_0016E790 pattern */
+void func_00164964(s32 arg0) {
+    func_0014B558(arg0 + 0x130, 1);
+}
+
+/* func_00164980 */
+void func_00164980(void *arg0) {
+    if (*(s32 *)((u8 *)arg0 + 0x538) == 0) {
+        *(s64 *)((u8 *)arg0 + 0x930) = *(s64 *)((u8 *)arg0 + 0x940);
+        *(s64 *)((u8 *)arg0 + 0x938) = *(s64 *)((u8 *)arg0 + 0x948);
+    } else {
+        void *ptr = *(void **)((u8 *)arg0 + 0x4C);
+        void (*fn)(void *) = *(void (**)(void *))((u8 *)ptr + 0x110);
+        fn(arg0);
+    }
+}
+
+/* func_00164824 */
+void func_00164824(void *arg0, s32 *arg1, s32 *arg2, s32 arg3) {
+    s32 *src = (s32 *)((u8 *)arg0 + 0xA10);
+    s32 flag = *(s32 *)((u8 *)arg0 + 0x944);
+    u32 i = 0;
+    
+    if (flag != 0) {
+        do {
+            arg1[i] = arg3;
+            s32 val = src[i];
+            arg2[i] = val;
+            i++;
+        } while (i < 4);
+    } else {
+        do {
+            arg2[i] = arg3;
+            s32 val = src[i];
+            arg1[i] = val;
+            i++;
+        } while (i < 4);
+    }
+}
+
+/* func_00164AB0 */
+extern void (*func_001C7AFC[])(void);  /* func_001C7AF8+0x4 */
 
 void func_00164AB0(void *arg0) {
-    s64 temp_3;
-    s64 temp_4;
-
-    M2C_FIELD(&func_001C7AF8, M2C_UNK (**)(), 4)();
-    temp_3 = M2C_FIELD(arg0, s64 *, 0x940);
-    temp_4 = M2C_FIELD(arg0, s64 *, 0x948);
-    M2C_FIELD(arg0, s32 *, 0x98) = 2;
-    M2C_FIELD(arg0, s64 *, 0x930) = temp_3;
-    M2C_FIELD(arg0, s64 *, 0x938) = temp_4;
-    M2C_FIELD(arg0, s64 *, 0x950) = temp_3;
-    M2C_FIELD(arg0, s64 *, 0x958) = temp_4;
+    func_001C7AFC[0]();
+    s64 val1 = *(s64 *)((u8 *)arg0 + 0x940);
+    s64 val2 = *(s64 *)((u8 *)arg0 + 0x948);
+    *(s32 *)((u8 *)arg0 + 0x98) = 2;
+    *(s64 *)((u8 *)arg0 + 0x930) = val1;
+    *(s64 *)((u8 *)arg0 + 0x938) = val2;
+    *(s64 *)((u8 *)arg0 + 0x950) = val1;
+    *(s64 *)((u8 *)arg0 + 0x958) = val2;
 }

@@ -15,14 +15,14 @@ typedef s32 M2C_UNK32;
 void *func_001521A0(M2C_UNK);                       /* extern */
 
 void func_00151BFC(void *arg0, s32 arg1) {
-    void *temp_2;
+    register void *temp_2;
 
     temp_2 = func_001521A0(0xE);
     if (temp_2 != NULL) {
-        M2C_FIELD(temp_2, s32 *, 0x20) = arg1;
         M2C_FIELD(temp_2, s32 *, 0x10) = 1;
+        M2C_FIELD(temp_2, s32 *, 0x20) = arg1;
         M2C_FIELD(temp_2, s32 *, 0x14) = (s32) M2C_FIELD(arg0, s32 *, 0xFD4);
         M2C_FIELD(temp_2, s32 *, 0x18) = (s32) M2C_FIELD(arg0, s32 *, 0xFD8);
-        M2C_FIELD(temp_2, s32 *, 0x1C) = (s32) M2C_FIELD(arg0, s32 *, 0xFDC);
+        M2C_FIELD(temp_2, s32 *, 0x1C) = M2C_FIELD(arg0, s32 *, 0xFDC);
     }
 }

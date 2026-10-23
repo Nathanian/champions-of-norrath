@@ -1,26 +1,16 @@
-/* machine draft (m2c), tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-s32 func_002F81C0(s64 arg0, s64 arg1, s32 arg5) {
-    s64 temp_2;
-    s64 temp_3;
-    s64 temp_9;
-    u64 temp_7;
-
-    temp_2 = (s64) (arg1 << 0x20) >> 0x20;
-    temp_3 = (s64) (arg0 << 0x20) >> 0x20;
-    temp_7 = 0xFFFF0000U >> 0x20;
-    temp_9 = (((arg5 & (-1 << 0x20)) | ((u64) ((temp_3 * temp_2) << 0x20) >> 0x20)) & temp_7) | (MULTU_HI(temp_3, temp_2) << 0x20);
-    return (temp_9 & temp_7) | (((temp_9 >> 0x20) + ((temp_3 * (arg1 >> 0x20)) + ((arg0 >> 0x20) * temp_2))) << 0x20);
+s64 func_002F81C0(s64 a, s64 b, s64 c, s64 d, s64 e, s64 acc) {
+    s32 blo = (s32)b;
+    s32 bhi = (s32)(b >> 32);
+    s32 alo = (s32)a;
+    u64 prod = (u64)(u32)alo * (u64)(u32)blo;
+    s32 ahi = (s32)(a >> 32);
+    s32 cross1 = alo * bhi;
+    acc &= (u64)0xFFFFFFFFULL << 32;
+    s32 cross2 = ahi * blo;
+    acc |= (u32)prod;
+    u64 ph = prod >> 32;
+    acc &= 0xFFFFFFFFULL;
+    acc |= ph << 32;
+    s32 cross = cross1 + cross2;
+    return (s64)((((acc >> 32) + cross) << 32) | (acc & 0xFFFFFFFFULL));
 }

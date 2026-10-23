@@ -16,6 +16,6 @@ void func_0014F18C(s64 arg1) {
     s64 temp_5;
 
     temp_5 = (s64) (arg1 << 0x20) >> 0x20;
-    M2C_FIELD(temp_5, s32 *, 0x560) = 0;
     M2C_FIELD(temp_5, s32 *, 0x564) = 0;
+    M2C_FIELD(temp_5, s32 *, 0x560) = 0;
 }

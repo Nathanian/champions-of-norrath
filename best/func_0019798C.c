@@ -1,24 +1,35 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+u8 *D_00480488;   /* gp-rel small data: pointer to manager */
+extern u8 jtbl_004C006C[];
 
-void func_0019798C(void *arg0, void *arg1) {
-    s32 temp_6;
-    s32 temp_7;
-    s32 temp_8;
+typedef struct {
+    u8 pad0[0x40];
+    s32 (*fn40)(u8 *);
+} Mgr_197B8C;
 
-    temp_6 = M2C_FIELD(arg0, s32 *, 0x48);
-    temp_7 = M2C_FIELD(arg0, s32 *, 0x78);
-    temp_8 = M2C_FIELD(arg0, s32 *, 0x6C);
-    M2C_FIELD(arg1, M2C_UNK (**)(void *, s32, s32, s32, s32), 0x2C)(arg1, temp_8 + (M2C_FIELD(((temp_6 * 0x198) + temp_7), u16 *, 0x180) * 0x10), temp_6, temp_7, temp_8);
+void func_00197B8C(u8 *arg0) {
+    if (((Mgr_197B8C *)D_00480488)->fn40(arg0) != 0) {
+        *(s32 *)(arg0 + 0xE4) = 3;
+    }
+}
+
+void func_0019798C(u8 *arg0, u8 *arg1) {
+    s32 n = *(s32 *)(arg0 + 0x48);
+    u8 *p = *(u8 **)(arg0 + 0x78);
+    s32 v = *(s32 *)(arg0 + 0x6C);
+    ((void (*)(u8 *, s32))*(void **)(arg1 + 0x2C))(arg1,
+        v + (*(u16 *)(p + n * 0x198 + 0x180) << 4));
+}
+
+void func_00197970(u8 *arg0, s32 *arg1, s32 *arg2) {
+    *arg1 = *(s32 *)(*(u8 * volatile *)(arg0 + 0x7C) + 0);
+    *arg2 = *(s32 *)(*(u8 * volatile *)(arg0 + 0x7C) + 4);
+}
+
+void func_0019790C(u8 *arg0, u32 arg1, s32 arg2) {
+    s32 v = arg2 & 0xFF;
+    if (arg1 >= 5) {
+        ((void (*)(u8 *, u32, s32))*(void **)(D_00480488 + 0xF4))(jtbl_004C006C + 0xF1E0, arg1, v);
+    } else {
+        ((void (*)(u8 *, u32, s32))*(void **)(arg0 + 0x34))(arg0, arg1, v);
+    }
 }

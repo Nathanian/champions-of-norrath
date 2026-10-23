@@ -1,90 +1,41 @@
-extern s32 func_002DD640(void);
-extern void func_002DD698(void);
-extern s32 func_002DE908(s32 arg0);
-extern s32 func_002DE290(s64 arg0);
-extern void func_002DE420(s32 arg0);
-extern s64 func_002DE780(void);
+typedef struct D4459A8 {
+    u32 f00;
+    u32 f04;
+    u32 f08;
+    u32 f0C;
+    u32 f10;
+    u32 f14;
+} D4459A8;
 
-struct D_004459A8_Struct {
-    u32 unk0;
-    u32 unk4;
-    u32 unk8;
-    u32 unkC;
-    u32 unk10;
-    u32 unk14;
-    u32 unk18;
-    u32 unk1C;
-};
+typedef struct Node850 {
+    u32 f00;
+    u32 f04;
+    u32 f08;
+    u32 f0C;
+    u64 f10;
+    u32 f18;
+    u32 f1C;
+    u32 f20;
+    u32 f24;
+    u32 f28;
+} Node850;
 
-extern struct D_004459A8_Struct D_004459A8;
-
-struct NodeStruct {
-    u32 unk0;
-    u32 unk4;
-    u32 unk8;
-    u32 unkC;
-    u32 unk10;
-    u32 unk14;
-    u32 unk18;
-    u32 unk1C;
-    u32 unk20;
-    u32 unk24;
-    u32 unk28;
-    u32 unk2C;
-};
-
-s32 func_002DE9A8(s32 arg0) {
-    s32 temp17 = func_002DD640();
-    s32 temp16 = func_002DE908(arg0);
-    if (temp17 != 0) func_002DD698();
-    return temp16;
-}
-
-s32 func_002DE8C0(void) {
-    s32 temp16 = func_002DD640();
-    s32 temp17 = func_002DE850();
-    if (temp16 != 0) {
-        func_002DD698();
-    }
-    return temp17;
-}
-
-s32 func_002DEAA8(u32 arg0) {
-    struct NodeStruct *temp16 = (struct NodeStruct *)((arg0 >> 10) << 6);
-    if ((s32)arg0 < 0) return 0x80008002;
-    if ((arg0 & 0x3FF) != temp16->unk8) return 0x80008002;
-    if (D_004459A8.unk1C != arg0) {
-        s32 var2 = 1;
-        if (!(temp16->unkC & 1)) {
-            s64 temp2 = func_002DE780();
-            temp16->unk10 = (u32)temp2;
-            temp16->unkC |= 1;
-            if (temp16->unkC & 2) {
-                func_002DE420((s32)temp16);
-                func_002DE290(temp2);
-            }
-            var2 = 0;
-        }
-        return var2;
-    }
-    return 0x80000010;
-}
+extern D4459A8 D_004459A8;
 
 s32 func_002DE850(void) {
-    struct NodeStruct *temp6;
-    s32 temp5;
-    
-    temp6 = (struct NodeStruct *)D_004459A8.unk14;
-    if (temp6 == 0) {
-        return 0x80008005;
+    Node850 *node = (Node850 *)D_004459A8.f14;
+    if (node == 0) {
+        return (s32)0x80008005;
     }
-    temp5 = temp6->unk0 * 0x10;
-    temp6->unk28 = 0;
-    D_004459A8.unk10++;
-    temp6->unkC = 0;
-    D_004459A8.unk14 = temp6->unk0;
-    temp6->unk18 = 0;
-    D_004459A8.unkC++;
-    temp6->unk8 = ((D_004459A8.unkC * 2) & 0x3FE) | 1;
-    return temp5 | temp6->unk8;
+    s32 newf10 = D_004459A8.f10 + 1;
+    s32 temp5 = (s32)node << 4;
+    s32 node0 = node->f00;
+    node->f28 = 0;
+    D_004459A8.f10 = newf10;
+    node->f0C = 0;
+    D_004459A8.f14 = node0;
+    node->f18 = 0;
+    D_004459A8.f0C = D_004459A8.f0C + 1;
+    node->f08 = ((D_004459A8.f0C << 1) & 0x3FE) | 1;
+    return temp5 | node->f08;
 }

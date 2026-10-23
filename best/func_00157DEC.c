@@ -1,29 +1,37 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-void *func_00157DEC(void *arg0) {
-    void *temp_4;
-
-    temp_4 = M2C_FIELD(arg0, void **, 0x890);
-    M2C_FIELD(M2C_FIELD(temp_4, void **, 0x4C), M2C_UNK (**)(void *), 0xE0)(temp_4);
-    M2C_ERROR(/* unknown instruction: ldl $v1, 0xbf($v0) */);
-    M2C_ERROR(/* unknown instruction: ldr $v1, 0xb8($v0) */);
-    M2C_ERROR(/* unknown instruction: ldl $a0, 0xc7($v0) */);
-    M2C_ERROR(/* unknown instruction: ldr $a0, 0xc0($v0) */);
-    M2C_ERROR(/* unknown instruction: sdl $v1, 0xbf($s0) */);
-    M2C_ERROR(/* unknown instruction: sdr $v1, 0xb8($s0) */);
-    M2C_ERROR(/* unknown instruction: sdl $a0, 0xc7($s0) */);
-    M2C_ERROR(/* unknown instruction: sdr $a0, 0xc0($s0) */);
-    return M2C_FIELD(arg0, void **, 0x890);
+typedef struct 
+{
+  char pad_0[0x4C];
+  void **unk_4C;
+  char pad_1[0x68];
+  u64 unk_B8;
+  u64 unk_C0;
+} S_func_00157DEC_mid;
+typedef struct 
+{
+  char pad_0[0xB8];
+  u64 unk_B8;
+  u64 unk_C0;
+  char pad_1[0x890 - 0xC8];
+  S_func_00157DEC_mid *unk_890;
+} S_func_00157DEC_arg0;
+typedef struct 
+{
+  u64 unk_B8;
+  u64 unk_C0;
+} __attribute__((packed)) U64Pair;
+void func_00157DEC(S_func_00157DEC_arg0 *arg0)
+{
+  S_func_00157DEC_mid *mid;
+  void (*fn)(S_func_00157DEC_mid *);
+  S_func_00157DEC_mid *new_var;
+  U64Pair *src;
+  U64Pair *dst;
+  mid = arg0->unk_890;
+  fn = mid->unk_4C[0xE0 / 4];
+  fn(mid);
+  new_var = arg0->unk_890;
+  mid = new_var;
+  src = (U64Pair *) (((char *) mid) + 0xB8);
+  dst = (U64Pair *) (((char *) arg0) + 0xB8);
+  *dst = *src;
 }
