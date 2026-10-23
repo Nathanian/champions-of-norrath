@@ -1,7 +1,5 @@
 # Champions of Norrath (SLUS-20565) — decompilation progress
 
-[View the official Champions of Norrath cover art on Wikipedia](https://en.wikipedia.org/wiki/File:Champions_of_Norrath_Coverart.png)
-
 [![Join the project on Discord](https://img.shields.io/badge/Discord-Join%20the%20project-5865F2?logo=discord&logoColor=white&style=for-the-badge)](https://discord.com/channels/762922174263590983/1563215091292307476)
 
 This is a saved decompilation project created with
