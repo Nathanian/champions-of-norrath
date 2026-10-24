@@ -1,3 +1,6 @@
+/* identical to func_001A8280 (matched), with its names changed by decompdecomp */
+/* identical to func_002FF978 (matched), with its names changed by decompdecomp */
+
 typedef struct {
     s32 f00, f04, f08;
     s16 f0C, f0E;

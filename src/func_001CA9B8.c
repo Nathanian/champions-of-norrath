@@ -1,0 +1,5 @@
+extern s32 D_00484BA0,D_00484BA4,D_00484C70;
+extern u8 D_00333130[];
+extern u8 D_00428760[];
+void *func_003021B0(void*,s32,s32);
+s64 func_001CA9B8(void) { D_00484C70=1; D_00484BA0=2; D_00484BA4=(s32)D_00428760; return (s32)func_003021B0(D_00333130,0,0x148); }

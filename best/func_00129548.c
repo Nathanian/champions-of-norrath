@@ -1,35 +1,41 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+extern s32 D_001C4D78[], D_001C4D84[], D_001C4D88[];
+extern u8 D_004CA250[], D_004CA260[];
+extern u8 D_010CB0F0[];
+extern u8 D_010CB078[];
+extern s32 D_010CB0B8[];
+extern u8 D_0050F9F0[];
+typedef struct { s32 a; void (*fn)(void); void *sp0; s32 ssize; void *sp; s32 prio; s32 pad[6]; } Th;
+extern Th D_010CB0C0;
+void func_00129548(void);
+void *func_001A2660(void *, s32, s32);
+s32 CreateThread(void *);
+void StartThread(s32, s32);
+void ExitDeleteThread(void);
+s32 func_001B34C0(void *, void *);
 
-M2C_UNK ExitDeleteThread();                         /* extern */
-s32 func_001B34C0(void *, void *);                  /* extern */
-extern M2C_UNK func_001C4B18;
-extern M2C_UNK func_01000000;
-extern M2C_UNK jtbl_004C006C;
+void func_001295A8(void) {
+    Th *t = &D_010CB0C0;
+    D_001C4D88[0] = 0;
+    D_001C4D84[0] = 0;
+    func_001A2660(t, 0, 0x30);
+    t->fn = func_00129548;
+    t->ssize = 0x2000;
+    t->sp = D_0050F9F0;
+    t->prio = 0xA;
+    t->sp0 = D_010CB0F0;
+    StartThread(CreateThread(t), 0);
+}
 
 void func_00129548(void) {
-    void *var_4;
-    void *var_5;
-
-    if (M2C_FIELD(&func_001C4B18, s32 *, 0x260) == 1) {
-        var_5 = &func_01000000 + 0xCB078;
-        var_4 = &jtbl_004C006C + 0xA1E4;
+    void *a, *b;
+    if (D_001C4D78[0] == 1) {
+        a = D_004CA250;
+        b = D_010CB078;
     } else {
-        var_5 = &func_01000000 + 0xCB078;
-        var_4 = &jtbl_004C006C + 0xA1F4;
+        a = D_004CA260;
+        b = D_010CB078;
     }
-    M2C_FIELD(&func_01000000, s32 *, 0xCB0B8) = func_001B34C0(var_4, var_5);
-    M2C_FIELD(&func_001C4B18, s32 *, 0x270) = 1;
+    D_010CB0B8[0] = func_001B34C0(a, b);
+    D_001C4D88[0] = 1;
     ExitDeleteThread();
 }

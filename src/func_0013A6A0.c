@@ -1,4 +1,4 @@
-/* identical to func_00135798 (matched), with its names changed by decomp.wtf */
+/* identical to func_00135798 (matched), with its names changed by decompdecomp */
 #include "context.h"
 
 extern s8 D_00483829;

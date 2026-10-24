@@ -1,4 +1,4 @@
-/* identical to func_00113708 (matched), with its names changed by decomp.wtf */
+/* identical to func_00113708 (matched), with its names changed by decompdecomp */
 // 12-byte struct copy (3 s32) - plain unpacked struct
 typedef struct {
     s32 a, b, c;

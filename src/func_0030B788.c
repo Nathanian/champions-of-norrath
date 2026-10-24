@@ -1,3 +1,5 @@
+/* identical to func_001AABF0 (matched), with its names changed by decompdecomp */
+/* identical to func_0030B788 (matched), with its names changed by decompdecomp */
 s32 func_0030B788(u32 *a) {
     u32 v;
     s32 n;

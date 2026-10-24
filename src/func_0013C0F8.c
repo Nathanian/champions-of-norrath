@@ -1,5 +1,4 @@
-/* identical to func_0013B330 (matched), with its names changed by decomp.wtf */
-
+/* identical to func_0013B330 (matched), with its names changed by decompdecomp */
 /* B320 */
 s32 D_00485070;
 s32 func_0013B320(void *a0, void *a1) {

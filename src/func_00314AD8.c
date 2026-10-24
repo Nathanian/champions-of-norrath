@@ -1,5 +1,4 @@
-/* identical to func_00310AF8 (matched), with its names changed by decomp.wtf */
-
+/* identical to func_00310AF8 (matched), with its names changed by decompdecomp */
 extern u8 D_0044E790[];
 extern u8 D_0044A1E0[];
 extern u8 D_0044A150[];

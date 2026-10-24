@@ -1,14 +1,31 @@
+/* identical to func_001499FC (matched), with its names changed by decompdecomp */
+typedef struct {u8 pad[0x870]; s32 *items; s32 x874; s32 count; s32 x87c; s32 x880; s32 current; s32 target; s32 active; s32 dirty; s32 x894; s32 origin;} Gui;
 s32 D_0047FB14;
 s32 func_0014B5E4(s32,s32,s32,s32,s32);
-void func_0014A890(s32 a,s32 b,s32 c,s32 d){func_0014B5E4(D_0047FB14,a,b,c,d);}
-s32 func_001A4174(s32,s32);
-typedef struct {char pad[0x870]; s32 *items; s32 pad874; s32 count;} Items;
-s32 func_0014A808(Items *p,s32 key){s32 i;if(!p->items)return -1;for(i=0;i<p->count;i++){if(func_001A4174(key,p->items[i])==0)return i;}return -1;}
-#define F(p,o) (*(s32*)((char*)(p)+(o)))
-s32 func_0011B9A8(s32);
-s32 func_0014B0F0(void*,s32,s32);
-s32 func_0014A8C4(void*);
-void func_0014A9D8(void*p){s32 size,buf;F(p,0x928)=0;size=(F(p,0x940)<<5)+0x80;buf=func_0011B9A8(size*2);F(p,0x910)=buf;F(p,0x914)=buf+size;F(p,0x91c)=func_0011B9A8(F(p,0x940)*16);F(p,0x920)=1;F(p,0x930)=F(p,0x8e0);F(p,0x924)=2;func_0014B0F0(p,F(p,0x930),2);func_0014A8C4(p);F(p,0x4d0)=0;}
+void func_0014A6BC(void*);
+void func_0011B9E0(s32);
+void func_0014A3E8(void*,s32);
 extern u8 func_001C8098[];
-s32 func_0014AEDC(void*);s32 func_00171AE0(s32);
-void func_0014AA98(void*p){void*q=func_001C8098; s32 n;q=*(void**)((char*)q+0xd68);((s32(*)(void))q)();n=F(p,0x924);if(n){F(p,0x924)=n-1;func_0014AEDC(p);}if(F(p,0x920)&&!F(p,0x924)){F(p,0x920)=0;F(p,0x928)=0;F(p,0x98)=2;}func_00171AE0(F(p,0x910+((F(p,0x4ec)^1)*4)));}
+void func_0014A890(s32 a,s32 b,s32 c,s32 d){func_0014B5E4(D_0047FB14,a,b,c,d);}
+void func_00149F60(Gui *p) {
+s32 old,delta,mag,n,half,eighth,quarter,cond;
+void *fp=func_001C8098; fp=*(void**)((u8*)fp-0x8f4); ((void(*)(void))fp)();
+if(p->active){
+old=p->current; n=p->count; delta=p->target-old; mag=delta; if(delta<0)mag=-mag;
+mag>>=8; half=delta>>1; eighth=delta>>3; quarter=delta>>2; cond=(n>>2)<mag;
+if((n>>1)<mag)p->current=old+half;
+if(cond)p->current+=quarter;
+p->current+=eighth;
+if(p->dirty==0 && old==p->current){p->active=0;return;}
+func_0014A6BC(p);
+}}
+void func_0014A32C(Gui *p,u32 index){
+s32 n=p->count;
+if(n>0 && index<(u32)n){
+u32 i; s32 limit,total; s32 *q;
+func_0011B9E0(p->items[index]);
+i=index; total=p->count; limit=total-1;
+if((s32)i<limit){q=p->items+index; do{ i++; q[0]=q[1]; q++;}while((s32)i<limit);}
+p->dirty=1; p->items[i]=0; p->count=total-1;p->active=1;
+}}
+void func_0014A43C(Gui *p,s32 i){func_0014A3E8(p,i-p->origin+1);}

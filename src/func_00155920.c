@@ -1,4 +1,4 @@
-/* identical to func_00154A10 (matched), with its names changed by decomp.wtf */
+/* identical to func_00154A10 (matched), with its names changed by decompdecomp */
 typedef struct { s32 a; s32 b; s32 c; } Struct12;
 struct GameObject {
     u8 pad_0[0xC];

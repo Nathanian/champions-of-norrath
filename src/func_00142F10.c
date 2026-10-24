@@ -1,3 +1,4 @@
+/* identical to func_0011AAC0 (matched), with its names changed by decompdecomp */
 /* identical to func_00143E80 (matched), with its names changed by decompdecomp */
 void func_001428E8(void *);
 

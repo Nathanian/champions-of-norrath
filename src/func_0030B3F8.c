@@ -1,3 +1,5 @@
+/* identical to func_001AA860 (matched), with its names changed by decompdecomp */
+/* identical to func_0030B3F8 (matched), with its names changed by decompdecomp */
 typedef struct S_0030B3F8_node {
     struct S_0030B3F8_node *next;
     s32 f4;

@@ -1,3 +1,5 @@
+/* identical to func_001A3A00 (matched), with its names changed by decompdecomp */
+/* identical to func_00303A08 (matched), with its names changed by decompdecomp */
 extern s32 D_00453850[6];
 typedef struct 
 {

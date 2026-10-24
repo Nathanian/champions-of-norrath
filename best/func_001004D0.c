@@ -1,25 +1,24 @@
-extern u8 func_001B9FD8[];
-
+extern u8 D_001BA38C[];
+extern u8 D_001BA390[];
 void func_0017FD84(void);
-s32 func_0017FD48(s32, f32);
+void func_0017FD48(f32);
 s32 func_0017FF20(s32);
 s32 func_0018014C(void);
+typedef struct { s32 a; f32 b; s32 c; f32 d; } S4D0;
 
-void func_001004D0(s32 arg0, s32 arg1, void *arg2, f32 fparg0) {
-    u8 *p = func_001B9FD8 + 0x3B4;
-    if (*(f32 *)p != fparg0) {
+s32 func_001004D0(s32 arg0, s32 arg1, S4D0 *o, f32 f) {
+    if (*(f32 *)D_001BA38C != f) {
         func_0017FD84();
-        *(f32 *)p = fparg0;
+        *(f32 *)D_001BA38C = f;
     }
-    p = func_001B9FD8 + 0x3B8;
-    if (*(s32 *)p != arg0) {
-        s32 t = (arg0 < 0) ? (arg0 + 0xF) : arg0;
-        t >>= 4;
-        func_0017FD48(arg0 + 0xF, (f32)t);
-        *(s32 *)p = arg0;
+    if (*(s32 *)D_001BA390 != arg0) {
+        f32 g = (f32)(arg0 / 16);
+        func_0017FD48(g);
+        *(s32 *)D_001BA390 = arg0;
     }
-    *(s32 *)((u8 *)arg2 + 0x8) = 0;
-    *(s32 *)((u8 *)arg2 + 0x0) = 0;
-    *(f32 *)((u8 *)arg2 + 0xC) = (f32)func_0017FF20(arg1) * 16.0f;
-    *(f32 *)((u8 *)arg2 + 0x4) = (f32)func_0018014C() * 16.0f;
+    o->c = 0;
+    o->a = 0;
+    o->d = (f32)func_0017FF20(arg1) * 16.0f;
+    o->b = (f32)func_0018014C() * 16.0f;
+    return 0;
 }

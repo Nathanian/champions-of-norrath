@@ -1,5 +1,4 @@
-/* identical to func_0030D658 (matched), with its names changed by decomp.wtf */
-
+/* identical to func_0030D658 (matched), with its names changed by decompdecomp */
 /* small data */
 s64 D_00486DC8;
 

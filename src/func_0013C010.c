@@ -1,5 +1,4 @@
-/* identical to func_0013AA08 (matched), with its names changed by decomp.wtf */
-
+/* identical to func_0013AA08 (matched), with its names changed by decompdecomp */
 extern char D_004614A0[];
 void func_002D70D0(char *);
 void func_00250D48(s32, s32, s32);

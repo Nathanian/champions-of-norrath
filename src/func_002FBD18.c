@@ -1,3 +1,5 @@
+/* identical to func_0019FFC0 (matched), with its names changed by decompdecomp */
+/* identical to func_002FBD18 (matched), with its names changed by decompdecomp */
 /* machine draft (m2c), tried by autopilot */
 #ifndef M2C_DEFINES
 #define M2C_DEFINES

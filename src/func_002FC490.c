@@ -1,3 +1,6 @@
+/* identical to func_001A0738 (matched), with its names changed by decompdecomp */
+/* identical to func_002FC490 (matched), with its names changed by decompdecomp */
+
 s32 func_001449A8(s32);
 void func_002FC428(s32, void *);
 void func_002FC490(s32 arg0) {

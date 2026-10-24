@@ -1,4 +1,5 @@
-/* identical to func_0013AAA8 (matched), with its names changed by decomp.wtf */
+/* identical to func_001040B8 (matched), with its names changed by decompdecomp */
+/* identical to func_0013AAA8 (matched), with its names changed by decompdecomp */
 
 extern s32 func_00138758(void *arg0, s32 arg1, void **arg2);
 extern s32 func_00138900(void *arg0, void *arg1);

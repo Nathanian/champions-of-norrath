@@ -1,28 +1,58 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+extern s32 D_010CE310[];
+extern s32 D_010CE314[];
+extern s32 D_010CE2E0[];
+extern u8 D_010CE2E4[];
+extern s32 D_010CE2F4[];
+extern s32 D_010CE2F8[];
+extern s32 D_001C3BEC[];
+void func_001351A8(void);
+void func_00134EE0(void);
+void func_00134D20(void);
+void func_00118140(void *, s32, void *, void *, s32);
+s32 func_00118160(void *);
+void func_00118340(s32);
+s32 func_001107E8(s32, void *, s32, void *, s32);
+s32 func_0011BA18(s32);
+void func_0011CEF0(s32, s32, s32);
+void func_0011E420(s32, s32);
+s32 func_0011C6C8(void);
+s32 func_0011C6F0(s32);
+void func_001350B8(void);
 
-s32 func_001107E8(s32, void *, M2C_UNK, void *, M2C_UNK); /* extern */
-s32 func_0011BA18(M2C_UNK);                         /* extern */
-M2C_UNK func_0011CEF0(s32, s32, M2C_UNK);           /* extern */
-M2C_UNK func_0011E420(s32, M2C_UNK);                /* extern */
-extern M2C_UNK func_01000000;
+void func_00135240(s32 arg0) {
+    u8 a[0x20];
+    u8 b[0x20];
+    D_010CE310[0] = arg0;
+    if (arg0 < 0)
+        return;
+    switch (arg0) {
+    case 0: case 1: case 2: case 3: case 4: case 5: case 6:
+        func_00118140(a, 1, func_001351A8, func_00134EE0, 0);
+        D_010CE314[0] = func_00118160(a);
+        break;
+    case 7: case 8: case 9: case 10: case 11: case 12: case 13:
+        if (D_010CE314[0] != 0)
+            func_00118340(D_010CE314[0]);
+        func_00118140(b, 1, func_001351A8, func_00134D20, 0);
+        func_00118160(b);
+        break;
+    }
+}
 
 void func_001351A8(void) {
-    if ((M2C_FIELD(&func_01000000, s32 *, 0xCE310) >= 0) && (M2C_FIELD(&func_01000000, s32 *, 0xCE310) < 7)) {
-        M2C_FIELD(&func_01000000, s32 *, 0xCE2E0) = func_001107E8(func_0011BA18(0xD7), &func_01000000 + 0xCE2E4, 1, &func_01000000 + 0xCE2F4, 0);
-        M2C_FIELD(&func_01000000, s32 *, 0xCE2F8) = 0;
+    if (D_010CE310[0] >= 0 && D_010CE310[0] < 7) {
+        D_010CE2E0[0] = func_001107E8(func_0011BA18(0xD7), D_010CE2E4, 1, D_010CE2F4, 0);
+        D_010CE2F8[0] = 0;
     }
-    func_0011E420(M2C_FIELD(&func_01000000, s32 *, 0xCE2F4), 0);
-    func_0011CEF0(M2C_FIELD(&func_01000000, s32 *, 0xCE2E0), M2C_FIELD(&func_01000000, s32 *, 0xCE310), 7);
+    func_0011E420(D_010CE2F4[0], 0);
+    func_0011CEF0(D_010CE2E0[0], D_010CE310[0], 7);
+}
+
+s32 func_00135054(void) {
+    if ((func_0011C6C8() & D_001C3BEC[0]) == 0)
+        return 0;
+    if ((func_0011C6F0(D_001C3BEC[0]) & D_001C3BEC[0]) != 0)
+        return 0;
+    func_001350B8();
+    return 1;
 }

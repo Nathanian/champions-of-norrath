@@ -1,5 +1,4 @@
-/* identical to func_002A50E0 (matched), with its names changed by decomp.wtf */
-
+/* identical to func_002A50E0 (matched), with its names changed by decompdecomp */
 struct T12 { s32 x; s32 y; s32 z; };
 
 s32 func_003131E8(void *a, s32 b, s32 c, void *d) {

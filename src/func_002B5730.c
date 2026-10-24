@@ -1,0 +1,22 @@
+/* identical to func_002A8FE0 (matched), with its names changed by decompdecomp */
+typedef struct { f32 x, y, z; } Vec3;
+
+typedef struct {
+    u8  pad0[0xC];
+    void *unkC;
+    void *unk10;
+    void *unk14;
+    s32  f18;
+} ObjB;
+
+void func_002B5730(ObjB *a, Vec3 *v) {
+    Vec3 local = *v;
+    if (a->f18 == 0) {
+        if (a != 0) {
+            char *t = (char *)a->unk14 + 8;
+            s16 off = *(s16 *)t;
+            void (*fn)(void *, s32) = *(void (**)(void *, s32))(t + 4);
+            fn((u8 *)a + off, 3);
+        }
+    }
+}

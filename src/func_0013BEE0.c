@@ -1,4 +1,4 @@
-/* identical to func_0013A6A8 (matched), with its names changed by decomp.wtf */
+/* identical to func_0013A6A8 (matched), with its names changed by decompdecomp */
 #include "context.h"
 
 extern u32 D_00484CD4;

@@ -1,0 +1,4 @@
+/* identical to func_001ACDF0 (matched), with its names changed by decompdecomp */
+typedef struct{u8 *_p; u8 pad04[0x2C]; u8 *_base; s32 _size; u8 pad38[8]; u8 _ubuf[3]; u8 _nbuf[1]; u8 pad44[0x10]; void *_data;} FILE_;
+void *func_00301840(void*,s32); void *func_003030A8(void*,void*,s32); void *func_00301FFC(void*,void*,s32);
+s32 func_0030C4B8(FILE_ *fp){ s32 i; u8 *p; if(fp->_base==fp->_ubuf){ if((p=func_00301840(fp->_data,0x400))==NULL) return -1; fp->_base=p; fp->_size=0x400; p+=0x400-sizeof(fp->_ubuf); for(i=sizeof(fp->_ubuf);--i>=0;) p[i]=fp->_ubuf[i]; fp->_p=p; return 0; } i=fp->_size; p=func_003030A8(fp->_data,fp->_base,i<<1); if(p==NULL) return -1; func_00301FFC(p+i,p,i); fp->_p=p+i; fp->_base=p; fp->_size=i<<1; return 0; }

@@ -1,3 +1,5 @@
+/* identical to func_001AB1B8 (matched), with its names changed by decompdecomp */
+/* identical to func_0030BD50 (matched), with its names changed by decompdecomp */
 typedef union {
     u32 w;
     struct {

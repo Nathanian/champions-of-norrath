@@ -1,3 +1,5 @@
+/* identical to func_00171530 (matched), with its names changed by decompdecomp */
+/* identical to func_002FF4A8 (matched), with its names changed by decompdecomp */
 void func_002FF4A8(u32 *arg0, void *arg1) {
     u32 val = *arg0;
     s32 exp = (val >> 23) & 0xFF;

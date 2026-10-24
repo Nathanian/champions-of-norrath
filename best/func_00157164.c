@@ -1,23 +1,68 @@
-/* machine draft (m2c) for ee-gcc-2.96 -Os -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+extern u8 func_001C7738[];
 
-s64 func_00170968(s64, s32);                        /* extern */
+void func_001573A4(void) {
+    ((void (*)(void))*(void **)(func_001C7738 + 0x70))();
+}
+
+typedef struct {
+    char pad_0[0x4EC];
+    s32 unk_4EC;
+} S_func_0015735C_arg0;
+
+void func_00171AE0(void *);
+
+void func_0015735C(S_func_0015735C_arg0 *arg0) {
+    ((void (*)(void))*(void **)(func_001C7738 + 0x6C))();
+    func_00171AE0((u8 *)arg0 + ((arg0->unk_4EC ^ 1) * 0x50) + 0x880);
+}
+
+s32 func_0014B41C(void *, s32);
+void *func_0014D29C();
+s32 D_0047FBF4;
+
+typedef struct {
+    char pad_0[0x5A0];
+    s32 unk_5A0;
+    s32 unk_5A4;
+    s32 unk_5AC;
+    s32 unk_5B0;
+    char pad_1[0x20];
+    s32 unk_5D4;
+} S_func_001574CC_src;
+
+typedef struct {
+    char pad_0[0x98];
+    s32 unk_98;
+    char pad_1[0x794];
+    s32 unk_830;
+    s32 unk_834;
+    s32 unk_838;
+    s32 unk_83C;
+} S_func_001574CC_dst;
+
+void func_001574CC(S_func_001574CC_dst *arg0) {
+    S_func_001574CC_src *t = func_0014D29C();
+
+    if (t != NULL && func_0014B41C(t, D_0047FBF4) != 0) {
+        arg0->unk_830 = t->unk_5A0 + t->unk_5D4;
+        arg0->unk_834 = t->unk_5A4 + t->unk_5D4;
+        arg0->unk_838 = t->unk_5A0 + t->unk_5D4 + t->unk_5AC;
+        arg0->unk_98 = 2;
+        arg0->unk_83C = t->unk_5A4 + t->unk_5D4 + t->unk_5B0;
+    }
+}
+
+extern s64 func_00170968(s64, s64);
 
 void func_00157164(void *arg0) {
-    s64 temp_2;
+    u8 *p = (u8 *)arg0;
+    s64 t;
+    s64 a;
+    s64 b;
 
-    temp_2 = M2C_FIELD(arg0, s64 *, 0x940);
-    M2C_FIELD(arg0, s32 *, 0x918) = (s32) M2C_FIELD(arg0, s32 *, 0x928);
-    M2C_FIELD(arg0, s32 *, 0x928) = (s32) ((s64) (func_00170968((temp_2 + M2C_FIELD(arg0, s64 *, 0x930)) << 0xC, M2C_FIELD(arg0, s64 *, 0x938) - temp_2) << 0x20) >> 0x20);
+    *(s32 *)(p + 0x918) = *(s32 *)(p + 0x928);
+    t = *(s64 *)(p + 0x940);
+    a = *(s64 *)(p + 0x930);
+    b = *(s64 *)(p + 0x938);
+    *(s32 *)(p + 0x928) = (s32)func_00170968((a + t) << 12, b - t);
 }

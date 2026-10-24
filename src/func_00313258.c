@@ -1,4 +1,4 @@
-/* identical to func_00108230 (matched), with its names changed by decomp.wtf */
+/* identical to func_00108230 (matched), with its names changed by decompdecomp */
 f32 func_00313258(void) {
     return 1.0f;
 }

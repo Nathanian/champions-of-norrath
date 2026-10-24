@@ -1,3 +1,6 @@
+/* identical to func_001714A8 (matched), with its names changed by decompdecomp */
+/* identical to func_002FBBF0 (matched), with its names changed by decompdecomp */
+
 extern void func_002FD348(s32 *, char *, s32 *);
 extern void func_002FD368(s32 *, char *);
 extern s32 D_008EB2F8[4];

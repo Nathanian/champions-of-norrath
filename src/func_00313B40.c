@@ -1,5 +1,4 @@
-/* identical to func_00298300 (matched), with its names changed by decomp.wtf */
-
+/* identical to func_00298300 (matched), with its names changed by decompdecomp */
 extern f32 D_004827CC;
 extern f32 D_004827D0;
 extern f32 D_004827D4;
