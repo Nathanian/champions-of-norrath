@@ -1,27 +1,6 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-extern M2C_UNK func_01000000;
-
-void func_0013B7A8(s32 arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5, s32 arg6, s32 arg7, s32 arg_sp0) {
-    M2C_FIELD(&func_01000000, s32 *, 0xCE5B0) = arg6;
-    M2C_FIELD(&func_01000000, s32 *, 0xCE5B8) = arg_sp0;
-    M2C_FIELD(&func_01000000, s32 *, 0xCE5B4) = arg7;
-    M2C_FIELD(&func_01000000, s32 *, 0xCE598) = arg0;
-    M2C_FIELD(&func_01000000, s32 *, 0xCE59C) = arg1;
-    M2C_FIELD(&func_01000000, s32 *, 0xCE5A0) = arg2;
-    M2C_FIELD(&func_01000000, s32 *, 0xCE5A4) = arg3;
-    M2C_FIELD(&func_01000000, s32 *, 0xCE5A8) = arg4;
-    M2C_FIELD(&func_01000000, s32 *, 0xCE5AC) = arg5;
-}
+typedef struct{s64 pos,end,step,frac;} Ctr;s64 func_00170968(s64,s64);
+s32 func_0016FB28(Ctr*c){s64 pos=c->pos,end=c->end;if(pos==end)return 1;c->pos=pos+func_00170968(end-pos+c->step-1,c->step);if(end<c->pos)c->pos=end;c->frac=func_00170968(c->pos<<16,end);return 0;}extern void (*D_010CE59C[])(void);extern void (*D_010CE598[])(void);
+void func_0013B848(void){if(D_010CE59C[0])D_010CE59C[0]();}
+void func_0013B820(void){if(D_010CE598[0])D_010CE598[0]();}
+extern s32 D_010CE5A0[],D_010CE5A4[],D_010CE5A8[],D_010CE5AC[],D_010CE5B0[],D_010CE5B4[],D_010CE5B8[];
+void func_0013B7A8(void(*a)(void),void(*b)(void),s32 c,s32 d,s32 e,s32 f,s32 g,s32 h,s32 i){D_010CE598[0]=a;D_010CE59C[0]=b;D_010CE5A0[0]=c;D_010CE5A4[0]=d;D_010CE5A8[0]=e;D_010CE5AC[0]=f;D_010CE5B0[0]=g;D_010CE5B4[0]=h;D_010CE5B8[0]=i;}

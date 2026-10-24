@@ -1,12 +1,82 @@
-s32 func_0014B5E4(s32,s32,s32,s32,s32); s32 D_0047FC08;
-s32 func_001529D8(void*,void*);
-void func_001504B8(void*);void func_00152930(void*);
-void func_0015030C(void*);void func_00150AA4(void*);void func_001517DC(s32,void*,void*);
-s32 D_0047FC30,D_0047FC34,D_0047FC38,D_0047FC3C;
 extern u8 func_001C7330[];
-#define F(a,o) (*(s32*)((u8*)(a)+(o)))
-typedef struct Node {s32 x,y;struct Node *next;s32 z,id;} Node;
-void func_0014FCA0(s32 a,s32 b,s32 c,s32 d){func_0014B5E4(D_0047FC08,a,b,c,d);}
-void func_0014FE3C(u8*a,s32 b,s32 c){Node *found=0,*p,*head;if(b!=c){head=(Node*)(a+0x840);p=head;while(1){Node *n=p->next;p=n;if(n==head)break;if(b==p->id){found=p;break;}}p=head;if(found){while(1){Node*n=p->next;p=n;if(n==head)break;if(c==p->id){func_001529D8(p,found);break;}}}}}
-void func_0014FF14(u8*a){void *t;s32 x,y;func_001504B8(a);func_00152930(a+0x840);F(a,0x854)=0;x=D_0047FC30*16;y=D_0047FC34*16;t=*(void**)(a+0x4c);F(a,0x858)=1;F(a,0x820)=x;F(a,0x824)=y;F(a,0x810)=0;F(a,0x814)=0;F(a,0x818)=0;F(a,0x81c)=0;F(a,0x864)=0;(*(s32(**)(void*))((u8*)t+0x130))(a);(*(s32(**)(void*))(*(u8**)(a+0x4c)+0x12c))(a);}
-void func_0014FFB4(u8*a){s32 msg,x,y;u8*t;func_00150AA4(a);t=func_001C7330+0x100;if(F(a,0x868))(*(s32(**)(void*,void*))(t+0x74))(a,t);else (*(s32(**)(void*,void*))(t+0x78))(a,t);x=F(a,0x620);if(x){msg=0x18;func_001517DC(x,a,&msg);}if(F(a,0x858))func_0015030C(a);y=F(a,0x85c);x=F(a,0x860);D_0047FC3C=x;D_0047FC38=y;}
+void func_00150AA4(u8 *);
+void func_0015030C(u8 *);
+void func_001517DC(s32, u8 *, void *);
+s32 D_0047FC38;
+s32 D_0047FC3C;
+
+typedef struct Tbl {
+    u8 pad[0x74];
+    void (*f74)(u8 *, struct Tbl *);
+    void (*f78)(u8 *, struct Tbl *);
+} Tbl;
+
+void func_0014FFB4(u8 *a)
+{
+    Tbl *t;
+    s32 h;
+    s32 x, y;
+    func_00150AA4(a);
+    t = (Tbl *)(func_001C7330 + 0x100);
+    if (*(s32 *)(a + 0x868) != 0) {
+        t->f74(a, t);
+    } else {
+        t->f78(a, t);
+    }
+    h = *(s32 *)(a + 0x620);
+    if (h != 0) {
+        s32 msg[4];
+        msg[0] = 0x18;
+        func_001517DC(h, a, msg);
+    }
+    if (*(s32 *)(a + 0x858) != 0) {
+        func_0015030C(a);
+    }
+    y = *(s32 *)(a + 0x85C);
+    x = *(s32 *)(a + 0x860);
+    D_0047FC3C = x;
+    D_0047FC38 = y;
+}
+
+void func_001504B8(void *);
+void func_00152930(void *);
+s32 D_0047FC30;
+s32 D_0047FC34;
+
+typedef struct Obj Obj;
+typedef struct {
+    u8 pad[0x12C];
+    void (*f12C)(Obj *);
+    void (*f130)(Obj *, s32);
+} ObjVt;
+struct Obj {
+    u8 pad0[0x4C];
+    ObjVt *vt;
+    u8 pad50[0x810 - 0x50];
+    s32 x810, x814, x818, x81C, x820, x824;
+    u8 pad828[0x840 - 0x828];
+    u8 x840[0x14];
+    s32 x854, x858;
+    u8 pad85C[8];
+    s32 x864;
+};
+
+void func_0014FF14(Obj *a)
+{
+    s32 t0, t1;
+    func_001504B8(a);
+    func_00152930(a->x840);
+    a->x854 = 0;
+    t1 = D_0047FC34 << 4;
+    t0 = D_0047FC30 << 4;
+    a->x858 = 1;
+    a->x820 = t0;
+    a->x824 = t1;
+    a->x810 = 0;
+    a->x814 = 0;
+    a->x818 = 0;
+    a->x81C = 0;
+    a->x864 = 0;
+    a->vt->f130(a, 1);
+    a->vt->f12C(a);
+}

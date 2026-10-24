@@ -1,34 +1,54 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+extern s32 D_001C6828[], D_001C682C[], D_001C6830[], D_001C686C[], D_010C4CF8[];
+void func_00139498(s32, s32);
+void func_00105860(s32);
+void func_0013FAA8(void);
+void func_00140030(void);
+void func_0013E610(void);
+void func_001401A0(void);
+void func_00140F98(void);
+void func_0011BA30(void);
+void func_0013CF20(void);
+void func_0013D3E8(void);
+void func_0013DE30(void);
+void func_0013E8D0(void);
+void func_0013F128(void);
+void func_0013CB70(void);
+void func_0013D2A0(void);
+void func_0013E2E8(void);
+void func_0013E6E0(void);
+void func_0013F378(void);
+void func_0013EE48(void);
 
-M2C_UNK func_00105860(s32);                         /* extern */
-M2C_UNK func_0011BA30();                            /* extern */
-M2C_UNK func_0013E610();                            /* extern */
-M2C_UNK func_0013FAA8();                            /* extern */
-M2C_UNK func_00140030();                            /* extern */
-M2C_UNK func_001401A0();                            /* extern */
-M2C_UNK func_00140F98();                            /* extern */
-extern M2C_UNK func_01000000;
+void func_0011C388(s32 a0) {
+    func_00139498(a0, 0x3C);
+}
 
 void func_0011BCC0(void) {
     func_0011BA30();
-    func_00105860(M2C_FIELD(&func_01000000, s32 *, 0xC4CF8));
+    func_00105860(D_010C4CF8[0]);
     func_0013FAA8();
     func_00140030();
-    if (M2C_FIELD(&func_01000000, s32 *, 0xC4CF8) & 1) {
+    if (D_010C4CF8[0] & 1) {
         func_0013E610();
     }
     func_001401A0();
     func_00140F98();
+}
+
+void func_0011BA30(void) {
+    D_001C686C[0] = -1;
+    D_001C6828[0] = 0;
+    D_001C682C[0] = 0;
+    D_001C6830[0] = 0;
+    func_0013CF20();
+    func_0013D3E8();
+    func_0013DE30();
+    func_0013E8D0();
+    func_0013F128();
+    func_0013CB70();
+    func_0013D2A0();
+    func_0013E2E8();
+    func_0013E6E0();
+    func_0013F378();
+    func_0013EE48();
 }

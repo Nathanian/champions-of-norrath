@@ -1,17 +1,31 @@
-typedef struct {u8 pad[0x870]; s32 *items; s32 x874; s32 count; s32 x87c; s32 x880; s32 current; s32 target; s32 active; s32 dirty; s32 x894; s32 origin;} Gui;
-s32 D_0047FAFC;
-s32 func_0014B5E4(s32,s32,s32,s32,s32);
-void func_0014A6BC(void*);
-void func_0011B9E0(s32);
-void func_0014A3E8(void*,s32);
-extern u8 func_001C8098[];
-void func_00149F60(Gui *p) {
-s32 old,delta,mag,n,half,eighth,quarter,cond;
-extern s32 (*D_001C77A4[])(void); D_001C77A4[0]();
-if(p->active){
-old=p->current; n=p->count; delta=p->target-old; if(delta<0)mag=(-delta)>>8; else mag=delta>>8; half=delta>>1; eighth=delta>>3; quarter=delta>>2; cond=(n>>2)<mag;
-if((n>>1)<mag)p->current=old+half;
-if(cond)p->current+=quarter;
-p->current+=eighth;
-if(p->dirty || old!=p->current) return func_0014A6BC(p); p->active=0;
-}}
+typedef struct {
+    char pad[0x878];
+    s32 f878;
+    s32 f87C;
+    char pad880[4];
+    s32 f884;
+    s32 f888;
+    s32 f88C;
+    s32 f890;
+} W;
+extern void (*D_001C77A4[])(W *);
+void func_0014A6BC(W *);
+
+void func_00149F60(W *w) {
+    s32 old, d, ad, n;
+    D_001C77A4[0](w);
+    if (w->f88C == 0) return;
+    old = w->f884;
+    d = w->f888 - old;
+    n = w->f878;
+    ad = d < 0 ? -d : d;
+    ad >>= 8;
+    if ((n >> 1) < ad) w->f884 = old + (d >> 1);
+    if ((n >> 2) < ad) w->f884 = w->f884 + (d >> 2);
+    w->f884 = w->f884 + (d >> 3);
+    if (w->f890 == 0 && old == w->f884) {
+        w->f88C = 0;
+        return;
+    }
+    func_0014A6BC(w);
+}

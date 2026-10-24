@@ -1,28 +1,42 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+extern u8 func_001B9FD8[], func_001C3BC0[], func_001BCB38[], func_001C6058[], jtbl_004C006C[];
+extern s32 D_010CE2E8, D_010CE2F8;
+void func_00118140(void*,s32,s32,void*,s32);s32 func_00118160(void*);
+void func_00135330(void);void func_00138990(s32);void func_0010B718(void);
+void func_00135458(void);
+void func_001353A0(void){
+    u8 stack[32];
+    s32 t;
+    func_00118140(stack,0,0,func_00135458,0);
+    D_010CE2F8=func_00118160(stack);
+    t=D_010CE2E8;
+    *(s32*)(func_001B9FD8+0x16EC)=t;
+    func_00138990(t);
+    func_00135330();
+    func_0010B718();
+}
 
-M2C_UNK func_0011DA20(M2C_UNK, M2C_UNK);            /* extern */
-s32 func_0013B6F0(void *, M2C_UNK);                 /* extern */
-M2C_UNK func_001A42B8(void *, void *);              /* extern */
-extern M2C_UNK func_001BCB38;
-extern M2C_UNK func_001C6058;
-extern M2C_UNK jtbl_004C006C;
-
-void func_00135898(void) {
-    if (func_0013B6F0(&jtbl_004C006C + 0xAD14, -1) == 0) {
-        M2C_FIELD(&func_001BCB38, u8 *, 0xC30) = (u8) M2C_FIELD(&jtbl_004C006C, u8 *, 0xAD24);
+s32 func_0011C6C8(void);
+s32 func_0011C6F0(void);
+void func_00135898(void);
+s32 func_00135838(void) {
+    s32 r = 0;
+    if (func_0011C6C8() & *(s32 *)(func_001C3BC0 + 0x2C)) {
+        if (!(func_0011C6F0() & *(s32 *)(func_001C3BC0 + 0x2C))) {
+            func_00135898();
+            r = 1;
+        }
     }
-    func_001A42B8(&func_001C6058 + 0x5A8, &func_001BCB38 + 0xC30);
+    return r;
+}
+
+s32 func_0013B6F0(void *, s32);
+void func_001A42B8(void *, void *);
+void func_0011DA20(s32, s32);
+void func_00135898(void) {
+    u8 *c = jtbl_004C006C + 0xAD24;
+    if (func_0013B6F0(jtbl_004C006C + 0xAD14, -1) == 0) {
+        *(u8 *)(func_001BCB38 + 0xC30) = *c;
+    }
+    func_001A42B8(func_001C6058 + 0x5A8, func_001BCB38 + 0xC30);
     func_0011DA20(6, -1);
 }
