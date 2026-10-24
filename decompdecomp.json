@@ -7003,7 +7003,7 @@
   },
   "func_0014957C": {
    "vram": 1348988,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00149588": {
@@ -7248,7 +7248,7 @@
   },
   "func_0014ABF0": {
    "vram": 1354736,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014ABFC": {
@@ -7643,7 +7643,7 @@
   },
   "func_0014D2F4": {
    "vram": 1364724,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014D2FC": {
@@ -7688,12 +7688,12 @@
   },
   "func_0014D3FC": {
    "vram": 1364988,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014D404": {
    "vram": 1364996,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014D410": {
@@ -7768,7 +7768,7 @@
   },
   "func_0014D9FC": {
    "vram": 1366524,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014DA7C": {
@@ -7778,7 +7778,7 @@
   },
   "func_0014DA8C": {
    "vram": 1366668,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014DA98": {
@@ -7898,7 +7898,7 @@
   },
   "func_0014E690": {
    "vram": 1369744,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014E69C": {
@@ -7918,7 +7918,7 @@
   },
   "func_0014E6E0": {
    "vram": 1369824,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014EC94": {
@@ -7948,12 +7948,12 @@
   },
   "func_0014EE68": {
    "vram": 1371752,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014EE74": {
    "vram": 1371764,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014F02C": {
@@ -8118,7 +8118,7 @@
   },
   "func_0014FEE8": {
    "vram": 1375976,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0014FEF0": {
@@ -8548,22 +8548,22 @@
   },
   "func_00152808": {
    "vram": 1386504,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00152814": {
    "vram": 1386516,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00152820": {
    "vram": 1386528,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0015282C": {
    "vram": 1386540,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00152838": {
@@ -8573,22 +8573,22 @@
   },
   "func_00152848": {
    "vram": 1386568,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00152854": {
    "vram": 1386580,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00152860": {
    "vram": 1386592,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0015286C": {
    "vram": 1386604,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00152878": {
@@ -8603,17 +8603,17 @@
   },
   "func_001528A0": {
    "vram": 1386656,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_001528AC": {
    "vram": 1386668,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_001528B8": {
    "vram": 1386680,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_001528C4": {
@@ -8623,12 +8623,12 @@
   },
   "func_00152908": {
    "vram": 1386760,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00152914": {
    "vram": 1386772,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00152920": {
@@ -8768,7 +8768,7 @@
   },
   "func_00152E4C": {
    "vram": 1388108,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00152E54": {
@@ -9108,7 +9108,7 @@
   },
   "func_001551F0": {
    "vram": 1397232,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_001551F8": {
@@ -9518,7 +9518,7 @@
   },
   "func_00157158": {
    "vram": 1405272,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00157164": {
@@ -9558,7 +9558,7 @@
   },
   "func_00157280": {
    "vram": 1405568,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00157288": {
@@ -9863,7 +9863,7 @@
   },
   "func_001592F4": {
    "vram": 1413876,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_001592FC": {
@@ -10243,7 +10243,7 @@
   },
   "func_0015AFAC": {
    "vram": 1421228,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0015B0E0": {
@@ -10343,7 +10343,7 @@
   },
   "func_0015BF98": {
    "vram": 1425304,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0015BFA0": {
@@ -10358,7 +10358,7 @@
   },
   "func_0015BFDC": {
    "vram": 1425372,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0015BFE4": {
@@ -12448,12 +12448,12 @@
   },
   "func_0016FB18": {
    "vram": 1506072,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0016FB20": {
    "vram": 1506080,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0016FB28": {
@@ -12503,7 +12503,7 @@
   },
   "func_00170480": {
    "vram": 1508480,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0017048C": {
@@ -13983,12 +13983,12 @@
   },
   "func_0017FD6C": {
    "vram": 1572204,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0017FD78": {
    "vram": 1572216,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0017FD84": {
@@ -14048,7 +14048,7 @@
   },
   "func_0017FF68": {
    "vram": 1572712,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0017FF78": {
@@ -14068,7 +14068,7 @@
   },
   "func_00180140": {
    "vram": 1573184,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0018014C": {
@@ -14263,17 +14263,17 @@
   },
   "func_00181E38": {
    "vram": 1580600,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00181E40": {
    "vram": 1580608,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00181E48": {
    "vram": 1580616,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00181E50": {
@@ -14418,12 +14418,12 @@
   },
   "func_001835A0": {
    "vram": 1586592,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_001835B0": {
    "vram": 1586608,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00183730": {
@@ -14688,7 +14688,7 @@
   },
   "func_001883F0": {
    "vram": 1606640,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00188490": {
@@ -14868,7 +14868,7 @@
   },
   "func_0018CE78": {
    "vram": 1625720,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0018CF58": {
@@ -14878,7 +14878,7 @@
   },
   "func_0018CF98": {
    "vram": 1626008,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0018CFA0": {
@@ -14888,12 +14888,12 @@
   },
   "func_0018CFD0": {
    "vram": 1626064,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0018CFD8": {
    "vram": 1626072,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0018CFE0": {
@@ -14903,7 +14903,7 @@
   },
   "func_0018CFF0": {
    "vram": 1626096,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_0018CFF8": {
@@ -15918,7 +15918,7 @@
   },
   "func_00197A90": {
    "vram": 1669776,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00197A9C": {
@@ -15928,7 +15928,7 @@
   },
   "func_00197AA8": {
    "vram": 1669800,
-   "matched_by": "@autopilot",
+   "matched_by": "autopilot",
    "readable": false
   },
   "func_00197AB4": {

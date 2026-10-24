@@ -31,6 +31,14 @@ Install the latest release from the
 When decompdecomp offers to install PS2 compilers, review and accept their
 licenses before proceeding.
 
+## License
+
+The MIT license in [LICENSE](./LICENSE) applies only to original works authored
+by project contributors. It does not cover decompiled or reconstructed game
+code, game-derived material, game data, or other third-party content. Those
+materials remain subject to their respective rights holders. Only use or share
+material you have the right to distribute.
+
 ## Download and open the project
 
 Clone the repository:
