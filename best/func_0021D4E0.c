@@ -1,31 +1,53 @@
-/* machine draft (m2c), tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-f32 func_0015A100(s32);                             /* extern */
-M2C_UNK func_001815C8(M2C_UNK *, M2C_UNK, M2C_UNK, M2C_UNK, M2C_UNK, s32, s16, M2C_UNK, M2C_UNK, f32); /* extern */
-extern s32 D_004844A4;
-extern s32 D_004844BC;
-
-void func_0021D4E0(void *arg0) {
-    M2C_UNK sp10;
-    f32 temp_f0;
-
-    temp_f0 = func_0015A100(D_004844A4 << 0xA) * 250.0f;
-    M2C_ERROR(/* unknown instruction: ldl $v1, 0x17($s0) */);
-    M2C_ERROR(/* unknown instruction: ldr $v1, 0x10($s0) */);
-    M2C_ERROR(/* unknown instruction: sdl $v1, 0x7($v0) */);
-    M2C_ERROR(/* unknown instruction: sdr $v1, ($v0) */);
-    M2C_FIELD(&sp10, s32 *, 8) = (s32) M2C_FIELD(arg0, s32 *, 0x18);
-    func_001815C8(&sp10, 0x32, 0x64, 0xFF, 0x80, D_004844BC, (s16) ((u16) D_004844A4 << 9), 3, 0x40A00000, temp_f0 + 8000.0f);
+typedef struct { s64 a __attribute__((packed)); s32 b; } L12;
+extern void func_00180D78(u8 *, s32,s32,s32,s32,s32,s32,s32,f32,f32,f32,s32,s32,s32,s32,s32);
+extern u8 D_007D7DD0[];
+f32 D_00481A04;
+void func_00233110(s32 a, s32 b) {
+    if (b == 0xFFFF) {
+        if (a == 1) {
+            func_00180D78(D_007D7DD0, 0x72,0x6C,0x1A,0x76,0x85,0x49,0x61, 6.0f, 5.0f, D_00481A04, a, 3, a, 9, 0);
+        }
+    }
+}
+extern char D_00470C10[], D_00470C20[];
+extern void *func_001671F8(char *);
+extern void func_00190E20(void *, void *, f32, f32, f32, f32, f32, f32, f32, f32);
+extern void ovl_ntgui2_func_00191830(void *, void *);
+s32 func_0021DC80(u8 *a, void *b) {
+    u32 local[100];
+    if (*(s32 *)(a + 0x84) == 0) {
+        ovl_ntgui2_func_00191830(b, func_001671F8(D_00470C10));
+        return 1;
+    }
+    if (*(s16 *)(a + 0x4C) > 0) {
+        func_00190E20(local, func_001671F8(D_00470C20), (f32)*(s16 *)(a + 0x4C), 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+        ovl_ntgui2_func_00191830(b, local);
+    }
+    return 1;
+}
+extern s32 func_001411F0();
+extern s32 func_0017DB78(f32, s32, void *, s32);
+extern s32 D_0044CCB8[];
+s32 D_004844A0;
+void func_0021D578(u8 *o, void *src, s16 a2, s32 a3) {
+    L12 loc, loc2;
+    loc = *(L12 *)src;
+    func_001411F0(o, &loc, 0, a3);
+    *(void **)(o + 0x48) = D_0044CCB8;
+    *(s32 *)(o + 0xC) |= 0x10;
+    *(s16 *)(o + 0x38) = a2;
+    *(s32 *)(o + 0x78) = -1;
+    *(s32 *)(o + 0x74) = 0;
+    loc2 = *(L12 *)(o + 0x10);
+    *(s8 *)(o + 0x7C) = func_0017DB78(12.0f, D_004844A0, &loc2, 0);
+}
+extern f32 func_0015A100(s32);
+extern void func_001815C8(void *, s32, s32, s32, s32, s32, s16, s32, f32, f32);
+s32 D_004844A4;
+s32 D_004844BC;
+void func_0021D4E0(u8 *o) {
+    L12 loc;
+    f32 f = func_0015A100(D_004844A4 << 10) * 250.0f;
+    loc = *(L12 *)(o + 0x10);
+    func_001815C8(&loc, 0x32, 0x64, 0xFF, 0x80, D_004844BC, (s16)((u16)D_004844A4 << 9), 3, 5.0f, f + 8000.0f);
 }

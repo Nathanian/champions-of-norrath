@@ -1,0 +1,6 @@
+typedef struct{void*data;s32 cap,min,len,grow;}PA; void*func_0011B8D0(s32);void*func_0011B940(void*,s32);void func_0011B968(void*);s32 func_001A24AC(void*,void*,s32);
+s32 func_0013A300(PA*p){s32 n=p->cap;if(n>0){void*q=func_0011B8D0(n*1200);void*old=p->data;if((s32)q<(s32)old){func_001A24AC(q,old,p->len*1200);if(p->data)func_0011B968(p->data);p->data=q;return 1;}func_0011B968(q);}return 0;}
+void func_00139658(PA*p){s32 g=p->grow,c=p->cap,n=c-g*2;if(c-g*3>=p->len&&n>=p->min){p->cap=n;p->data=func_0011B940(p->data,n*1200);}}
+void func_001395E8(PA*p){s32 n=p->cap+p->grow;void*old=p->data;p->cap=n;if(old)p->data=func_0011B940(old,n*1200);else p->data=func_0011B8D0(n*1200);}
+typedef struct{u8 pad[16];s16 x,y;u8 pad2[12];}Pt;typedef struct{u8 pad[0x980];Pt pt[4];}Ent;
+void func_00159E18(u8*o){Ent*e=(Ent*)(o+*(s32*)(o+0x4ec)*240);Pt*p;u16 c=*(u16*)(o+0x5d4);s32 x0=*(s32*)(o+0x4dc)+*(s32*)(o+0x5a0);s32 xb=*(s32*)(o+0x8d4)+*(s32*)(o+0xcf0);s32 ya=*(s32*)(o+0x8d4)+*(s32*)(o+0xcf4);s32 y0,yb,xa1,ya1,xa2,ya2;xa1=xb+*(s32*)(o+0xbf8);x0=c+x0;yb=*(s32*)(o+0x5b0)-*(s32*)(o+0x8d4);y0=*(s32*)(o+0x4e0)+*(s32*)(o+0x4d4);xa1=x0+xa1;ya1=y0+(c+ya);xa2=x0+(xb+*(s32*)(o+0xbfc));ya2=y0+(c+(yb-*(s32*)(o+0xcf4)));p=&e->pt[0];p->y=ya1;p->x=xa1;p=&e->pt[1];p->y=ya1;p->x=xa2;p=&e->pt[2];p->x=xa1;p->y=ya2;p=&e->pt[3];p->y=ya2;p->x=xa2;}
