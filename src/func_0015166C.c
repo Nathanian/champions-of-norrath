@@ -1,4 +1,4 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
+/* machine draft (m2c) for ee-gcc-2.96 -Os -G8 -mno-check-zero-division, tried by autopilot */
 #ifndef M2C_DEFINES
 #define M2C_DEFINES
 typedef s32 M2C_UNK;
@@ -12,10 +12,9 @@ typedef s32 M2C_UNK32;
 #define M2C_OVERFLOW(a) (0)
 #endif
 
-void func_00152888(void *arg0, void **arg1) {
-    void *temp_3;
+M2C_UNK func_0014B5E4(s32, s32, s32, s32, s32);     /* extern */
+extern s32 D_0047FC14;
 
-    temp_3 = *arg1;
-    M2C_FIELD(arg0, s64 *, 0) = (s64) M2C_FIELD(temp_3, s64 *, 0);
-    M2C_FIELD(arg0, s64 *, 8) = (s64) M2C_FIELD(temp_3, s64 *, 8);
+void func_0015166C(s32 arg0, s32 arg1, s32 arg2, s32 arg3) {
+    func_0014B5E4(D_0047FC14, arg0, arg1, arg2, arg3);
 }

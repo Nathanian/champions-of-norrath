@@ -1,4 +1,5 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
+/* identical to func_0014F1A0 (matched), with its names changed by decompdecomp */
+/* machine draft (m2c) for ee-gcc-2.96 -Os -G8, tried by autopilot */
 #ifndef M2C_DEFINES
 #define M2C_DEFINES
 typedef s32 M2C_UNK;
@@ -13,8 +14,8 @@ typedef s32 M2C_UNK32;
 #endif
 
 M2C_UNK func_0014B5E4(s32, s32, s32, s32, s32);     /* extern */
-extern s32 D_0047FBF4;
+extern s32 D_0047FE78;
 
-void func_0014F1A0(s32 arg0, s32 arg1, s32 arg2, s32 arg3) {
-    func_0014B5E4(D_0047FBF4, arg0, arg1, arg2, arg3);
+void func_0015720C(s32 arg0, s32 arg1, s32 arg2, s32 arg3) {
+    func_0014B5E4(D_0047FE78, arg0, arg1, arg2, arg3);
 }
