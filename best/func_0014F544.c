@@ -1,19 +1,6 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-void func_0014F544(void *arg0, void *arg1) {
-    M2C_FIELD(arg1, s32 *, 4) = (s32) (M2C_FIELD(arg0, s32 *, 0x5A0) + M2C_FIELD(arg0, s32 *, 0x5D4) + M2C_FIELD(arg0, s32 *, 0x998));
-    M2C_FIELD(arg1, s32 *, 0) = 4;
-    M2C_FIELD(arg1, s32 *, 8) = (s32) (M2C_FIELD(arg0, s32 *, 0x5A4) + M2C_FIELD(arg0, s32 *, 0x5D4) + M2C_FIELD(arg0, s32 *, 0x99C));
-}
+s32 func_00151BFC(); s32 func_00151C5C(s32,s32);
+void func_0014F418(s32 a,s32 b){if(b)func_00151BFC(a+0x9d0);}
+void func_0014F38C(s32 a,s32 b,s32 c){if(b!=c){if(b)func_00151C5C(a+0x9d0,b);if(c)func_00151BFC(a+0x9d0,c);}}
+#define F(a,o) (*(s32*)((u8*)(a)+(o)))
+void func_0014F544(void*a,void*b){ s32 y,z; s32 x=F(a,0x5a0)+F(a,0x5d4); x+=F(a,0x998); F(b,4)=x; y=F(a,0x5a4)+F(a,0x5d4); z=F(a,0x99c); F(b,0)=4; F(b,8)=y+z;}
+void func_0014F508(void*a,void*b){func_0014F544(a,b);F(b,4)>>=4;F(b,8)>>=4;}

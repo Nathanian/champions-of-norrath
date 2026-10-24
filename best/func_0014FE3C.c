@@ -1,53 +1,12 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-M2C_UNK func_001529D8(void *, void *, void *, void *); /* extern */
-
-void func_0014FE3C(s32 arg0, s32 arg1, s32 arg2) {
-    void *temp_2;
-    void *temp_3;
-    void *temp_7;
-    void *var_4;
-    void *var_4_2;
-    void *var_8;
-
-    var_8 = NULL;
-    if (arg1 != arg2) {
-        var_4 = arg0 + 0x840;
-        temp_7 = var_4;
-loop_2:
-        temp_2 = M2C_FIELD(var_4, void **, 8);
-        var_4 = temp_2;
-        if (temp_2 != temp_7) {
-            if (arg1 == M2C_FIELD(var_4, s32 *, 0x10)) {
-                var_8 = var_4;
-            } else {
-                goto loop_2;
-            }
-        }
-        var_4_2 = temp_7;
-        if (var_8 != NULL) {
-loop_6:
-            temp_3 = M2C_FIELD(var_4_2, void **, 8);
-            var_4_2 = temp_3;
-            if (temp_3 != temp_7) {
-                if (arg2 == M2C_FIELD(temp_3, s32 *, 0x10)) {
-                    func_001529D8(var_4_2, var_8, temp_7, var_8);
-                } else {
-                    goto loop_6;
-                }
-            }
-        }
-    }
-}
+s32 func_0014B5E4(s32,s32,s32,s32,s32); s32 D_0047FC08;
+s32 func_001529D8(void*,void*);
+void func_001504B8(void*);void func_00152930(void*);
+void func_0015030C(void*);void func_00150AA4(void*);void func_001517DC(s32,void*,void*);
+volatile s32 D_0047FC30,D_0047FC34; s32 D_0047FC38,D_0047FC3C;
+extern u8 func_001C7330[];
+#define F(a,o) (*(s32*)((u8*)(a)+(o)))
+typedef struct Node {s32 x,y;struct Node *next;s32 z,id;} Node;
+void func_0014FCA0(s32 a,s32 b,s32 c,s32 d){func_0014B5E4(D_0047FC08,a,b,c,d);}
+void func_0014FE3C(u8*a,s32 b,s32 c){Node *found=0,*p,*head,*n;if(b!=c){head=(Node*)(a+0x840);p=head;while(1){n=p->next;if(n==head)break;p=n;if(b==p->id){found=p;break;}}p=head;if(found){while(1){n=p->next;p=n;if(n==head)break;if(c==n->id){func_001529D8(n,found);break;}}}}}
+void func_0014FF14(u8*a){void *t;s32 x,y;func_001504B8(a);func_00152930(a+0x840);F(a,0x854)=0;x=D_0047FC30;y=D_0047FC34;F(a,0x858)=1;t=*(void**)(a+0x4c);F(a,0x820)=x<<4;F(a,0x824)=y<<4;F(a,0x810)=0;F(a,0x814)=0;F(a,0x818)=0;F(a,0x81c)=0;F(a,0x864)=0;(*(void(**)(void*))((u8*)t+0x130))(a);(*(s32(**)(void*))(*(u8**)(a+0x4c)+0x12c))(a);}
+void func_0014FFB4(u8*a){s32 msg,x,y;u8*t;func_00150AA4(a);t=func_001C7330+0x100;if(F(a,0x868))(*(s32(**)(void*,void*))(t+0x74))(a,t);else (*(s32(**)(void*,void*))(t+0x78))(a,t);if((x=F(a,0x620))!=0){msg=0x18;func_001517DC((u32)x,a,&msg);}if(F(a,0x858))func_0015030C(a);y=F(a,0x85c);x=F(a,0x860);D_0047FC3C=x;D_0047FC38=y;}

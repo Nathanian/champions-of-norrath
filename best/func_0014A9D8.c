@@ -1,37 +1,14 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-s32 func_0011B9A8(s32);                             /* extern */
-M2C_UNK func_0014A8C4(void *);                      /* extern */
-M2C_UNK func_0014B0F0(void *, s32, M2C_UNK);        /* extern */
-
-void func_0014A9D8(void *arg0) {
-    s32 temp_16;
-    s32 temp_2;
-    s32 temp_5;
-
-    M2C_FIELD(arg0, s32 *, 0x928) = 0;
-    temp_16 = (M2C_FIELD(arg0, s32 *, 0x940) << 5) + 0x80;
-    temp_2 = func_0011B9A8(temp_16 * 2);
-    M2C_FIELD(arg0, s32 *, 0x910) = temp_2;
-    M2C_FIELD(arg0, s32 *, 0x914) = (s32) (temp_2 + temp_16);
-    temp_5 = M2C_FIELD(arg0, s32 *, 0x8E0);
-    M2C_FIELD(arg0, s32 *, 0x91C) = func_0011B9A8(M2C_FIELD(arg0, s32 *, 0x940) * 0x10);
-    M2C_FIELD(arg0, s32 *, 0x920) = 1;
-    M2C_FIELD(arg0, s32 *, 0x930) = temp_5;
-    M2C_FIELD(arg0, s32 *, 0x924) = 2;
-    func_0014B0F0(arg0, temp_5, 2);
-    func_0014A8C4(arg0);
-    M2C_FIELD(arg0, s32 *, 0x4D0) = 0;
-}
+s32 D_0047FB14;
+s32 func_0014B5E4(s32,s32,s32,s32,s32);
+void func_0014A890(s32 a,s32 b,s32 c,s32 d){func_0014B5E4(D_0047FB14,a,b,c,d);}
+s32 func_001A4174(s32,s32);
+typedef struct {char pad[0x870]; s32 *items; s32 pad874; s32 count;} Items;
+s32 func_0014A808(Items *p,s32 key){s32 i;if(!p->items)return -1;for(i=0;i<p->count;i++){if(func_001A4174(key,p->items[i])==0)return i;}return -1;}
+#define F(p,o) (*(s32*)((char*)(p)+(o)))
+s32 func_0011B9A8(s32);
+s32 func_0014B0F0(void*,s32,s32);
+s32 func_0014A8C4(void*);
+void func_0014A9D8(void*p){s32 size,buf;F(p,0x928)=0;size=(F(p,0x940)<<5)+0x80;buf=func_0011B9A8(size*2);F(p,0x910)=buf;F(p,0x914)=buf+size;F(p,0x91c)=func_0011B9A8(F(p,0x940)*16);F(p,0x920)=1;F(p,0x930)=F(p,0x8e0);F(p,0x924)=2;func_0014B0F0(p,F(p,0x930),2);func_0014A8C4(p);F(p,0x4d0)=0;}
+extern u8 func_001C8098[];
+s32 func_0014AEDC(void*);s32 func_00171AE0(s32);
+void func_0014AA98(void*p){void*q=func_001C8098; s32 n;q=*(void**)((char*)q+0xd68);((s32(*)(void))q)();n=F(p,0x924);if(n){F(p,0x924)=n-1;func_0014AEDC(p);}if(F(p,0x920)&&!F(p,0x924)){F(p,0x920)=0;F(p,0x928)=0;F(p,0x98)=2;}func_00171AE0(F(p,0x910+((F(p,0x4ec)^1)*4)));}

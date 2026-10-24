@@ -1,59 +1,30 @@
-/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
-
-s64 func_0014C400(s32 arg0) {
-    s32 temp_4;
-    s32 temp_5;
-    s64 var_2;
-    s64 var_5_2;
-    u32 temp_3;
-    u32 var_5;
-    u64 temp_3_2;
-    u64 temp_3_3;
-    u64 var_4;
-
-    temp_5 = arg0 >> 8;
-    temp_3 = temp_5 - 0x81;
-    temp_4 = arg0 & 0xFF;
-    if (temp_3 < 0x1FU) {
-        var_5 = temp_3;
-        goto block_3;
-    }
-    var_5 = temp_5 - 0xC1;
-    var_2 = -1;
-    if ((u32) (temp_5 - 0xE0) < 0x10U) {
-block_3:
-        temp_3_2 = temp_4 - 0x40;
-        var_5_2 = var_5 * 2;
-        if (temp_3_2 < 0x3FU) {
-            var_4 = temp_3_2;
-            goto block_10;
-        }
-        temp_3_3 = temp_4 - 0x9F;
-        if ((u32) (temp_4 - 0x80) < 0x1FU) {
-            var_4 = temp_4 - 0x41;
-            goto block_10;
-        }
-        var_4 = temp_3_3;
-        if (temp_3_3 < 0x5EU) {
-            var_5_2 += 1;
-block_10:
-            var_2 = (s64) ((((u64) (var_5_2 << 0x20) >> 0x18) + ((u64) (var_4 << 0x20) >> 0x20) + 0x2121) << 0x20) >> 0x20;
-            /* Duplicate return node #11. Try simplifying control flow for better match */
-            return var_2;
-        }
-        return -1;
-    }
-    return var_2;
+s32 func_0014B5E4(s32,s32,s32,s32,s32);
+extern s32 D_0047FBD0;
+void func_0014C8CC(s32 a,s32 b,s32 c,s32 d){func_0014B5E4(D_0047FBD0,a,b,c,d);}
+extern f32 D_010D4550[];
+f32 func_0014C97C(s32 a) {
+s32 neg=(u32)a>>31; s32 v; f32 f;
+v=neg?(-a)%0x10000:a%0x10000;
+if(v>0x7fff){v-=0x8000;neg=!neg;}
+if(v>=0x4000)v=0x8000-v;
+f=D_010D4550[v];if(neg)f=-f;return f;
+}
+typedef struct Obj4C { char pad000[0x74]; void (*fn74)(void *); char pad078[0x94]; void (*fn10C)(void *); char pad110[8]; s32 (*fn118)(void); } Obj4C;
+typedef struct ObjCA30 {char pad000[0x4C];Obj4C *q4C;char pad050[0x5C];s32 fAC,fB0,fB4;char pad0B8[0x480];s32 f538;} ObjCA30;
+void func_0014B8E0(ObjCA30 *,s32);void func_0014CBB8(ObjCA30 *);
+void func_0014CA30(ObjCA30 *p){
+if(p->fAC){if(p->fB4==1){if(!p->fB0){p->fB0=p->fB4;return;}func_0014B8E0(p,0);}return;}
+Obj4C *q=p->q4C; s32 (*cb)(void)=q->fn118; if(cb && p->f538)cb();
+if(p->q4C->fn10C)p->q4C->fn10C(p);
+func_0014CBB8(p);
+if(p->q4C->fn74)p->q4C->fn74(p);
+}
+s64 func_0014C400(s32 a){
+u32 hi=a>>8;u32 t=hi-0x81;u32 lo=a&255;
+if(t<31)hi=t;else {t=hi-0xe0;hi-=0xc1;if(t>=16)return -1;}
+hi*=2;t=lo-0x40;
+if(t<63)lo=t;
+else if((u32)(lo-0x80)<31)lo-=0x41;
+else {t=lo-0x9f;if(t<94){lo=t;hi++;}else return -1;}
+return (s32)(((u64)hi<<8)+(u64)lo+0x2121);
 }
