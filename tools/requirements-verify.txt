@@ -1,0 +1,2 @@
+# The verifier uses decompdecomp's compiler and ROM judge APIs from this revision.
+decompnet @ git+https://github.com/n-delic/decompdecomp.git@4edd17e11987ba2ac03ebdd6b226cc8b799b081b

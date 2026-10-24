@@ -1,0 +1,43 @@
+﻿# Local editor and agent state
+/.vscode/
+/.idea/
+/.agents/
+/.codex/
+/state/
+*.code-workspace
+
+# Game data and generated project output
+/asm/
+/assets/
+/build/
+*.rom
+*.iso
+*.elf
+*.o
+*.obj
+*.a
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+/.venv/
+/venv/
+.pytest_cache/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+/.aws/
+
+# Temporary files and editor backups
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
