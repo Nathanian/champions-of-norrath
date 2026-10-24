@@ -1,5 +1,7 @@
 # SLUS-20565: decompdecomp progress
 
+[![Join the project on Discord](https://img.shields.io/badge/Discord-Join%20the%20project-5865F2?logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/pUrzXK8ghQ)
+
 This is a saved decompilation project created with [decompdecomp](https://github.com/n-delic/decompdecomp).
 AI agents were used during the decompilation; their C attempts were kept only when decompdecomp's byte-for-byte
 judge accepted them as matches.

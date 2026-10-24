@@ -22393,10 +22393,15 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_002442B8": {
+   "vram": 2376376,
+   "matched_by": "tiredunc",
+   "readable": false
+  },
   "func_002446F8": {
    "vram": 2377464,
-   "best_score": 1435,
-   "best_by": "opencode-deepseek-v4.1-flash-free-7"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_00245938": {
    "vram": 2382136,
@@ -22405,13 +22410,23 @@
   },
   "func_00246598": {
    "vram": 2385304,
-   "best_score": 15730,
-   "best_by": "autopilot"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_002468A0": {
    "vram": 2386080,
    "best_score": 4176,
    "best_by": "autopilot"
+  },
+  "func_002469D0": {
+   "vram": 2386384,
+   "matched_by": "tiredunc",
+   "readable": false
+  },
+  "func_00246CF0": {
+   "vram": 2387184,
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_00246F10": {
    "vram": 2387728,
@@ -22420,13 +22435,13 @@
   },
   "func_00246F80": {
    "vram": 2387840,
-   "best_score": 665,
-   "best_by": "autopilot"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_00247010": {
    "vram": 2387984,
-   "best_score": 210,
-   "best_by": "opencode-nemotron-3-ultra-free-3"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_002470C8": {
    "vram": 2388168,
@@ -22440,18 +22455,18 @@
   },
   "func_00247250": {
    "vram": 2388560,
-   "best_score": 600,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_00247288": {
    "vram": 2388616,
-   "best_score": 705,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_00247310": {
    "vram": 2388752,
-   "best_score": 260,
-   "best_by": "codex-gpt-6-luna-2"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_002473F0": {
    "vram": 2388976,
@@ -24118,45 +24133,55 @@
    "matched_by": "autopilot",
    "readable": false
   },
+  "func_002853A8": {
+   "vram": 2642856,
+   "matched_by": "tiredunc",
+   "readable": false
+  },
   "func_00285708": {
    "vram": 2643720,
-   "best_score": 1779,
-   "best_by": "autopilot"
+   "matched_by": "tiredunc",
+   "readable": false
+  },
+  "func_002870D8": {
+   "vram": 2650328,
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_00287610": {
    "vram": 2651664,
-   "best_score": 3344,
-   "best_by": "autopilot"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_002894D8": {
    "vram": 2659544,
-   "best_score": 220,
-   "best_by": "opencode-nemotron-3-ultra-free-4"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_00289548": {
    "vram": 2659656,
-   "best_score": 710,
-   "best_by": "autopilot"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_002895C8": {
    "vram": 2659784,
-   "best_score": 1104,
-   "best_by": "opencode-nemotron-3-ultra-free-4"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_00289680": {
    "vram": 2659968,
-   "best_score": 235,
-   "best_by": "opencode-nemotron-3-ultra-free-1"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_002896F8": {
    "vram": 2660088,
-   "best_score": 260,
-   "best_by": "opencode-nemotron-3-ultra-free-1"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_00289788": {
    "vram": 2660232,
-   "best_score": 770,
-   "best_by": "opencode-nemotron-3-ultra-free-1"
+   "matched_by": "tiredunc",
+   "readable": false
   },
   "func_00289840": {
    "vram": 2660416,
