@@ -1,5 +1,3 @@
-/* identical to func_00298A78 (matched), with its names changed by decompdecomp */
-/* identical to func_002994D0 (matched), with its names changed by decompdecomp */
 extern u8 D_00450F50[];
 extern char D_00477E78[];
 unsigned char func_002994D0(void *arg0)

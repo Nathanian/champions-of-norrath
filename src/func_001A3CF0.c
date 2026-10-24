@@ -1,5 +1,3 @@
-/* identical to func_00303E30 (matched), with its names changed by decompdecomp */
-/* identical to func_001A3CF0 (matched), with its names changed by decompdecomp */
 s32 func_001A5A58(void *, const char *, void *);
 s32 func_001A3990(void *);
 

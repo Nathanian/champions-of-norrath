@@ -1,5 +1,3 @@
-/* identical to func_002FBA98 (matched), with its names changed by decompdecomp */
-/* identical to func_00179A00 (matched), with its names changed by decompdecomp */
 s32 iSignalSema(s32);
 extern s32 D_001D0488;
 

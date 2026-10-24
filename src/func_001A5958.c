@@ -1,4 +1,3 @@
-/* identical to func_001A4BE8 (matched), with its names changed by decompdecomp */
 /* identical to func_00306960 (matched), with its names changed by decompdecomp */
 
 extern u8 D_00448480[9];

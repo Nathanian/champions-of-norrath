@@ -1,68 +1,29 @@
-#include "context.h"
-
-extern void (*D_001C77A8[])(void);
-void func_00155238(void) {
-    D_001C77A8[0]();
+extern u8 func_001C7738[];
+typedef struct Obj Obj;
+typedef struct { u8 pad[0x9C]; void (*getSize)(Obj *, s32 *, s32 *); } ObjVt;
+struct Obj { u8 pad[0x4C]; ObjVt *vt; };
+typedef struct {
+    u8 pad0[0x50]; Obj *obj;
+    u8 pad54[0x5A0 - 0x54]; s32 x5A0; s32 x5A4;
+    u8 pad5A8[0x5D4 - 0x5A8]; s32 x5D4;
+    u8 pad5D8[0x878 - 0x5D8]; s32 x878; s32 x87C; s32 x880; s32 x884; s32 x888;
+} Win;
+void func_0015525C(Win *w, s32 a1, s32 x, s32 y)
+{
+    (*(void (**)(Win *, s32, s32, s32))(func_001C7738 + 0xB4))(w, a1, x + w->x878 + w->x880, y + w->x87C + w->x888);
 }
-
-extern void (*D_001C77EC[])(void *, s32, s32, s32);
-void func_0015525C(void *arg0, s32 arg1, s32 arg2, s32 arg3) {
-    s32 v878 = *(s32 *)((char *)arg0 + 0x878);
-    s32 v87C = *(s32 *)((char *)arg0 + 0x87C);
-    s32 v880 = *(s32 *)((char *)arg0 + 0x880);
-    s32 v888 = *(s32 *)((char *)arg0 + 0x888);
-    D_001C77EC[0](arg0, arg1, arg2 + v878 + v880, arg3 + v87C + v888);
-}
-
-void func_001552A0(void *arg0, s32 *arg1, s32 *arg2) {
-    void *obj = *(void **)((char *)arg0 + 0x50);
-    if (obj != 0) {
-        s32 (*fn)(void *) = *(s32 (**)(void *))((char *)*(void **)((char *)obj + 0x4C) + 0x9C);
-        if (fn != 0) {
-            fn(obj);
-        } else {
-            *arg2 = 0;
-            *arg1 = 0;
-        }
+void func_001552A0(Win *w, s32 *x, s32 *y)
+{
+    Obj *o = w->obj;
+    s32 t;
+    if (o != NULL && o->vt->getSize != NULL) {
+        o->vt->getSize(o, x, y);
     } else {
-        *arg2 = 0;
-        *arg1 = 0;
+        *y = 0;
+        *x = 0;
     }
-    {
-        s32 a = *(s32 *)((char *)arg0 + 0x5A0);
-        s32 b = *(s32 *)((char *)arg0 + 0x5D4);
-        s32 c = *(s32 *)((char *)arg0 + 0x880);
-        s32 d = *(s32 *)((char *)arg0 + 0x878);
-        *arg1 = *arg1 + a + (c + b) + d;
-    }
-    {
-        s32 a = *(s32 *)((char *)arg0 + 0x5A4);
-        s32 b = *(s32 *)((char *)arg0 + 0x5D4);
-        s32 c = *(s32 *)((char *)arg0 + 0x888);
-        s32 d = *(s32 *)((char *)arg0 + 0x87C);
-        *arg2 = *arg2 + a + (c + b) + d;
-    }
-}
-
-extern void (*D_001C77EC2[])(s32, s32, s32, s32, s32, s32, s32, void *);
-void func_00155358(void *arg0, s32 arg1) {
-    void *v4C = *(void **)((char *)arg0 + 0x4C);
-    s32 v5D4 = *(s32 *)((char *)arg0 + 0x5D4);
-    s32 v888 = *(s32 *)((char *)arg0 + 0x888);
-    s32 v87C = *(s32 *)((char *)arg0 + 0x87C);
-    s32 v810 = *(s32 *)((char *)arg0 + 0x810);
-    s32 v880 = *(s32 *)((char *)arg0 + 0x880);
-    s32 v5A0 = *(s32 *)((char *)arg0 + 0x5A0);
-    s32 v814 = *(s32 *)((char *)arg0 + 0x814);
-    s32 v5A4 = *(s32 *)((char *)arg0 + 0x5A4);
-    s32 v878 = *(s32 *)((char *)arg0 + 0x878);
-    void (**fn)(s32, s32, s32, s32, s32, s32, s32, void *) = (void (**)(s32, s32, s32, s32, s32, s32, s32, void *))((char *)v4C + 0x124);
-    (*fn)(arg1,
-          v810 + v880 + (v5D4 + v5A0) + v878,
-          v814 + v888 + (v5D4 + v5A4) + v87C,
-          (char *)arg0 + 0x818,
-          v87C,
-          v5D4 + v5A4,
-          v888,
-          v4C);
+    t = w->x880 + w->x5D4;
+    *x = *x + w->x5A0 + t + w->x878;
+    t = w->x888 + w->x5D4;
+    *y = *y + w->x5A4 + t + w->x87C;
 }

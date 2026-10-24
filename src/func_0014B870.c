@@ -1,22 +1,25 @@
-s32 func_001A2418(s32, s32, s32);
-
-s32 func_0014BA10(s32 arg0, s32 arg1) {
-    return func_001A2418(arg0, arg1, 8) == 0;
-}
-
-void func_0014B95C(u8 *arg0) {
-    void (*fn)(u8 *) = *(void (**)(u8 *))(*(u8 **)(arg0 + 0x4C) + 0xFC);
-    fn(arg0);
-}
-
-void func_0014B938(u8 *arg0) {
-    void (*fn)(u8 *) = *(void (**)(u8 *))(*(u8 **)(arg0 + 0x4C) + 0xF8);
-    fn(arg0);
-}
-
-void func_0014B870(void *arg0, s32 arg1, s32 arg2, s32 *arg3, s32 *arg4) {
-    void (*fn)(void *, s32 *, s32 *) = *(void (**)(void *, s32 *, s32 *))(*(u8 **)((u8 *)arg0 + 0x4C) + 0x9C);
-    fn(arg0, arg3, arg4);
+void func_0014B870(u8 *arg0, s32 arg1, s32 arg2, s32 *arg3, s32 *arg4) {
+    void *p = *(void **)(arg0 + 0x4C);
+    p = *(void **)((u8 *)p + 0x9C);
+    ((void (*)(void *, s32 *, s32 *))p)(arg0, arg3, arg4);
     *arg3 = arg1 - *arg3;
     *arg4 = arg2 - *arg4;
+}
+
+void func_0014CECC(void *obj, s32 arg1, s32 arg2) {
+    void *p = *(void **)((u8 *)obj + 0x4C);
+    p = *(void **)((u8 *)p + 0x88);
+    ((void (*)(void *, s32, s32))p)(obj, arg1, arg2);
+}
+
+void func_0014CF0C(void *obj, s32 arg1, s32 arg2) {
+    void *p = *(void **)((u8 *)obj + 0x4C);
+    p = *(void **)((u8 *)p + 0x8C);
+    ((void (*)(void *, s32, s32))p)(obj, arg1, arg2);
+}
+
+void func_0014CF78(void *obj, s32 arg1, s32 arg2) {
+    void *p = *(void **)((u8 *)obj + 0x4C);
+    p = *(void **)((u8 *)p + 0x90);
+    ((void (*)(void *, s32, s32))p)(obj, arg1, arg2);
 }

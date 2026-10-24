@@ -1,25 +1,14 @@
+volatile void func_001001C8(s32);
 void func_001A3BF0(s32);
-s32 func_001001C8(s32) __attribute__((noreturn));
+s64 func_001A4BB8(s32, s32, s32);
 
-s32 func_001A1550(void) {
+void func_001A1550(void)
+{
     func_001A3BF0(6);
     func_001001C8(1);
 }
 
-extern u8 jtbl_004C006C[];
-extern u8 jtbl_00503023[];
-
-void func_001A1770(void *, s32, ...);
-s32 func_001A1550(void);
-
-void func_001A1568(s32 arg0, s32 arg1, s32 arg2) {
-    s32 *p = *(s32 **)(jtbl_004C006C + 0x3A14);
-    func_001A1770((void *)p[3], jtbl_00503023 + 0x372D, arg2, arg0, arg1);
-    func_001A1550();
-}
-
-s64 func_001A4BB8(s32, s32, s32);
-
-s32 func_001A1640(s32 arg0) {
-    return (s32)func_001A4BB8(arg0, 0, 0xA);
+s32 func_001A1640(s32 a)
+{
+    return func_001A4BB8(a, 0, 10);
 }

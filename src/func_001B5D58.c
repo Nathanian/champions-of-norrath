@@ -1,67 +1,32 @@
-extern u8 jtbl_004C006C[];
+s32 func_001B5D58(s32 *d,s32 *s,u32 n){u32 i=0;n>>=2;if(n)do{ s32 v=*s; i++; s++; *d=v; d++;}while(i<n);return 0;}
 
-s32 CreateSema(void *);
-void Copy(void *, void *, s32);
+extern s32 sceSifGetReg(s32);
+extern void func_001ADBA0(void);
+extern void func_001B7DF0(s32, s32);
 
-s32 func_001B5D58(s32 *arg0, s32 *arg1, u32 arg2) {
-    s32 *var_4;
-    s32 *var_5;
-    s32 temp_3;
-    u32 temp_6;
-    u32 var_7;
-
-    var_4 = arg0;
-    var_5 = arg1;
-    temp_6 = arg2 >> 2;
-    var_7 = 0;
-    if (temp_6 != 0) {
-        do {
-            temp_3 = *var_5;
-            var_7 += 1;
-            var_5 += 1;
-            *var_4 = temp_3;
-            var_4 += 1;
-        } while (var_7 < temp_6);
+s32 func_001B5B20(void) {
+    s32 val = sceSifGetReg(4);
+    if (val & 0x40000) {
+        func_001ADBA0();
+        func_001B7DF0(1, 1);
+        func_001B7DF0(0, 1);
+        return 1;
     }
     return 0;
 }
 
-u32 func_001B5D90(s32 *arg0, u32 arg1, s32 arg2) {
-    s32 *var_4;
-    u32 var_2;
-
-    var_4 = arg0;
-    var_2 = (u32) var_4 < arg1;
-    if ((*var_4 != arg2) && (var_2 != 0)) {
-    loop_2:
-        var_4 += 1;
-        var_2 = (u32) var_4 < arg1;
-        if (*var_4 != arg2) {
-            if (var_2 == 0) {
-            } else {
-                goto loop_2;
-            }
-        }
-    }
-    return (var_2 == 0) ? 0 : (u32) var_4;
+s32 func_001B5AF8(void) {
+    return (sceSifGetReg(4) & 0x10000) != 0;
 }
 
-s32 func_001B5CF0(void) {
-    s32 buf[20];
-    s32 r1, r2;
-    buf[10] = 1;
-    buf[1] = 1;
-    buf[2] = 1;
-    buf[9] = 1;
-    r1 = CreateSema(buf);
-    r2 = CreateSema(buf + 8);
-    *(s32 *)(jtbl_004C006C + 0x3F6C) = r1;
-    *(s32 *)(jtbl_004C006C + 0x3F70) = r2;
-    return r2; /* ? */
-}
-
-s32 func_001B5DE0(s32 arg0) {
-    s32 buf;
-    Copy(&buf, (void *)(*(s32 *)(jtbl_004C006C + 0x3F54) + arg0 * 4), 4);
-    return buf;
+void GetOsdConfigParam(void *); void SetOsdConfigParam(void *);
+s32 func_001B5FE8(void) {
+    u32 stk[2]; u32 *p;
+    GetOsdConfigParam(&stk[0]);
+    p = &stk[1];
+    stk[1] = (stk[0] & 0xFFFF1FFF) | 0x2000;
+    SetOsdConfigParam(p);
+    GetOsdConfigParam(p);
+    SetOsdConfigParam(&stk[0]);
+    return ((stk[1] >> 13) & 7) == 0;
 }

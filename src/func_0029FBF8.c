@@ -1,4 +1,4 @@
-/* identical to func_0029E368 (matched), with its names changed by decomp.wtf */
+/* identical to func_0029E368 (matched), with its names changed by decompdecomp */
 typedef struct { s32 unk0; s32 unk4; f32 unk8; } S12;
 void *func_001441B8(s32);
 void func_0029E6A8(void *, void *, s16, s32, s32, void *);

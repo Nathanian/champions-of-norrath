@@ -1,4 +1,4 @@
-/* identical to func_00316D58 (matched), with its names changed by decomp.wtf */
+/* identical to func_00316D58 (matched), with its names changed by decompdecomp */
 extern s32 D_008EB748[4];
 extern char D_00477A60[];
 extern char D_00486160[];

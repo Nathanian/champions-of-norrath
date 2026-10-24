@@ -1,11 +1,40 @@
-s32 D_0047FD48,D_0047FD4C,D_0047FFB4;
-s32 func_0014B5E4(s32,s32,s32,s32,s32);
-void func_001550D0(s32 a,s32 b,s32 c,s32 d){func_0014B5E4(D_0047FD48,a,b,c,d);}
-#define F(p,o) (*(s32*)((char*)(p)+(o)))
-#define P(p,o) (*(void* volatile*)((char*)(p)+(o)))
-s32 func_0014B41C(s32,s32);s32 func_0015BFA0(s32,s32);
-void func_00155104(void*p,s32 a,s32 b){void*head;void*n;s32 count;if(!D_0047FD4C){count=F(p,0x854);head=(char*)p+0x840;D_0047FD4C=1;n=head;if(count&&P(head,8)!=head){do{n=P(n,8);if(a!=F(n,16)&&F(n,0)&&func_0014B41C(F(n,16),D_0047FFB4))func_0015BFA0(F(n,16),b);}while(P(n,8)!=head);}D_0047FD4C=0;}}
-s32 func_00152C8C(s32,void*);void func_001A2850(void*);extern char jtbl_004C006C[];
-s32 func_00155040(void*p,s32 a){u16 data[8];s32 n;float scale;if(func_00152C8C(a,data)==-1)func_001A2850(jtbl_004C006C+0xb4c4);n=data[6];scale=*(float*)((char*)p+0x9b8);if(a<128)n=((n<<16)>>16)+F(p,0x9ac);else n=(n<<16)>>16;return (s32)((float)n*(scale));}
-extern u8 func_001C8098[];
-void func_00155214(void){void *q=func_001C8098;q=*(void**)((char*)q-0x8f4);((s32(*)(void))q)();}
+extern u8 func_001C7738[];
+void func_00155238(void)
+{
+    u8 *p = func_001C7738;
+    p = *(u8 **)(p + 0x70);
+    ((void (*)(void))p)();
+}
+void func_00155214(void)
+{
+    u8 *p = func_001C7738;
+    p = *(u8 **)(p + 0x6C);
+    ((void (*)(void))p)();
+}
+typedef struct Obj Obj;
+typedef struct { u8 pad[0x9C]; void (*getSize)(Obj *, s32 *, s32 *); } ObjVt;
+struct Obj { u8 pad[0x4C]; ObjVt *vt; };
+typedef struct {
+    u8 pad0[0x50]; Obj *obj;
+    u8 pad54[0x5A0 - 0x54]; s32 x5A0; s32 x5A4;
+    u8 pad5A8[0x5D4 - 0x5A8]; s32 x5D4;
+    u8 pad5D8[0x878 - 0x5D8]; s32 x878; s32 x87C; s32 x880; s32 x884; s32 x888;
+} Win;
+void func_0015525C(Win *w, s32 a1, s32 x, s32 y)
+{
+    u8 *p = func_001C7738;
+    p = *(u8 **)(p + 0xB4);
+    ((void (*)(Win *, s32, s32, s32))p)(w, a1, x + w->x878 + w->x880, y + w->x87C + w->x888);
+}
+void func_001552A0(Win *w, s32 *x, s32 *y)
+{
+    Obj *o = w->obj;
+    if (o != NULL && o->vt->getSize != NULL) {
+        o->vt->getSize(o, x, y);
+    } else {
+        *y = 0;
+        *x = 0;
+    }
+    *x = *x + w->x5A0 + (w->x880 + w->x5D4) + w->x878;
+    *y = *y + w->x5A4 + (w->x888 + w->x5D4) + w->x87C;
+}

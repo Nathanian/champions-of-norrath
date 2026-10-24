@@ -1,22 +1,9 @@
 /* identical to func_001AE898 (matched), with its names changed by decompdecomp */
-void func_002D6258(void *arg0) {
-    s32 *p = arg0;
-    s32 n;
-    p[1] = p[1] + 1;
-    n = p[3] + 1;
-    p[3] = n;
-    if (n == (s32)((u8 *)p + (p[0] + 0x10))) {
-        p[3] = (s32)((u8 *)p + 0x10);
-    }
-}
-
-void func_001AE8D8(void *arg0) {
-    s32 *p = arg0;
-    s32 n;
-    p[1] = p[1] - 1;
-    n = p[2] + 1;
-    p[2] = n;
-    if (n == (s32)((u8 *)p + (p[0] + 0x10))) {
-        p[2] = (s32)((u8 *)p + 0x10);
+typedef struct { s32 size; s32 count; s32 pad; char *cur; } Ring;
+void func_002D6258(Ring *r) {
+    r->count++;
+    r->cur++;
+    if (r->cur == (char *)r + (r->size + 0x10)) {
+        r->cur = (char *)r + 0x10;
     }
 }

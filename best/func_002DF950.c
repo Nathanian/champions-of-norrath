@@ -1,30 +1,5 @@
-/* identical to func_001B7F90 (matched), with its names changed by decompdecomp */
-extern void Deci2Call_2(s32, void*);
-
-void func_002DF950(s32 a0) {
-    s32 args[1];
-    args[0] = a0;
-    Deci2Call_2(0x21, args);
-}
-
-void func_001B7FB8(s32 a0, s32 a1, s32 a2) {
-    s32 args[2];
-    args[0] = a0;
-    args[1] = a1;
-    Deci2Call_2(-5, args);
-}
-
-void func_001B7F60(s32 a0, s32 a1, s32 a2) {
-    s32 args[3];
-    args[0] = a0;
-    args[1] = a1;
-    args[2] = a2;
-    Deci2Call_2(0x20, args);
-}
-
-void func_001B7FF0(s32 a0, s32 a1, s32 a2) {
-    s32 args[2];
-    args[0] = a0;
-    args[1] = a1;
-    Deci2Call_2(-6, args);
-}
+extern void Deci2Call_2(s32, void *);
+void func_002DF8C8(s32 arg0, s8 arg1) { struct { s32 a, b; } args; args.a=arg0; args.b=arg1; Deci2Call_2(3,&args); }
+void func_002DF8F8(s32 arg0) { Deci2Call_2(4,&arg0); }
+void func_002DF920(s32 arg0, s32 arg1, s32 arg2) { struct { s32 a,b,c; } args; args.a=arg0&255; args.b=arg1; args.c=arg2; Deci2Call_2(0x20,&args); }
+void func_002DF950(s32 arg0) { Deci2Call_2(0x21,&arg0); }

@@ -1,63 +1,75 @@
-extern void (*func_001CB5F8[])(void);
-extern void func_0016698C(s32);
-extern void func_001662E0(s32);
-extern s32 func_00171AE0(void *);
+extern u8 func_001CABD0[];
+extern u8 func_001CB5F8[];
+extern u8 func_001C8098[];
+void func_00165A40(void *);
+void func_00165A7C(void *);
+void func_00171AE0(void *);
+void func_0016FCC4(void *, void *, void *, void *);
+void func_0016526C(void *);
 
-void func_00165CCC(void) {
-    func_001CB5F8[0x14]();
+void func_001659E4(void *arg0) {
+    u8 *p = func_001CABD0;
+    p = *(u8 **)(p + 0x430);
+    ((void (*)(void *))p)(arg0);
+    func_00165A40(arg0);
+    func_00165A7C(arg0);
 }
 
-void func_00165CF0(s32 arg0) {
-    func_001CB5F8[0x16]();
-    func_0016698C(arg0);
-    func_001662E0(arg0);
+void func_00165C70(u8 *arg0) {
+    u8 *p = func_001CB5F8;
+    p = *(u8 **)(p + 0x50);
+    ((void (*)(void *))p)(arg0);
+    if (*(s32 *)(arg0 + 0x2880) != 0) {
+        func_00171AE0(arg0 + (*(s32 *)(arg0 + 0x4EC) ^ 1) * 0xF80 + 0x970);
+    }
 }
 
-typedef struct {
-    char pad_0[0x4EC];
-    s32 unk_4EC;
-    char pad_1[0x2390];
-    s32 unk_2880;
-} S_00165C70_arg0;
-
-void func_00165C70(S_00165C70_arg0 *arg0) {
-    func_001CB5F8[0x14]();
-    if (arg0->unk_2880 != 0) {
-        func_00171AE0((void *)((char *)arg0 + (arg0->unk_4EC ^ 1) * 0xF80 + 0x970));
+void func_001656B0(u8 *arg0) {
+    s32 flag = 0;
+    u8 *p;
+    if (*(s32 *)(arg0 + 0x538) != 0) {
+        flag = *(s32 *)(arg0 + 0x53C) != 0;
+    }
+    p = func_001C8098;
+    p = *(u8 **)(p + 0xE08);
+    ((void (*)(void))p)();
+    if (flag) {
+        func_0016FCC4(arg0 + 0x540, arg0 + 0x1250, arg0 + 0x1240, arg0 + 0x1230);
+        func_0016526C(arg0);
     }
 }
 
 typedef struct {
-    char pad_0[0x98];
-    s32 unk_98;
-    char pad_1[0x27EC];
-    s32 unk_2888;
-    s32 unk_288C;
-    s32 unk_2890;
-    s32 unk_2894;
+    s32 x98;
+    char pad[0x98];
+    char pad2[0x2888 - 0x9C];
+    s32 v[4];
 } S_00165D28;
 
 s32 func_00165D28(S_00165D28 *arg0, S_00165D28 *arg1, S_00165D28 *arg2) {
-    s32 var_4 = ((s32 (*)(void))func_001CB5F8[0x28])();
-    if (arg1->unk_2888 != arg2->unk_2888) {
-        arg0->unk_2888 = arg1->unk_2888;
-        arg0->unk_98 = 2;
-        var_4 = 1;
+    u8 *p = func_001CB5F8;
+    s32 r;
+    p = *(u8 **)(p + 0xA0);
+    r = ((s32 (*)(void *, void *, void *))p)(arg0, arg1, arg2);
+    if (arg1->v[0] != arg2->v[0]) {
+        arg0->v[0] = arg1->v[0];
+        arg0->x98 = 2;
+        r = 1;
     }
-    if (arg1->unk_288C != arg2->unk_288C) {
-        arg0->unk_288C = arg1->unk_288C;
-        arg0->unk_98 = 2;
-        var_4 = 1;
+    if (arg1->v[1] != arg2->v[1]) {
+        arg0->v[1] = arg1->v[1];
+        arg0->x98 = 2;
+        r = 1;
     }
-    if (arg1->unk_2890 != arg2->unk_2890) {
-        arg0->unk_2890 = arg1->unk_2890;
-        arg0->unk_98 = 2;
-        var_4 = 1;
+    if (arg1->v[2] != arg2->v[2]) {
+        arg0->v[2] = arg1->v[2];
+        arg0->x98 = 2;
+        r = 1;
     }
-    if (arg1->unk_2894 != arg2->unk_2894) {
-        arg0->unk_2894 = arg1->unk_2894;
-        arg0->unk_98 = 2;
-        var_4 = 1;
+    if (arg1->v[3] != arg2->v[3]) {
+        arg0->v[3] = arg1->v[3];
+        arg0->x98 = 2;
+        r = 1;
     }
-    return var_4;
+    return r;
 }

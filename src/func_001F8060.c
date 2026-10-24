@@ -1,5 +1,4 @@
-/* identical to func_001F75B8 (matched), with its names changed by decomp.wtf */
-
+/* identical to func_001F75B8 (matched), with its names changed by decompdecomp */
 void func_00109808(void *, s32, s32, s32);
 s32 func_001129F0(void *, void *);
 

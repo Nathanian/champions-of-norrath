@@ -16,12 +16,12 @@ s32 func_0014BA30(void *, void *);                  /* extern */
 extern M2C_UNK func_001C8098;
 
 s32 func_00166FD8(void *arg0, void *arg1, void *arg2) {
-    s32 temp_3;
+    s32 temp_4;
     s32 temp_3_2;
     s32 temp_3_3;
     s32 temp_3_4;
     s32 temp_3_5;
-    s32 temp_4;
+    s32 temp_3;
     s32 var_17;
 
     var_17 = M2C_FIELD(&func_001C8098, s32 (**)(), 0xDB8)();
@@ -42,7 +42,7 @@ s32 func_00166FD8(void *arg0, void *arg1, void *arg2) {
         var_17 = 1;
     }
     temp_3_3 = M2C_FIELD(arg1, s32 *, 0x5EB4);
-    if (temp_3_3 != M2C_FIELD(arg2, s32 *, 0x5EB4)) {
+    if ((unsigned short)temp_3_3 != M2C_FIELD(arg2, s32 *, 0x5EB4)) {
         M2C_FIELD(arg0, s32 *, 0x5EB4) = temp_3_3;
         M2C_FIELD(arg0, s32 *, 0x98) = 2;
         var_17 = 1;

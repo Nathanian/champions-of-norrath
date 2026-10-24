@@ -1,4 +1,4 @@
-/* identical to func_0013D230 (matched), with its names changed by decomp.wtf */
+/* identical to func_0013D230 (matched), with its names changed by decompdecomp */
 typedef struct Obj {
     struct Obj *unk0;
     struct Obj *unk4;

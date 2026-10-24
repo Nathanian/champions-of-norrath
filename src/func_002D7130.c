@@ -1,25 +1,21 @@
-#include "context.h"
-
-extern char D_008DEA18[];
-char *func_002D7198(void) {
-    return D_008DEA18;
+void _iEnableIntc_2(void);
+void func_002D5D60(void) { _iEnableIntc_2(); }
+s32 func_002D6AA0(s64 *);
+void func_002D7098(s64 ignored, s64 a1, s64 a2, s64 a3, s64 a4, s64 a5, s64 a6, s64 a7) {
+    s64 args[7]; args[0]=a1; args[1]=a2; args[2]=a3; args[3]=a4; args[4]=a5; args[5]=a6; args[6]=a7;
+    func_002D6AA0(args);
 }
-
-extern s32 D_008DEBC0[];
-s32 func_002D7178(s32 arg0, s32 arg1) {
-    volatile s32 *base = (volatile s32 *)D_008DEBC0;
-    base[arg0] = arg1;
-    return arg1;
+s32 func_002D67B8(void);
+s32 D_00444960;
+void func_002D70D0(s64 ignored, s64 a1, s64 a2, s64 a3, s64 a4, s64 a5, s64 a6, s64 a7) {
+    s32 old=D_00444960;
+    s64 args[7]; args[0]=a1; D_00444960=(s32)func_002D67B8;
+    args[1]=a2; args[2]=a3; args[3]=a4; args[4]=a5; args[5]=a6; args[6]=a7;
+    func_002D6AA0(args);
+    D_00444960=old;
 }
-
-extern s32 D_008DEBC0[];
-s32 func_002D7160(s32 arg0) {
-    volatile s32 *p = (volatile s32 *)D_008DEBC0;
-    return p[arg0];
-}
-
 void func_002D7130(s32 *a0, s32 *a1) {
-    s32 ix = a0[4];
-    s32 *base = (s32 *)(unsigned long)(unsigned int)a1[7];
-    base[ix] = a0[5];
+    s32 ix=a0[4];
+    s32 *base=(s32 *)(unsigned long)(unsigned int)a1[7];
+    base[ix]=a0[5];
 }

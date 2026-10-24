@@ -1,4 +1,3 @@
-/* identical to func_00100390 (matched), with its names changed by decompdecomp */
 /* identical to func_00134EC0 (matched), with its names changed by decompdecomp */
 
 extern s32 D_004F3ED0[16];

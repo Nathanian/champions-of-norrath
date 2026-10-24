@@ -1,5 +1,4 @@
 /* identical to func_00313A58 (matched), with its names changed by decompdecomp */
-
 extern s32 D_008EB308[];
 extern char D_00483EE8[];
 extern char D_00463350[];

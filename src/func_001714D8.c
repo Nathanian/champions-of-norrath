@@ -1,5 +1,3 @@
-/* identical to func_002FBC20 (matched), with its names changed by decompdecomp */
-/* identical to func_001714D8 (matched), with its names changed by decompdecomp */
 typedef struct {
     s32 class;
     s32 sign;

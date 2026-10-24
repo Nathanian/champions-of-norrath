@@ -1,36 +1,76 @@
-/* Function declarations for called functions */
-void func_00149924(s32);
-void func_00149980(s32);
-void func_0014CA30(s32);
+/* identical to func_001659E4 (matched), with its names changed by decompdecomp */
+extern u8 D_001C6568[];
+extern u8 func_001CB5F8[];
+extern u8 func_001C8098[];
+void func_00149924(void *);
+void func_00149980(void *);
+void func_00171AE0(void *);
+void func_0016FCC4(void *, void *, void *, void *);
+void func_0016526C(void *);
 
-/* External function pointers - use unsized array to force full address load (not $gp-relative) */
-extern void (*func_001C6998[])(void);  /* func_001C6788+0x210 */
-extern void (*func_001C698C[])(void *); /* func_001C6788+0x204 */
-
-/* func_001498EC */
-void func_001498EC(s32 arg0) {
-    func_001C6998[0]();
+void func_001498EC(void *arg0) {
+    u8 *p = D_001C6568;
+    p = *(u8 **)(p + 0x430);
+    ((void (*)(void *))p)(arg0);
     func_00149924(arg0);
     func_00149980(arg0);
 }
 
-/* func_001498AC */
-void func_001498AC(void *arg0) {
-    func_0014CA30(*(s32 *)((u8 *)arg0 + 0x8A4));
-    func_0014CA30(*(s32 *)((u8 *)arg0 + 0x8A0));
-    func_001C698C[0](arg0);
+void func_00165C70(u8 *arg0) {
+    u8 *p = func_001CB5F8;
+    p = *(u8 **)(p + 0x50);
+    ((void (*)(void *))p)(arg0);
+    if (*(s32 *)(arg0 + 0x2880) != 0) {
+        func_00171AE0(arg0 + (*(s32 *)(arg0 + 0x4EC) ^ 1) * 0xF80 + 0x970);
+    }
 }
 
-/* func_00149A30 - reuse same variable for chained loads (proposal #8) */
-void func_00149A30(void *arg0) {
-    void *v0 = *(void **)((u8 *)arg0 + 0x4C);
-    v0 = *(void **)((u8 *)v0 + 0x13C);
-    ((void (*)(void))v0)();
+void func_001656B0(u8 *arg0) {
+    s32 flag = 0;
+    u8 *p;
+    if (*(s32 *)(arg0 + 0x538) != 0) {
+        flag = *(s32 *)(arg0 + 0x53C) != 0;
+    }
+    p = func_001C8098;
+    p = *(u8 **)(p + 0xE08);
+    ((void (*)(void))p)();
+    if (flag) {
+        func_0016FCC4(arg0 + 0x540, arg0 + 0x1250, arg0 + 0x1240, arg0 + 0x1230);
+        func_0016526C(arg0);
+    }
 }
 
-/* func_00149A54 - reuse same variable for chained loads (proposal #8) */
-void func_00149A54(void *arg0) {
-    void *v0 = *(void **)((u8 *)arg0 + 0x4C);
-    v0 = *(void **)((u8 *)v0 + 0x140);
-    ((void (*)(void))v0)();
+typedef struct {
+    char pad[0x98];
+    s32 x98;
+    char pad2[0x2888 - 0x9C];
+    s32 v[4];
+} S_00165D28;
+
+s32 func_00165D28(S_00165D28 *arg0, S_00165D28 *arg1, S_00165D28 *arg2) {
+    u8 *p = func_001CB5F8;
+    s32 r;
+    p = *(u8 **)(p + 0xA0);
+    r = ((s32 (*)(void *, void *, void *))p)(arg0, arg1, arg2);
+    if (arg1->v[0] != arg2->v[0]) {
+        arg0->v[0] = arg1->v[0];
+        arg0->x98 = 2;
+        r = 1;
+    }
+    if (arg1->v[1] != arg2->v[1]) {
+        arg0->v[1] = arg1->v[1];
+        arg0->x98 = 2;
+        r = 1;
+    }
+    if (arg1->v[2] != arg2->v[2]) {
+        arg0->v[2] = arg1->v[2];
+        arg0->x98 = 2;
+        r = 1;
+    }
+    if (arg1->v[3] != arg2->v[3]) {
+        arg0->v[3] = arg1->v[3];
+        arg0->x98 = 2;
+        r = 1;
+    }
+    return r;
 }

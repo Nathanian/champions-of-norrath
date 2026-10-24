@@ -1,4 +1,3 @@
-/* identical to func_002DD6B0 (matched), with its names changed by decompdecomp */
 extern s32 D_004C3FD8[]; extern s32 D_004C3FDC[];
 typedef struct { s32 currentCount, maxCount, initCount, numWaitThreads; u32 attr, option; } SemaP5CF0;
 s32 CreateSema(SemaP5CF0 *);

@@ -1,3 +1,5 @@
+/* identical to ovl_ntgui2_func_001AB878 (matched), with its names changed by decompdecomp */
+/* identical to func_00303648 (matched), with its names changed by decompdecomp */
 /* machine draft (m2c), tried by autopilot */
 #ifndef M2C_DEFINES
 #define M2C_DEFINES

@@ -1,5 +1,3 @@
-/* identical to func_00191C38 (matched), with its names changed by decompdecomp */
-/* identical to ovl_ntgui2_func_00191830 (matched), with its names changed by decompdecomp */
 typedef unsigned int u128 __attribute__((mode(TI)));
 typedef struct {
     u32 *cur;

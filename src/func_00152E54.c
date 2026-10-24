@@ -1,31 +1,50 @@
-/* identical to func_001499FC (matched), with its names changed by decompdecomp */
-typedef struct {u8 pad[0x870]; s32 *items; s32 x874; s32 count; s32 x87c; s32 x880; s32 current; s32 target; s32 active; s32 dirty; s32 x894; s32 origin;} Gui;
-s32 D_0047FCB0;
-s32 func_0014B5E4(s32,s32,s32,s32,s32);
-void func_0014A6BC(void*);
-void func_0011B9E0(s32);
-void func_0014A3E8(void*,s32);
-extern u8 func_001C8098[];
-void func_00152E54(s32 a,s32 b,s32 c,s32 d){func_0014B5E4(D_0047FCB0,a,b,c,d);}
-void func_00149F60(Gui *p) {
-s32 old,delta,mag,n,half,eighth,quarter,cond;
-void *fp=func_001C8098; fp=*(void**)((u8*)fp-0x8f4); ((void(*)(void))fp)();
-if(p->active){
-old=p->current; n=p->count; delta=p->target-old; mag=delta; if(delta<0)mag=-mag;
-mag>>=8; half=delta>>1; eighth=delta>>3; quarter=delta>>2; cond=(n>>2)<mag;
-if((n>>1)<mag)p->current=old+half;
-if(cond)p->current+=quarter;
-p->current+=eighth;
-if(p->dirty==0 && old==p->current){p->active=0;return;}
-func_0014A6BC(p);
-}}
-void func_0014A32C(Gui *p,u32 index){
-s32 n=p->count;
-if(n>0 && index<(u32)n){
-u32 i; s32 limit,total; s32 *q;
-func_0011B9E0(p->items[index]);
-i=index; total=p->count; limit=total-1;
-if((s32)i<limit){q=p->items+index; do{ i++; q[0]=q[1]; q++;}while((s32)i<limit);}
-p->dirty=1; p->items[i]=0; p->count=total-1;p->active=1;
-}}
-void func_0014A43C(Gui *p,s32 i){func_0014A3E8(p,i-p->origin+1);}
+/* identical to func_00154620 (matched), with its names changed by decompdecomp */
+typedef struct {
+    u8 pad0[0x80];
+    s32 x80;
+    u8 pad84[0xAC - 0x84];
+    void *fnAC;
+    void *fnB0;
+    u8 padB4[0xC0 - 0xB4];
+} Win137;
+extern void func_001050A8(Win137 *, s32, s32, s32, s32, s32, s32, s32, s32, s32);
+extern void func_00105190(Win137 *);
+extern s32 D_0047FCB0;
+void func_0014B5E4(s32, s32, s32, s32, s32);
+void func_00137298(s32 a, s32 *w);
+void func_001372E8(void);
+extern s32 D_010CE390[];
+extern s32 D_010CE3A0[];
+extern s32 D_001BB6C4;
+extern u8 jtbl_004C006C[];
+s32 func_0013B6F0(void *, s32);
+void func_00138990(s32);
+
+void func_00152E54(s32 a0, s32 a1, s32 a2, s32 a3) {
+    func_0014B5E4(D_0047FCB0, a0, a1, a2, a3);
+}
+
+void func_00137328(s32 a, s32 n) {
+    Win137 w;
+    func_001050A8(&w, a, 0xB, 2, 6, 0, 0x10, 6, 0x150, 0x22);
+    if (n < 3) {
+        w.fnAC = func_00137298;
+        w.x80 = n + 1;
+    } else {
+        w.fnB0 = func_001372E8;
+    }
+    func_00105190(&w);
+}
+
+void func_001372E8(void) {
+    D_001BB6C4 = D_010CE3A0[func_0013B6F0(jtbl_004C006C + 0xAD94, 0)];
+    func_00138990(D_001BB6C4);
+}
+
+void func_00137298(s32 a, s32 *w) {
+    s32 n = w[0x80/4];
+    if (w[0x1C/4] >= 3) {
+        func_00137328(D_010CE390[n], n);
+        w[0xAC/4] = 0;
+    }
+}

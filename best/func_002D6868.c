@@ -1,34 +1,44 @@
-/* identical to func_001AEEA8 (matched), with its names changed by decompdecomp */
-void func_002D6778(s32);
+extern void _iEnableIntc_2(void);
+void func_002D5D60(void) {
+    _iEnableIntc_2();
+    __sync_synchronize();
+}
+
+s32 func_002D6778(s32 arg0) {
+    while (*(volatile u32 *)0x1000F130 & 0x8000) {
+    }
+    *(volatile u8 *)0x1000F180 = arg0;
+    return arg0;
+}
+
+extern s32 D_0044495C;
+extern u8 D_008DE8C0[];
+void func_002DFA68(u8 *, s32);
+
+void func_002D67B8(s32 arg0) {
+    s32 idx = D_0044495C;
+    if (idx >= 0x7E) {
+        D_0044495C = 0;
+        D_008DE8C0[0x7F] = 0;
+        func_002DFA68(D_008DE8C0, idx);
+        idx = D_0044495C;
+    }
+    if (arg0 == 0xA) {
+        D_0044495C = 0;
+        D_008DE8C0[idx] = arg0;
+        D_008DE8C0[idx + 1] = 0;
+        func_002DFA68(D_008DE8C0, idx);
+        return;
+    }
+    D_0044495C = idx + 1;
+    D_008DE8C0[idx] = arg0;
+}
 
 void func_002D6868(s32 arg0) {
-    if (arg0 == 10) {
-        func_002D6778(13);
-        func_002D6778(10);
+    if (arg0 == 0xA) {
+        func_002D6778(0xD);
+        func_002D6778(0xA);
     } else {
         func_002D6778(arg0);
     }
-}
-
-extern u8 jtbl_004C006C[];
-extern u8 D_01107C00[];
-s32 func_001B80A8(void *);
-
-s32 func_001AEDF8(s32 arg0) {
-    s32 i = *(s32 *)(jtbl_004C006C + 0x3E9C);
-    if (i >= 0x7E) {
-        *(s32 *)(jtbl_004C006C + 0x3E9C) = 0;
-        D_01107C00[0x7F] = 0;
-        func_001B80A8(D_01107C00);
-        i = *(s32 *)(jtbl_004C006C + 0x3E9C);
-    }
-    if (arg0 == 10) {
-        *(s32 *)(jtbl_004C006C + 0x3E9C) = 0;
-        D_01107C00[i] = arg0;
-        D_01107C00[i + 1] = 0;
-        return func_001B80A8(D_01107C00);
-    }
-    *(s32 *)(jtbl_004C006C + 0x3E9C) = i + 1;
-    D_01107C00[i] = arg0;
-    return (s32)&D_01107C00[i];
 }

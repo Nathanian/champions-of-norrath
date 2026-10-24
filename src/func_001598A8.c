@@ -1,81 +1,55 @@
-extern char func_001C8098[];
-
-void func_001598A8(void) {
-    void *p = func_001C8098;
-    p = *(void **)((u8 *)p + 0xD68);
+extern u8 func_001C8098[];
+void func_001598A8(void)
+{
+    u8 *p = func_001C8098;
+    p = *(u8 **)(p + 0xD68);
     ((void (*)(void))p)();
 }
 
-void func_00159C30(s32);
-void func_00159D1C(s32);
-void func_0015A128(s32);
-
-void func_001598CC(s32 arg0) {
-    void *p = func_001C8098;
-    p = *(void **)((u8 *)p + 0xD70);
+void func_00159C30(u8 *);
+void func_00159D1C(u8 *);
+void func_0015A128(u8 *);
+void func_001598CC(u8 *e)
+{
+    u8 *p = func_001C8098;
+    p = *(u8 **)(p + 0xD70);
     ((void (*)(void))p)();
-    func_00159C30(arg0);
-    func_00159D1C(arg0);
-    func_0015A128(arg0);
+    func_00159C30(e);
+    func_00159D1C(e);
+    func_0015A128(e);
 }
 
-void func_00152DCC(void *);
+#define I(p, o) (*(s32 *)((u8 *)(p) + (o)))
+void func_00152DCC(u8 *, s32);
 void func_0011B9E0(s32);
-s32 func_0014D29C(void *);
+s32 func_0014D29C(u8 *);
 void func_0014F288(s32, s32);
-void func_00151788(void *, s32);
+void func_00151788(u8 *, s32);
 void func_0014B7F0(s32, s32);
-
-typedef struct {
-    char pad0[0x910];
-    s32 unk_910;
-    s32 unk_914;
-    char pad1[0x268];
-    s32 unk_B80;
-    char pad2[0x108];
-    s32 unk_C8C;
-    s32 unk_C90;
-    s32 pad3;
-    s32 unk_C9C;
-    char pad4[0x7C];
-    u8 unk_D1C[4];
-} S_func_001596F8;
-
-void func_001596F8(S_func_001596F8 *arg0, s32 arg1) {
-    func_00152DCC(arg0);
-    if (arg0->unk_C9C != 0) {
-        func_0011B9E0(arg0->unk_C9C);
+void func_001596F8(u8 *e, s32 a1)
+{
+    func_00152DCC(e, a1);
+    if (I(e, 0xC9C) != 0) {
+        func_0011B9E0(I(e, 0xC9C));
     }
-    if (arg0->unk_C90 != 0) {
-        func_0014F288(func_0014D29C(arg0), arg0->unk_C90);
+    if (I(e, 0xC90) != 0) {
+        func_0014F288(func_0014D29C(e), I(e, 0xC90));
     }
-    if (arg0->unk_C8C != 0) {
-        func_0014F288(func_0014D29C(arg0), arg0->unk_C8C);
+    if (I(e, 0xC8C) != 0) {
+        func_0014F288(func_0014D29C(e), I(e, 0xC8C));
     }
-    func_00151788(arg0->unk_D1C, 3);
-    func_0011B9E0(arg0->unk_B80);
-    func_0014B7F0(arg0->unk_910, arg1);
-    func_0014B7F0(arg0->unk_914, arg1);
+    func_00151788(e + 0xD1C, 3);
+    func_0011B9E0(I(e, 0xB80));
+    func_0014B7F0(I(e, 0x910), a1);
+    func_0014B7F0(I(e, 0x914), a1);
 }
 
-void func_0014CBF4(s32, void *, s32);
-
-typedef struct {
-    s32 unk0;
-    s32 pad4;
-    s64 unk8;
-    char pad10[0xF0];
-} S_func_00159C58;
-
-typedef struct {
-    char pad0[0x914];
-    s32 unk_914;
-    char pad8[0x2B8];
-} S_func_00159C58_arg0;
-
-void func_00159C58(S_func_00159C58_arg0 *arg0) {
-    S_func_00159C58 buf;
-    buf.unk0 = 0x39;
-    buf.unk8 = (s64)(s32)((char *)arg0 + 0xBD0);
-    func_0014CBF4(arg0->unk_914, &buf, 1);
+typedef struct { s32 type; s32 pad; s64 arg; u8 rest[0xF0]; } Msg;
+void func_0014CBF4(s32, Msg *, s32);
+void func_00159C58(u8 *e)
+{
+    Msg m;
+    m.type = 0x39;
+    m.arg = (s32)(e + 0xBD0);
+    func_0014CBF4(I(e, 0x914), &m, 1);
 }

@@ -1,20 +1,24 @@
-void func_0015EF14(s32 *arg0) {
-    s32 v = arg0[0xE84/4];
-    if (v == 1) {
-        arg0[0xE74/4] = 3;
-        return;
+typedef struct {
+    char pad[0xE74];
+    s32 e74;
+    char pad2[0xC];
+    s32 e84;
+} S_0015EF14;
+
+void func_0015EF14(S_0015EF14 *arg0) {
+    switch (arg0->e84) {
+    case 19:
+        arg0->e74 = 1;
+        break;
+    case 2:
+        arg0->e74 = 2;
+        break;
+    case 1:
+        arg0->e74 = 3;
+        break;
+    case 0:
+    default:
+        arg0->e74 = 4;
+        break;
     }
-    if (v < 2) {
-        arg0[0xE74/4] = 4;
-        return;
-    }
-    if (v == 2) {
-        arg0[0xE74/4] = v;
-        return;
-    }
-    if (v == 0x13) {
-        arg0[0xE74/4] = 1;
-        return;
-    }
-    arg0[0xE74/4] = 4;
 }

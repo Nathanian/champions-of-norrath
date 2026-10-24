@@ -1,104 +1,75 @@
-extern void (*func_001CB5F8[])(void);
+extern u8 func_001CABD0[];
+extern u8 func_001CB5F8[];
+extern u8 func_001C8098[];
+void func_00165A40(void *);
+void func_00165A7C(void *);
+void func_00171AE0(void *);
+void func_0016FCC4(void *, void *, void *, void *);
+void func_0016526C(void *);
+
+void func_001659E4(void *arg0) {
+    u8 *p = func_001CABD0;
+    p = *(u8 **)(p + 0x430);
+    ((void (*)(void *))p)(arg0);
+    func_00165A40(arg0);
+    func_00165A7C(arg0);
+}
+
+void func_00165C70(u8 *arg0) {
+    u8 *p = func_001CB5F8;
+    p = *(u8 **)(p + 0x50);
+    ((void (*)(void *))p)(arg0);
+    if (*(s32 *)(arg0 + 0x2880) != 0) {
+        func_00171AE0(arg0 + (*(s32 *)(arg0 + 0x4EC) ^ 1) * 0xF80 + 0x970);
+    }
+}
+
+void func_001656B0(u8 *arg0) {
+    s32 flag = 0;
+    u8 *p;
+    if (*(s32 *)(arg0 + 0x538) != 0) {
+        flag = *(s32 *)(arg0 + 0x53C) != 0;
+    }
+    p = func_001C8098;
+    p = *(u8 **)(p + 0xE08);
+    ((void (*)(void))p)();
+    if (flag) {
+        func_0016FCC4(arg0 + 0x540, arg0 + 0x1250, arg0 + 0x1240, arg0 + 0x1230);
+        func_0016526C(arg0);
+    }
+}
 
 typedef struct {
-    char pad_0[0x98];
-    s32 unk_98;
-    char pad_1[0x27EC];
-    s32 unk_2888;
-    s32 unk_288C;
-    s32 unk_2890;
-    s32 unk_2894;
+    char pad[0x98];
+    s32 x98;
+    char pad2[0x2888 - 0x9C];
+    s32 v[4];
 } S_00165D28;
 
 s32 func_00165D28(S_00165D28 *arg0, S_00165D28 *arg1, S_00165D28 *arg2) {
-    s32 var_4 = ((s32 (*)(void))func_001CB5F8[0x28])();
-    if (arg1->unk_2888 != arg2->unk_2888) {
-        arg0->unk_2888 = arg1->unk_2888;
-        arg0->unk_98 = 2;
-        var_4 = 1;
+    u8 *p = func_001CB5F8;
+    s32 r;
+    p = *(u8 **)(p + 0xA0);
+    r = ((s32 (*)(void *, void *, void *))p)(arg0, arg1, arg2);
+    if (arg1->v[0] != arg2->v[0]) {
+        arg0->v[0] = arg1->v[0];
+        arg0->x98 = 2;
+        r = 1;
     }
-    if (arg1->unk_288C != arg2->unk_288C) {
-        arg0->unk_288C = arg1->unk_288C;
-        arg0->unk_98 = 2;
-        var_4 = 1;
+    if (arg1->v[1] != arg2->v[1]) {
+        arg0->v[1] = arg1->v[1];
+        arg0->x98 = 2;
+        r = 1;
     }
-    if (arg1->unk_2890 != arg2->unk_2890) {
-        arg0->unk_2890 = arg1->unk_2890;
-        arg0->unk_98 = 2;
-        var_4 = 1;
+    if (arg1->v[2] != arg2->v[2]) {
+        arg0->v[2] = arg1->v[2];
+        arg0->x98 = 2;
+        r = 1;
     }
-    if (arg1->unk_2894 != arg2->unk_2894) {
-        arg0->unk_2894 = arg1->unk_2894;
-        arg0->unk_98 = 2;
-        var_4 = 1;
+    if (arg1->v[3] != arg2->v[3]) {
+        arg0->v[3] = arg1->v[3];
+        arg0->x98 = 2;
+        r = 1;
     }
-    return var_4;
-}
-
-s32 D_004801AC;
-s32 func_0014B5E4(s32, s32, s32, s32, s32);
-void func_00161FDC(s32 a, s32 b, s32 c, s32 d) {
-    func_0014B5E4(D_004801AC, a, b, c, d);
-}
-
-typedef struct {
-    char pad_0[0x4DC];
-    u16 unk_4DC;
-    u16 unk_4E0;
-} S_0016B020_arg0;
-
-typedef struct {
-    char pad_0[0x10];
-    s16 x10;
-    s16 x12;
-    s32 pad_1;
-    char pad_2[8];
-} Blk;
-
-void func_0016B020(S_0016B020_arg0 *arg0, s32 arg1, s32 arg2, s32 arg3, s32 arg4, s32 arg5, Blk *arg6) {
-    s32 var_14 = 1;
-    s32 var_13 = -1;
-    s32 i;
-
-    if (arg1 != 1) {
-        var_13 = -1;
-        if (arg1 >= 2) {
-            var_14 = -1;
-            if (arg1 != 2) {
-                var_13 = 1;
-                if (arg1 == 3) {
-                    var_13 = -1;
-                    var_14 = 1;
-                }
-            }
-        }
-    }
-
-    arg6[0].x12 = (s16)(arg0->unk_4E0 + 7);
-    arg6[0].x10 = (s16)(arg0->unk_4DC + arg2);
-
-    for (i = 7; i >= 0; i--) {
-        *(u64 *)&arg6[1].x10 = *(u64 *)&arg6[0].x10;
-    }
-
-    arg6[2].x12 = (s16)(arg0->unk_4E0 + var_13 * arg5 + 7);
-    arg6[2].x10 = (s16)(arg0->unk_4DC + arg2);
-    arg6[3].x12 = (s16)(arg0->unk_4E0 + var_13 * arg5 + 7);
-    arg6[3].x10 = (s16)(arg0->unk_4DC + var_14 * arg4 + arg2);
-    arg6[4].x12 = (s16)(arg0->unk_4E0 + 7);
-    arg6[4].x10 = (s16)(arg0->unk_4DC + var_14 * arg4 + arg2);
-}
-
-void func_001606F4(void *arg0) {
-    void *temp_4 = (char *)arg0 + 0x910;
-    s64 temp_3 = ((s64)(((s32 *)temp_4)[0x33C0 >> 2] & 1)) << 6;
-    void *temp_4_2 = (char *)temp_4 + (s64)((s32 *)arg0)[0x4EC >> 2] * (s64)0x19C0 + 0x10;
-    s64 *f = (s64 *)temp_4_2;
-
-    f[0x6F0 >> 3] = (f[0x6F0 >> 3] & ~(s64)0x40) | temp_3;
-    f[0x1690 >> 3] = (f[0x1690 >> 3] & ~(s64)0x40) | temp_3;
-    f[0x1370 >> 3] = (f[0x1370 >> 3] & ~(s64)0x40) | temp_3;
-    f[0x1050 >> 3] = (f[0x1050 >> 3] & ~(s64)0x40) | temp_3;
-    f[0xD30 >> 3] = (f[0xD30 >> 3] & ~(s64)0x40) | temp_3;
-    f[0xA10 >> 3] = (f[0xA10 >> 3] & ~(s64)0x40) | temp_3;
+    return r;
 }

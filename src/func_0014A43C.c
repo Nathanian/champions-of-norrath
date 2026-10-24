@@ -1,30 +1,31 @@
-typedef struct {u8 pad[0x870]; s32 *items; s32 x874; s32 count; s32 x87c; s32 x880; s32 current; s32 target; s32 active; s32 dirty; s32 x894; s32 origin;} Gui;
-s32 D_0047FAFC;
-s32 func_0014B5E4(s32,s32,s32,s32,s32);
-void func_0014A6BC(void*);
+#define F(p,o) (*(s32*)((char*)(p)+(o)))
+void func_0014B870(u8 *arg0, s32 arg1, s32 arg2, s32 *arg3, s32 *arg4) {
+    u8 *p = *(u8 **)(arg0 + 0x4C);
+    p = *(u8 **)(p + 0x9C);
+    ((void (*)(u8 *, s32 *, s32 *))p)(arg0, arg3, arg4);
+    *arg3 = arg1 - *arg3;
+    *arg4 = arg2 - *arg4;
+}
+
 void func_0011B9E0(s32);
-void func_0014A3E8(void*,s32);
-extern u8 func_001C8098[];
-void func_001499FC(s32 a,s32 b,s32 c,s32 d){func_0014B5E4(D_0047FAFC,a,b,c,d);}
-void func_00149F60(Gui *p) {
-s32 old,delta,mag,n,half,eighth,quarter,cond;
-void *fp=func_001C8098; fp=*(void**)((u8*)fp-0x8f4); ((void(*)(void))fp)();
-if(p->active){
-old=p->current; n=p->count; delta=p->target-old; mag=delta; if(delta<0)mag=-mag;
-mag>>=8; half=delta>>1; eighth=delta>>3; quarter=delta>>2; cond=(n>>2)<mag;
-if((n>>1)<mag)p->current=old+half;
-if(cond)p->current+=quarter;
-p->current+=eighth;
-if(p->dirty==0 && old==p->current){p->active=0;return;}
-func_0014A6BC(p);
-}}
-void func_0014A32C(Gui *p,u32 index){
-s32 n=p->count;
-if(n>0 && index<(u32)n){
-u32 i; s32 limit,total; s32 *q;
-func_0011B9E0(p->items[index]);
-i=index; total=p->count; limit=total-1;
-if((s32)i<limit){q=p->items+index; do{ i++; q[0]=q[1]; q++;}while((s32)i<limit);}
-p->dirty=1; p->items[i]=0; p->count=total-1;p->active=1;
-}}
-void func_0014A43C(Gui *p,s32 i){func_0014A3E8(p,i-p->origin+1);}
+void func_0014A5CC(void *a) {
+    s32 i;
+    for (i = 0; i < F(a, 0x878); i++) {
+        func_0011B9E0((*(s32 **)((char *)a + 0x870))[i]);
+        (*(s32 **)((char *)a + 0x870))[i] = 0;
+    }
+    F(a, 0x878) = 0;
+}
+
+void func_0014A2EC(void *, s32);
+void func_0014A49C(void *a, s32 *list, u32 n) {
+    u32 i;
+    for (i = 0; i < n; i++) {
+        func_0014A2EC(a, *list++);
+    }
+}
+
+void func_0014A3E8(void *, s32);
+void func_0014A43C(void *a, s32 x) {
+    func_0014A3E8(a, x - F(a, 0x898) + 1);
+}

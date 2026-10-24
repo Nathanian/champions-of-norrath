@@ -1,21 +1,44 @@
-/* machine draft (m2c) for ee-gcc-2.96 -Os -G8, tried by autopilot */
-#ifndef M2C_DEFINES
-#define M2C_DEFINES
-typedef s32 M2C_UNK;
-typedef s8 M2C_UNK8;
-typedef s16 M2C_UNK16;
-typedef s32 M2C_UNK32;
-#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
-#define M2C_BITWISE(type, expr) ((type)(expr))
-#define M2C_ERROR(desc) (0)
-#define M2C_CARRY 0
-#define M2C_OVERFLOW(a) (0)
-#endif
+extern void *func_001A1668(void *, void *, s32, s32, s32 (*)(const void *, const void *));
+extern s32 func_00152920(const void *, const void *);
 
-void func_00152888(void *arg0, void **arg1) {
-    void *temp_3;
+typedef struct { s64 a; s64 b; } W16;
+typedef struct { s32 x; } W4;
 
-    temp_3 = *arg1;
-    M2C_FIELD(arg0, s64 *, 0) = (s64) M2C_FIELD(temp_3, s64 *, 0);
-    M2C_FIELD(arg0, s64 *, 8) = (s64) M2C_FIELD(temp_3, s64 *, 8);
+void func_00152888(W16 *arg0, W16 **arg1) {
+    *arg0 = **arg1;
+}
+
+void func_00152878(W4 *arg0, W4 **arg1) {
+    *arg0 = **arg1;
+}
+
+typedef struct {
+    s32 id;
+    s32 x4;
+    void (*fn)(void *, void *);
+    s32 off;
+    s32 x10;
+} Handler;
+
+typedef struct {
+    s32 id;
+    s32 x4;
+    u8 data[8];
+} Msg;
+
+void func_0015275C(void *arg0, void *arg1, s32 arg2, Msg *arg3, s32 arg4) {
+    Handler key;
+    Handler *h;
+    s32 i;
+
+    if (arg3 == NULL) {
+        return;
+    }
+    for (i = 0; i < arg4; i++, arg3++) {
+        key.id = arg3->id;
+        h = func_001A1668(&key, arg1, arg2, 0x14, func_00152920);
+        if (h != NULL && h->fn != NULL) {
+            h->fn((u8 *)arg0 + h->off, arg3->data);
+        }
+    }
 }

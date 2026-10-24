@@ -1,5 +1,7 @@
+extern s32 D_001D0488[];
 void iSignalSema(s32);
-extern u8 func_001CE218[];
-void func_0017A088(void) {
-    iSignalSema(*(s32 *)(func_001CE218 + 0x2270));
+
+void func_0017A088(void)
+{
+    iSignalSema(D_001D0488[0]);
 }

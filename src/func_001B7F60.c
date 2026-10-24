@@ -1,5 +1,3 @@
-/* identical to func_002DF920 (matched), with its names changed by decompdecomp */
-/* identical to func_001B7F60 (matched), with its names changed by decompdecomp */
 s32 Deci2Call(s32, u32 *);
 
 s32 func_001B7F60(u8 a, u32 b, u32 c)

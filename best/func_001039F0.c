@@ -1,42 +1,18 @@
-#include "context.h"
-extern s32 D_0047FB08;
-
-s32 func_001039F0(s32 *arg0) {
-    s32 var_2;
-    s32 var_4;
-    s32 var_5;
-    s32 var_5_2;
-    s32 var_6;
-    s32 *temp_9;
-
-    temp_9 = arg0 + 4;
-    var_6 = 0;
-    var_5 = 0x20;
-
-    while (var_6 < 4) {
-        if (*(temp_9 + var_5) != 0x23) {
-            var_6 += 1;
-            var_5 += 8;
-            continue;
-        }
-        var_2 = *(arg0 + 6 + var_5);
-
-        if (var_2 == 0) {
-            return 0;
-        }
-
-        var_4 = 0x20;
-        var_5_2 = 0;
-
-        while (var_5_2 < 4) {
-            if (*(temp_9 + var_4) != 0x23) {
-                var_5_2 += 1;
-                var_4 += 8;
-                continue;
-            }
-            break;
-        }
-
-        return 0;
+extern f32 D_0047FB08;
+typedef struct { s16 type, val, p0, p1; } Slot;
+typedef struct { u8 *obj; Slot s[8]; } Obj;
+static inline s32 find(Obj *a, s32 t) {
+    s32 i;
+    for (i = 0; i < 4; i++) {
+        if (a->s[i + 4].type == t)
+            return a->s[i + 4].val;
     }
+    return 0;
+}
+s32 func_001039F0(Obj *a) {
+    f32 fh = (f32)*(s16 *)(a->obj + 0x1A);
+    if (find(a, 0x23) != 0) {
+        fh = fh + ((f32)find(a, 0x23) * D_0047FB08) * fh;
+    }
+    return (s32)fh;
 }

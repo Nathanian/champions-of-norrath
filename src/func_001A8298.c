@@ -1,51 +1,95 @@
-/* func_001A8298 */
-void func_001A4BB8(s32, s32, s32);
-void func_001A8298(s32 arg0) {
-    func_001A4BB8(arg0, 0, 10);
-}
+typedef struct { u8 *_base; s32 _size; } SBuf;
+typedef struct Reent { u8 pad[0x38]; s32 __sdidinit; } Reent;
+typedef struct SFile {
+    u8 *_p;
+    s32 _r;
+    s32 _w;
+    u16 _flags;
+    s16 _file;
+    SBuf _bf;
+    s32 _lbfsize;
+    void *_cookie;
+    void *_read;
+    void *_write;
+    void *_seek;
+    void *_close;
+    SBuf _ub;
+    u8 *_up;
+    s32 _ur;
+    u8 _ubuf[3];
+    u8 _nbuf[1];
+    SBuf _lb;
+    s32 _blksize;
+    s32 _offset;
+    Reent *_data;
+} SFile;
 
-/* func_001A9868 */
-extern void func_001ABAB8(void);
-extern void func_001ABB20(void);
-extern void func_001ABBA0(void);
-extern void func_001ABC08(void);
-
-void func_001A9868(void *arg0, s16 arg1, s16 arg2, s32 arg3) {
-    *(s32 *)((u8 *)arg0 + 0x54) = arg3;
-    *(s16 *)((u8 *)arg0 + 0xC) = arg1;
-    *(s16 *)((u8 *)arg0 + 0xE) = arg2;
-    *(s32 *)((u8 *)arg0 + 0x20) = (s32)func_001ABAB8;
-    *(s32 *)((u8 *)arg0 + 0x24) = (s32)func_001ABB20;
-    *(s32 *)((u8 *)arg0 + 0x28) = (s32)func_001ABBA0;
-    *(s32 *)((u8 *)arg0 + 0x2C) = (s32)func_001ABC08;
-    *(s32 *)((u8 *)arg0 + 0x0) = 0;
-    *(s32 *)((u8 *)arg0 + 0x4) = 0;
-    *(s32 *)((u8 *)arg0 + 0x8) = 0;
-    *(s32 *)((u8 *)arg0 + 0x10) = 0;
-    *(s32 *)((u8 *)arg0 + 0x14) = 0;
-    *(s32 *)((u8 *)arg0 + 0x18) = 0;
-    *(s32 *)((u8 *)arg0 + 0x1C) = (s32)arg0;
-}
-
-/* func_001A98C8 */
-void *func_001A1CF0(s32, s32);
-void func_001A2660(void *, s32, s32);
-
-void *func_001A98C8(s32 arg0, s32 arg1) {
-    s32 size = arg1 * 0x58;
-    s32 *p = func_001A1CF0(arg0, size + 0xC);
-    if (p != 0) {
-        p[1] = arg1;
-        p[0] = 0;
-        p[2] = (s32)(p + 3);
-        func_001A2660(p + 3, 0, size);
-    }
-    return p;
-}
-
-/* func_001AA5D0 */
 extern u8 jtbl_004C006C[];
-void func_001AA598(s32);
-void func_001AA5D0(void) {
-    func_001AA598(*(s32 *)(jtbl_004C006C + 0x3A14));
+s32 func_001A4BB8(char *, char **, s32);
+void func_001A9A78(Reent *);
+s32 func_001A4D60(Reent *, SFile *, const char *, char *);
+s32 func_001A9750(SFile *);
+
+s32 func_001A8298(char *s)
+{
+    return func_001A4BB8(s, 0, 10);
+}
+
+s32 func_001A4CE8(SFile *fp, const char *fmt, char *ap)
+{
+    if (fp->_data == 0) {
+        fp->_data = *(Reent **)(jtbl_004C006C + 0x3A14);
+    }
+    if (!fp->_data->__sdidinit) {
+        func_001A9A78(fp->_data);
+    }
+    return func_001A4D60(fp->_data, fp, fmt, ap);
+}
+
+s32 func_001A4C30(SFile *fp, const char *fmt, char *ap)
+{
+    s32 ret;
+    SFile fake;
+    u8 buf[0x400];
+
+    fake._flags = fp->_flags & ~2;
+    fake._file = fp->_file;
+    fake._cookie = fp->_cookie;
+    fake._write = fp->_write;
+    fake._data = fp->_data;
+    fake._bf._base = fake._p = buf;
+    fake._bf._size = fake._w = sizeof(buf);
+    fake._lbfsize = 0;
+    ret = func_001A4CE8(&fake, fmt, ap);
+    if (ret >= 0 && func_001A9750(&fake)) {
+        ret = -1;
+    }
+    if (fake._flags & 0x40) {
+        fp->_flags |= 0x40;
+    }
+    return ret;
+}
+
+char *func_001A48F8(char *searchee, char *lookfor)
+{
+    if (*searchee == 0) {
+        if (*lookfor) {
+            return 0;
+        }
+        return searchee;
+    }
+    while (*searchee) {
+        s32 i = 0;
+        while (1) {
+            if (lookfor[i] == 0) {
+                return searchee;
+            }
+            if (lookfor[i] != searchee[i]) {
+                break;
+            }
+            i++;
+        }
+        searchee++;
+    }
+    return 0;
 }

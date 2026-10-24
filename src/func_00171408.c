@@ -1,5 +1,3 @@
-/* identical to func_002FBB50 (matched), with its names changed by decompdecomp */
-/* identical to func_00171408 (matched), with its names changed by decompdecomp */
 typedef enum {
     CLASS_SNAN,
     CLASS_QNAN,

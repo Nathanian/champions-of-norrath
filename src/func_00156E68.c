@@ -1,31 +1,31 @@
-extern void (*D_001C77EC[])();
+extern char func_001C8098[];
+void func_001571E0(void *);
+s64 func_00170968(s64, s64);
+void func_0014B558(void *, void *, s32);
+void func_00171AE0(void *);
 
-s32 D_0047FEEC;
-extern s32 func_0014B5E4(s32, s32, s32, s32, s32);
-extern s32 func_0014CD0C(s32, s32, void (*)(void), s32);
-extern void func_00157EE4(void);
-extern void func_00157F64(void);
+#define I(p, o) (*(s32 *)((char *)(p) + (o)))
+#define L(p, o) (*(s64 *)((char *)(p) + (o)))
 
-void func_00157428(void) {
-    D_001C77EC[0]();
+void func_00157068(void *arg0) {
+    (*(void (**)(void))(func_001C8098 + 0xD64))();
+    if (I(arg0, 0x92C) != 0) {
+        func_001571E0(arg0);
+        I(arg0, 0x92C)--;
+    }
 }
 
-s32 func_001577B8(s32 arg0, s32 arg1, s32 arg2, s32 arg3) {
-    s32 r;
-    r = func_0014B5E4(D_0047FEEC, arg0, arg1, arg2, arg3);
-    func_0014CD0C(r, 6, func_00157EE4, 0);
-    func_0014CD0C(r, 7, func_00157F64, 0);
-    return r;
+void func_00157164(void *arg0) {
+    s64 t = L(arg0, 0x940);
+    I(arg0, 0x918) = I(arg0, 0x928);
+    I(arg0, 0x928) = func_00170968((t + L(arg0, 0x930)) << 12, L(arg0, 0x938) - t);
 }
 
-extern s32 func_0014B558(s32, s32, s32);
-
-void func_00156E68(s32 arg0) {
-    func_0014B558(arg0, arg0 + 0x128, 4);
+void func_00156E68(void *arg0) {
+    func_0014B558(arg0, (char *)arg0 + 0x128, 4);
 }
 
-s32 D_0047FE68;
-
-void func_00156DE4(s32 a, s32 b, s32 c, s32 d) {
-    func_0014B5E4(D_0047FE68, a, b, c, d);
+void func_0015735C(void *arg0) {
+    (*(void (**)(void))(func_001C8098 - 0x8F4))();
+    func_00171AE0((char *)arg0 + (I(arg0, 0x4EC) ^ 1) * 0x50 + 0x880);
 }

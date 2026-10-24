@@ -1,86 +1,81 @@
-s32 func_0011B9E0(s32);
-s32 func_0011B9A8(s32);
-s32 func_0014B0F0(void *, s32, s32);
-void func_0014A8C4(void *);
-void func_0014CF0C(s32, s32, s32);
+void func_0014B870(u8 *arg0, s32 arg1, s32 arg2, s32 *arg3, s32 *arg4) {
+    u8 *p = *(u8 **)(arg0 + 0x4C);
+    p = *(u8 **)(p + 0x9C);
+    ((void (*)(u8 *, s32 *, s32 *))p)(arg0, arg3, arg4);
+    *arg3 = arg1 - *arg3;
+    *arg4 = arg2 - *arg4;
+}
+
+s32 func_0014C400(s32 arg0) {
+    u32 hi = arg0 >> 8;
+    u32 lo = arg0 & 0xFF;
+    if (hi - 0x81 < 0x1F) {
+        hi -= 0x81;
+    } else if (hi - 0xE0 < 0x10) {
+        hi -= 0xC1;
+    } else {
+        return -1;
+    }
+    hi *= 2;
+    if (lo - 0x40 < 0x3F) {
+        lo -= 0x40;
+    } else if (lo - 0x80 < 0x1F) {
+        lo -= 0x41;
+    } else if (lo - 0x9F < 0x5E) {
+        lo -= 0x9F;
+        hi += 1;
+    } else {
+        return -1;
+    }
+    return ((u64)hi << 8) + lo + 0x2121;
+}
+
+s32 func_0014C4A4(s32 a, s32 *out) {
+    s32 v = func_0014C400(a);
+    s32 r;
+    s32 cat;
+    if (v == -1) {
+        *out = 0;
+        r = -34;
+    } else if (v < 0x2121) {
+        r = v;
+    } else {
+        v = (s32)((s64)(v >> 8) * 94 - 3102) + ((v & 0xFF) - 0x21);
+        if (v < 0x582) {
+            cat = 1;
+        } else if (0x1142 > v) {
+            cat = 2;
+        } else {
+            cat = 3;
+        }
+        *out = cat;
+        r = v;
+    }
+    return r;
+}
+
+typedef struct {
+    s16 x;
+    s16 y;
+    s32 pad4;
+    u8 b8;
+    u8 b9;
+    u8 bA;
+    u8 padB[5];
+} S_0014AB48_Item;
+
 s32 func_001A32C8(void);
 
-void func_0014A5CC(void *arg0) {
-    u8 *p = arg0;
-    s32 i = 0;
-    if (*(s32 *)(p + 0x878) > 0) {
-        do {
-            s32 *base = *(s32 **)(p + 0x870);
-            func_0011B9E0(base[i]);
-            base[i] = 0;
-            i++;
-        } while (i < *(s32 *)(p + 0x878));
+void func_0014AB48(u8 *arg0) {
+    S_0014AB48_Item *p;
+    s32 i;
+    *(s32 *)(arg0 + 0x920) = 1;
+    p = *(S_0014AB48_Item **)(arg0 + 0x91C);
+    for (i = 0; i < *(s32 *)(arg0 + 0x928); i++) {
+        p->x = func_001A32C8() % *(s32 *)(arg0 + 0x5AC);
+        p->y = func_001A32C8() % *(s32 *)(arg0 + 0x5B0);
+        p->b8 = p->b9 = p->bA = 0;
+        p++;
     }
-    *(s32 *)(p + 0x878) = 0;
-}
-
-void func_0014A644(void *arg0) {
-    u8 *p = arg0;
-    s32 i = 0;
-    if (*(s32 *)(p + 0x898) + 1 != 0) {
-        do {
-            s32 *arr = *(s32 **)(p + 0x87C);
-            s32 v = arr[i];
-            i++;
-            func_0014CF0C(v, *(s32 *)(p + 0x5AC) - (*(s32 *)(p + 0x8A4) << 1), *(s32 *)(p + 0x8A0));
-        } while (i < *(s32 *)(p + 0x898) + 1);
-    }
-}
-
-void func_0014A9D8(void *p) {
-    u8 *pp = p;
-    s32 size;
-    s32 buf;
-    s32 alloc2;
-    s32 v;
-    *(s32 *)(pp + 0x928) = 0;
-    size = (*(s32 *)(pp + 0x940) << 5) + 0x80;
-    buf = func_0011B9A8(size * 2);
-    *(s32 *)(pp + 0x910) = buf;
-    *(s32 *)(pp + 0x914) = buf + size;
-    alloc2 = func_0011B9A8(*(s32 *)(pp + 0x940) * 16);
-    v = *(s32 *)(pp + 0x8E0);
-    *(s32 *)(pp + 0x91C) = alloc2;
-    *(s32 *)(pp + 0x920) = 1;
-    *(s32 *)(pp + 0x930) = v;
-    *(s32 *)(pp + 0x924) = 2;
-    func_0014B0F0(p, v, 2);
-    func_0014A8C4(p);
-    *(s32 *)(pp + 0x4D0) = 0;
-}
-
-void func_0014AB48(void *arg0) {
-    u8 *p = arg0;
-    s32 *buf = *(s32 **)(p + 0x91C);
-    s32 i = 0;
-    *(s32 *)(p + 0x920) = 1;
-    if (*(s32 *)(p + 0x928) > 0) {
-        do {
-            s32 r1;
-            s32 a;
-            s32 m1;
-            s32 r2;
-            s32 b;
-            s32 m2;
-            i++;
-            r1 = func_001A32C8();
-            a = *(s32 *)(p + 0x5AC);
-            m1 = r1 % a;
-            *((s16 *)buf) = (s16)m1;
-            r2 = func_001A32C8();
-            b = *(s32 *)(p + 0x5B0);
-            m2 = r2 % b;
-            *((u8 *)buf + 0xA) = 0;
-            *((u8 *)buf + 0x9) = 0;
-            *((u8 *)buf + 0x8) = 0;
-            *((s16 *)((u8 *)buf + 0x2)) = (s16)m2;
-            buf = (s32 *)((u8 *)buf + 0x10);
-        } while (i < *(s32 *)(p + 0x928));
-    }
-    *(s32 *)(p + 0x924) = 2;
+    *(s32 *)(arg0 + 0x924) = 2;
 }

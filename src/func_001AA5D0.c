@@ -1,51 +1,80 @@
-/* func_001A8298 */
-void func_001A4BB8(s32, s32, s32);
-void func_001A8298(s32 arg0) {
-    func_001A4BB8(arg0, 0, 10);
-}
+/* identical to func_00300188 (matched), with its names changed by decompdecomp */
 
-/* func_001A9868 */
-extern void func_001ABAB8(void);
-extern void func_001ABB20(void);
-extern void func_001ABBA0(void);
-extern void func_001ABC08(void);
+extern u8 D_004C3A80[9];
+s32 func_00301088(s32 arg0, void *arg1);
+void func_002FFDE8(void);
+void func_002FFF98(void *arg0, s32 arg1, s32 arg2, void *arg3);
+void func_001AA598(s32 arg0);
 
-void func_001A9868(void *arg0, s16 arg1, s16 arg2, s32 arg3) {
-    *(s32 *)((u8 *)arg0 + 0x54) = arg3;
-    *(s16 *)((u8 *)arg0 + 0xC) = arg1;
-    *(s16 *)((u8 *)arg0 + 0xE) = arg2;
-    *(s32 *)((u8 *)arg0 + 0x20) = (s32)func_001ABAB8;
-    *(s32 *)((u8 *)arg0 + 0x24) = (s32)func_001ABB20;
-    *(s32 *)((u8 *)arg0 + 0x28) = (s32)func_001ABBA0;
-    *(s32 *)((u8 *)arg0 + 0x2C) = (s32)func_001ABC08;
-    *(s32 *)((u8 *)arg0 + 0x0) = 0;
-    *(s32 *)((u8 *)arg0 + 0x4) = 0;
-    *(s32 *)((u8 *)arg0 + 0x8) = 0;
-    *(s32 *)((u8 *)arg0 + 0x10) = 0;
-    *(s32 *)((u8 *)arg0 + 0x14) = 0;
-    *(s32 *)((u8 *)arg0 + 0x18) = 0;
-    *(s32 *)((u8 *)arg0 + 0x1C) = (s32)arg0;
-}
-
-/* func_001A98C8 */
-void *func_001A1CF0(s32, s32);
-void func_001A2660(void *, s32, s32);
-
-void *func_001A98C8(s32 arg0, s32 arg1) {
-    s32 size = arg1 * 0x58;
-    s32 *p = func_001A1CF0(arg0, size + 0xC);
-    if (p != 0) {
-        p[1] = arg1;
-        p[0] = 0;
-        p[2] = (s32)(p + 3);
-        func_001A2660(p + 3, 0, size);
-    }
-    return p;
-}
-
-/* func_001AA5D0 */
-extern u8 jtbl_004C006C[];
-void func_001AA598(s32);
 void func_001AA5D0(void) {
-    func_001AA598(*(s32 *)(jtbl_004C006C + 0x3A14));
+    func_001AA598(*(s32 *)D_004C3A80);
+}
+
+void func_001AA598(s32 arg0) {
+    func_00301088(arg0, (void *)func_002FFDE8);
+}
+
+void func_003001A8(void *arg0) {
+    void *tmp;
+    tmp = (char *)arg0 + 0x1E4;
+    *(void **)((char *)arg0 + 0x3C) = (void *)func_001AA598;
+    *(s32 *)((char *)arg0 + 0x38) = 1;
+    func_002FFF98(tmp, 4, 0, arg0);
+    func_002FFF98((char *)arg0 + 0x23C, 9, 1, arg0);
+    func_002FFF98((char *)arg0 + 0x294, 0xA, 2, arg0);
+    *(s32 *)((char *)arg0 + 0x1D8) = 0;
+    *(void **)((char *)arg0 + 0x1E0) = tmp;
+    *(s32 *)((char *)arg0 + 0x1DC) = 3;
+}
+
+s32 func_00300238(s32 *arg0, char *arg1, s32 *arg2) {
+    s32 v1;
+    s32 a3;
+    s32 t0;
+    char c0;
+    c0 = arg1[0];
+    if (c0 == 0x72) {
+        t0 = 4;
+        v1 = 0;
+        a3 = 0;
+        goto L1;
+    }
+    if (c0 < 0x73) {
+        t0 = 0x108;
+        if (c0 != 0x61) {
+            *arg0 = 0x16;
+            return 0;
+        }
+        v1 = 1;
+        a3 = 0x208;
+        goto L1;
+    }
+    t0 = 8;
+    if (c0 != 0x77) {
+        *arg0 = 0x16;
+        return 0;
+    }
+    v1 = 1;
+    a3 = 0x600;
+L1:
+    if (arg1[1] == 0) {
+        goto L2;
+    }
+    if (arg1[1] == 0x2B) {
+        t0 = 0x10;
+        v1 = 2;
+        goto L2;
+    }
+    if (arg1[2] != 0x2B) {
+        v1 |= a3;
+        goto L3;
+    }
+    v1 |= a3;
+    t0 = 0x10;
+    goto L2;
+L2:
+    v1 |= a3;
+L3:
+    *arg2 = v1;
+    return t0;
 }

@@ -1,45 +1,60 @@
-extern u8 D_001D20C8[];
-extern u8 D_001D20CA[];
-extern u8 D_001D20CC[];
-extern u8 D_001D20CD[];
+typedef struct {
+    u32 spdifMode : 1;
+    u32 screenType : 2;
+    u32 videoOutput : 1;
+    u32 japLanguage : 1;
+    u32 ps1drvConfig : 8;
+    u32 version : 3;
+    u32 language : 5;
+    u32 timezoneOffset : 11;
+} OsdConfigParam;
 
+typedef struct {
+    u8 b[8];
+} Cfg8;
+
+extern u8 func_001D1C80[];
 s32 func_0017DCF0(void);
-void GetOsdConfigParam(s32 *);
+void GetOsdConfigParam(OsdConfigParam *);
 
-typedef struct { u64 v; } __attribute__((packed)) Unaligned64;
+s32 func_0017DD30(void)
+{
+    OsdConfigParam c;
 
-void ovl_ntgui2_func_0017DD90(void *src) {
-    ((Unaligned64 *)D_001D20C8)->v = ((Unaligned64 *)src)->v;
+    GetOsdConfigParam(&c);
+    if (func_0017DCF0()) {
+        return func_001D1C80[0x44C];
+    }
+    GetOsdConfigParam(&c);
+    if (c.version != 0) {
+        return c.language;
+    }
+    return c.japLanguage;
 }
 
-s32 ovl_ntgui2_func_0017DDB0(void) {
-    if (func_0017DCF0() != 0) {
-        return D_001D20CA[0];
-    }
-    s32 cfg;
-    GetOsdConfigParam(&cfg);
-    return (cfg >> 1) & 0x3;
+void ovl_ntgui2_func_0017DD90(Cfg8 *p)
+{
+    *(Cfg8 *)(func_001D1C80 + 0x448) = *p;
 }
 
-s32 func_0017DD30(void) {
-    s32 cfg;
-    GetOsdConfigParam(&cfg);
-    if (func_0017DCF0() != 0) {
-        return D_001D20CC[0];
+s32 ovl_ntgui2_func_0017DDB0(void)
+{
+    OsdConfigParam c;
+
+    if (func_0017DCF0()) {
+        return func_001D1C80[0x44A];
     }
-    GetOsdConfigParam(&cfg);
-    u32 t = (cfg >> 13) & 0x7;
-    if (t != 0) {
-        return (cfg >> 16) & 0x1F;
-    }
-    return (cfg >> 4) & 0x1;
+    GetOsdConfigParam(&c);
+    return c.screenType;
 }
 
-s32 func_0017DDF0(void) {
-    if (func_0017DCF0() != 0) {
-        return D_001D20CD[0];
+s32 func_0017DDF0(void)
+{
+    OsdConfigParam c;
+
+    if (func_0017DCF0()) {
+        return func_001D1C80[0x44D];
     }
-    s32 cfg;
-    GetOsdConfigParam(&cfg);
-    return cfg & 0x1;
+    GetOsdConfigParam(&c);
+    return c.spdifMode;
 }

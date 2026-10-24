@@ -1,50 +1,76 @@
+/* identical to func_001659E4 (matched), with its names changed by decompdecomp */
+extern u8 D_001C81E0[];
+extern u8 func_001CB5F8[];
 extern u8 func_001C8098[];
-
-void func_00157C40(void) {
-    void *p = func_001C8098;
-    p = *(void **)((u8 *)p + 0x570);
-    ((void (*)(void))p)();
-}
-
 void func_00157CC0(void *);
 void func_00157D40(void *);
+void func_00171AE0(void *);
+void func_0016FCC4(void *, void *, void *, void *);
+void func_0016526C(void *);
 
 void func_00157C64(void *arg0) {
-    void *p = func_001C8098;
-    p = *(void **)((u8 *)p + 0x578);
-    ((void (*)(void))p)();
+    u8 *p = D_001C81E0;
+    p = *(u8 **)(p + 0x430);
+    ((void (*)(void *))p)(arg0);
     func_00157CC0(arg0);
-    return func_00157D40(arg0);
+    func_00157D40(arg0);
 }
 
-s32 func_0014CE60(s32, s32, s32, s32);
+void func_00165C70(u8 *arg0) {
+    u8 *p = func_001CB5F8;
+    p = *(u8 **)(p + 0x50);
+    ((void (*)(void *))p)(arg0);
+    if (*(s32 *)(arg0 + 0x2880) != 0) {
+        func_00171AE0(arg0 + (*(s32 *)(arg0 + 0x4EC) ^ 1) * 0xF80 + 0x970);
+    }
+}
+
+void func_001656B0(u8 *arg0) {
+    s32 flag = 0;
+    u8 *p;
+    if (*(s32 *)(arg0 + 0x538) != 0) {
+        flag = *(s32 *)(arg0 + 0x53C) != 0;
+    }
+    p = func_001C8098;
+    p = *(u8 **)(p + 0xE08);
+    ((void (*)(void))p)();
+    if (flag) {
+        func_0016FCC4(arg0 + 0x540, arg0 + 0x1250, arg0 + 0x1240, arg0 + 0x1230);
+        func_0016526C(arg0);
+    }
+}
 
 typedef struct {
-    char pad0[0x5A0];
-    s32 unk_5A0;
-    s32 unk_5A4;
-    char pad1[0x2C];
-    s32 unk_5D4;
-    char pad2[0x2A8];
-    s32 unk_880;
-    s32 unk_884;
-    s32 unk_888;
-    s32 unk_88C;
-    s32 unk_890;
-    s32 unk_894;
-    char pad3[0x98];
-    s32 unk_930;
-} S_func_00157CC0_arg0;
+    char pad[0x98];
+    s32 x98;
+    char pad2[0x2888 - 0x9C];
+    s32 v[4];
+} S_00165D28;
 
-s32 func_00157CC0(S_func_00157CC0_arg0 *a) {
-    s32 d = a->unk_5D4;
-    func_0014CE60(a->unk_890, a->unk_5A0 + d - a->unk_880, a->unk_5A4 + d - a->unk_888, a->unk_880);
-    d = a->unk_5D4;
-    return func_0014CE60(a->unk_894, a->unk_5A0 + d, a->unk_5A4 + d - a->unk_930 * 3 / 2, a->unk_5A0);
-}
-
-void func_00157D9C(void) {
-    void *p = func_001C8098;
-    p = *(void **)((u8 *)p + 0x5C0);
-    ((void (*)(void))p)();
+s32 func_00165D28(S_00165D28 *arg0, S_00165D28 *arg1, S_00165D28 *arg2) {
+    u8 *p = func_001CB5F8;
+    s32 r;
+    p = *(u8 **)(p + 0xA0);
+    r = ((s32 (*)(void *, void *, void *))p)(arg0, arg1, arg2);
+    if (arg1->v[0] != arg2->v[0]) {
+        arg0->v[0] = arg1->v[0];
+        arg0->x98 = 2;
+        r = 1;
+    }
+    if (arg1->v[1] != arg2->v[1]) {
+        arg0->v[1] = arg1->v[1];
+        arg0->x98 = 2;
+        r = 1;
+    }
+    if (arg1->v[2] != arg2->v[2]) {
+        arg0->v[2] = arg1->v[2];
+        arg0->x98 = 2;
+        r = 1;
+    }
+    if (arg1->v[3] != arg2->v[3]) {
+        arg0->v[3] = arg1->v[3];
+        arg0->x98 = 2;
+        r = 1;
+    }
+    return r;
 }
