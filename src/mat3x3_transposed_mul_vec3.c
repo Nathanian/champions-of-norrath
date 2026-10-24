@@ -1,6 +1,3 @@
-/* identical to func_00159B98 (matched), with its names changed by decompdecomp */
-/* identical to func_00159880 (matched), with its names changed by decomp.wtf */
-
 typedef struct { f32 x, y, z; } Vec3;
 
 Vec3 *func_001597E0(Vec3 *out, f32 *m, Vec3 *v) {
@@ -11,7 +8,7 @@ Vec3 *func_001597E0(Vec3 *out, f32 *m, Vec3 *v) {
     return out;
 }
 
-Vec3 *mat3x3_transposed_mul_vec3(Vec3 *out, f32 *m, Vec3 *v) {
+Vec3 *func_00159880(Vec3 *out, f32 *m, Vec3 *v) {
     Vec3 t = *v;
     out->x = m[0] * t.x + m[3] * t.y + m[6] * t.z;
     out->y = m[1] * t.x + m[4] * t.y + m[7] * t.z;

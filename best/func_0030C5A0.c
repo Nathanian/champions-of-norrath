@@ -1,50 +1,101 @@
-/* identical to func_001ACED8 (matched), with its names changed by decompdecomp */
-typedef struct Reent { char pad[0x38]; s32 didinit; } Reent;
-typedef struct UFile {
-    u8 *p; s32 r; s32 w; u16 flags; s16 file;
-    u8 *bbase; s32 bsize; s32 lbfsize; s32 pad1[5];
-    u8 *ubase; s32 usize; u8 *up; s32 ur;
-    u8 ubuf[3]; u8 nbuf[1]; s32 pad2[4];
-    Reent *data;
-} UFile;
-extern char D_00444A6C[];
-extern void func_003001A8(Reent *);
-extern s32 func_002FFDE8(UFile *);
-extern s32 func_0030C4B8(UFile *);
+/* machine draft (m2c), tried by autopilot */
+#ifndef M2C_DEFINES
+#define M2C_DEFINES
+typedef s32 M2C_UNK;
+typedef s8 M2C_UNK8;
+typedef s16 M2C_UNK16;
+typedef s32 M2C_UNK32;
+#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
+#define M2C_BITWISE(type, expr) ((type)(expr))
+#define M2C_ERROR(desc) (0)
+#define M2C_CARRY 0
+#define M2C_OVERFLOW(a) (0)
+#endif
 
-s32 func_0030C5A0(s32 c, UFile *fp) {
-    if (c == -1) return -1;
-    if (fp->data == 0) fp->data = *(Reent **)(D_00444A6C + 0x3A14);
-    if (fp->data->didinit == 0) func_003001A8(fp->data);
-    fp->flags &= ~0x20;
-    if ((fp->flags & 4) == 0) {
-        if ((fp->flags & 0x10) == 0) return -1;
-        if (fp->flags & 8) {
-            if (func_002FFDE8(fp)) return -1;
-            fp->flags &= ~8;
-            fp->w = 0;
-            fp->lbfsize = 0;
+s32 func_002FFDE8(void *);                          /* extern */
+M2C_UNK func_003001A8(void *);                      /* extern */
+s32 func_0030C4B8(void *);                          /* extern */
+extern void *D_00448480;
+
+s8 func_0030C5A0(s32 arg0, void *arg1) {
+    s8 *temp_4_2;
+    s8 *temp_7;
+    s8 temp_17;
+    s8 var_2;
+    u16 temp_4;
+    u32 temp_2;
+    void *var_3;
+
+    var_2 = -1;
+    if (arg0 != -1) {
+        var_3 = M2C_FIELD(arg1, void **, 0x54);
+        if (var_3 == NULL) {
+            var_3 = D_00448480;
+            M2C_FIELD(arg1, void **, 0x54) = var_3;
         }
-        fp->flags |= 4;
+        if (M2C_FIELD(var_3, s32 *, 0x38) == 0) {
+            func_003001A8(var_3);
+        }
+        temp_4 = M2C_FIELD(arg1, u16 *, 0xC) & 0xFFDF;
+        M2C_FIELD(arg1, u16 *, 0xC) = temp_4;
+        if (!(temp_4 & 4)) {
+            var_2 = -1;
+            if (temp_4 & 0x10) {
+                if (temp_4 & 8) {
+                    var_2 = -1;
+                    if (func_002FFDE8(arg1) == 0) {
+                        M2C_FIELD(arg1, s32 *, 8) = 0;
+                        M2C_FIELD(arg1, s32 *, 0x18) = 0;
+                        M2C_FIELD(arg1, u16 *, 0xC) = (u16) (M2C_FIELD(arg1, u16 *, 0xC) & 0xFFF7);
+                        goto block_10;
+                    }
+                    /* Duplicate return node #29. Try simplifying control flow for better match */
+                    return var_2;
+                }
+block_10:
+                M2C_FIELD(arg1, u16 *, 0xC) = (u16) (M2C_FIELD(arg1, u16 *, 0xC) | 4);
+                goto block_11;
+            }
+            /* Duplicate return node #29. Try simplifying control flow for better match */
+            return var_2;
+        }
+block_11:
+        temp_17 = arg0 & 0xFF;
+        if (M2C_FIELD(arg1, void **, 0x30) != NULL) {
+            if (M2C_FIELD(arg1, s32 *, 4) < M2C_FIELD(arg1, s32 *, 0x34)) {
+                goto block_20;
+            }
+            if (func_0030C4B8(arg1) == 0) {
+block_20:
+                temp_4_2 = M2C_FIELD(arg1, s8 **, 0) - 1;
+                M2C_FIELD(arg1, s8 **, 0) = temp_4_2;
+                *temp_4_2 = temp_17;
+                goto block_25;
+            }
+            return -1;
+        }
+        temp_2 = M2C_FIELD(arg1, u32 *, 0x10);
+        temp_7 = M2C_FIELD(arg1, s8 **, 0);
+        if (temp_2 != 0) {
+            if ((temp_2 < (u32) temp_7) && (M2C_FIELD(temp_7, u8 *, -1) == temp_17)) {
+                M2C_FIELD(arg1, s8 **, 0) = (s8 *) (temp_7 - 1);
+block_25:
+                M2C_FIELD(arg1, s32 *, 4) = (s32) (M2C_FIELD(arg1, s32 *, 4) + 1);
+                return temp_17;
+            }
+            goto block_28;
+        }
+block_28:
+        M2C_FIELD(arg1, s32 *, 0x3C) = M2C_FIELD(arg1, s32 *, 4);
+        M2C_FIELD(arg1, s8 **, 0x38) = temp_7;
+        M2C_FIELD(arg1, void **, 0x30) = (void *) (arg1 + 0x40);
+        M2C_FIELD(arg1, s32 *, 0x34) = 3;
+        M2C_FIELD(arg1, s8 **, 0) = (s8 *) (arg1 + 0x42);
+        M2C_FIELD(arg1, s8 *, 0x42) = temp_17;
+        M2C_FIELD(arg1, s32 *, 4) = 1;
+        var_2 = temp_17;
+        /* Duplicate return node #29. Try simplifying control flow for better match */
+        return var_2;
     }
-    c = (u8)c;
-    if (fp->ubase != 0) {
-        if (fp->r >= fp->usize && func_0030C4B8(fp)) return -1;
-        *--fp->p = c;
-        fp->r++;
-        return c;
-    }
-    if (fp->bbase != 0 && fp->p > fp->bbase && fp->p[-1] == c) {
-        fp->p--;
-        fp->r++;
-        return c;
-    }
-    fp->ur = fp->r;
-    fp->up = fp->p;
-    fp->ubase = fp->ubuf;
-    fp->usize = 3;
-    fp->ubuf[2] = c;
-    fp->p = fp->ubuf + 2;
-    fp->r = 1;
-    return c;
+    return var_2;
 }

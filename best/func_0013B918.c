@@ -1,3 +1,25 @@
-typedef struct{u8 p[0xc88];s32 C88;u8 q[0x94];s32 D20;} Obj;typedef struct{s32 type,res,val;} Msg;
-void func_0015A764(Obj*);void func_001517DC(s32,Obj*,Msg*);
-s32 ovl_ntgui2_func_0015A7B8(Obj*o){Msg m;if(o->C88)return 0;if(!o->D20)return 1;func_0015A764(o);o->C88=1;m.res=1;m.type=0x12;m.val=0;func_001517DC(o->D20,o,&m);o->C88=0;return 1;}extern s32 (*D_010CE5B0[])(void);s32 func_0013B918(void){s32 r=0;if(D_010CE5B0[0])r=D_010CE5B0[0]();return r;}
+/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
+#ifndef M2C_DEFINES
+#define M2C_DEFINES
+typedef s32 M2C_UNK;
+typedef s8 M2C_UNK8;
+typedef s16 M2C_UNK16;
+typedef s32 M2C_UNK32;
+#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
+#define M2C_BITWISE(type, expr) ((type)(expr))
+#define M2C_ERROR(desc) (0)
+#define M2C_CARRY 0
+#define M2C_OVERFLOW(a) (0)
+#endif
+
+extern M2C_UNK func_01000000;
+
+s32 func_0013B918(void) {
+    s32 var_2;
+
+    var_2 = 0;
+    if (M2C_FIELD(&func_01000000, s32 (**)(), 0xCE5B0) != NULL) {
+        var_2 = M2C_FIELD(&func_01000000, s32 (**)(), 0xCE5B0)();
+    }
+    return var_2;
+}

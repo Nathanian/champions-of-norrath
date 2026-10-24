@@ -1,29 +1,54 @@
-typedef struct { f32 x, y, z; } V3;
-extern u8 D_0044E670[], D_00452AE0[], D_00479480[], D_004864A0[];
-void func_0013EAC8(void *, s32);
-void func_0013EB28(void *);
-void func_001447D8(void *);
-s32 func_00165DC0(void *, void *);
-void func_00194300(void *);
-void func_0024CF80(s32);
-void func_0024D4F8(s32, V3 *, void *, f32);
+/* machine draft (m2c), tried by autopilot */
+#ifndef M2C_DEFINES
+#define M2C_DEFINES
+typedef s32 M2C_UNK;
+typedef s8 M2C_UNK8;
+typedef s16 M2C_UNK16;
+typedef s32 M2C_UNK32;
+#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
+#define M2C_BITWISE(type, expr) ((type)(expr))
+#define M2C_ERROR(desc) (0)
+#define M2C_CARRY 0
+#define M2C_OVERFLOW(a) (0)
+#endif
 
-typedef struct { u8 pad0[4]; u8 sub[0x10]; void *vt; u8 pad18[4]; u8 obj[0x3C]; s32 h; } Obj;
-void func_002B5A00(u8 *a, s32 flag) {
-    V3 v;
-    void *p;
-    s32 r;
-    flag &= 1;
-    *(void **)(a + 0x14) = D_00452AE0;
-    func_0024CF80(*(s32 *)(a + 0x54));
-    *(s32 *)(a + 0x54) = -1;
-    func_0013EB28(a + 0x18);
-    r = func_00165DC0(D_004864A0, D_00479480);
-    p = *(void **)(a + 0xC);
-    v = *(V3 *)((u8 *)p + 0x10);
-    func_0024D4F8(r, &v, p, 1.0f);
-    func_0013EAC8(a + 0x18, 2);
-    *(void **)(a + 0x14) = D_0044E670;
-    func_00194300(a + 4);
-    if (flag) func_001447D8(a);
+M2C_UNK func_0013EAC8(s32, M2C_UNK);                /* extern */
+M2C_UNK func_0013EB28(s32);                         /* extern */
+M2C_UNK func_001447D8(void *);                      /* extern */
+s32 func_00165DC0(M2C_UNK *, M2C_UNK *);            /* extern */
+M2C_UNK func_00194300(void *);                      /* extern */
+M2C_UNK func_0024CF80(s32);                         /* extern */
+M2C_UNK func_0024D4F8(s32, M2C_UNK *, void *, s32, M2C_UNK); /* extern */
+extern M2C_UNK D_0044E670;
+extern M2C_UNK D_00452AE0;
+extern M2C_UNK D_00479480;
+extern M2C_UNK D_004864A0;
+
+void func_002B5A00(void *arg0, s32 arg1) {
+    M2C_UNK sp10;
+    s32 temp_18;
+    s32 temp_4;
+    s32 temp_7;
+    void *temp_6;
+
+    temp_18 = arg0 + 0x18;
+    M2C_FIELD(arg0, M2C_UNK **, 0x14) = &D_00452AE0;
+    func_0024CF80(M2C_FIELD(arg0, s32 *, 0x54));
+    M2C_FIELD(arg0, s32 *, 0x54) = -1;
+    func_0013EB28(temp_18);
+    temp_6 = M2C_FIELD(arg0, void **, 0xC);
+    temp_4 = func_00165DC0(&D_004864A0, &D_00479480);
+    M2C_ERROR(/* unknown instruction: ldl $v0, 0x17($a2) */);
+    M2C_ERROR(/* unknown instruction: ldr $v0, 0x10($a2) */);
+    temp_7 = M2C_FIELD(temp_6, s32 *, 0x18);
+    M2C_ERROR(/* unknown instruction: sdl $v0, 0x7($v1) */);
+    M2C_ERROR(/* unknown instruction: sdr $v0, ($v1) */);
+    M2C_FIELD(&sp10, s32 *, 8) = temp_7;
+    func_0024D4F8(temp_4, &sp10, temp_6, temp_7, 0x3F800000);
+    func_0013EAC8(temp_18, 2);
+    M2C_FIELD(arg0, M2C_UNK **, 0x14) = &D_0044E670;
+    func_00194300(arg0 + 4);
+    if (arg1 & 1) {
+        func_001447D8(arg0);
+    }
 }

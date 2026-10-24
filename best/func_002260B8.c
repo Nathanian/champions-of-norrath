@@ -1,39 +1,25 @@
-typedef struct { f32 x, y, z; } V3;
-extern void func_00220278(void *, s32, V3 *, s16);
-extern void func_00163830(void *, s32, s32);
-extern void func_00223BD8(void *, s32, V3 *, s16);
-extern void func_00221A20(void *);
-extern u8 D_0044F150[];
 extern u8 D_0044F2A0[];
+extern void func_00223BD8(void *, s16, s32);
 
-typedef struct { u8 p0[0x48]; void *vt; u8 p4c[0x4c]; u8 b98[4]; s8 b9c; u8 p9d[0x33]; u32 fd0; u8 pd4[0x68]; u32 f13c; u8 p140[8]; void *f148; } X;
-
-void func_00226140(u8 *o, s32 a1, V3 *a2, s16 a3) {
-    V3 t = *a2;
-    func_00220278(o, a1, &t, a3);
-    *(void **)(o + 0x48) = D_0044F150;
-    o[0x9C] = 0;
-    func_00163830(o + 0x98, *(s32 *)(o + 0x128), 1);
-    *(u32 *)(o + 0xD0) |= 1;
-}
-
-void func_002260B8(u8 *o, s32 a1, V3 *a2, s16 a3) {
-    V3 t = *a2;
-    s32 i;
-    func_00223BD8(o, a1, &t, a3);
-    *(void **)(o + 0x48) = D_0044F2A0;
-    for (i = 3; i >= 0; i--)
-        *(s32 *)(o + 0x1C0 + i * 4 + 4 - 4 + 0) = 2;
-    *(u32 *)(o + 0x13C) |= 2;
-}
-
-typedef struct { u8 pad[0x48]; struct { s16 off; s32 (*fn)(void *, V3 *); } *vt; } Obj2;
-void func_00225680(u8 *o) {
-    u8 *c = *(u8 **)(o + 0x148);
-    if (c) {
-        struct { s16 off; s32 (*fn)(void *, V3 *); } *e = (void *)(*(u8 **)(c + 0x48) + 0x90);
-        V3 t = *(V3 *)(o + 0x10);
-        e->fn(c + e->off, &t);
+void func_002260B8(void *arg0, void *arg2, s16 arg3) {
+    s32 *stack_buf = (s32 *)__builtin_alloca(16);
+    // ldl/ldr/sdl/sdr for misaligned 64-bit load/store at arg2
+    // This copies 12 bytes from arg2 to stack_buf (unaligned)
+    // arg2[0..7] via ldl/ldr, arg2[8] via lw
+    s64 val_lo = *(s64 *)((u8 *)arg2 + 0);  // unaligned
+    s32 val_hi = *(s32 *)((u8 *)arg2 + 8);
+    *(s64 *)((u8 *)stack_buf + 0) = val_lo;
+    *(s32 *)((u8 *)stack_buf + 8) = val_hi;
+    
+    func_00223BD8(stack_buf, arg3, val_hi);
+    
+    *(void **)((u8 *)arg0 + 0x48) = D_0044F2A0;
+    
+    s32 *ptr = (s32 *)((u8 *)arg0 + 0x1C4);
+    for (s32 i = 3; i >= 0; i--) {
+        *ptr = 2;
+        ptr--;
     }
-    func_00221A20(o);
+    
+    *(u16 *)((u8 *)arg0 + 0x13C) |= 2;
 }

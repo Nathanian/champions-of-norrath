@@ -1,61 +1,29 @@
-typedef struct {
-    u32 spdifMode : 1;
-    u32 screenType : 2;
-    u32 videoOutput : 1;
-    u32 japLanguage : 1;
-    u32 ps1drvConfig : 8;
-    u32 version : 3;
-    u32 language : 5;
-    u32 timezoneOffset : 11;
-} OsdConfigParam;
-extern u8 func_001D1C80[];
-s32 func_0017DCF0(void);
-void GetOsdConfigParam(OsdConfigParam *);
+/* machine draft (m2c) for ee-gcc-2.96 -O2 -G8, tried by autopilot */
+#ifndef M2C_DEFINES
+#define M2C_DEFINES
+typedef s32 M2C_UNK;
+typedef s8 M2C_UNK8;
+typedef s16 M2C_UNK16;
+typedef s32 M2C_UNK32;
+#define M2C_FIELD(expr, type_ptr, offset) (*(type_ptr)((s8 *)(expr) + (offset)))
+#define M2C_BITWISE(type, expr) ((type)(expr))
+#define M2C_ERROR(desc) (0)
+#define M2C_CARRY 0
+#define M2C_OVERFLOW(a) (0)
+#endif
 
-s32 func_0017DD30(void)
-{
-    OsdConfigParam c;
-    s32 r;
-    GetOsdConfigParam(&c);
-    if (func_0017DCF0()) {
-        r = func_001D1C80[0x44C];
-    } else {
-        GetOsdConfigParam(&c);
-        if (c.version == 0) r = c.japLanguage;
-        else r = c.language;
+s32 func_0011B940(s32, s32, s32);                   /* extern */
+
+void func_0013A45C(void *arg0) {
+    s32 temp_2;
+    s32 temp_3;
+    s32 temp_6;
+
+    temp_3 = M2C_FIELD(arg0, s32 *, 0x10);
+    temp_2 = M2C_FIELD(arg0, s32 *, 4);
+    temp_6 = temp_2 - (temp_3 * 2);
+    if (((temp_2 - (temp_3 * 3)) >= M2C_FIELD(arg0, s32 *, 0xC)) && (temp_6 >= M2C_FIELD(arg0, s32 *, 8))) {
+        M2C_FIELD(arg0, s32 *, 4) = temp_6;
+        M2C_FIELD(arg0, s32 *, 0) = func_0011B940(M2C_FIELD(arg0, s32 *, 0), temp_6 * 0x14, temp_6);
     }
-    return r;
-}
-
-typedef struct {s32 x[5];} Item;
-typedef struct {Item*data;s32 cap,min,len,grow;} Arr;
-extern void *func_0011B940(void *, s32);
-extern void *func_0011B8D0(s32);
-void func_0013A3F8(Arr *p);
-
-void func_0013A3F8(Arr *p) {
-    s32 n = p->cap + p->grow;
-    void *old = p->data;
-    p->cap = n;
-    if (old)
-        p->data = func_0011B940(old, n * 0x14);
-    else
-        p->data = func_0011B8D0(n * 0x14);
-}
-
-void func_0013A45C(Arr *p) {
-    s32 g = p->grow;
-    s32 c = p->cap;
-    s32 n = c - g * 2;
-    if (c - g * 3 >= p->len && n >= p->min) {
-        p->cap = n;
-        p->data = func_0011B940(p->data, n * 0x14);
-    }
-}
-
-void func_0013A4D8(Arr *p, Item *q) {
-    s32 n = p->len, t = n * 4;
-    if (n >= p->cap) { func_0013A3F8(p); n = p->len; t = n * 4; }
-    *(Item *)((u8 *)p->data + (t + n) * 4) = *q;
-    p->len++;
 }
