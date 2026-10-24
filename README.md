@@ -11,7 +11,7 @@ judge accepted them as matches.
 - **Game:** SLUS-20565
 - **Platform:** ps2
 - **Compiler:** ee-gcc-2.96
-- **Progress:** 2942 matching function(s), 3738 best attempt(s)
+- **Progress:** 3040 matching function(s), 3666 best attempt(s)
 
 ## What's in this folder
 
